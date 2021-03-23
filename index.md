@@ -39,8 +39,10 @@ All participants (including instructors, helpers and observers) are required to 
 
 ## Contact 
 Please email bio_rdm@ed.ac.uk for more information. 
+  
 <!-- this is an html comment -->
 {% comment %} This is a comment in Liquid {% endcomment %}
+
 > ## Prerequisites
 >
 > We ask participant to do some preparation ahead of the workshop: 
@@ -48,8 +50,9 @@ Please email bio_rdm@ed.ac.uk for more information.
 > Please remember to update your Zoom client before the start of the course 
 > If possible, please read the following short papers before coming to the workshop:  
 > * [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
-> * `Any texts on Open Science?` 
-> * `Any texts on FAIR principles?` 
+> * [No raw data, no science: another possible source of the reproducibility crisis](https://molecularbrain.biomedcentral.com/articles/10.1186/s13041-020-0552-2)
+> * [The FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618)
+> 
 {: .prereq}
-
+  
 {% include links.md %}
