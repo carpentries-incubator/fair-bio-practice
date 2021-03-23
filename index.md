@@ -28,17 +28,6 @@ After taking this workshop you should:
 * understand the importance of metadata. 
 * understand how implementing these concepts at the beginning of a project will help you save time towards the end of the project cycle. 
 
-## Workshop location 
-This is an online event. We will meet using the online videoconference software Zoom. You will need to download and install the latest Zoom client to connect with your instructors. The link to use for this event will be announced via email to registered participants. Remember to update your client before the start of the course. 
-
-## Registration 
-Registration is free via EventBrite `<FIX ME>`. Priority will be given to participants from `<FIX ME>`. 
-
-## Requirements 
-Participants will need a laptop/desktop computer with video and sound capabilities (including a microphone) to attend the workshop. 
-
-## Code of Conduct 
-All participants (including instructors, helpers and observers) are required to abide by [The Carpentries Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html). This document also outlines how to report an incident if needed.
 
 ## Contact 
 Please email bio_rdm@ed.ac.uk for more information. 
