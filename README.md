@@ -4,22 +4,20 @@
 
 ## General information
 
-This lesson provides foundation for practical incorporation of Open Science and FAIR data principles into biological data managment.
+This lesson provides the foundation for practical incorporation of Open Science and FAIR data principles into biological research data managment.
 
-FIXME: Add description what this project is about.
-Why we develop the lesson (? copy paste something from the grant application), ? funding info?
+We [(the UoE BioRDM team)](https://www.wiki.ed.ac.uk/display/RDMS/Research+Data+Management+SynthSys+%28f1sysrdm%29+Home) have identified that a gap exists in the knowledge of how to apply FAIR principles to real-life day-to-day biological research. An understanding of the principles of good data management is just as important as the practicalities. Researchers must become conversant with the Open Science ethos, the Reproducible Research movement, and the FAIR principles, to explain their new skills and to recognize or evaluate them in their peers.
 
-That there is a gap in knowledge of how to apply FAIR pricinples in real biological work. Especially for the wet-people. 
+The overall goals of the lesson are: 
+* To teach solid basic concepts in open science, FAIR guidelines and data management.
+* To teach how to be FAIR in practice.
+* To teach how to organize research workflows in such a way that it is easy to make biological research open, findable and reusable.
 
-So a bit different angle than lesson description, what is the rationale behind.
+We are developing this lesson as part of the ED-DaSH consortium, supported by the "Data driven life science skills development - equipping society for the future" UKRI-MRC grant MR/V039075/1.
 
-Overall goals: 
-?Teach how to be FAIR in practice
-?How to organize research workflows that then it is easy to be Open and Reusable.
+## Development status and contributing
 
-## Contributing
-
-We welcome all contributions to improve the lesson! Maintainers will do their best to help you if you have any
+The lesson is currently under active development. We welcome all contributions to improve the lesson! Maintainers will do their best to help you if you have any
 questions, concerns, or experience any difficulties along the way.
 
 We'd like to ask you to familiarize yourself with our [Contribution Guide](CONTRIBUTING.md) and have a look at
@@ -37,7 +35,7 @@ Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%
 
 Current maintainers of this lesson are
 
-* [Andrew Romanowski](https://github.com/aromanowski)
+* [Andrés Romanowski](https://github.com/aromanowski)
 * [Tomasz Zielinski](https://github.com/tzielins)
 
 
