@@ -6,6 +6,17 @@
 
 This lesson provides foundation for practical incorporation of Open Science and FAIR data principles into biological data managment.
 
+FIXME: Add description what this project is about.
+Why we develop the lesson (? copy paste something from the grant application), ? funding info?
+
+That there is a gap in knowledge of how to apply FAIR pricinples in real biological work. Especially for the wet-people. 
+
+So a bit different angle than lesson description, what is the rationale behind.
+
+Overall goals: 
+?Teach how to be FAIR in practice
+?How to organize research workflows that then it is easy to be Open and Reusable.
+
 ## Contributing
 
 We welcome all contributions to improve the lesson! Maintainers will do their best to help you if you have any
