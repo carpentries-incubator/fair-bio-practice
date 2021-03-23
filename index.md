@@ -5,8 +5,8 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 ---
 ## Introduction
 Open Science is disruptive. It will change how we do reasearch and how society benefits from it. Making data re-usable is key to this, and FAIR principles are a way to achieve it.
-* But what does it mean in practice?</li>
-* How can a biologist incorporapte those principles in their workflow?
+* But what does it mean in practice?
+* How can a biologist incorporate those principles in their workflow?
 * We will learn that becoming FAIR and following OS practices is a process.
 
 Nowadays you can be FAIR ready rather than FAIR from the beginning. Through planning and using the correct set of tools you can easily make your outputs public and reusable.
