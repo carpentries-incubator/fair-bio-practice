@@ -4,6 +4,8 @@
 
 ## General information
 
+This lesson provides foundation for practical incorporation of Open Science and FAIR data principles into biological data managment.
+
 ## Contributing
 
 We welcome all contributions to improve the lesson! Maintainers will do their best to help you if you have any
