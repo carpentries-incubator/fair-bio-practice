@@ -53,14 +53,14 @@ they are going to supervise...([read more](./learners) )
   
 > ## Learning Objectives
 >
-> After following this lesson, learners will:
+> After following this lesson, learners will be able to:
 >
-> * be familiar with the concept of Open Science and Open Research. 
-> * be familiar with FAIR guidelines. 
-> * understand the FAIR data research data cycle. 
-> * be familiar with tools that allow you to implement a FAIR research data cycle. 
-> * understand the importance of metadata. 
-> * understand how implementing these concepts at the beginning of a project will help you save time towards the end of the project cycle. 
+> * explain the elements Open Science movement. 
+> * explain the FAIR principles and understand their importance. 
+> * plan their own data managment strategy.
+> * prepare their data for re-use.
+> * aply aproaches and tools into FAIR-ready research data cycle.
+> * find suitable resources for delivering Open Science and FAIR data
 >
 {: .objectives }
 
