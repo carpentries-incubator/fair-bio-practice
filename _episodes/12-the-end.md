@@ -1,5 +1,5 @@
 ---
-title: "Wrapping up"
+title: "12 episodes to come"
 teaching: 0
 exercises: 0
 questions:
