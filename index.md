@@ -27,7 +27,7 @@ This course can also be interesting to modellers, data analysts, project manager
 
 Kavindra Anand (they/them) - junior postdocs 
 
-Kavindra are starting their first postdoctoral stay. They have recently obtained a PhD in Plant Biology and are very skilled in running plant molecular and physiology experiments. They recently published their first publication, but they found the process of preparing all the figures and required information for the publisher as super tedious and time consuming. As postdocs, they must find an effective way to organise their own research project and the PhD students they are going to supervise...(read more) 
+Kavindra are starting their first postdoctoral stay. They have recently obtained a PhD in Plant Biology and are very skilled in running plant molecular and physiology experiments. They recently published their first publication, but they found the process of preparing all the figures and required information for the publisher as super tedious and time consuming. As postdocs, they must find an effective way to organise their own research project and the PhD students they are going to supervise...([read more](./learners) ) 
 `<Add link to learners profiles or paste them here if we cannot keep them in seperate page>`
   
 > ## Prerequisites
