@@ -45,7 +45,9 @@ Kavindra are starting their first postdoctoral stay. They have recently obtained
 > There may be additional prerequisites for individual episodes/lessons in the extras section.
 > 
 {: .prereq }
-  
+
+> Senior PIs running their groups rather than performing experiments should come to FIXME COURSE. 
+> Bioinformaticians and those who mostly develop scientific software may prefer software specific courses like FIXME FIXME.
   
 > ## Learning Objectives
 >
