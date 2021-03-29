@@ -23,14 +23,11 @@ and hands-on lessons where you will use the approaches learned and implement som
 PhD students, postdocs, technicians who actively generate or analyse biological data, in majority bench biologists. 
 This course can also be interesting to modellers, data analysts, project managers and advocates of FAIR/Open Data.
 
-### Example of a learner profile
+<ins>Example of a learner profile:</ins>
 
-Kavindra Anand (they/them) - junior postdocs 
-
-Kavindra are starting their first postdoctoral stay. They have recently obtained a PhD in Plant Biology and are very skilled in running plant molecular and physiology experiments. They recently published their first publication, but they found the process of preparing all the figures and required information for the publisher as super tedious and time consuming.
-As postdocs, they must find an effective way to organise their own research project and the PhD students
-they are going to supervise...([read more](./learners) ) 
-
+Shania T. Wain (she/her) - junior postdoc  
+Shania is starting her first postdoctoral stay. She has recently obtained a PhD in Plant Biology and is very skilled in running plant molecular and physiology experiments. She recently published her first publication, but found the process of preparing all the figures and required information for the publisher as super tedious and time consuming. As a postdoc, she must find an effective way to organise her own research project and the PhD students she is going to supervise...([read more](./learners) ) 
+  
   
 > ## Prerequisites
 >
@@ -46,10 +43,12 @@ they are going to supervise...([read more](./learners) )
 > 
 > There may be additional prerequisites for individual episodes/lessons in the extras section.
 > 
-{: .prereq }
-
+{: .prereq }  
+  
+  
 > Senior PIs running their groups rather than performing experiments should come to FIXME COURSE. 
-> Bioinformaticians and those who mostly develop scientific software may prefer software specific courses like FIXME FIXME.
+> Bioinformaticians and those who mostly develop scientific software may prefer software specific courses like FIXME FIXME.  
+  
   
 > ## Learning Objectives
 >
@@ -62,7 +61,7 @@ they are going to supervise...([read more](./learners) )
 > * aply aproaches and tools into FAIR-ready research data cycle.
 > * find suitable resources for delivering Open Science and FAIR data
 >
-{: .objectives }
+{: .objectives }  
 
 
 <!-- this is an html comment -->
