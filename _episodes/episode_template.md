@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Template"
 teaching: 0
 exercises: 0
 questions:
