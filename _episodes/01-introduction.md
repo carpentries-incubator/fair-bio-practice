@@ -51,11 +51,83 @@ TODO FIGURE with OS hexagons.
 
 TODO short description of each part of OS
 
+> ## Goals of Open Science
+>
+> For the following OS parts:
+> * Open Access
+> * Open Data
+> * Open Software
+> * Open Notebooks
+> * Open Peer Review
+>
+> discuss what are the main goals or problems that are being addressed
+> by those Open initiatives.
+>
+> For example:
+> Open educational resources:
+> - makes quality teaching materials widely available
+> - permits collaborative development of courses
+> - improves teachers/instructors skills by sharing ideas
+>
+> *The Trainer may have you discuss in small groups one initiative each and
+> then gather your thoughts together as a group.*
+>
+>> ## Solution
+>>
+>> TODO: We should provide some answers for each of 5 here as a take away.
+>> **Open Access**
+>> * free, unlimited access to scientific discovery
+>> * speeds knowledge distribution
+>>
+>> **Open Data**
+>> * one
+>> * two
+>>
+>> **Open Software**
+>> * one
+>> * two
+>>
+>> **Open Notebooks**
+>> * one
+>> * two
+>>
+>> **Open Peer Review**
+>> * one
+>> * two
+>>
+> {: .solution}
+{: .challenge}
 
+> ## Personal benefits of being "open"
+>
+> Discuss in group how you personally can benefit from making your data or source code open.
+>
+{: .discussion}
+
+TODO: Describe that OA is very popular cause the UK funders require so,
+that it changed the publishing world with OA journals, new bussiness models.
+But for many publishers as the minimum you can deposit golden copy at your institution
+which fulfuls UK requirements.
+
+TODO: One paragraph on O Software. That is very popular, becomes rather default
+than option, that bussiness is on board. Collaborations, bug fixes, transparency,
+developers portfolio.
+
+> ## Benefits of Open Science
+>
+> TODO: List the benefits, those should come in the discussion above,
+> but as the lesson must be "self taught" lets state them here. And
+> as a seprate box not a solution so a) no cheating b) it is nicely visible
+> for those who read quickly through the lesson.
+{: .callout}
+
+>
+> -- I propose the costs of open data or software to move after FAIR
+> and metadata so the involved work is more obvious
 
 >## Open Science Quizz
 >
->Which of the following statements about the OS movement are true/false?
+> Which of the following statements about the OS movement are true/false?
 >
 >* Open Science relies strongly on the Internet
 >* Open Access eliminates publishing costs
