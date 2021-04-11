@@ -122,11 +122,6 @@ developers portfolio.
 > for those who read quickly through the lesson.
 {: .callout}
 
->
-> -- I propose the costs of open data or software to move after FAIR
-> and metadata so the involved work is more obvious
->
-
 > ## Why we are not doing Open Science already
 >
 > Discuss why you did not or would not make your data or software open.
