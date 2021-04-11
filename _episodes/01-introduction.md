@@ -136,7 +136,7 @@ TODO: Describe the barriers and risks of OS movement:
 - misuse (fake news)
 - the costs in $ and in time
 
->## Open Science Quizz
+> ## Open Science Quiz
 >
 > Which of the following statements about the OS movement are true/false?
 >
