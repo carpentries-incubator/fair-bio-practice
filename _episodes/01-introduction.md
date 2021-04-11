@@ -47,7 +47,8 @@ Now we would like to get to know all of you.
 
 TODO Open Science movement, what it is, why, when, who is behind,
 
-TODO FIGURE with OS hexagons.
+[Figure 1. Open Science Building Blocks](../fig/OpenScienceBuildingBlocks.jpg)
+*After [Gema Bueno de la Fuente](https://www.fosteropenscience.eu/content/what-open-science-introduction)*
 
 TODO short description of each part of OS
 
