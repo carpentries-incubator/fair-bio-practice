@@ -25,7 +25,7 @@ biological community and the whole society.
 > --- Tracy Teal, Former Executive Director, The Carpentries
 {: .testimonial}
 
-Hello everyone, and welcome to FAIR in biological practice workshop.
+Hello everyone, and welcome to **FAIR in biological practice** workshop.
 We are very pleased to have you with us.
 
 > ## Today's Trainers
@@ -124,6 +124,20 @@ developers portfolio.
 >
 > -- I propose the costs of open data or software to move after FAIR
 > and metadata so the involved work is more obvious
+>
+
+> ## Why we are not doing Open Science already
+>
+> Discuss why you did not or would not make your data or software open.
+>
+{: .discussion}
+
+
+TODO: Describe the barriers and risks of OS movement:
+- IP
+- sensitive data
+- misuse (fake news)
+- the costs in $ and in time
 
 >## Open Science Quizz
 >
