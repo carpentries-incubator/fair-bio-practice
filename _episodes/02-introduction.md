@@ -89,12 +89,19 @@ TODO: One paragraph on O Software. That is very popular, becomes rather default
 than option, that bussiness is on board. Collaborations, bug fixes, transparency,
 developers portfolio.
 
-> ## Benefits of Open Science
+> ## TODO Why to get into Open Science
 >
-> TODO: List the benefits, those should come in the discussion above,
-> but as the lesson must be "self taught" lets state them here. And
-> as a seprate box not a solution so a) no cheating b) it is nicely visible
-> for those who read quickly through the lesson.
+> * get extra value from your work (e.g. collaborators, reuse by modelers, ML specialists)
+> * complying with funders’ policies
+> * receive higher citations
+> * demonstrate research impact
+> * safe own time (reproducibility but also communication overhead)
+> * become pioneers
+> * distinguish yourself from the crowd
+> * plan successful research proposals
+> * gain valuable experience
+> * form community
+>
 {: .callout}
 
 > ## Why we are not doing Open Science already
