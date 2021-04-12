@@ -11,7 +11,8 @@ objectives:
 - "Explain the main benefits of OS"
 - "Recognize the barriers and risks in the OS adoption"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Open Science increases transparency in research"
+- "Publicly funded science should be publicly available"
 ---
 
 TODO: Some nice short opening, something in the spirit:

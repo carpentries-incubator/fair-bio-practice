@@ -143,6 +143,7 @@ Or domain specific, for example:
 >
 > There are several services and technologies (schemas) that provide PIDs
 > for objects (whether digital, physical or abstract).
+>
 > One of the most popular is **Digital Object Identifier [(DOI)]()**,
 > recognizable by the prefix doi.org in the web links.
 >
