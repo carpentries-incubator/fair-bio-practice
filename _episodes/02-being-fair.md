@@ -134,8 +134,7 @@ Or domain specific, for example:
 >
 > A persistent identifier is a long-lasting reference to a digital resource.
 > Typically it has two components:
-> * a service that locates the resource over time even when its location
-> in the changes
+> * a service that locates the resource over time even when its location in the changes
 > * and a unique identifier (that distinguishes the resource or concept from others).
 >
 > Persistent identifiers aim to solve the problem of the persistence of accessing cited resource,
