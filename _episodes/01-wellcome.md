@@ -10,7 +10,7 @@ objectives:
 - ""
 keypoints:
 - "Do not be shy"
-- "By nice"
+- "Be nice"
 ---
 
 ## Introductions
