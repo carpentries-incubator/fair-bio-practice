@@ -11,7 +11,8 @@ objectives:
 - "Understand FAIR principles"
 - "Know steps for achieving FAIR data"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "FAIR stands for Findable Accessible Interoperable Reusable"
+- "FAIR assures easy access to data underlying scientific findings"
 ---
 
 TODO some intro, maybe like:
@@ -29,8 +30,8 @@ that underlines those publications.
 > date are also:
 > * images, not only from microscopy
 > * information about biological materials, like strain details
-> * recipes, laboratory/measurement protocols
-> * ?ANOTHER EXAMPLE?
+> * recipes, laboratory and measurement protocols
+> * ?ARE THERE ANOTHER EXAMPLES?
 > * scripts, analysis procedures, custom software can also be considered as data,
 > although there are often specific recommendations how to deal with code.
 >
@@ -103,13 +104,14 @@ After [SangyaPundir](https://commons.wikimedia.org/wiki/File:FAIR_data_principle
 >
 {: .callout}
 
-In biological practice it often means:
 
-### Findable & Accessible
+## FAIR in biological practice
 
-Deposit data to external, reputable public repository.
+#### Findable & Accessible
 
-Repositories provide permanent identifiers (PIDs), catalogue options,
+Deposit data to an external, reputable public repository.
+
+Repositories provide persistent identifiers (PIDs), catalogue options,
 advanced metadata searching, download stats.
 
 Some repositories can host also private data or provide embargo period.
@@ -127,7 +129,41 @@ Or domain specific, for example:
 
 *We will cover repositories in more details in a later episode.*
 
-### Interoperable
+
+> ## What are persistent identifiers (PIDs)
+>
+> A persistent identifier is a long-lasting reference to a digital resource.
+> Typically it has two components:
+> * a service that locates the resource over time even when its location
+> in the changes
+> * and a unique identifier (that distinguishes the resource or concept from others).
+>
+> Persistent identifiers aim to solve the problem of the persistence of accessing cited resource,
+> particularly in the academic literature. All too often, web addresses (links) changes over time
+> and fail to take you to the referenced resource you expect.
+>
+> There are several services and technologies (schemas) that provide PIDs
+> for objects (whether digital, physical or abstract).
+
+> One of the most popular is **Digital Object Identifier [(DOI)]()**,
+> recognizable by the prefix doi.org in the web links.
+>
+> For example: [https://doi.org/10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18)
+> resolves to the location of the paper that describes FAIR principles.
+>
+> Public repositories often maintain web addresses of their content in a stable form
+> which follows the convention http://repository.adress/identifier;
+> these are often called permalinks.
+> For well establish services, permalinks can be treated as PIDs.
+>
+> For example: [http://identifiers.org/SO:0000167](http://identifiers.org/SO:0000167) resolves to a page
+> defining promoter role and can be used to annotate part of DNA sequence
+> as performinig such role during transcription.
+>
+{: .callout}
+
+
+#### Interoperable
 
 * Use common files formats (can be domain specific)
 * Always use .csv or .xls files for numerical data.
@@ -136,14 +172,18 @@ Never make data tables in word or pdf,
 * Convert proprietary binary formats to the open ones, for example
  convert Snapgene to Genbank, microscopy multistack images to OME-TIFF
 
-### Reusable
+#### Reusable
 
 1. Attach licence file.
 Generally, without an explicit licence the data
 cannot not be re-used.
-We recommend [Creative Commons Attribution (CC BY)](https://creativecommons.org/licenses/by/4.0/)
-licence for data, and, for code a permissive open source license such
-as the MIT, BSD, or Apache license
+Here, we recommend:
+    * for data [Creative Commons Attribution (CC BY)](https://creativecommons.org/licenses/by/4.0/)
+licence,
+    * for code a permissive open source license such
+as the [MIT](https://opensource.org/licenses/MIT),
+[BSD](https://opensource.org/licenses/BSD-2-Clause),
+or [Apache license](http://www.apache.org/licenses/).
 
 2. Describe your data well / provide good metadata
     * write README file describing the data
