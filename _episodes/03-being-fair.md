@@ -37,14 +37,43 @@ that underlines those publications.
 >
 {: .callout}
 
-Let's check ourselves how easy it is to obtain data from
+Let's have a look how difficult it is to find data from
 published biological papers.
 
 TODO:
-> ## Impossible protocol
+
+> ## Impossible protocol 
 >
-> Defined here.
+> Imagine you have discovered a protein of interest during a RNA-seq or
+> proteomics experiment and are wanting to validate your data via a
+> western blot of your samples. That protein is Titin, the largest
+> protein in the body with a molecular weight of 3,800 kDa, and you are
+> now looking for protocols on how to best separate and transfer this
+> large protein. You found an antibody that has been validated in
+> western blots and immunofluorescence, have ordered it and are now
+> looking through those publications which have successfully used it.
+> Sigma Aldrich lists [this paper](https://doi.org/10.1002/acn3.50831)
+> which uses their antibody.
+> Can you find a complete protocol in their Methods under Western blot
+> analysis (p. 1312), where their reference (ref 17) leads you to another
+> publication?
 >
+>> ## Solution 
+>>
+>>  * Ref 17 will lead you to [this
+>>     paper](https://doi.org/10.1002/ana.24102), which first of all is
+>>     not open access
+>>  * Access the paper through your institutions (if you can) and find
+>>     the 'Western Blotting' protocol on page 232 which will show the
+>>     following (Screenshot from the methods section from [Evilä et al 2014](https://doi.org/10.1002/ana.24102)):
+>>  * ![Figure 1. Impossible Protocol](../fig/impossible_protocol.png) 
+>>  * "Western blotting were performed according to standard methods." -
+>>     with no further reference to these standard methods, describing
+>>     these methods, or supplementary material detailing these methods
+>>  * This methodology is unfortunately a true dead end and we thus
+>>      can't easily continue our experiments!
+>>
+> {: .solution}
 {: .challenge}
 
 > ## Impossible numbers
@@ -68,7 +97,7 @@ TODO:
 TODO: As we saw the typical problems are: ....
 To avoid such problems FAIR principles were designed.
 
-![Figure 1. FAIR principles](../fig/FAIR.png)
+![Figure 2. FAIR principles](../fig/FAIR.png)
 After [SangyaPundir](https://commons.wikimedia.org/wiki/File:FAIR_data_principles.jpg)
 
 > ## FAIR Principles
