@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Metadata"
+title: "Introduction to metadata"
 teaching: 15
 exercises: 15
 questions:
