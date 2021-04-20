@@ -22,6 +22,11 @@ I am episode intro
 
 With a text.
 
+![Figure 1. I am some figure](../fig/figure_file.jpg)
+
+*After [Figure source](https://www.figure.link/)*
+
+
 > ## I am a yellow info
 >
 > And my text.
