@@ -73,12 +73,29 @@ your data.
 > How would you improve this? (5 minutes)
 >> ## Solution
 >> One possible solution would be to include the following header in the first rows of the spreadsheet:
->> A | B
->>  --- | --- |
->> Strain: | *Escherichia coli* strain used in this work.
->> Flask: | ID number of the 250 ml bacterial culture flask.
->> OD600: | optical density at 600nm.
->> Time: | time in hours since inoculation .
+>> 
+>> <table style="width:100%">
+  <tr>
+    <th>A</th>
+    <th>B</th>
+  </tr>
+  <tr>
+    <td>Strain</td>
+    <td markdown="span">*Escherichia coli* strain used in this work.</td>
+  </tr>
+  <tr>
+    <td>Flask</td>
+    <td>ID number of the 250 ml bacterial culture flask</td>
+  </tr>
+  <tr>
+    <td>OD600</td>
+    <td>optical density at 600nm</td>
+  </tr>
+  <tr>
+    <td>Time</td>
+    <td>time in hours since inoculation</td>
+  </tr>
+</table>
 >> 
 >> Discuss: could you think of any other metadata that could be of use here? (3 minutes)
 > {: .solution}
