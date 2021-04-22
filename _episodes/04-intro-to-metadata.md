@@ -13,11 +13,9 @@ objectives:
 - "Recognise how FAIR guidelines apply to metadata"
 keypoints:
 - "Metadata provides contextual information so that other people understand our data."
-- "Metadata is key for data reuse."
+- "Several community metadata standards exist."
+- "Metadata is key for data reuse and complying with FAIR guidelines."
 - "Metadata can be included as a standalone ReadMe.txt file or included as a header on a data file"
-output: html_notebook
-editor_options: 
-  chunk_output_type: inline
 ---
 
 ## What is (or are) metadata?
@@ -162,8 +160,10 @@ continuously throughout the project.
 > > * Structural metadata appears in grey
 > >![metadata-full-spreadhseet](../fig/04-metadatafull_spreadsheet_solution.png)
 > {: .solution}
->  
-> Optional: in groups, now repeat the excercise for the example of the previous section.
+{: .challenge}
+
+> ## Identifying metadata types - optional
+> In groups, now repeat the excercise for the example of the previous section.
 {: .challenge}
 
 > ## Open Researcher and Contributor ID (ORCID)
@@ -185,14 +185,46 @@ Many fields have a set of defined ways in which to structure their
 metadata (this ensures it is consistent among the researchers of the
 field, and helps with machine readibility of metadata). A list of
 metadata standards can be found at the [The Digital Curation
-Center](http://www.dcc.ac.uk/resources/metadata-standards/list).
+Center](http://www.dcc.ac.uk/resources/metadata-standards/list). Although, 
+for biologists [FAIR Share](https://fairsharing.org/standards/)
+is a much better and easier resource to navigate.
 
-What can you do if there are no metadata standards defined for your
-data / field of research? Think about the minimum information that
-someone else (from your lab or from any other lab in the world) would
-need to know about your dataset to be able to work with it without any
-further inputs from you.
+> ## Finding a metadata standard
+> Go to [FAIR Share](https://fairsharing.org/standards/) and find the 'MINSEQE'
+> metadata standard, usually used in high-throughput sequencing experiments. Download the specification 
+> and spend some time exploring it.
+>
+{: .challenge}
+  
+> ## Tip
+> What can you do if there are no metadata standards defined for your
+> data / field of research?  
+> Think about the minimum information that
+> someone else (from your lab or from any other lab in the world) would
+> need to know about your dataset to be able to work with it without any
+> further inputs from you.
+{: .callout}
 
+## Adding metadata to your experiments
+Collecting and adding metadata to your experimental data files could take many forms. It could as simple as including a ReadMe.txt file,
+or, as we saw in the previous example, including your metadata within a spreadsheet. In subsequent episodes we will see more examples in
+greater detail.  
+For a template ReadMe.txt that you could use to include with your datasets, click here: [ReadMe.txt template](../files/readme_template_BioRDM.txt)
+    
+## Metadata and FAIR guidelines
+Metadata provides valuable information for us and others to be able to interpret (and process) the research data it accompanies. Making your
+data and metadata public provides an extra location for others to find your work. Even if you have published your results, the data files may
+not be findable. Metadata are machine-readable, and when they have a persistent identifier, search engines can easily find them. 
+To be FAIR, your data (and metadata) must have a findable persistent identifier. The persistent identifier is typically assigned when a digital
+resource is placed in a data repository.
+
+> ## Persistent identifiers
+> A persistent identifier (PID) is a long-lasting reference to a digital resource. It provides the information required to reliably identify and locate your research data.
+> A PID may also be connected to a set of metadata which describes a digital resource.  
+> A common PID you might have come accross is the Digital Object Identifier (DOI), which is assigned to resources ready for public dissemination and research publications.
+{: .callout}
+
+	
 > ## Metadata and FAIR guidelines - discussion
 > 
 > In groups, discuss how metadata can help the process of FAIRification.
@@ -204,7 +236,7 @@ further inputs from you.
 >
 > Content of this episode was adopted from: 
 > - [Metadata - FAIR data for climate sciences](https://escience-academy.github.io/Lesson-FAIR-Data-Climate/metadata/index.html).
-> - [Metadata - HOWTO FAIR](https://howtofair.dk/how-to-fair/metadata/)
+> - [Metadata - How to FAIR](https://howtofair.dk/how-to-fair/metadata/)
 > - [Data Tidiness](https://datacarpentry.org/organization-genomics/01-tidiness/index.html)
 {: .callout}
 
