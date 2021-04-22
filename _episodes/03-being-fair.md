@@ -48,20 +48,26 @@ TODO:
 {: .challenge}
 
 > ## Impossible numbers
->
-> Defined here.
+> 
+> Systems biologists usually require raw numerical data  to build their models. However, those are sometimes not easy to find. It was not customary to include raw numerical 
+> data in biological papers. Take a look at the following example:  
+> Try to find the numerical data behind the graph shown in [Figure 6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/figure/F6/) of [Sharrock RA and Clack T, 2002](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/). Is this possible?
 >
 {: .challenge}
 
 > ## Impossible resource/link
 >
-> Defined here.
+> RNA-seq (transcriptomics) data is usually deposited in online repositories such as [SRA](https://www.ncbi.nlm.nih.gov/sra) or [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/).  
+> Your task is to find the link to the repository of the raw RNA-seq data in [Li et al., Genes Dev. 2012](http://genesdev.cshlp.org/content/26/8/785.long).  
+> Can you find it anywhere?
 >
 {: .challenge}
 
 > ## Impossible format
 >
-> Defined here.
+> Sometimes raw data is shared in a proprietary format that is not easily accessible by everyone.
+> Check the format in which xxx is shared in xxxx and compare it to the list of [recommended formats](https://www.ed.ac.uk/information-services/research-support/research-data-service/after/data-repository/choosing-file-formats).  
+> Does the resource comply with recommended guidelines?
 >
 {: .challenge}
 
