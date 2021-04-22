@@ -16,3 +16,5 @@ vendor/
 Gemfile.lock
 .*history
 .idea
+.Rproj
+fair-bio-practice.Rproj
