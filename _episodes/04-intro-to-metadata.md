@@ -33,21 +33,20 @@ Metadata can be produced in an automated way (e.g.: when you create a
 microscopy image usually the accompanying software saves metadata on it)
 or manually.
 
-Let's take a look at an example:
+<ins>Let's take a look at an example:</ins>
 
-This is a confocal microscopy image of a C. elegans nematode strain used
+This is a confocal microscopy image of a *C. elegans* nematode strain used
 as a proteostasis model (Pretty! Isn't it?).
-![nematode_confocal_microscopy_image](../fig/04-microscopy_with_metadata.png)
+<img src="../fig/04-microscopy_with_metadata.png" alt="nematode_confocal_microscopy_image" width="600"/>
 
-Let's see the associated metadata to the image and the dataset to which
-it belongs:
-
+Let's see the associated metadata to the image and the dataset to which it belongs:
+  
 > ## Image metadata  
 >  
-> Name: OP50 D10Ad_06.czi
+> Name: OP50 D10Ad_06.czi  
 > Image ID: 3485  
 > Owner: Maria Eugenia Goya  
-> ORCID:
+> ORCID: 0000-0002-5031-2470
 >
 > Acquisition Date: 2018-12-12 17:53:55  
 > Import Date: 2020-04-30 22:38:59  
@@ -63,16 +62,16 @@ it belongs:
 >
 > ## Dataset metadata
 >  
-> Name: Figure2_Figure2B
+> Name: Figure2_Figure2B  
 > Dataset ID:	263  
 > Owner: Maria Eugenia Goya  
-> ORCID:
+> ORCID: 0000-0002-5031-2470
 >  
-
+>
 > Description:  
 > The datasets contains a time course of α-syn aggregation in NL5901 C.
 > elegans worms after a food switch at the L4 stage:
-
+>
 > E. coli OP50 to OP50  
 > Day 01 adults  
 > Day 03 adults  
@@ -80,7 +79,7 @@ it belongs:
 > Day 07 adults  
 > Day 10 adults  
 > Day 13 adults  
-
+>
 > E. coli OP50 to B. subtilis PXN21  
 > Day 01 adults  
 > Day 03 adults  
@@ -88,16 +87,16 @@ it belongs:
 > Day 07 adults  
 > Day 10 adults  
 > Day 13 adults  
-
+>
 > Images were taken at 6 developmental timepoints (D1Ad, D3Ad, D5Ad,
 > D7Ad, D10Ad, D13Ad)
-
-> * Some images contain more than one nematode.
-
+>
+> \* Some images contain more than one nematode.
+>
 > Each image contains   ~30 (or more) Z-sections, 1 µmeters apart. The
 > TagYFP channel is used to follow the alpha-synuclein particles. The TL
 > DIC channel is used to image the whole nematode head.
-
+>
 > These images were used to construct Figure 2B of the Cell Reports
 > paper (<https://doi.org/10.1016/j.celrep.2019.12.078>).
 >  
@@ -105,7 +104,7 @@ it belongs:
 >  
 > Tags: protein aggregation; time course; E. coli OP50 to B. subtilis PXN21; food switching; E. coli OP50;
 > 10.1016/j.celrep.2019.12.078; NL5901; C. elegans
-> {: .source}
+{: .callout}
 
 > ## Challenge
 >
@@ -113,7 +112,7 @@ it belongs:
 > -   Discuss in pairs: based on this example, how useful do you believe
 >     metadata is?
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Distinguishing data from metadata
 >
@@ -121,7 +120,7 @@ it belongs:
 > perspective: Some researchers' metadata can be other researchers'
 > data.
 >
-> {: .callout}
+{: .callout}
 
 ## Types of metadata
 
@@ -172,8 +171,8 @@ spreadsheet that contains your data.
 > > > Data Owner: Andrés Romanowski
 > > > ORCID: 0000-0003-0737-2408 
 > > > {: .source}
-> > {: .solution} 
-> {: .challenge}
+> {: .solution} 
+{: .challenge}
 
 > ## Producing metadata 2 (13 minutes)
 >
@@ -192,8 +191,8 @@ spreadsheet that contains your data.
 > > ![A metadata-full-spreadsheet](../fig/04-metadatafull_spreadsheet.png) 
 > > Discuss:
 > > could you think of any other metadata that could be of use here? (3 minutes)
-> > {: .solution}
-> {: .challenge}
+> {: .solution}
+{: .challenge}
 
 ## Metadata standards
 
