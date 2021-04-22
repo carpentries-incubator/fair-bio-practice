@@ -36,7 +36,10 @@ or manually.
 <ins>Let's take a look at an example:</ins>
 
 This is a confocal microscopy image of a *C. elegans* nematode strain used
-as a proteostasis model (Pretty! Isn't it?).
+as a proteostasis model (Pretty! Isn't it?). The image is part of the raw data
+associated to [Goya et al., 2020](https://doi.org/10.1016/j.celrep.2019.12.078),
+which was deposited in a [Public Omero Server](https://publicomero.bio.ed.ac.uk/).
+
 <img src="../fig/04-microscopy_with_metadata.png" alt="nematode_confocal_microscopy_image" width="600"/>
 
 Let's see the associated metadata to the image and the dataset to which it belongs:
@@ -106,11 +109,14 @@ Let's see the associated metadata to the image and the dataset to which it belon
 > 10.1016/j.celrep.2019.12.078; NL5901; C. elegans
 {: .callout}
 
+This is a lot of information!
+
 > ## Challenge
 >
-> -   Which information could you have guessed without the metadata?
-> -   Discuss in pairs: based on this example, how useful do you believe
->     metadata is?
+> -  Which information could you have guessed without the metadata?
+> -  Discuss in pairs: 
+> 	* how useful do you believe metadata is?
+>	* should metadata be included with public datasets?
 >
 {: .challenge}
 
@@ -144,55 +150,34 @@ practice in their research community and will be published together with
 the data. Descriptive and structural metadata should be added
 continuously throughout the project.
 
-## How to include metadata with (or within) our datasets?
 
-Including metadata to your newly produced data can be as simple as
-adding a 'ReadMe.txt' file or, for example, adding a header to a
-spreadsheet that contains your data.
-
-> ## Producing metadata (2 minutes)
+> ## Identifying metadata types
+> Here we have an excel spreadsheet that contains project metadata for a made-up experiment
+> ![metadata-full-spreadhseet](../fig/04-metadatafull_spreadsheet.png)
 >
-> Have you ever done a search in pubmed and found that you have
-> *doppelganger*? Do not worry, there is a solution to that! It is
-> called an ORCID. An [ORCID](https://orcid.org/) is a unique identifier
-> that links the papers you produced with you. Let's make use of it:
->
-> Create a tab separated text file with the following key value pairs
-> that identifies you *unequivocally* as the data owner (2 minutes):
-> Data owner: <your name> ORCID: <your ORCID>
->
-> If you do not have an [ORCID](https://orcid.org/), please create one
-> for this excercise.
->
+> In groups, identify different types of metadata used in this example.
 > > ## Solution
-> >
-> > A possible example would be: 
-> > > ## ReadMe.txt 
-> > > Data Owner: Andrés Romanowski
-> > > ORCID: 0000-0003-0737-2408 
-> > > {: .source}
-> {: .solution} 
+> > * Administrative metadata appears in blue
+> > * Descriptive metadata appears in orange
+> > * Structural metadata appears in grey
+> >![metadata-full-spreadhseet](../fig/04-metadatafull_spreadsheet_solution.png)
+> {: .solution}
+>  
+> Optional: in groups, now repeat the excercise for the example of the previous section.
 {: .challenge}
 
-> ## Producing metadata 2 (13 minutes)
+> ## Open Researcher and Contributor ID (ORCID)
+> 
+> Have you ever done a search in pubmed and found that you have
+> *doppelganger*? So how can you uniquely associate something you created
+> to just you and no other researcher that has the same name?
+> Do not worry, there is a solution to that! It is called an ORCID. 
+> An [ORCID](https://orcid.org/) is a unique identifier that links the resources 
+> you produced with you.
 >
-> Data about an experiment is frequently collected in spreadsheets, like
-> MS Excel. Let's take a look at the following example: ![A
-> metadata-less spreadsheet](../fig/04-metadataless_spreadsheet.png)
+> If you do not have an [ORCID](https://orcid.org/), you should consider getting one!
 >
-> Discuss what could possibly be misinterpreted if someone else
-> downloaded this spreadsheet and did not have any acompanying metadata.
-> (5 minutes)
->
-> How would you improve this? (5 minutes)
-> > ## Solution 
-> > One possible solution would be to include the following header in the
-> > first rows of the spreadsheet: 
-> > ![A metadata-full-spreadsheet](../fig/04-metadatafull_spreadsheet.png) 
-> > Discuss:
-> > could you think of any other metadata that could be of use here? (3 minutes)
-> {: .solution}
-{: .challenge}
+{: .callout}
 
 ## Metadata standards
 
@@ -208,14 +193,19 @@ someone else (from your lab or from any other lab in the world) would
 need to know about your dataset to be able to work with it without any
 further inputs from you.
 
+> ## Metadata and FAIR guidelines - discussion
+> 
+> In groups, discuss how metadata can help the process of FAIRification.
+>  
+{: .challenge}
+
+
 > ## Attribution
 >
-> Content of this episode was adopted from: - [Metadata - FAIR data for
-> climate
-> sciences](https://escience-academy.github.io/Lesson-FAIR-Data-Climate/metadata/index.html).
+> Content of this episode was adopted from: 
+> - [Metadata - FAIR data for climate sciences](https://escience-academy.github.io/Lesson-FAIR-Data-Climate/metadata/index.html).
 > - [Metadata - HOWTO FAIR](https://howtofair.dk/how-to-fair/metadata/)
-> - [Data
-> Tidiness](https://datacarpentry.org/organization-genomics/01-tidiness/index.html)
-> {: .callout}
+> - [Data Tidiness](https://datacarpentry.org/organization-genomics/01-tidiness/index.html)
+{: .callout}
 
 {% include links.md %}
