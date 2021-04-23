@@ -217,13 +217,6 @@ data and metadata public provides an extra location for others to find your work
 not be findable. Metadata are machine-readable, and when they have a persistent identifier, search engines can easily find them. 
 To be FAIR, your data (and metadata) must have a findable persistent identifier. The persistent identifier is typically assigned when a digital
 resource is placed in a data repository.
-
-> ## Persistent identifiers
-> A persistent identifier (PID) is a long-lasting reference to a digital resource. It provides the information required to reliably identify and locate your research data.
-> A PID may also be connected to a set of metadata which describes a digital resource.  
-> A common PID you might have come accross is the Digital Object Identifier (DOI), which is assigned to resources ready for public dissemination and research publications.
-{: .callout}
-
 	
 > ## Metadata and FAIR guidelines - discussion
 > 
