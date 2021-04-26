@@ -20,11 +20,27 @@ Good scientific practice includes good record keeping, which ensures not only tr
 
 In order to avoid data mismanagement and such unexplained discrepancies, it is imperative to keep dated, accurate, complete and understandable records of our experiments. This means they should include enough detail for others to reproduce under ideally the same conditions. You are, legally (!!) the one responsible for your records, not your colleague, not your PI.
 
-In the following exercise we want to demonstrate how to keep good quality records, and some of the benefits that new repositories such as electronic lab notebooks (ELNs) or online protocols have. There are multiple repo's for ELNs and online protocols, here we will discuss free options that are easy to use: [Benchling](https://www.benchling.com/) and  [procols.io](https://www.protocols.io/welcome)
+In the following exercise we want to demonstrate how to keep good quality records, and some of the benefits that new repositories such as electronic lab notebooks (ELNs) or online protocols have. There are multiple repo's for ELNs and online protocols, here we will discuss free options that are easy to use: [Benchling](https://www.benchling.com/) and  [procols.io](https://www.protocols.io/welcome) which are both free to use and you should both have created accounts for. If not, please do so now.
 
-## I am a section
+## Experiment
 
-With a text.
+In this lesson we will all run an experiment together to evaluate how easy it is to reproduce an experiment from an online deposited protocol. Later we will elaborate what pitfalls we might have encountered if this were a handwritten protocol. But first lets discuss a problem:
+
+> ## How to make the perfect cup of tea?
+>
+> Ask three different people how they make their perfect cup of tea, what type of mug/tea, do they add milk...?
+>> ## Solution
+>>
+>> *  If you ask three people, you should ideally get three different preferences
+>> *  This highlights that different laboratories/groups have different SOPs (standard operating procedures), but to ensure reproducible results we need to share these SOPs more widely
+> {: .solution}
+{: .challenge}
+
+## Good quality protocols
+
+You now understand why it is important to share protocols and data, and ensure we all follow the same standards. For that reason we have generated the ['perfect cup of tea' protocol](https://www.protocols.io/private/606E0A61A68011EBB6890A58A9FEAC02) that we will experiment with today.
+
+
 
 ![Figure 1. I am some figure](../fig/figure_file.jpg)
 
@@ -43,16 +59,12 @@ I am code
 {: .source}
 
 
-> ## I am a problem
+> ## What problems would we have encountered if the protocol were handwritten in any of our labbooks?
 >
-> Defined here.
->
->> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
-> {: .solution}
-{: .challenge}
+> * The protocol would be difficult to share.
+> * Handwritten protocols can be scanned, but handwriting can be illegible.
+> * The person could transcribe the protocol and email it, but small things could vary, or details could be lacking
+{: .callout}
 
 
 > ## Attribution
