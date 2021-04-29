@@ -7,7 +7,10 @@ questions:
 - "How to streamline and simplify record keeping and maintenance with electronic lab notebooks and online protocols?"
 - "How to keep records FAIR? - Preservation and re-usability of records"
 objectives:
-- ""
+- "Use an existing protocol on protocols.io and adapt it to your own needs"
+- "Use Benchling to create an electronic lab notebook entry with electronic protocols"
+- "Export protocols from protocols.io and import these into Benchling"
+- "Export Benchling entry"
 keypoints:
 - ""
 - ""
@@ -36,19 +39,11 @@ In this lesson we will all run an experiment together to evaluate how easy it is
 
 ## Good quality protocols
 
-You now understand why it is important to share protocols and data, and ensure we all follow the same standards. For that reason we have generated the ['perfect cup of tea' protocol](https://www.protocols.io/private/606E0A61A68011EBB6890A58A9FEAC02) that we will experiment with today.
+You now understand why it is important to have electronic versions of protocols and data, as these ultimately must be more reproducible. For that reason we have generated an electronic copy of the ['perfect cup of tea' protocol](https://www.protocols.io/private/606E0A61A68011EBB6890A58A9FEAC02).
 
+## Electronic Lab Notebooks
 
-
-![Figure 1. I am some figure](../fig/figure_file.jpg)
-
-*After [Figure source](https://www.figure.link/)*
-
-
-> ## I am a yellow info
->
-> And my text.
-{: .callout}
+It is self-explanatory that handwritten notes and laboratory notebook entries take more time to search through when looking for a particular entry. A thorough indexing system is important. Electronic lab notebooks allow to organise things by project and the search function, or filters can easily point out what we were looking for. To highlight how easy it is to share protocols across different platforms, integrate these into electronic lab notebooks, and export these for e.g. printing we will be looking at the [Benchling project](https://benchling.com/iboehm/f_/KkCyJWRM-breakfast/).
 
 
 ~~~
