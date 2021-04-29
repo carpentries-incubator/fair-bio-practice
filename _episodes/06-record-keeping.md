@@ -3,13 +3,11 @@ title: "Records keeping"
 teaching: 0
 exercises: 0
 questions:
-- ""
-- ""
-- ""
-objectives:
 - "How to keep good quality records for experiments?"
 - "How to streamline and simplify record keeping and maintenance with electronic lab notebooks and online protocols?"
 - "How to keep records FAIR? - Preservation and re-usability of records"
+objectives:
+- ""
 keypoints:
 - ""
 - ""
