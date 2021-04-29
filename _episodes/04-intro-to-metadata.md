@@ -1,7 +1,7 @@
 ---
 title: "Introduction to metadata"
-teaching: 15
-exercises: 15
+teaching: 10
+exercises: 20
 questions:
 - "What is metadata?"
 - "What do we use metadata for?"
@@ -39,6 +39,7 @@ associated to [Goya et al., 2020](https://doi.org/10.1016/j.celrep.2019.12.078),
 which was deposited in a [Public Omero Server](https://publicomero.bio.ed.ac.uk/).
 
 <img src="../fig/04-microscopy_with_metadata.png" alt="nematode_confocal_microscopy_image" width="600"/>
+*Figure credits: María Eugenia Goya*
 
 Let's see the associated metadata to the image and the dataset to which it belongs:
   
@@ -109,7 +110,7 @@ Let's see the associated metadata to the image and the dataset to which it belon
 
 This is a lot of information!
 
-> ## Challenge
+> ## Challenge (5 minutes)
 >
 > -  Which information could you have guessed without the metadata?
 > -  Discuss in pairs: 
@@ -149,9 +150,10 @@ the data. Descriptive and structural metadata should be added
 continuously throughout the project.
 
 
-> ## Identifying metadata types
+> ## Identifying metadata types (5 minutes)
 > Here we have an excel spreadsheet that contains project metadata for a made-up experiment
 > ![metadata-full-spreadhseet](../fig/04-metadatafull_spreadsheet.png)
+> *Figure credits: Tomasz Zielinski and Andrés Romanowski*
 >
 > In groups, identify different types of metadata used in this example.
 > > ## Solution
@@ -159,10 +161,11 @@ continuously throughout the project.
 > > * Descriptive metadata appears in orange
 > > * Structural metadata appears in grey
 > >![metadata-full-spreadhseet](../fig/04-metadatafull_spreadsheet_solution.png)
+> >*Figure credits: Tomasz Zielinski and Andrés Romanowski*
 > {: .solution}
 {: .challenge}
 
-> ## Identifying metadata types - optional
+> ## Identifying metadata types - optional (5 minutes)
 > In groups, now repeat the excercise for the example of the previous section.
 {: .challenge}
 
@@ -189,7 +192,7 @@ Center](http://www.dcc.ac.uk/resources/metadata-standards/list). Although,
 for biologists [FAIR Share](https://fairsharing.org/standards/)
 is a much better and easier resource to navigate.
 
-> ## Finding a metadata standard
+> ## Finding a metadata standard (5 minutes)
 > Go to [FAIR Share](https://fairsharing.org/standards/) and find the 'MINSEQE'
 > metadata standard, usually used in high-throughput sequencing experiments. Download the specification 
 > and spend some time exploring it.
@@ -217,15 +220,8 @@ data and metadata public provides an extra location for others to find your work
 not be findable. Metadata are machine-readable, and when they have a persistent identifier, search engines can easily find them. 
 To be FAIR, your data (and metadata) must have a findable persistent identifier. The persistent identifier is typically assigned when a digital
 resource is placed in a data repository.
-
-> ## Persistent identifiers
-> A persistent identifier (PID) is a long-lasting reference to a digital resource. It provides the information required to reliably identify and locate your research data.
-> A PID may also be connected to a set of metadata which describes a digital resource.  
-> A common PID you might have come accross is the Digital Object Identifier (DOI), which is assigned to resources ready for public dissemination and research publications.
-{: .callout}
-
 	
-> ## Metadata and FAIR guidelines - discussion
+> ## Metadata and FAIR guidelines - discussion (5 minutes)
 > 
 > In groups, discuss how metadata can help the process of FAIRification.
 >  
@@ -234,7 +230,7 @@ resource is placed in a data repository.
 
 > ## Attribution
 >
-> Content of this episode was adopted from: 
+> Content of this episode was adapted from: 
 > - [Metadata - FAIR data for climate sciences](https://escience-academy.github.io/Lesson-FAIR-Data-Climate/metadata/index.html).
 > - [Metadata - How to FAIR](https://howtofair.dk/how-to-fair/metadata/)
 > - [Data Tidiness](https://datacarpentry.org/organization-genomics/01-tidiness/index.html)
