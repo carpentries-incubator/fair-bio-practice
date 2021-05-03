@@ -199,33 +199,50 @@ publicly support Open Science.
 >
 > Discuss why you did not or would not make your data or software open.
 >
+>> ## Solution
+>> - sensitive data
+>> - IP
+>> - misuse (fake news)
+>> - lack of confidence (the fear of critics)
+>> - the costs in $ and in time
+>>
+> {: .solution}
 {: .discussion}
 
-### Describe the barriers and risks of OS movement:
-
-- sensitive data
-- IP
-- misuse (fake news)
-- personal
-- the costs in $ and in time
+### Barriers and risks of OS movement:
 
 It may seem obvious that we should adopt open science practices, but there are associated challenges with doing so.
-Sensitivity of data is sometimes considered a barrier. Data hosted needs to be compliant with data privacy laws, leading
+
+Sensitivity of data is sometimes considered a barrier.
+Shared data needs to be compliant with data privacy laws, leading
 many to shy away from hosting it publicly. Anonymising data to desensitise it can help overcome this barrier.
 
 The potential for intellectual property on research can dissuade some from adopting open practices. Again, much can be
 shared if the data is filtered carefully to protect anything relating to intellectual property.
 
-Another risk has been seen with work on Covid19: pre-prints, a manuscript hosted publicly prior to peer review, may
+
+Another risk could be seen with work on Covid19: pre-prints.
+A manuscript hosted publicly prior to peer review, may
 accelerate access to knowledge, but can also be misused and/or misunderstood. This can result in political and health
-decision making based on faulty data, which is counter to societies’ best interest. One concern is that opening up ones
-data to the scientific community pre-publication can lead to the identification of errors, which may lead to feelings of
+decision making based on faulty data, which is counter to societies’ best interest.
+
+One concern is that opening up ones
+data to the scientific community can lead to the identification of errors, which may lead to feelings of
 embarrassment. However, this could be considered an upside - we should seek for our work to be scrutinized and errors to
-be pointed out, and is the sign of a competent scientist. One should rather have errors pointed out before publication,
-than after publication where irreproducible data might cause even more embarrassment and disaster. Thankfully, incentive
+be pointed out, and is the sign of a competent scientist.
+One should rather have errors pointed out rather than risking
+that irreproducible data might cause
+even more embarrassment and disaster.
+
+One of the biggest barriers are the costs involved in "being Open".
+Firstly, making outputs readily available and usable to others takes time
+and significant effort. Secondly, there are costs of hosting and storage.
+For example, microscopy datasets reach sizes in terabytes,
+making such data accessible for 10 years involves serious financial commitment.
+
+Thankfully, incentive
 structures are beginning to support Open Science practices, e.g. Universities signing up to the Declaration on Research
-Assessment (DORA), the Wellcome Trust funding proposals that increase Open Science and support workshops such as these
-today.
+Assessment (DORA) or the Wellcome Trust funding proposals that increase Open Science.
 
 > ## Open Science Quiz
 >
@@ -258,7 +275,8 @@ today.
 > >* Posting your Excel files on the group webpage is in the spirit of Open Data F
 > >* Citizen Science engages public in the research process T
 > >
-> {: .solution} {: .challenge}
+> {: .solution}
+{: .challenge}
 
 {% include links.md %}
 
