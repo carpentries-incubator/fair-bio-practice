@@ -1,18 +1,18 @@
 ---
 title: "Introduction to Open Science"
-teaching: 15 exercises: 0 questions:
-
+teaching: 0
+exercises: 0
+questions:
 - "What is Open Science?"
 - "How can I benefit from Open Science?"
 - "Why has Open Science become a hot topic?"
-  objectives:
+objectives:
 - "Identify parts of the Open Science movement, their goals and motivations"
 - "Explain the main benefits of Open Science"
 - "Recognize the barriers and risks in the adoption of Open Science practices"
-  keypoints:
+keypoints:
 - "Open Science increases transparency in research"
 - "Publicly funded science should be publicly available"
-
 ---
 
 Science works best by exchanging ideas and building on them. Most efficient science involves both questions and
