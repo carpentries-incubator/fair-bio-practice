@@ -93,37 +93,34 @@ reproducibility crisis, trust in the public science sector etc...) that we face 
 >> ## Solution
 >>
 >> **Open Access**
->> * free, unlimited access to scientific discovery
->> * Saves articles being paid for ‘thrice’ (first to produce, second to publish, third to access) by institutions.
 >> * speed of knowledge distribution
+>> * leveling field for underfunded sites which otherwise wouldn’t be able to navigate the paywall
+>> * prevent articles being paid for ‘thrice’ (first to produce, second to publish, third to access) by institutions.
 >> * greater access to work by others, increasing chance for exposure & citations
->> * access to work by lay audiences, thus increases social media exposure of research
->> * wider audience can access research who otherwise wouldn’t be able to navigate the paywall
+>> * access to work by lay audiences, thus increases social exposure of research
 >>
 >> **Open Data**
->> * questions from an experiment can be addressed that may otherwise be too expensive to perform
->> * multiple users ensure data isn’t lost overtime
+>> * ensures data isn’t lost overtime
 >> * acceleration of scientific discovery rate
 >> * permits statistical re-analysis of the data to validate findings
->> * gives access to datasets which were not published as papers
->> * provides an avenue to generate hypotheses that can then be tested experimentally
->> * combination of multiple appropriate data sources to address questions, provides greater power than a single data source
+>> * gives access to datasets which were not published as papers (e.g. negative results, large screening data sets)
+>> * provides an avenue to generate new hypotheses
+>> * permits combination of multiple data sources to address questions, provides greater power than a single data source
 >>
 >> **Open Software**
->> * free software allows more users to access and use it
->> * the ability to modify creates a supportive community of users and rapid innovation
 >> * great source to learn programming skills
->> * accessibility and community make it more likely to find bugs
+>> * the ability to modify creates a supportive community of users and rapid innovation
+>> * faster bug fixes
+>> * better error scrutiny
 >> * use of the same software/code allows better reproducibility between experiments
 >>
 >> **Open Notebooks**
 >> * 100% transparent science, allowing input from others at early stages of experiments
 >> * source of learning about the process of how science is actually conducted
 >> * allows access to experiments and data which otherwise never get published
->> * anyone, anywhere around the world, at any time, can check in on projects, including many users simultaneously
->> * meta data for entries are automatically generated, saving time and effort doing so manually
->> * thorough evidence of originality of ideas and experiments, negating effect of ‘scooping’
 >> * provides access to ‘negative’ results and failed experiments
+>> * anyone, anywhere around the world, at any time, can check in on projects, including many users simultaneously
+>> * thorough evidence of originality of ideas and experiments, negating effect of ‘scooping’
 >>
 >> **Open Peer Review**
 >> * visibility leads to more constructive reviews
