@@ -173,7 +173,7 @@ publicly support Open Science.
 > How personal benefits of Open Science compare to the benefits
 > for the (scientific) society.
 >
-> {: .discussion}
+{: .discussion}
 
 > ### Open Access (successful example)
 >
