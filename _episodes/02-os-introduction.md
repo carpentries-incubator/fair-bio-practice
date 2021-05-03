@@ -132,9 +132,6 @@ reproducibility crisis, trust in the public science sector etc...) that we face 
 
 ### How to get involved
 
-Everyone can take up a role in the Open Science movement by adopting a single Open Science practice. However, some
-practices are major drivers and should be considered more impactful.
-
 One has to consider the moral objectives that
 accompany the research/publication process: charities/taxpayers pay to fund research, these then pay again to access the
 research they already funded. The goals of Open Science is to make research and research data available to e.g.
@@ -147,23 +144,32 @@ publicly support Open Science.
 
 > ## Personal benefits of being "open"
 >
-> Discuss in group how you personally can benefit from making your data or source code open.
+> Below are some personal benefits to adopting Open Science practices:
 >
->> ## Solution
->>
->> Below are some personal benefits to adopting Open Science practices. Considering the 5 practices we’ve covered so far, discus which practices match to which benefits & justify your decisions. (Hint: each practice has more than one benefit).
->>
->> * Saves time
->> * Increased citations
->> * Increased collaborations
->> * Greater recognition among lay audience (paywalled articles are less likely to be shared)
->> * Increased speed and/or ease of writing papers
->> * Speed up and help with peer review
->> * Avoid embarassment/disaster when you can't reproduce your results
->> * Build reputation and presence in the science community
->> * Evidence of your scientific rigour and work ethic
->> * This list is not exhaustive. Can you think of other benefits?
-     > {: .solution} {: .discussion}
+> * get extra value from your work (e.g. collaborators, reuse by modelers, ML specialists)
+> * complying with funders’ policies
+> * receive higher citations
+> * demonstrate research impact
+> * save own time (reproducibility but also communication overhead)
+> * become pioneers
+> * distinguish yourself from the crowd
+> * plan successful research proposals
+> * gain valuable experience
+> * form community
+> * increased speed and/or ease of writing papers
+> * speed up and help with peer review
+> * build reputation and presence in the science community
+> * evidence of your scientific rigour and work ethic
+> * avoid embarassment/disaster when you can't reproduce your results
+>
+>
+> which of them are the strongest motivators for you, rank them.
+>
+> Can you think of other benefits?
+> How personal benefits of Open Science compare to the benefits
+> for the (scientific) society.
+>
+> {: .discussion}
 
 ### Open Access
 
@@ -189,21 +195,6 @@ usability and can be added to portfolios. Modifying the code acts as a fantastic
 gives a sense of connection to the developer. The large number of users & transparency of code also makes it much more
 likely that bugs will be identified and fixed.
 
-> ## Why to get into Open Science
->
-> * get extra value from your work (e.g. collaborators, reuse by modelers, ML specialists)
-> * complying with funders’ policies
-> * receive higher citations
-> * demonstrate research impact
-> * save own time (reproducibility but also communication overhead)
-> * become pioneers
-> * distinguish yourself from the crowd
-> * plan successful research proposals
-> * gain valuable experience
-> * form community
-> * if you give access to knowledge earlier, this is not only beneficial to other scientists, but arguably to society at large
->
-{: .callout}
 
 > ## Why we are not doing Open Science already
 >
