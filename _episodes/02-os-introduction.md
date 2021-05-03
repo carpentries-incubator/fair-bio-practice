@@ -1,44 +1,73 @@
 ---
 title: "Introduction to Open Science"
-teaching: 15
-exercises: 0
-questions:
+teaching: 15 exercises: 0 questions:
+
 - "What is Open Science?"
 - "How can I benefit from Open Science?"
 - "Why has Open Science become a hot topic?"
-objectives:
+  objectives:
 - "Identify parts of the Open Science movement, their goals and motivations"
 - "Explain the main benefits of Open Science"
 - "Recognize the barriers and risks in the adoption of Open Science practices"
-keypoints:
+  keypoints:
 - "Open Science increases transparency in research"
 - "Publicly funded science should be publicly available"
+
 ---
 
-Open Science is transforming the way we do research and communicate within the biological research community and society. Science works best by exchanging ideas and building on them. Most efficient science involves both questions and experiments being made as fully informed as possible, which requires the free exchange of data and information. All practices that make knowledge and data **freely available** fall under the umbrella-term of **Open Science/Open Research**. It makes science **more reproducible, transparent, and accessible**. As science becomes more open, the way we conduct and communicate science changes continuously.
+Science works best by exchanging ideas and building on them. Most efficient science involves both questions and
+experiments being made as fully informed as possible, which requires the free exchange of data and information.
+
+All practices that make knowledge and data **freely available** fall under the umbrella-term of **Open Science/Open
+Research**. It makes science **more reproducible, transparent, and accessible**. As science becomes more open, the way
+we conduct and communicate science changes continuously.
+
 
 ### What is the Open Science movement?
-Sharing of information is fundamental for science. This began at a significant scale with the invention of scientific journals in 1665. At that time this was the best available alternative to critique & disseminate research, and foster communities of like-minded researchers. Whilst this was a great step forward, the journal-driven system of science has led to a culture of ‘closed’ science, where knowledge or data is unavailable or unaffordable to many. Counter to this ‘closed’ state, Open Science is the movement to increase transparency and reproducibility of research, through using Open Science best practices. Helpfully, Open Science is advantageous to all parties involved in science (including researchers, funding bodies, the public, journals, etc...), which is leading to a push for the widespread adoption of Open Science practices.  
-The distribution of science has always been subject to improvement. Whilst the internet was initially developed for military purposes, it was hijacked for communication between scientists, which provided a viable route to change the dissemination of science. The momentum has built up with a change in the way science is communicated to reflect what research communities are calling for – solutions to the majority of problems (e.g. impact factors, data reusability, reproducibility crisis, trust in the public science sector etc...) that we face today.
 
-### How to get involved
-Everyone can take up a role in the Open Science movement by adopting a single Open Science practice. However, some practices are major drivers and should be considered more impactful. One has to consider the moral objectives that accompany the research/publication process: charities/taxpayers pay to fund research, these then pay again to access the research they already funded. 
-The goals of Open Science is to make research and research data available to e.g. charities/taxpayers who funded this research. COAlition S, a group of national research funding organisations backed by the European Commission and the European Research Council, is a big driver trying to get rid of the paywalls that our research is sat behind.
-They announced Plan S, an initiative to make research publications fully free at the point of access, meaning that all research funded by public funding bodies must be published Open Access from 2021 onwards. Large UK funding bodies such as The Wellcome Trust are big supporters of Open Science and many journals are coming out to publicly support Open Science. 
+Sharing of information is fundamental for science. This began at a significant scale with the invention of scientific
+journals in 1665. At that time this was the best available alternative to critique & disseminate research, and foster
+communities of like-minded researchers.
+
+Whilst this was a great step forward, the journal-driven system of science has
+led to a culture of ‘closed’ science, where knowledge or data is unavailable or unaffordable to many. Counter to this
+‘closed’ state, Open Science is the movement to increase transparency and reproducibility of research, through using
+Open Science best practices.
+
+Open Science is advantageous to all parties involved in science (including
+researchers, funding bodies, the public, journals, etc...), which is leading to a push for the widespread adoption of
+Open Science practices.
+
+The distribution of knowledge has always been subject to improvement. Whilst the internet was initially developed for
+military purposes, it was hijacked for communication between scientists, which provided a viable route to change the
+dissemination of science. The momentum has built up with a change in the way science is communicated to reflect what
+research communities are calling for – solutions to the majority of problems (e.g. impact factors, data reusability,
+reproducibility crisis, trust in the public science sector etc...) that we face today.
+
 
 ![Figure 1. Open Science Building Blocks](../fig/OpenScienceBuildingBlocks.jpg)
 
 *After [Gema Bueno de la Fuente](https://www.fosteropenscience.eu/content/what-open-science-introduction)*
 
-* **Open Access:** Research outputs hosted in a way that make them accessible for everyone. Traditionally Open Access referred to journal articles, but now includes books, chapters, images, data sets etc... 
+* **Open Access:** Research outputs hosted in a way that make them accessible for everyone. Traditionally Open Access
+  referred to journal articles, but now includes books, chapters or images.
 
-* **Open Data:** Data freely and readily available to access, reuse, and share. Smaller data sets are often hosted as supplemental materials by journals alongside articles themselves. However, they could be hosted in more convenient places for better access, larger datasets require dedicated platforms to host them, and larger and larger data sets are being produced, putting demand on data hosting platforms. 
+* **Open Data:** Data freely and readily available to access, reuse, and share.
+  Smaller data sets were often accessible as
+  supplemental materials by journals alongside articles themselves.
+  However, they should be hosted in dedicated platforms for
+  more convenient and better access.
 
-* **Open Software:** Software where the source code is made readily available; others are free to use, change, and share. Some examples of these including the coding language and supporting software R and RStudio, as well as image analysis software such as Fiji/ImageJ. There are many others. 
+* **Open Software:** Software where the source code is made readily available;
+  others are free to use, change, and
+  share. Some examples of these including the coding language and supporting software R and RStudio,
+  as well as image analysis software such as Fiji/ImageJ.
 
-* **Open Notebooks:** Lab & notebooks hosted online, readily accessible to all. These are popular among some of the large funding bodies and allow anyone to comment on any stage of the experimental record. 
+* **Open Notebooks:** Lab & notebooks hosted online, readily accessible to all. These are popular among some of the
+  large funding bodies and allow anyone to comment on any stage of the experimental record.
 
-* **Open Peer Review:** A system where peer review reports are published alongside the body of work. This can include reviewers' reports, correspondence between parties involved, rebuttals, editorial decisions etc... 
+* **Open Peer Review:** A system where peer review reports are published alongside the body of work. This can include
+  reviewers' reports, correspondence between parties involved, rebuttals, editorial decisions etc...
 
 > ## Goals of Open Science
 >
@@ -65,11 +94,11 @@ They announced Plan S, an initiative to make research publications fully free at
 >>
 >> **Open Access**
 >> * free, unlimited access to scientific discovery
->> * Saves articles being paid for ‘thrice’ (first to produce, second to publish, third to access) by institutions. 
+>> * Saves articles being paid for ‘thrice’ (first to produce, second to publish, third to access) by institutions.
 >> * speed of knowledge distribution
->> * greater access to work by others, increasing chance for exposure & citations 
->> * access to work by lay audiences, thus increases social media exposure of research 
->> * wider audience can access research who otherwise wouldn’t be able to navigate the paywall 
+>> * greater access to work by others, increasing chance for exposure & citations
+>> * access to work by lay audiences, thus increases social media exposure of research
+>> * wider audience can access research who otherwise wouldn’t be able to navigate the paywall
 >>
 >> **Open Data**
 >> * questions from an experiment can be addressed that may otherwise be too expensive to perform
@@ -102,8 +131,22 @@ They announced Plan S, an initiative to make research publications fully free at
 >> * mitigates against reviewers conflicts of interest and/or biases
 >> * allows readers to learn/benefit from comments of the reviewers
 >>
-> {: .solution}
-{: .challenge}
+> {: .solution} {: .challenge}
+
+### How to get involved
+
+Everyone can take up a role in the Open Science movement by adopting a single Open Science practice. However, some
+practices are major drivers and should be considered more impactful.
+
+One has to consider the moral objectives that
+accompany the research/publication process: charities/taxpayers pay to fund research, these then pay again to access the
+research they already funded. The goals of Open Science is to make research and research data available to e.g.
+charities/taxpayers who funded this research. COAlition S, a group of national research funding organisations backed by
+the European Commission and the European Research Council, is a big driver trying to get rid of the paywalls that our
+research is sat behind. They announced Plan S, an initiative to make research publications fully free at the point of
+access, meaning that all research funded by public funding bodies must be published Open Access from 2021 onwards. Large
+UK funding bodies such as The Wellcome Trust are big supporters of Open Science and many journals are coming out to
+publicly support Open Science.
 
 > ## Personal benefits of being "open"
 >
@@ -111,29 +154,43 @@ They announced Plan S, an initiative to make research publications fully free at
 >
 >> ## Solution
 >>
->> Below are some personal benefits to adopting Open Science practices. Considering the 5 practices we’ve covered so far, discus which practices match to which benefits & justify your decisions. (Hint: each practice has more than one benefit). 
+>> Below are some personal benefits to adopting Open Science practices. Considering the 5 practices we’ve covered so far, discus which practices match to which benefits & justify your decisions. (Hint: each practice has more than one benefit).
 >>
->> * Saves time 
->> * Increased citations 
->> * Increased collaborations 
+>> * Saves time
+>> * Increased citations
+>> * Increased collaborations
 >> * Greater recognition among lay audience (paywalled articles are less likely to be shared)
->> * Increased speed and/or ease of writing papers 
->> * Speed up and help with peer review 
+>> * Increased speed and/or ease of writing papers
+>> * Speed up and help with peer review
 >> * Avoid embarassment/disaster when you can't reproduce your results
->> * Build reputation and presence in the science community 
->> * Evidence of your scientific rigour and work ethic 
->> * This list is not exhaustive. Can you think of other benefits?  
->{: .solution}
-{: .discussion}
+>> * Build reputation and presence in the science community
+>> * Evidence of your scientific rigour and work ethic
+>> * This list is not exhaustive. Can you think of other benefits?
+     > {: .solution} {: .discussion}
 
 ### Open Access
-Under the closed system of pay-to-access articles, research output is placed behind a paywall, with journals and shareholders being the only beneficiaries. The majority of larger UK and other countries' funding bodies are now making Open Access publication conditional upon funding.  
-The initiative to accelerate the move to Open Access publishing is known as Plan S, which requires “resulting publications available immediately (without embargoes) and under open licences, either in quality Open Access platforms or journals or through immediate deposit in open repositories that fulfil the necessary conditions.” 
-Exact requirements differ between funding bodies, with the minimum requirement being that a copy be deposited with your home institution. Details of funding bodies and their involvement and requirements can be found at [Plan S/cOAlition S](https://www.coalition-s.org/plan-s-funders-implementation/). There is also a [cOAlition S journal checker tool](https://www.coalition-s.org/blog/unboxing-the-journal-checker-tool/) to assess compliance being developed.  
-The [Directory of Open Access Journals (DOAJ)](https://doaj.org/) is a tool to find which journals are Open Access.  
+
+Under the closed system of pay-to-access articles, research output is placed behind a paywall, with journals and
+shareholders being the only beneficiaries. The majority of larger UK and other countries' funding bodies are now making
+Open Access publication conditional upon funding.
+The initiative to accelerate the move to Open Access publishing is known as Plan S, which requires “resulting
+publications available immediately (without embargoes) and under open licences, either in quality Open Access platforms
+or journals or through immediate deposit in open repositories that fulfil the necessary conditions.” Exact requirements
+differ between funding bodies, with the minimum requirement being that a copy be deposited with your home institution.
+Details of funding bodies and their involvement and requirements can be found
+at [Plan S/cOAlition S](https://www.coalition-s.org/plan-s-funders-implementation/). There is also
+a [cOAlition S journal checker tool](https://www.coalition-s.org/blog/unboxing-the-journal-checker-tool/) to assess
+compliance being developed.
+The [Directory of Open Access Journals (DOAJ)](https://doaj.org/) is a tool to find which journals are Open Access.
 
 ### Open Software
-Open Software is free with its source code readily available, allowing anyone to modify and share it. Usually being a free alternative to an otherwise paid software, Open Software is continuing to become increasingly popular. It allows anyone to modify the source code, quickly leading to the development of further free macros and add-ons which boost usability and can be added to portfolios. Modifying the code acts as a fantastic tool to learn programming skills and gives a sense of connection to the developer. The large number of users & transparency of code also makes it much more likely that bugs will be identified and fixed.
+
+Open Software is free with its source code readily available, allowing anyone to modify and share it. Usually being a
+free alternative to an otherwise paid software, Open Software is continuing to become increasingly popular. It allows
+anyone to modify the source code, quickly leading to the development of further free macros and add-ons which boost
+usability and can be added to portfolios. Modifying the code acts as a fantastic tool to learn programming skills and
+gives a sense of connection to the developer. The large number of users & transparency of code also makes it much more
+likely that bugs will be identified and fixed.
 
 > ## Why to get into Open Science
 >
@@ -158,18 +215,30 @@ Open Software is free with its source code readily available, allowing anyone to
 {: .discussion}
 
 ### Describe the barriers and risks of OS movement:
+
 - sensitive data
 - IP
 - misuse (fake news)
 - personal
 - the costs in $ and in time
 
-It may seem obvious that we should adopt open science practices, but there are associated challenges with doing so. Sensitivity of data is sometimes considered a barrier. Data hosted needs to be compliant with data privacy laws, leading many to shy away from hosting it publicly. Anonymising data to desensitise it can help overcome this barrier. 
+It may seem obvious that we should adopt open science practices, but there are associated challenges with doing so.
+Sensitivity of data is sometimes considered a barrier. Data hosted needs to be compliant with data privacy laws, leading
+many to shy away from hosting it publicly. Anonymising data to desensitise it can help overcome this barrier.
 
-The potential for intellectual property on research can dissuade some from adopting open practices. Again, much can be shared if the data is filtered carefully to protect anything relating to intellectual property. 
+The potential for intellectual property on research can dissuade some from adopting open practices. Again, much can be
+shared if the data is filtered carefully to protect anything relating to intellectual property.
 
-Another risk has been seen with work on Covid19: pre-prints, a manuscript hosted publicly prior to peer review, may accelerate access to knowledge, but can also be misused and/or misunderstood. This can result in political and health decision making based on faulty data, which is counter to societies’ best interest. One concern is that opening up ones data to the scientific community pre-publication can lead to the identification of errors, which may lead to feelings of embarrassment. However, this could be considered an upside - we should seek for our work to be scrutinized and errors to be pointed out, and is the sign of a competent scientist. One should rather have errors pointed out before publication, than after publication where irreproducible data might cause even more embarrassment and disaster. 
-Thankfully, incentive structures are beginning to support Open Science practices, e.g. Universities signing up to the Declaration on Research Assessment (DORA), the Wellcome Trust funding proposals that increase Open Science and support workshops such as these today.  
+Another risk has been seen with work on Covid19: pre-prints, a manuscript hosted publicly prior to peer review, may
+accelerate access to knowledge, but can also be misused and/or misunderstood. This can result in political and health
+decision making based on faulty data, which is counter to societies’ best interest. One concern is that opening up ones
+data to the scientific community pre-publication can lead to the identification of errors, which may lead to feelings of
+embarrassment. However, this could be considered an upside - we should seek for our work to be scrutinized and errors to
+be pointed out, and is the sign of a competent scientist. One should rather have errors pointed out before publication,
+than after publication where irreproducible data might cause even more embarrassment and disaster. Thankfully, incentive
+structures are beginning to support Open Science practices, e.g. Universities signing up to the Declaration on Research
+Assessment (DORA), the Wellcome Trust funding proposals that increase Open Science and support workshops such as these
+today.
 
 > ## Open Science Quiz
 >
@@ -202,8 +271,7 @@ Thankfully, incentive structures are beginning to support Open Science practices
 > >* Posting your Excel files on the group webpage is in the spirit of Open Data F
 > >* Citizen Science engages public in the research process T
 > >
-> {: .solution}
-{: .challenge}
+> {: .solution} {: .challenge}
 
 {% include links.md %}
 
