@@ -194,15 +194,6 @@ publicly support Open Science.
 >
 {: .callout}
 
-### Open Software
-
-Open Software is free with its source code readily available, allowing anyone to modify and share it. Usually being a
-free alternative to an otherwise paid software, Open Software is continuing to become increasingly popular. It allows
-anyone to modify the source code, quickly leading to the development of further free macros and add-ons which boost
-usability and can be added to portfolios. Modifying the code acts as a fantastic tool to learn programming skills and
-gives a sense of connection to the developer. The large number of users & transparency of code also makes it much more
-likely that bugs will be identified and fixed.
-
 
 > ## Why we are not doing Open Science already
 >
