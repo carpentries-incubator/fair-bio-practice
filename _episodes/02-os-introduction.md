@@ -175,7 +175,7 @@ publicly support Open Science.
 >
 {: .discussion}
 
-> ### Open Access (successful example)
+> ## Open Access (successful example)
 >
 > Under the closed system of pay-to-access articles, research output is placed behind a paywall, with journals and
 > shareholders being the only beneficiaries. The majority of larger UK and other countries' funding bodies are now making
