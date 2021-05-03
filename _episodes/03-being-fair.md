@@ -15,9 +15,9 @@ keypoints:
 - "FAIR assures easy access to data underlying scientific findings"
 ---
 
-TODO some intro, maybe like:
-Thanks to UK (?and EU?) funders polices there is a wide adoption of Open Access
-and as the results easy access to the recent biomedical publications.
+Thanks to funders polices that mandate Open Access,
+there is a wide adoption of Open Access which results in an easy access
+to the recent biomedical publications.
 Unfortunately, the same cannot be said about data and software code
 that underlines those publications.
 
@@ -35,10 +35,8 @@ that underlines those publications.
 >
 {: .callout}
 
-Let's have a look how difficult it is to find data from
+Let's have a look how difficult it is to access data from
 published biological papers.
-
-TODO:
 
 > ## Impossible protocol
 >
@@ -98,7 +96,22 @@ TODO:
 >
 {: .challenge}
 
-TODO: As we saw the typical problems are: ....
+The above examples illustrate the typical challenges in accessing research
+data and software. Firstly, data/protocols/software often do not have identity
+on their own, but only accompany a publications.
+They are not easily accessible or reusable,
+for example, all the details are inside one supporting information PDF file. Such file
+includes "printed" numerical table or even source code, both of which need to be re-typed
+again if one would like to use them. Data are shared in proprietary
+file format specific to a particular vendor and not accessible if one does not have a software
+that accompanies the equipment. Finally, data files are provided without detailed description
+other than the whole article text.
+
+In our examples, the protocol was difficult to *find* (the loops),
+difficult to *access* (pay wall), and not *reusable* as it lacked the necessary details.
+In the second example the data were not *interoperable* and *reusable*
+as their were only available as a figure graph.
+
 To avoid such problems FAIR principles were designed.
 
 ![Figure 2. FAIR principles](../fig/FAIR.png)
@@ -195,16 +208,17 @@ Or domain specific, for example:
 
 * Use common files formats (can be domain specific)
 * Always use .csv or .xls files for numerical data.
-Never make data tables in word or pdf,
+**Never** share data tables as word or pdf,
 * Provide underlying numerical data for all plots and graphs
-* Convert proprietary binary formats to the open ones, for example
+* Convert proprietary binary formats to the open ones.
+  For example
  convert Snapgene to Genbank, microscopy multistack images to OME-TIFF
 
 #### Reusable
 
 1. Attach licence file.
-Generally, without an explicit licence the data
-cannot not be re-used.
+Licence explicitly declares conditions and terms by which data
+and software can be re-used.
 Here, we recommend:
     * for data [Creative Commons Attribution (CC BY)](https://creativecommons.org/licenses/by/4.0/)
 licence,
@@ -217,7 +231,7 @@ or [Apache license](http://www.apache.org/licenses/).
     * write README file describing the data
     * user descriptive column headers for the data tables
     * tidy data tables, make them analysis friendly
-    * describe your data in details (prepare good metadata)
+    * provide as many details as possible (prepare good metadata)
     * use (meta)data formats (e.g. SBML, SBOL)
     * follow Minimum Information Standards
 
