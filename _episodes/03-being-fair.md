@@ -25,15 +25,13 @@ that underlines those publications.
 >
 > Although scientific data is a very broad term we still encounter
 > groups who (wrongly) believe they do not have data!
-> -- maybe give the centre example unless we will use it somewhere else --
-> Data are not only the Excel files recording measurements from a machine,
-> date are also:
+> Data does not mean Excel file with recorded measurements from a machine.
+> Data are also:
 > * images, not only from microscopy
 > * information about biological materials, like strain details
 > * recipes, laboratory and measurement protocols
-> * ?ARE THERE ANOTHER EXAMPLES?
-> * scripts, analysis procedures, custom software can also be considered as data,
-> although there are often specific recommendations how to deal with code.
+> * scripts, analysis procedures, custom software can also be considered as data.
+> However, there are specific recommendations how to deal with code.
 >
 {: .callout}
 
@@ -42,7 +40,7 @@ published biological papers.
 
 TODO:
 
-> ## Impossible protocol 
+> ## Impossible protocol
 >
 > Imagine you have discovered a protein of interest during a RNA-seq or
 > proteomics experiment and are wanting to validate your data via a
@@ -58,7 +56,7 @@ TODO:
 > analysis (p. 1312), where their reference (ref 17) leads you to another
 > publication?
 >
->> ## Solution 
+>> ## Solution
 >>
 >>  * Ref 17 will lead you to [this
 >>     paper](https://doi.org/10.1002/ana.24102), which first of all is
@@ -66,7 +64,7 @@ TODO:
 >>  * Access the paper through your institutions (if you can) and find
 >>     the 'Western Blotting' protocol on page 232 which will show the
 >>     following (Screenshot from the methods section from [Evilä et al 2014](https://doi.org/10.1002/ana.24102)):
->>  * ![Figure 1. Impossible Protocol](../fig/impossible_protocol.png) 
+>>  * ![Figure 1. Impossible Protocol](../fig/impossible_protocol.png)
 >>  * "Western blotting were performed according to standard methods." -
 >>     with no further reference to these standard methods, describing
 >>     these methods, or supplementary material detailing these methods
@@ -77,17 +75,17 @@ TODO:
 {: .challenge}
 
 > ## Impossible numbers
-> 
-> Systems biologists usually require raw numerical data  to build their models. However, those are sometimes not easy to find. It was not customary to include raw numerical 
-> data in biological papers. Take a look at the following example:  
+>
+> Systems biologists usually require raw numerical data  to build their models. However, those are sometimes not easy to find. It was not customary to include raw numerical
+> data in biological papers. Take a look at the following example:
 > Try to find the numerical data behind the graph shown in [Figure 6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/figure/F6/) of [Sharrock RA and Clack T, 2002](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/). Is this possible?
 >
 {: .challenge}
 
 > ## Impossible resource/link
 >
-> RNA-seq (transcriptomics) data is usually deposited in online repositories such as [SRA](https://www.ncbi.nlm.nih.gov/sra) or [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/).  
-> Your task is to find the link to the repository of the raw RNA-seq data in [Li et al., Genes Dev. 2012](http://genesdev.cshlp.org/content/26/8/785.long).  
+> RNA-seq (transcriptomics) data is usually deposited in online repositories such as [SRA](https://www.ncbi.nlm.nih.gov/sra) or [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/).
+> Your task is to find the link to the repository of the raw RNA-seq data in [Li et al., Genes Dev. 2012](http://genesdev.cshlp.org/content/26/8/785.long).
 > Can you find it anywhere?
 >
 {: .challenge}
@@ -95,7 +93,7 @@ TODO:
 > ## Impossible format
 >
 > Sometimes raw data is shared in a proprietary format that is not easily accessible by everyone.
-> Check the format in which xxx is shared in xxxx and compare it to the list of [recommended formats](https://www.ed.ac.uk/information-services/research-support/research-data-service/after/data-repository/choosing-file-formats).  
+> Check the format in which xxx is shared in xxxx and compare it to the list of [recommended formats](https://www.ed.ac.uk/information-services/research-support/research-data-service/after/data-repository/choosing-file-formats).
 > Does the resource comply with recommended guidelines?
 >
 {: .challenge}
@@ -147,16 +145,13 @@ After [SangyaPundir](https://commons.wikimedia.org/wiki/File:FAIR_data_principle
 Deposit data to an external, reputable public repository.
 
 Repositories provide persistent identifiers (PIDs), catalogue options,
-advanced metadata searching, download stats.
-
-Some repositories can host also private data or provide embargo period.
+advanced metadata searching, download stats. Some repositories can host also private data or provide embargo period.
 
 There are general "data agnostic" repositories, for example:
 [Dryad](http://datadryad.org),
 [Zenodo](http://zenodo.org),
 [FigShare](http://figshare.com),
-[Dataverse](http://thedata.org)
-
+[Dataverse](http://thedata.org).
 Or domain specific, for example:
 [UniProt](https://www.uniprot.org/) protein data,
 [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) sequence data,
@@ -178,10 +173,8 @@ Or domain specific, for example:
 >
 > There are several services and technologies (schemas) that provide PIDs
 > for objects (whether digital, physical or abstract).
->
 > One of the most popular is **Digital Object Identifier [(DOI)]()**,
 > recognizable by the prefix doi.org in the web links.
->
 > For example: [https://doi.org/10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18)
 > resolves to the location of the paper that describes FAIR principles.
 >
@@ -191,8 +184,9 @@ Or domain specific, for example:
 > For well establish services, permalinks can be treated as PIDs.
 >
 > For example: [http://identifiers.org/SO:0000167](http://identifiers.org/SO:0000167) resolves to a page
-> defining promoter role and can be used to annotate part of DNA sequence
+> defining promoter role and can be used to annotate a part of DNA sequence
 > as performinig such role during transcription.
+>
 >
 {: .callout}
 
