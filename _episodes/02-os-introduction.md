@@ -195,6 +195,10 @@ publicly support Open Science.
 {: .callout}
 
 
+
+### Barriers and risks of OS movement:
+
+
 > ## Why we are not doing Open Science already
 >
 > Discuss why you did not or would not make your data or software open.
@@ -209,7 +213,6 @@ publicly support Open Science.
 > {: .solution}
 {: .discussion}
 
-### Barriers and risks of OS movement:
 
 It may seem obvious that we should adopt open science practices, but there are associated challenges with doing so.
 
