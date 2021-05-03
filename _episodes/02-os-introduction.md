@@ -128,18 +128,22 @@ reproducibility crisis, trust in the public science sector etc...) that we face 
 >> * mitigates against reviewers conflicts of interest and/or biases
 >> * allows readers to learn/benefit from comments of the reviewers
 >>
-> {: .solution} {: .challenge}
+> {: .solution}
+{: .challenge}
 
-### How to get involved
+### Why to get involved
 
 One has to consider the moral objectives that
 accompany the research/publication process: charities/taxpayers pay to fund research, these then pay again to access the
 research they already funded. The goals of Open Science is to make research and research data available to e.g.
-charities/taxpayers who funded this research. COAlition S, a group of national research funding organisations backed by
+charities/taxpayers who funded this research.
+
+COAlition S, a group of national research funding organisations backed by
 the European Commission and the European Research Council, is a big driver trying to get rid of the paywalls that our
 research is sat behind. They announced Plan S, an initiative to make research publications fully free at the point of
-access, meaning that all research funded by public funding bodies must be published Open Access from 2021 onwards. Large
-UK funding bodies such as The Wellcome Trust are big supporters of Open Science and many journals are coming out to
+access, meaning that all research funded by public funding bodies must be published Open Access from 2021 onwards.
+
+Large UK funding bodies such as The Wellcome Trust are big supporters of Open Science and many journals are coming out to
 publicly support Open Science.
 
 > ## Personal benefits of being "open"
@@ -171,20 +175,24 @@ publicly support Open Science.
 >
 > {: .discussion}
 
-### Open Access
-
-Under the closed system of pay-to-access articles, research output is placed behind a paywall, with journals and
-shareholders being the only beneficiaries. The majority of larger UK and other countries' funding bodies are now making
-Open Access publication conditional upon funding.
-The initiative to accelerate the move to Open Access publishing is known as Plan S, which requires “resulting
-publications available immediately (without embargoes) and under open licences, either in quality Open Access platforms
-or journals or through immediate deposit in open repositories that fulfil the necessary conditions.” Exact requirements
-differ between funding bodies, with the minimum requirement being that a copy be deposited with your home institution.
-Details of funding bodies and their involvement and requirements can be found
-at [Plan S/cOAlition S](https://www.coalition-s.org/plan-s-funders-implementation/). There is also
-a [cOAlition S journal checker tool](https://www.coalition-s.org/blog/unboxing-the-journal-checker-tool/) to assess
-compliance being developed.
-The [Directory of Open Access Journals (DOAJ)](https://doaj.org/) is a tool to find which journals are Open Access.
+> ### Open Access (successful example)
+>
+> Under the closed system of pay-to-access articles, research output is placed behind a paywall, with journals and
+> shareholders being the only beneficiaries. The majority of larger UK and other countries' funding bodies are now making
+> Open Access publication conditional upon funding.
+>
+> The initiative to accelerate the move to Open Access publishing is known as Plan S, which requires “resulting
+> publications available immediately (without embargoes) and under open licences, either in quality Open Access platforms
+> or journals or through immediate deposit in open repositories that fulfil the necessary conditions.” Exact requirements
+> differ between funding bodies, with the minimum requirement being that a copy be deposited with your home institution.
+>
+> Details of funding bodies and their involvement and requirements can be found
+> at [Plan S/cOAlition S](https://www.coalition-s.org/plan-s-funders-implementation/). There is also
+> a [cOAlition S journal checker tool](https://www.coalition-s.org/blog/unboxing-the-journal-checker-tool/) to assess
+> compliance being developed.
+> The [Directory of Open Access Journals (DOAJ)](https://doaj.org/) is a tool to find which journals are Open Access.
+>
+{: .callout}
 
 ### Open Software
 
