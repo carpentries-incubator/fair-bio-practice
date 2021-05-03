@@ -12,7 +12,7 @@ objectives:
 - "Know steps for achieving FAIR data"
 keypoints:
 - "FAIR stands for Findable Accessible Interoperable Reusable"
-- "FAIR assures easy access to data underlying scientific findings"
+- "FAIR assures easy reuse of data underlying scientific findings"
 ---
 
 Thanks to funders polices that mandate Open Access,
