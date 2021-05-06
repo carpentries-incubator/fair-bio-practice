@@ -17,9 +17,21 @@ keypoints:
 - ""
 ---
 ## Why do we need to keep good quality records?
-Good scientific practice includes good record keeping, which ensures not only transparency and reproducibility, but also accountability. One prime example of why this is necessary is the recent data scandal surrounding [Novartis' FDA approval](https://www.biopharmadive.com/news/novartis-gene-therapy-application-contained-manipulated-data-fda-says/560346/) for their gene therapy Zolgensma, a treatment for the fatal childhood motor neuron disease Spinal Muscular Atrophy. Novartis applied with manipulated data for FDA approval, however withheld data which would have delayed FDA approval of the drug. Whilst clinical trial data show a benefit of the drug, unexplained discrepancies in mouse data and allegations of data mismanagement were not reported until a week before FDA approval.
+Good scientific practice includes good record keeping, which ensures not only transparency and reproducibility, but also accountability. One prime example of why this is necessary is the recent data scandal surrounding [Novartis' FDA approved gene therapy](https://www.biopharmadive.com/news/novartis-gene-therapy-application-contained-manipulated-data-fda-says/560346/) Zolgensma, for the fatal childhood motor neuron disease Spinal Muscular Atrophy (the most expensive treatment ever approved).
+Novartis submitted manipulated data, showing that the comparison of two versions of Zolgensma in Phase 1 and Phase 3 testing had similar therapeutic activity. 
+How can we prevent the occurrence of data manipulation such as this in the future, or how can we as a research community implement practices to make it easier to find manipulated records? FAIR record keeping, for example version control can help, as it shows what changes have been made when in electronic laboratory notebooks (ELNs), which will make it difficult to manipulate results such as this without leaving a trace.
 
-In order to avoid data mismanagement and such unexplained discrepancies, it is imperative to keep dated, accurate, complete and understandable records of our experiments. This means they should include enough detail for others to reproduce under ideally the same conditions. You are, legally (!!) the one responsible for your records, not your colleague, or your PI.
+In order to avoid data mismanagement and such unexplained discrepancies, it is imperative to keep dated, accurate, complete and intelligible records of our experiments and the protocols we use. This means they should include enough detail for others to reproduce under ideally the same conditions. You are, legally (!!) the one responsible for your records, not your colleague, or your PI.
+
+>## What designates a good record?
+>Common guidelines of good record keeping for protocols and laboratory notebooks are the following:
+>
+> **Protocol**
+> * 
+>
+> **Laboratory Notebook**
+> * 
+{: .callout}
 
 Before we start this session on good record keeping, it might be a good idea to make ourselves cup of tea. Here's a peer-reviewed protocol for making tea:
 <img src="../fig/06-handwritten-tea-protocol.jpg" alt="handwritten-tea-protocol" width="600"/>
@@ -33,19 +45,30 @@ Here is the same protocol typed out on [protocol.io](https://www.protocols.io/pr
 > What are advantages and disadvantages of traditional lab book-based record keeping vs. digital-based record keeping? Try to find at least a handful of advantages and disadvantages for each. With all of these, which system do you think is most advantageous?
 >> ## Solution
 >> **Advantages of traditional analog record keeping**
->> * One
->> * Two
+>> * Ability to directly draw on your records
+>> * works regardless of internet/power access
 >>
 >> **Disadvantages of traditional analog record keeping**
->> * many more
->> * Two
+>> * can be lost and/or damaged
+>> * only in one location at any time 
+>> * handwriting can make it less intelligible
+>> * harder to edit/move elements around smoothly
+>> * can’t store most data types (e.g. imaging data) in a useable way
 >>
 >> **Advantages of digital record keeping**
->> * many more
->> * Two
+>> * can smoothly and easily move elements around to edit it
+>> * can be shared instantly anywhere around the world, with anyone 
+>> * can be easily commented on by anyone anywhere
+>> * doesn’t take up physical space (no record rooms/folders)
+>> * regular backups mean it won't be lost
+>> * version controls mean changes can easily be tracked 
+>> * can store protocols directly with other supporting data types (e.g. video explanations)
+>> * can you think of more? 
 >>
 >> **Disadvantages of digital record keeping**
->> * dependent on internet connection
+>> * dependent on internet access and power
+>> * some digital record keeping services charge a fee
+>> * risk of corruption if data is not backed up (either yourself or by the service used)
 > {: .solution}
 {: .challenge}
 
@@ -125,9 +148,24 @@ By now you should be familiar with the concept of why digital record keeping is 
 {: .challenge}
 
 > ## FAIR record keeping - Quiz
-> xyz
->> ## Solutions
->> xyz
+>
+> Which of the following statement are true/false.
+>
+> * Good record keeping ensures transparency and reproducibility. (T)
+> * The legal responsibility for record keeping falls on the principle investigator of a project. (F)
+> * There are no advantageous to analogue record keeping. (F)
+> * Digital record keeping allows multiple people, anywhere on the planet, to view a protocol simultaneously. (T)
+> * Digitally kept records can be quickly and easily edited. (T)
+> * Digital records have automatic version controls; analog records cannot. (F)
+> * On balance, digital record keeping is more advantageous than analog record keeping. (T)
+> * At the University of Edinburgh, we’re required to use either Benchling or Protocols.io (F)
+> * People are not real scientists until they have made tea. (F)
+> * A protocol is considered invalid unless it’s stored in an online database. (F)
+> * Digital records are generally easier to search than analog records. (T)
+>
+>> ## Solution
+>> copied form above once the wording is corrected
+>>
 > {: .solution}
 {: .challenge}
 
