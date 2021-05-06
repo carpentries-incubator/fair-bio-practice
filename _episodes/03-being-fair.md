@@ -3,11 +3,11 @@ title: "Being FAIR"
 teaching: 0
 exercises: 0
 questions:
-- "How to get more value from own data?"
+- "How to get more value from your own data?"
 - "What are the FAIR guidelines?"
 - "Why being FAIR matters?"
 objectives:
-- "Recognize typical issues that prevents data re-use"
+- "Recognize typical issues that prevent data re-use"
 - "Understand FAIR principles"
 - "Know steps for achieving FAIR data"
 keypoints:
@@ -15,23 +15,23 @@ keypoints:
 - "FAIR assures easy reuse of data underlying scientific findings"
 ---
 
-Thanks to funders polices that mandate Open Access,
-there is a wide adoption of Open Access which results in an easy access
-to the recent biomedical publications.
+Thanks to funding bodies policies that mandate Open Access,
+there is a wide implementation of Open Access principles which result in easy access
+to more recent biomedical publications.
 Unfortunately, the same cannot be said about data and software code
-that underlines those publications.
+that accompanies those publications.
 
 > ## What is data
 >
-> Although scientific data is a very broad term we still encounter
+> Although scientific data is a very broad term, we still encounter
 > groups who (wrongly) believe they do not have data!
-> Data does not mean Excel file with recorded measurements from a machine.
-> Data are also:
-> * images, not only from microscopy
-> * information about biological materials, like strain details
+> Data does not mean Excel files with recorded measurements from a machine.
+> Data also includes:
+> * images, not only from microscopes
+> * information about biological materials, like strain or patient details
 > * recipes, laboratory and measurement protocols
-> * scripts, analysis procedures, custom software can also be considered as data.
-> However, there are specific recommendations how to deal with code.
+> * scripts, analysis procedures, and custom software can also be considered data
+> However, there are specific recommendations on how to deal with code.
 >
 {: .callout}
 
@@ -40,7 +40,7 @@ published biological papers.
 
 > ## Impossible protocol
 >
-> Imagine you have discovered a protein of interest during a RNA-seq or
+> Imagine you have discovered a protein of interest during an RNA-seq or
 > proteomics experiment and are wanting to validate your data via a
 > western blot of your samples. That protein is Titin, the largest
 > protein in the body with a molecular weight of 3,800 kDa, and you are
@@ -58,7 +58,7 @@ published biological papers.
 >>
 >>  * Ref 17 will lead you to [this
 >>     paper](https://doi.org/10.1002/ana.24102), which first of all is
->>     not open access
+>>     not Open Access
 >>  * Access the paper through your institutions (if you can) and find
 >>     the 'Western Blotting' protocol on page 232 which will show the
 >>     following (Screenshot from the methods section from [Evilä et al 2014](https://doi.org/10.1002/ana.24102)):
@@ -74,8 +74,7 @@ published biological papers.
 
 > ## Impossible numbers
 >
-> Systems biologists usually require raw numerical data  to build their models. However, those are sometimes not easy to find. It was not customary to include raw numerical
-> data in biological papers. Take a look at the following example:
+> Systems biologists usually require raw numerical data to build their models. However, those are sometimes not easy to find. It was not customary to include raw numerical data in biological papers. Take a look at the following example:
 > Try to find the numerical data behind the graph shown in [Figure 6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/figure/F6/) of [Sharrock RA and Clack T, 2002](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/). Is this possible?
 >
 {: .challenge}
@@ -97,18 +96,13 @@ published biological papers.
 {: .challenge}
 
 The above examples illustrate the typical challenges in accessing research
-data and software. Firstly, data/protocols/software often do not have identity
-on their own, but only accompany a publications.
-They are not easily accessible or reusable,
-for example, all the details are inside one supporting information PDF file. Such file
-includes "printed" numerical table or even source code, both of which need to be re-typed
-again if one would like to use them. Data are shared in proprietary
-file format specific to a particular vendor and not accessible if one does not have a software
-that accompanies the equipment. Finally, data files are provided without detailed description
+data and software. Firstly, data/protocols/software often do not have an identity
+of their own, but only accompany a publication.
+Second, they are not easily accessible or reusable, for example, all the details are inside one supporting information PDF file. Such file includes "printed" numerical table or even source code, both of which need to be "re-typed" if someone would like to use them. Data are shared in proprietary file format specific to a particular vendor and not accessible if one does not have a particular software that accompanies the equipment. Finally, data files are provided without detailed description
 other than the whole article text.
 
 In our examples, the protocol was difficult to *find* (the loops),
-difficult to *access* (pay wall), and not *reusable* as it lacked the necessary details.
+difficult to *access* (pay wall), and not *reusable* as it lacked the necessary details (dead-end).
 In the second example the data were not *interoperable* and *reusable*
 as their were only available as a figure graph.
 
@@ -122,31 +116,31 @@ After [SangyaPundir](https://commons.wikimedia.org/wiki/File:FAIR_data_principle
 > In 2016, the [FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618)
 > were published in Scientific Data.
 > The original guideline focused on "machine-actionability" -
-> ability of computer system to operate on data with
-> a minimal human intervention. However, currently the focus shifts
-> to making data accessible from human perspective not an automated one
-> (mostly due to the lack of user friendly tooling that could help
-> dealing with standards and structured metadata).
+> the ability of computer systems to operate on data with
+> minimal human intervention. However, now the focus has shifted
+> to making data accessible from a human perspective, and not an automated one
+> (mostly due to the lack of user friendly tools that could help
+> deal with standards and structured metadata).
 >
-> **Findable**:  Easy to find the data and the metadata for
+> **Findable**:  Easy to find data and metadata for
 > both humans and computers.
 > Automatic and reliable discovery of datasets and services depends
 > on machine-readable persistent identifiers (PIDs) and metadata.
 >
-> **Accessible**: The (meta)data retrievable by their identifier using
+> **Accessible**: (Meta)data should be retrievable by their identifier using
 > a standardized and open communications protocol (including authentication
 > and authorisation). Metadata should be available even when the data
 > are no longer available.
 >
-> **Interoperable**: The data should be able to be combined with and used
+> **Interoperable**: Data should be able to be combined with and used
 > with other data or tools. The format of the data should be open and
-> interpretable for various tools. It applies both to the data and
-> metadata, the (meta)data should use vocabularies that follow FAIR principles.
+> interpretable for various tools. It applies both to data and
+> metadata, (meta)data should use vocabularies that follow FAIR principles.
 >
 > **Re-usable**: FAIR aims at optimizing the reuse of data.
 > Metadata and data should be well-described so that they can be replicated
-> and/or combined in different settings. The reuse of the (meta)data
-> should be stated with clear and accessible license(s)
+> and/or combined in different settings. The reuse of (meta)data
+> should be stated with clear and accessible license(s).
 >
 {: .callout}
 
@@ -158,7 +152,7 @@ After [SangyaPundir](https://commons.wikimedia.org/wiki/File:FAIR_data_principle
 Deposit data to an external, reputable public repository.
 
 Repositories provide persistent identifiers (PIDs), catalogue options,
-advanced metadata searching, download stats. Some repositories can host also private data or provide embargo period.
+advanced metadata searching, and download statistics. Some repositories can also host private data or provide embargo periods, meaning access to all data can be delayed.
 
 There are general "data agnostic" repositories, for example:
 [Dryad](http://datadryad.org),
@@ -177,28 +171,28 @@ Or domain specific, for example:
 >
 > A persistent identifier is a long-lasting reference to a digital resource.
 > Typically it has two components:
-> * a service that locates the resource over time even when its location in the changes
+> * a service that locates the resource over time even when its location changes
 > * and a unique identifier (that distinguishes the resource or concept from others).
 >
 > Persistent identifiers aim to solve the problem of the persistence of accessing cited resource,
-> particularly in the academic literature. All too often, web addresses (links) changes over time
-> and fail to take you to the referenced resource you expect.
+> particularly in the field of academic literature. All too often, web addresses (links) changes over time
+> and fail to take you to the referenced resource you expected.
 >
-> There are several services and technologies (schemas) that provide PIDs
+> There are several services and technologies (schemes) that provide PIDs
 > for objects (whether digital, physical or abstract).
-> One of the most popular is **Digital Object Identifier [(DOI)]()**,
+> One of the most popular is **Digital Object Identifier [(DOI)](https://www.doi.org/)**,
 > recognizable by the prefix doi.org in the web links.
 > For example: [https://doi.org/10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18)
 > resolves to the location of the paper that describes FAIR principles.
 >
 > Public repositories often maintain web addresses of their content in a stable form
-> which follows the convention http://repository.adress/identifier;
+> which follow the convention http://repository.adress/identifier;
 > these are often called permalinks.
 > For well establish services, permalinks can be treated as PIDs.
 >
 > For example: [http://identifiers.org/SO:0000167](http://identifiers.org/SO:0000167) resolves to a page
-> defining promoter role and can be used to annotate a part of DNA sequence
-> as performinig such role during transcription.
+> defining promoter role, and can be used to annotate part of a DNA sequence
+> as performing such a role during transcription.
 >
 >
 {: .callout}
@@ -206,7 +200,7 @@ Or domain specific, for example:
 
 #### Interoperable
 
-* Use common files formats (can be domain specific)
+* Use common file formats (can be domain specific)
 * Always use .csv or .xls files for numerical data.
 **Never** share data tables as word or pdf,
 * Provide underlying numerical data for all plots and graphs
@@ -216,12 +210,11 @@ Or domain specific, for example:
 
 #### Reusable
 
-1. Attach licence file.
-Licence explicitly declares conditions and terms by which data
-and software can be re-used.
+1. Attach license files.
+Licenses explicitly declare conditions and terms by which data and software can be re-used.
 Here, we recommend:
     * for data [Creative Commons Attribution (CC BY)](https://creativecommons.org/licenses/by/4.0/)
-licence,
+license,
     * for code a permissive open source license such
 as the [MIT](https://opensource.org/licenses/MIT),
 [BSD](https://opensource.org/licenses/BSD-2-Clause),
@@ -235,8 +228,8 @@ or [Apache license](http://www.apache.org/licenses/).
     * use (meta)data formats (e.g. SBML, SBOL)
     * follow Minimum Information Standards
 
-*Describing data well is the most challenging part of the data sharing proces.
-We will cover it in more details later on*
+*Describing data well is the most challenging part of the data sharing process.
+We will cover this in more detail later on.*
 
 > ## FAIR and You
 >
@@ -252,14 +245,14 @@ We will cover it in more details later on*
 >> ## Solution
 >>
 >> * Findable data have their own identity, so they can be easily
->> cited and secure the credits to authors
->> * Data accessible over the Internet using standard protocols can be
->> easily monitored (for example using Goolge analytics) and give metrics
->> on the data popularity or even geo-locations of data users.
->> * TODO I dont know intelligible benefit!!!
+>> cited and secure the credits to the authors
+>> * Data accessibility over the Internet using standard protocols can be
+>> easily monitored (for example using Google analytics). This results in metrics
+>> on data popularity or even geo-locations of data users.
+>> * Data that is interoperable can be used across many different platforms and subsequently allows reuse of data. Additionally, use of accessible and broadly applicable vocabulary for knowledge representation make (meta)data more intelligible, which allows you to keep better track of your (meta)data and others who might not be in your field to use your data.  
 >> * Well documented data should contain all the details necessary to
 >> reproduce the experiments, helping the future you or someone taking over
->> you in the laboratory.
+>> from you in the laboratory.
 >>
 > {: .solution}
 {: .challenge}
@@ -279,33 +272,33 @@ We will cover it in more details later on*
 
 > ## FAIR Quiz
 >
-> Which of the following statement are true/false.
+> Which of the following statements is true/false (T or F).
 >
-> * F in FAIR stands for Free F
+> * F in FAIR stands for free. F
 >
-> * Even if there is no license information you can combine the data
-> with yours to produce a plot as long as you name the other authors F
+> * Even if there is no license information you can combine data
+> with yours to produce a plot as long as you give appropriate credit to the other authors. F
 >
-> * Only figure presenting results of statistical analysis need
-> numerical data that were used to create that figure F
+> * Only the figure presenting results of statistical analysis need
+> numerical data that were used to create that figure. F
 >
-> * Sharing numerical data as pdf in Zenodo is FAIR F
+> * Sharing numerical data as a .pdf in Zenodo is FAIR. F
 >
-> * Sharing numerical data as Excel via Github is not FAIR F*
+> * Sharing numerical data as an Excel file via Github is not FAIR. F*
 >
-> * Metadata standards (for example MIAME MIQUE) assure IR in FAIR T
+> * Metadata standards (for example MIAME MIQUE) assure the "IR" in FAIR. T
 >
-> * Group website is one the best place to share your data F
+> * Group websites are one of the best places to share your data. F
 >
-> * Data from failed experiments are not re-usable F
+> * Data from failed experiments are not re-usable. F
 >
-> * Data should always be converted to excel or cvs in order to be FAIR F
+> * Data should always be converted to Excel files or .cvs in order to be FAIR. F
 >
-> * DOI of a dataset helps in getting credit T
+> * A DOI of a dataset helps in getting credit. T
 >
-> * FAIR data are peer reviewed F
+> * FAIR data are peer reviewed. F
 >
-> * FAIR data have to accompany a publication F
+> * FAIR data have to accompany a publication. F
 >
 >> ## Solution
 >> copied form above once the wording is corrected
