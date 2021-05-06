@@ -68,6 +68,12 @@ reproducibility crisis, trust in the public science sector etc...) that we face 
 
 * **Open Peer Review:** A system where peer review reports are published alongside the body of work. This can include
   reviewers' reports, correspondence between parties involved, rebuttals, editorial decisions etc...
+  
+* **Citizens Science:** Lay people become involved in scientific research, most commonly in data collection or image analysis. Platforms such as [zooniverse.org](https://www.zooniverse.org/) help connect projects with lay people interested in playing an active role in research, which  can help generate and/or process data which would otherwise be unachievable by one single person.
+
+* **Scientific social networks:** Networks of researchers, which often meet locally in teams, but are also connected online, foster open discussions on scientific issues. Online, many people commonly use traditional social media platforms for this, such as Twitter, Instagram, various sub-reddits, discussion channels on Slack/Discord etc..., although there are also more dedicated spaces such as [researchgate.net](https://www.researchgate.net/).
+
+* **Open Education resources:** Educational materials that are free for anyone to access and use to learn from. These can be anything from talks, instructional videos, and explanations posted on video hosting websites (e.g. YouTube), to entire digital textbooks written and then published freely online. 
 
 > ## Goals of Open Science
 >
