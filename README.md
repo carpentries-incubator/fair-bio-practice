@@ -14,6 +14,7 @@ The overall goals of the lesson are:
 * To teach how to organize research workflows in such a way that it is easy to make biological research open, findable and reusable.
 
 We are developing this lesson as part of the ED-DaSH consortium, supported by the "Data driven life science skills development - equipping society for the future" UKRI-MRC grant MR/V039075/1.
+<p style="text-align:center;"> <img src="fig/Ed_DaSH_white_circle.png" alt="Ed_DaSH" width="150"/></p>
 
 ## Development status and contributing
 
