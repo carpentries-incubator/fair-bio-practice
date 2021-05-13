@@ -1,1 +1,1 @@
-[![Ed_DaSH](./fig/Ed_DaSH_white_circle.png)](/fair-bio-practice/)
+<a href="{{ site.url }}"> <img src="{{ repo_url }}/fig/Ed_DaSH_white_circle.png" alt="Ed_DaSH" width="150"/></a>
