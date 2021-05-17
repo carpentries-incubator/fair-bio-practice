@@ -250,12 +250,12 @@ shared if the data is filtered carefully to protect anything relating to intelle
 > However, it is a “no but yes” situation, and a software patent can
 > be settled by the court for each case.
 >
-> Software code is copyrighted. Copyright prevents people from:
+> **Software code is copyrighted**. Copyright prevents people from:
 > -	copying your work
 > -	distributing copies of it, whether free of charge or for sale.
 >
 > Data cannot be patented, and in general, it cannot be copyrighted.
-> It is not possible to copyright facts!
+> **It is not possible to copyright facts!**
 >
 > However, how data are presented (including a database),
 > can have a thin layer of copyright protection.
@@ -308,7 +308,6 @@ Assessment (DORA) or the Wellcome Trust funding proposals that increase Open Sci
 >* Open Notebooks improve reproducibility
 >* Open Notebooks can create patenting issues
 >* Open Access permits the whole society to benefit from scientific findings
->* Posting your Excel files on the group webpage is in the spirit of Open Data
 >* Citizen Science engages public in the research process
 >
 > > ## Solution
@@ -322,7 +321,6 @@ Assessment (DORA) or the Wellcome Trust funding proposals that increase Open Sci
 > >* Open Notebooks improve reproducibility T
 > >* Open Notebooks can create patenting issues T*
 > >* Open Access permits the whole society to benefit from scientific findings T
-> >* Posting your Excel files on the group webpage is in the spirit of Open Data F
 > >* Citizen Science engages public in the research process T
 > >
 > > ** For patenting, only the dates of public release and patent application

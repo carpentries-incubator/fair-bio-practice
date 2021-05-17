@@ -220,6 +220,25 @@ as the [MIT](https://opensource.org/licenses/MIT),
 [BSD](https://opensource.org/licenses/BSD-2-Clause),
 or [Apache license](http://www.apache.org/licenses/).
 
+> ## Copyright and data
+>
+> Software code (the text) automatically gets the default
+> copyright protection
+> which prevents others from copying or modifying it.
+> Only the explicit licence grants the usage permissions to others.
+>
+> Data, being factual, cannot be copyrighted. So why, do we need a licence?
+>
+> While the data itself cannot be copyrighted,
+> the way how it is presented can be. The extend to which it is protected needs ultimately
+> to be settled by the court.
+>
+> The "good actors" will restrain from using your data to avoid "court" risks.
+> The "bad actors" will either ignore the risk or can afford the lawyers
+> fees.
+{: .callout}
+
+
 2. Describe your data well / provide good metadata
     * write README file describing the data
     * user descriptive column headers for the data tables
@@ -249,7 +268,7 @@ We will cover this in more detail later on.*
 >> * Data accessibility over the Internet using standard protocols can be
 >> easily monitored (for example using Google analytics). This results in metrics
 >> on data popularity or even geo-locations of data users.
->> * Data that is interoperable can be used across many different platforms and subsequently allows reuse of data. Additionally, use of accessible and broadly applicable vocabulary for knowledge representation make (meta)data more intelligible, which allows you to keep better track of your (meta)data and others who might not be in your field to use your data.  
+>> * Data that is interoperable can be used across many different platforms and subsequently allows reuse of data. Additionally, use of accessible and broadly applicable vocabulary for knowledge representation make (meta)data more intelligible, which allows you to keep better track of your (meta)data and others who might not be in your field to use your data.
 >> * Well documented data should contain all the details necessary to
 >> reproduce the experiments, helping the future you or someone taking over
 >> from you in the laboratory.
