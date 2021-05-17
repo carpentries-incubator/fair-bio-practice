@@ -223,6 +223,53 @@ many to shy away from hosting it publicly. Anonymising data to desensitise it ca
 The potential for intellectual property on research can dissuade some from adopting open practices. Again, much can be
 shared if the data is filtered carefully to protect anything relating to intellectual property.
 
+> ## Intellectual property and its protection
+> *This section is tailored to the EU and UK.*
+>
+> Intellectual property is something that you create using your
+> mind - for example, a story, an invention, an artistic work
+> or a symbol.
+>
+> You can use a patent to protect your (*technical*) invention.
+> It gives you the right to take legal action against anyone who
+> makes, uses, sells or imports it without your permission.
+>
+> Discoveries, mathematical methods, computer programs and
+> business methods as such are not regarded as inventions.
+> Surgical and therapeutic procedures,
+> diagnostic methods and new plant or animal varieties are
+> completely excluded from patentability.
+>
+> Patents are granted only for inventions that are
+> **new and were not known to the public** in any form.
+> Publishing in a journal or presenting in a conference
+> information related to the invention completely
+> **prevents the inventor from getting a patent**!
+>
+> In general, software cannot be patented.
+> However, it is a “no but yes” situation, and a software patent can
+> be settled by the court for each case.
+>
+> Software code is copyrighted. Copyright prevents people from:
+> -	copying your work
+> -	distributing copies of it, whether free of charge or for sale.
+>
+> Data cannot be patented, and in general, it cannot be copyrighted.
+> It is not possible to copyright facts!
+>
+> However, how data are presented (including a database),
+> can have a thin layer of copyright protection.
+> Deciding what data needs to be included in a database,
+> how to organize the data, and how to relate different data elements are all creative
+> decisions that may receive copyright protection.
+> Again, it is a case by case situation and may come down to who has
+> better lawyers.
+>
+> After:
+> UK Government, [Intellectual Property](https://www.gov.uk/browse/business/intellectual-property)
+> European Patent Office, [Inventor’s Handbook](https://www.epo.org/learning/materials/inventors-handbook.html)
+>
+{: .callout}
 
 Another risk could be seen with work on Covid19: pre-prints.
 A manuscript hosted publicly prior to peer review, may
@@ -277,6 +324,12 @@ Assessment (DORA) or the Wellcome Trust funding proposals that increase Open Sci
 > >* Open Access permits the whole society to benefit from scientific findings T
 > >* Posting your Excel files on the group webpage is in the spirit of Open Data F
 > >* Citizen Science engages public in the research process T
+> >
+> > ** For patenting, only the dates of public release and patent application
+> > are important.
+> > Once patent is granted all the details can be made public, includedin source code.
+> > On the other hand, laboratory notes published before patent application
+> > can be treated as public disclosure and prevents from obtaining a patent.
 > >
 > {: .solution}
 {: .challenge}
