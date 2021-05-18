@@ -47,10 +47,10 @@ But it is not good for disovery, and does not enforces any metadata.
 > 
 > Select one of the following repositories based on your expertize/interests.
 >
-> Have a look at the record X in the repor R1 (data type D1, domain D1)
-> Have a look at the record Y in the repor R2 (data type D2, domain D2)
-> Have a look at the record Z in the repor R3 (data type D3, domain D3)
-> Have a look at the record W in the repor R4 (data type D4, domain D3)
+> - Have a look at the record X in the repor R1 (data type D1, domain D1)
+> - Have a look at the record Y in the repor R2 (data type D2, domain D2)
+> - Have a look at the record Z in the repor R3 (data type D3, domain D3)
+> - Have a look at the record W in the repor R4 (data type D4, domain D3)
 >
 > Report to the group, what advantages can you see in using the repo over a general repo like Zenodo.
 > 
