@@ -53,6 +53,7 @@ But it is not good for disovery, and does not enforces any metadata.
 > Have a look at the record W in the repor R4 (data type D4, domain D3)
 >
 > Report to the group, what advantages can you see in using the repo over a general repo like Zenodo.
+> 
 >> ## Solution
 >>
 >> *   I am an answer.
@@ -66,8 +67,8 @@ Finding a repository:
 - Fairsharing
 
 You can evaluate the repositories by following criteria:
--
--.
+- c1
+- c2
 
 > ## Excersize 4 Fiding repository
 >
@@ -95,10 +96,10 @@ You can evaluate the repositories by following criteria:
 >> *   So am I.
 > {: .solution}
 {: .challenge}
-, 
+ 
 
 
-The END
+----- The END
 
 
 
