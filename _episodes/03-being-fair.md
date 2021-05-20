@@ -15,10 +15,11 @@ keypoints:
 - "FAIR assures easy reuse of data underlying scientific findings"
 ---
 
-Thanks to funding bodies policies that mandate Open Access,
-there is a wide implementation of Open Access principles which result in easy access
-to more recent biomedical publications.
-Unfortunately, the same cannot be said about data and software code
+We have seen how Open practices can benefit both scientific community as
+a whole and individual practitioner.
+The wide adoption of Open Access principles has resulted in an easy access
+to the recent biomedical publications.
+Unfortunately, the same cannot be said about data and software
 that accompanies those publications.
 
 > ## What is data
@@ -35,8 +36,8 @@ that accompanies those publications.
 >
 {: .callout}
 
-Let's have a look how difficult it is to access data from
-published biological papers.
+Let's have a look how challenging it can be to access and use
+data from published biological papers.
 
 > ## Impossible protocol
 >
@@ -74,8 +75,16 @@ published biological papers.
 
 > ## Impossible numbers
 >
-> Systems biologists usually require raw numerical data to build their models. However, those are sometimes not easy to find. It was not customary to include raw numerical data in biological papers. Take a look at the following example:
-> Try to find the numerical data behind the graph shown in [Figure 6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/figure/F6/) of [Sharrock RA and Clack T, 2002](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/). Is this possible?
+> Systems biologists usually require raw numerical data to build their models.
+> Take a look at the following example: Try to find the numerical data behind the
+> graph shown in [Figure 6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/figure/F6/)
+> which demonstrates changes in levels of phytochrome proteins from [Sharrock RA and Clack T, 2002](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/).
+>
+> Hint 1: Materials and methods describe quantification procedure
+> Hint 2: Supporting Information or Supplementary Materials sections often contain data files.
+>
+> How easy it was?
+>
 >
 {: .challenge}
 
