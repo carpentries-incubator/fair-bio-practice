@@ -259,6 +259,27 @@ or [Apache license](http://www.apache.org/licenses/).
 *Describing data well is the most challenging part of the data sharing process.
 We will cover this in more detail later on.*
 
+> ## Achieving FAIR
+>
+> Which part of **Findable, Accessible, Interoperable, Reusable**
+> seems to be the easiest to achieve by you and
+> which looks like the most challenging for data producers.
+>
+>> ## Solution
+>>
+>> *Accessible* is probably the easiest to achieve as it can
+>> be delivered by depositing to any of the general repositories.
+>> *Findable* as accessible by persistent identifiers (PIDs) is also easy
+>> as offered by the same repositories. However, *findable* in the sense of search
+>> results by some features and characteristics may not be so simple.
+>>
+>> *Interoperable* and *Reusable* are the most challenging as they require
+>> substantial effort and time to convert existing data into well documented
+>> and in suitable format.
+>>
+> {: .solution}
+{: .challenge}
+
 > ## FAIR and You
 >
 > The FAIR acronym is sometimes accompanied with the following labels:
