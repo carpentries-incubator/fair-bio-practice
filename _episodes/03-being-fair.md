@@ -1,7 +1,7 @@
 ---
 title: "Being FAIR"
-teaching: 0
-exercises: 0
+teaching: 25
+exercises: 25
 questions:
 - "How to get more value from your own data?"
 - "What are the FAIR guidelines?"
@@ -39,7 +39,7 @@ that accompanies those publications.
 Let's have a look how challenging it can be to access and use
 data from published biological papers.
 
-> ## Impossible protocol
+> ## Impossible protocol (5+3)
 >
 > Imagine you have discovered a protein of interest during an RNA-seq or
 > proteomics experiment and are wanting to validate your data via a
@@ -262,7 +262,7 @@ or [Apache license](http://www.apache.org/licenses/).
 
 
 
-> ## Achieving FAIR
+> ## Achieving FAIR (2)
 >
 > Which part of **Findable, Accessible, Interoperable, Reusable**
 > seems to be the easiest to achieve by you and
@@ -284,7 +284,7 @@ or [Apache license](http://www.apache.org/licenses/).
 {: .challenge}
 
 
-> ## Example of FAIR data
+> ## Example of FAIR data (5+3)
 >
 > The Nucleotide database is a collection of sequences from several
 > sources, including GenBank, RefSeq, TPA and PDB.
@@ -312,7 +312,7 @@ or [Apache license](http://www.apache.org/licenses/).
 {: .challenge}
 
 
-> ## FAIR and You
+> ## FAIR and You (5)
 >
 > The FAIR acronym is sometimes accompanied with the following labels:
 > * Findable - Citable
@@ -345,7 +345,7 @@ or [Apache license](http://www.apache.org/licenses/).
 
 
 
-> ## FAIR Quiz
+> ## FAIR Quiz (2 ... run through break)
 >
 > Which of the following statements is true/false (T or F).
 >
