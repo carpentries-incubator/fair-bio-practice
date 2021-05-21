@@ -280,6 +280,35 @@ We will cover this in more detail later on.*
 > {: .solution}
 {: .challenge}
 
+
+> ## Example of FAIR data
+>
+> The Nucleotide database is a collection of sequences from several
+> sources, including GenBank, RefSeq, TPA and PDB.
+> Genome, gene and transcript sequence data provide the foundation for biomedical research and discovery.
+>
+> Have a look at record for myoglobin gen [https://www.ncbi.nlm.nih.gov/nuccore/AH002877.2](https://www.ncbi.nlm.nih.gov/nuccore/AH002877.2)
+>
+> Identify how each of F.A.I.R principles has been met.
+>
+> *Alternative records:*
+> *https://www.uniprot.org/uniprot/P42212 https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1*
+>
+>> ## Solution
+>>
+>> All entries are uniquely identified by a stable URL ('F'),
+>> that provides access to the record in a variety of formats including
+>> a web page, plain-text, FASTA, and GENBANK ('A', 'I').
+>> The record contains rich metadata (‘R’) that is both human-readable (HTML) and machine-readable (text) ('I').
+>> There search options that uses both records IDs and the rich metadata ('F').
+>> The graphical pane shows how the data are re-usable. Metadata uses ontological
+>> terms (e.g. taxonomy) and shared vocabularies (e.g. genbank features) ('I').
+>> Interlinking with other databases: UniProt, Pubmed ('I', 'R') enabling automated retrieval of records and cross-referencing information.
+>>
+> {: .solution}
+{: .challenge}
+
+
 > ## FAIR and You
 >
 > The FAIR acronym is sometimes accompanied with the following labels:
@@ -306,17 +335,7 @@ We will cover this in more detail later on.*
 > {: .solution}
 {: .challenge}
 
-> ## TODO example of FAIR data
->
-> Idea. Look at the record of X in Uniprot (link).
-> Identify how each of F.A.I.R principles has been met.
->
->> ## Solution
->>
->> Record has id which makes it Findable. It can downloaded in X formats
->> making it Accessible and Interoperable. TODO...
-> {: .solution}
-{: .challenge}
+
 
 
 > ## FAIR Quiz
