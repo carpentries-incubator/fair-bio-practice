@@ -342,6 +342,25 @@ or [Apache license](http://www.apache.org/licenses/).
 > {: .solution}
 {: .challenge}
 
+## FAIR vs Open Science
+
+**FAIR does not mean Open**. Actually, FAIR guideline only requires
+that the metadata record is always accessible.
+For example, the existence of the data can be known (their metadata),
+the data can have easy to use PID to reference them, but the actual
+data files can only be downloaded after the login and authorization.
+
+However, if data are already in the FAIR form, i.e. accessible over the internet,
+in interoperable format and well documented, then it is almost
+effortless to "open" the dataset and make it available to the whole public.
+The data owner can do it any time when he no longer perceives oppening
+as a risk.
+
+At the same time, Open data which does not follow FAIR guidelines have
+little value. If they are not well described, not in open formats then they
+are not going to be re-used even if they were made "open" by posting them on some
+website.
+
 
 
 
