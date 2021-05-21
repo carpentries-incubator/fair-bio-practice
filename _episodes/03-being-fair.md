@@ -219,7 +219,19 @@ Or domain specific, for example:
 
 #### Reusable
 
-1. Attach license files.
+1. Describe your data well / provide good metadata
+    * write README file describing the data
+    * user descriptive column headers for the data tables
+    * tidy data tables, make them analysis friendly
+    * provide as many details as possible (prepare good metadata)
+    * use (meta)data formats (e.g. SBML, SBOL)
+    * follow Minimum Information Standards
+
+*Describing data well is the most challenging part of the data sharing process.
+We will cover this in more detail later on.*
+
+
+2. Attach license files.
 Licenses explicitly declare conditions and terms by which data and software can be re-used.
 Here, we recommend:
     * for data [Creative Commons Attribution (CC BY)](https://creativecommons.org/licenses/by/4.0/)
@@ -234,9 +246,9 @@ or [Apache license](http://www.apache.org/licenses/).
 > Software code (the text) automatically gets the default
 > copyright protection
 > which prevents others from copying or modifying it.
-> Only the explicit licence grants the usage permissions to others.
+> Only by adding the explicit licence you can permit re-use by others.
 >
-> Data, being factual, cannot be copyrighted. So why, do we need a licence?
+> Data, being factual, cannot be copyrighted. **So why, do we need a licence?**
 >
 > While the data itself cannot be copyrighted,
 > the way how it is presented can be. The extend to which it is protected needs ultimately
@@ -245,19 +257,10 @@ or [Apache license](http://www.apache.org/licenses/).
 > The "good actors" will restrain from using your data to avoid "court" risks.
 > The "bad actors" will either ignore the risk or can afford the lawyers
 > fees.
+>
 {: .callout}
 
 
-2. Describe your data well / provide good metadata
-    * write README file describing the data
-    * user descriptive column headers for the data tables
-    * tidy data tables, make them analysis friendly
-    * provide as many details as possible (prepare good metadata)
-    * use (meta)data formats (e.g. SBML, SBOL)
-    * follow Minimum Information Standards
-
-*Describing data well is the most challenging part of the data sharing process.
-We will cover this in more detail later on.*
 
 > ## Achieving FAIR
 >
@@ -291,7 +294,7 @@ We will cover this in more detail later on.*
 >
 > Identify how each of F.A.I.R principles has been met.
 >
-> *Alternative records:*
+> *Alternative records to check:*
 > *https://www.uniprot.org/uniprot/P42212 https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1*
 >
 >> ## Solution
@@ -327,7 +330,11 @@ We will cover this in more detail later on.*
 >> * Data accessibility over the Internet using standard protocols can be
 >> easily monitored (for example using Google analytics). This results in metrics
 >> on data popularity or even geo-locations of data users.
->> * Data that is interoperable can be used across many different platforms and subsequently allows reuse of data. Additionally, use of accessible and broadly applicable vocabulary for knowledge representation make (meta)data more intelligible, which allows you to keep better track of your (meta)data and others who might not be in your field to use your data.
+>> * Interoperable data can benefit the future you, for example you will be
+>> able to still read your data even when you no longer have access to the specialized,
+>> vendor specific software with which you worked with them before.
+>> Also the future you may not remember abreviations and ad-hoc conventions you used before
+>> (Intelligible).
 >> * Well documented data should contain all the details necessary to
 >> reproduce the experiments, helping the future you or someone taking over
 >> from you in the laboratory.
