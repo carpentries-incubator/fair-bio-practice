@@ -69,29 +69,28 @@ reproducibility crisis, trust in the public science sector etc...) that we face 
 * **Open Peer Review:** A system where peer review reports are published alongside the body of work. This can include
   reviewers' reports, correspondence between parties involved, rebuttals, editorial decisions etc...
 
-> ## Goals of Open Science
+> ## Outcomes/Advantages of Open Science (4+6)
 >
-> For the following OS parts:
+> Being open has other outcomes/consequences beyond giving the free access to information.
+> For example, Open educational resources:
+> - enables collaborative development of courses
+> - improves teachers/instructors skills by sharing ideas
+>
+> Select one or two of the following OS parts:
 > * Open Access
 > * Open Data
 > * Open Software
 > * Open Notebooks
 > * Open Peer Review
 >
-> discuss what are the main goals or problems that are being addressed
-> by those Open initiatives.
+> and discuss what are the outcomes or what problems are solved
+> by adaption of those Open initiatives.
 >
-> For example:
-> Open educational resources:
-> - makes quality teaching materials widely available
-> - permits collaborative development of courses
-> - improves teachers/instructors skills by sharing ideas
->
-> *The Trainer may have you discuss in small groups one initiative each and
-> then gather your thoughts together as a group.*
 >
 >> ## Solution
 >>
+>> Possible outcomes and consequences for each part:
+>
 >> **Open Access**
 >> * speed of knowledge distribution
 >> * leveling field for underfunded sites which otherwise wouldn’t be able to navigate the paywall
