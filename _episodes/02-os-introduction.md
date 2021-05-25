@@ -196,7 +196,7 @@ publicly support Open Science.
 ### Barriers and risks of OS movement:
 
 
-> ## Why we are not doing Open Science already
+> ## Why we are not doing Open Science already (3+3)
 >
 > Discuss why you did not or would not make your data or software open.
 >
@@ -291,34 +291,32 @@ Thankfully, incentive
 structures are beginning to support Open Science practices, e.g. Universities signing up to the Declaration on Research
 Assessment (DORA) or the Wellcome Trust funding proposals that increase Open Science.
 
-> ## Open Science Quiz
+> ## Open Science Quiz (2 + runs over break)
 >
 > Which of the following statements about the OS movement are true/false?
 >
 >* Open Science relies strongly on the Internet
 >* Open Access eliminates publishing costs
 >* You cannot Open Source patented software
->* You cannot charge for Open Source software
+>* You cannot earn money from Open Source software
 >* Open Data facilitates re-use
->* Open Data increases confidence in research findings
+>* Open Data can increases confidence in research findings
 >* In Open Peer Review, readers vote on publication acceptance
 >* Open Notebooks improve reproducibility
 >* Open Notebooks can create patenting issues
 >* Open Access permits the whole society to benefit from scientific findings
->* Citizen Science engages public in the research process
 >
 > > ## Solution
 > >* Open Science relies strongly on the Internet T
 > >* Open Access eliminates publishing costs F
 > >* You cannot Open Source patented software F*
-> >* You cannot charge for Open Source software F
+> >* You cannot earn money Open Source software F
 > >* Open Data facilitates re-use T
 > >* Open Data increases confidence in research findings T
 > >* In Open Peer Review, readers vote on publication acceptance  F
 > >* Open Notebooks improve reproducibility T
 > >* Open Notebooks can create patenting issues T*
 > >* Open Access permits the whole society to benefit from scientific findings T
-> >* Citizen Science engages public in the research process T
 > >
 > > ** For patenting, only the dates of public release and patent application
 > > are important.
