@@ -114,7 +114,7 @@ the open best practices.
 >> ## Solution
 >>
 >> Possible outcomes and consequences for each part:
->
+>>
 >> **Open Access**
 >> * speed of knowledge distribution
 >> * leveling field for underfunded sites which otherwise wouldn’t be able to navigate the paywall
@@ -377,12 +377,11 @@ You do not want to be left behind!
 {: .callout}
 
 
-> ## Attribution
-> Content of this episode was adopted after:
-> Wiki [Open Science](https://en.wikipedia.org/wiki/Open_science)
->
-> [European Open Science Cloud](https://www.eosc-hub.eu/open-science-info)
->
+### Attribution
+Content of this episode was adopted after:
+* Wiki [Open Science](https://en.wikipedia.org/wiki/Open_science)
+* [European Open Science Cloud](https://www.eosc-hub.eu/open-science-info)
+
 
 
 > ## Open Science Quiz (2 + runs over break)
