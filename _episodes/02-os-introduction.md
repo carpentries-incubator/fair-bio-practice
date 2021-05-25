@@ -145,32 +145,31 @@ access, meaning that all research funded by public funding bodies must be publis
 Large UK funding bodies such as The Wellcome Trust are big supporters of Open Science and many journals are coming out to
 publicly support Open Science.
 
-> ## Personal benefits of being "open"
+> ## Personal benefits of being "open" (3+3)
 >
-> Below are some personal benefits to adopting Open Science practices:
+> Below are some personal benefits to adopting Open Science practices.
+> Read through them which of them are the strongest motivators for you.
+> Select two the most important/attractive for you and mark them with +1,
+> select the two least important for you and mark them with 0
 >
-> * get extra value from your work (e.g. collaborators, reuse by modelers, ML specialists)
-> * complying with funders’ policies
 > * receive higher citations
+> * complying with funders’ policies
+> * get extra value from your work (e.g. collaborators, reuse by modelers, ML specialists)
 > * demonstrate research impact
 > * save own time (reproducibility but also communication overhead)
-> * become pioneers
 > * distinguish yourself from the crowd
 > * plan successful research proposals
 > * gain valuable experience
 > * form community
-> * increased speed and/or ease of writing papers
+> * increased speed and ease of writing papers
 > * speed up and help with peer review
 > * build reputation and presence in the science community
 > * evidence of your scientific rigour and work ethic
 > * avoid embarassment/disaster when you can't reproduce your results
 >
->
-> which of them are the strongest motivators for you, rank them.
->
 > Can you think of other benefits?
 > How personal benefits of Open Science compare to the benefits
-> for the (scientific) society.
+> for the (scientific) society?
 >
 {: .discussion}
 
