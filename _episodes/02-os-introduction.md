@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Open Science"
-teaching: 0
-exercises: 0
+teaching: 25
+exercises: 25
 questions:
 - "What is Open Science?"
 - "How can I benefit from Open Science?"
