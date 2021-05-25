@@ -150,7 +150,6 @@ the open best practices.
 >> * mitigates against editorial conflicts of interest and/or biases
 >> * mitigates against reviewers conflicts of interest and/or biases
 >> * allows readers to learn/benefit from comments of the reviewers
->>
 > {: .solution}
 {: .challenge}
 
@@ -381,6 +380,7 @@ You do not want to be left behind!
 > ## Attribution
 > Content of this episode was adopted after:
 > Wiki [Open Science](https://en.wikipedia.org/wiki/Open_science)
+>
 > [European Open Science Cloud](https://www.eosc-hub.eu/open-science-info)
 >
 
