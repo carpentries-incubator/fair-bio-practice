@@ -153,7 +153,7 @@ publicly support Open Science.
 > select the two least important for you and mark them with 0
 >
 > * receive higher citations
-> * complying with funders’ policies
+> * comply with funders’ policies
 > * get extra value from your work (e.g. collaborators, reuse by modelers, ML specialists)
 > * demonstrate research impact
 > * save own time (reproducibility but also communication overhead)
@@ -165,7 +165,6 @@ publicly support Open Science.
 > * speed up and help with peer review
 > * build reputation and presence in the science community
 > * evidence of your scientific rigour and work ethic
-> * avoid embarassment/disaster when you can't reproduce your results
 >
 > Can you think of other benefits?
 > How personal benefits of Open Science compare to the benefits
