@@ -1,5 +1,5 @@
 ---
-title: "The research data life cycle"
+title: "It is about planning"
 teaching: 14
 exercises: 16
 questions:
@@ -19,14 +19,29 @@ keypoints:
 ---
 
 ## The research data life cycle
-The Research Data Life Cycle is composed of a sequential series of stages/steps in which data is produced, processed and shared.
-The arrows between circles represent the transitions that occur in research as work is finished and passed to the next stage/step. Research institutions need to support researcher across each stage of the research data life cycle and to facilitate the transition between stages/steps for maximum use and impact.
-  
+The Research Data Life Cycle is composed of a sequential series of stages/steps in which data is produced,
+processed and shared.
+The arrows between circles represent the transitions that occur in research
+as work is finished and passed to the next stage/step.
+The re-use is the driving force of the cycle, cause as if you (or others) were
+not going to use the data you would not need to store it or even process it.
+
+
 ![Figure 5.1. The Research Data Life Cycle ](../fig/05-research_data_life_cycle.png)
 *Figure credits: Tomasz Zielinski*
 
+## Data management is a continuous process
+Data management should be done throughout the duration of your project.
+If you wait till the end, it will take a massive effort on your side and will be more of a burden than a benefit.
+
+There are many actions/steps which you can take during your research workflow
+which would make it easier to share your data in a FAIR way, while, helping
+you in your day to day activities.
+
 > ## Challenge (2 minutes)
 > Where would you say the following actions belong in the Research Data Life Cycle?
+> How do they help in achieving FAIR principles?
+>
 > * performing statistical analysis on an experiment's results.
 > * sharing my datasets through a general repository, such as Zenodo.
 > * conversion of raw data into usable data.
@@ -52,30 +67,25 @@ The arrows between circles represent the transitions that occur in research as w
 > - How does it help in making it Re-usable?
 {: .challenge}
 
-## Data management is a continuous process
-When should I engage in data management?
-* Data management should be done throughout the duration of your project.  
-* If you wait till the end, it will take a massive effort on your side and will be more of a burden than a benefit.  
-* Taking the time to do effective data management will help you understand your data better and make it easier to find it when you need it (for example when you need to write a manuscript or a thesis!).  
 
 ![Figure 5.2. Effective data management](../fig/05-planning_can_save_time_and_effort.png)
 *Figure credits: Tomasz Zielinski and Andrés Romanowski*
 
 ## Plan ahead: data management plans (DMPs)
 A Data Management Plan is about PLANning! Funders are increasingly requiring that you present a DMP together with your grant applications. Some grad schools are also asking their
-PhD students to prepair a DMP for their PhD project.  
+PhD students to prepair a DMP for their PhD project.
 
 ![Figure 5.3. Planning ahead](../fig/05-planning.png)
 *Figure credits: Tomasz Zielinski and Andrés Romanowski*
 
 The DMP's purpose is to make you think about your data before you produce it. It must show that you were thinking about what will happen with your data during and after the project.
 You should think about:
-- how you will store the data  
-- how you will organize and describe your data  
-- how you will grant access to your data  
-- how you will share your data  
-- how you will preserve your data  
-- how much it will all cost  
+- how you will store the data
+- how you will organize and describe your data
+- how you will grant access to your data
+- how you will share your data
+- how you will preserve your data
+- how much it will all cost
 
 > ## Challenge (2 minutes)
 > In pairs, discuss how writing a DMP would help planning how to make your data FAIR.
@@ -89,19 +99,19 @@ The benefits of writing a DMP include:
 - ensuring your research is visible and has impact
 - getting credit when others cite your work
 - sharing your data, leading to collaboration and advances in research
-- complying with research funder mandates 
- 
+- complying with research funder mandates
+
 > ## Challenge (10 minutes)
 > Working in pairs, write a short DMP for one of your last papers (or projects).
 > Your DMP should contain the following three sections:
->   
+>
 > 1. What type of data you will acquire during the research
 > Please describe the type of data you will generate (for example ‘flow cytometry data’) as well as the type of files these data will be stored under (include the meta data as well). Estimate the size of your data.
->   
-> 2. How you will store the date 
+>
+> 2. How you will store the date
 > Please describe how you will store/organize or document the data during the duration of the project
->   
-> 3. How you will share the data 
+>
+> 3. How you will share the data
 > Please describe the strategies for data sharing, licensing and access information.
 >
 {: .challenge}
