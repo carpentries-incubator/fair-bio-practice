@@ -41,19 +41,20 @@ data from published biological papers.
 
 > ## Impossible protocol (5+3)
 >
-> Imagine you have discovered a protein of interest during an RNA-seq or
-> proteomics experiment and are wanting to validate your data via a
-> western blot of your samples. That protein is Titin, the largest
-> protein in the body with a molecular weight of 3,800 kDa, and you are
-> now looking for protocols on how to best separate and transfer this
-> large protein. You found an antibody that has been validated in
-> western blots and immunofluorescence, have ordered it and are now
-> looking through those publications which have successfully used it.
-> Sigma Aldrich lists [this paper](https://doi.org/10.1002/acn3.50831)
-> which uses their antibody.
-> Can you find a complete protocol in their Methods under Western blot
-> analysis (p. 1312), where their reference (ref 17) leads you to another
-> publication?
+> You need to do a western blot to identify Titin proteins,
+> the largest proteins in the body, with a molecular weight of 3,800 kDa.
+> You found an antibody sold by Sigma Aldrich that has been validated
+> in western blots and immunofluorescence. Sigma Aldrich lists the
+> [Yu et al., 2019](https://doi.org/10.1002/acn3.50831)
+> paper as reference.
+>
+> Find details of how to separate and transfer this large protein in
+> the reference paper.
+>
+> Hint 1: Methods section has a Western blot analysis subsection.
+> Hint 2: Follow the references.
+>
+> Would you say that the methods was Findable? Accessible? Reusable?
 >
 >> ## Solution
 >>
