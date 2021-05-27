@@ -75,17 +75,6 @@ you in your day to day activities.
 > {: .solution}
 {: .challenge}
 
-> ## Challenge (2 minutes)
-> In pairs, discuss how this process may help in making your data FAIR:
-> - How does it help in making it Findable?
-> - How does it help in making it Accessible?
-> - How does it help in making it Interoperable?
-> - How does it help in making it Re-usable?
-{: .challenge}
-
-
-![Figure 5.2. Effective data management](../fig/05-planning_can_save_time_and_effort.png)
-*Figure credits: Tomasz Zielinski and Andrés Romanowski*
 
 ## Plan ahead: data management plans (DMPs)
 A Data Management Plan is about PLANning! Funders are increasingly requiring that you present a DMP together with your grant applications. Some grad schools are also asking their
