@@ -1,5 +1,5 @@
 ---
-title: "It is about planning"
+title: "It's all about planning"
 teaching: 14
 exercises: 16
 questions:
