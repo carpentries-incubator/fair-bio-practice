@@ -127,20 +127,6 @@ to discuss folder structures, but, they should emphasize the **data safety
 {: .callout}
 
 
-> ## Challenge (2 minutes)
-> In pairs, discuss how writing a DMP would help planning how to make your data FAIR.
-{: .challenge}
-
-The benefits of writing a DMP include:
-- finding and understanding your data when needed
-- avoiding unnecessary duplication of data
-- documenting your data to ensure ongoing access and continuity when you or other colleagues depart or new reseach staff start
-- validating your published results
-- ensuring your research is visible and has impact
-- getting credit when others cite your work
-- sharing your data, leading to collaboration and advances in research
-- complying with research funder mandates
-
 > ## Challenge (10 minutes)
 > Working in pairs, write a short DMP for one of your last papers (or projects).
 > Your DMP should contain the following three sections:
