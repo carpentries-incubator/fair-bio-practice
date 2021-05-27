@@ -325,12 +325,13 @@ shared if the data is filtered carefully to protect anything relating to intelle
 > Data cannot be patented, and in principle, it cannot be copyrighted.
 > **It is not possible to copyright facts!**
 >
-> However, how data are presented (including a database),
-> can have a thin layer of copyright protection.
+> However, how data are collated and presented
+> (especially if it is a database),
+> can have a layer of copyright protection.
 > Deciding what data needs to be included in a database,
 > how to organize the data, and how to relate different data elements are all creative
 > decisions that may receive copyright protection.
-> Again, it is a case by case situation and may come down to who has
+> Again, it is often a case by case situation and may come down to who has
 > better lawyers.
 >
 > After:
