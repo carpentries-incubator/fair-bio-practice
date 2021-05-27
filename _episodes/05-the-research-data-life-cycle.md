@@ -127,21 +127,57 @@ to discuss folder structures, but, they should emphasize the **data safety
 {: .callout}
 
 
-> ## Challenge (10 minutes)
-> Working in pairs, write a short DMP for one of your last papers (or projects).
+> ## Challenge (given as homework but starts in class 5 minutes)
+> Working in pairs, think of your last paper (or project).
+> Pretend that you have a joined project that combines the outputs of both your papers/projects.
+>
+> Write a short DMP this joined project.
+>
 > Your DMP should contain the following three sections:
 >
-> 1. What type of data you will acquire during the research
-> Please describe the type of data you will generate (for example ‘flow cytometry data’) as well as the type of files these data will be stored under (include the meta data as well). Estimate the size of your data.
+> 1. What data you will acquire during the project.
+> Please describe the type of data you will generate
+> (for example ‘flow cytometry data’) as well as file formats and data volume.
+> these data will be stored under (include the meta data as well). Estimate the size of your data.
 >
 > 2. How you will store the date
-> Please describe how you will store/organize or document the data during the duration of the project
+> Please describe how you will store and organize your data,
+> what metadata will you capture in a what form.
+> Tell how you or document the data during the duration of the project
 >
 > 3. How you will share the data
 > Please describe the strategies for data sharing, licensing and access information.
 >
+> > ## Solution
+> > An example DMP can look like:
+> >
+> > (1) The project will generate a combination of qualitative and quantitative data
+> > derived from phenotyping, LC/MS metabolomics,
+> > and general molecular biology techniques.
+> >
+> > The main data types and their formats are:
+> > *	Phenotyping images (tiff)
+> > *	Time-series / Numerical data (Excel)
+> > *	MS Metabolomics (mzML)
+> > *	processing scripts (Python, R)
+> >
+> > We envisage the project will generate a total of 4 Tb data.
+> >
+> > (2) The instrument specific raw data will be converted into the open formats mentioned above.
+> > Daily experimental work will be recorded using an electronic lab notebook (Benchling).
+> > We will use ISA templates from MetaboLights for MS data.
+> >
+> > All the research data will be stored using the University file system.
+> > This is a high quality storage with guaranteed backup.
+> > Scripts/codes will be stored under version control using GitHun.
+> >
+> > (3) Metabolomics data will be made available through MetaboLights (https://www.ebi.ac.uk/metabolights/)
+> > repository. The remaining datasets will be made available through Zenodo.
+> > The data will be released no later than a year after the project ends.
+> > All data will be made available under CC-BY and the code under MIT licensing.
+> >
+> {: .solution}
 {: .challenge}
-
 
 
 > ## Attribution
