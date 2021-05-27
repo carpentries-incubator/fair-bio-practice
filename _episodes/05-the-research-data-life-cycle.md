@@ -124,6 +124,9 @@ to discuss folder structures, but, they should emphasize the **data safety
 >
 > Additionally, your own Institutions may have resources to help with your DMP.
 >
+> Authors of this course, have created ready to use paragraphs for writing DMPs
+> and a list of recommended repositories at [BioRDM wiki](https://www.wiki.ed.ac.uk/display/RDMS/Data+Management+Plans)
+>
 {: .callout}
 
 
