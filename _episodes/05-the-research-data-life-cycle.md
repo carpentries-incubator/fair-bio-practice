@@ -38,24 +38,40 @@ There are many actions/steps which you can take during your research workflow
 which would make it easier to share your data in a FAIR way, while, helping
 you in your day to day activities.
 
-> ## Challenge (2 minutes)
+> ## Challenge (4 + 4 minutes)
 > Where would you say the following actions belong in the Research Data Life Cycle?
 > How do they help in achieving FAIR principles?
 >
-> * performing statistical analysis on an experiment's results.
-> * sharing my datasets through a general repository, such as Zenodo.
-> * conversion of raw data into usable data.
-> * obtaining data from an experiment.
-> * downloading a dataset that will be useful for my research.
-> * saving my data in a resilient data storage with nightly backups, provided by my Institute.
+> * clarify usage rights
+> * give credit through citations
+> * use open source software
+> * attach PID to your data
+> * attach descriptive metadata
+> * produce standard metadata
+> * backup your data
+> * organize your files in folders
+> * select data repository
+> * add open licence
+> * link publications, data and methods
+> * create a template for assay description
+> * use institutional repositories
+> * use controlled vocabularies
+> * convert numerical data to csv
+> * track versions of files
+> * performing statistical analysis
+> * deposit datasets to Zenodo/Dryad
+> * record experiment details in Electronic Lab Notebook
+> * use github for your code
+> * ask someone to revise your project structure
+> * reformat and clean data tables
+> * use a Minimal Information Standard
+> * use PID in data description
+> * download a dataset
+> * link to UniProt or GenBank records
 >
 > > ## Solution
-> > * performing statistical analysis on an experiment's results.[ANALYSING DATA]
-> > * sharing my datasets through a general repository, such as Zenodo.[PRESERVING DATA / ACCESS TO DATA]
-> > * conversion of raw data into usable data [PROCESSING DATA]
-> > * obtaining data from an experiment.[CREATING DATA]
-> > * downloading a dataset that will be useful for my research. [RE-USING DATA]
-> > * saving my data in a resilient data storage with nightly backups, provided by my Institute. [PRESERVING DATA]
+> > Actually many of the above steps can be taken throughout the data life cycle.
+> >
 > {: .solution}
 {: .challenge}
 
