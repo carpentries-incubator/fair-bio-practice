@@ -35,7 +35,8 @@ Data management should be done throughout the duration of your project.
 If you wait till the end, it will take a massive effort on your side and will be more of a burden than a benefit.
 
 There are many actions/steps which you can take during your research workflow
-which would make it easier to share your data in a FAIR way, while, helping
+which would make it easier to share your data in a **Findable, Accessible,
+Interoperable and Reusable** way, while, helping
 you in your day to day activities.
 
 > ## Challenge (4 + 4 minutes)
@@ -49,6 +50,7 @@ you in your day to day activities.
 > * attach descriptive metadata
 > * produce standard metadata
 > * backup your data
+> * create figures and plots in python/R
 > * organize your files in folders
 > * select data repository
 > * add open licence
@@ -77,20 +79,53 @@ you in your day to day activities.
 
 
 ## Plan ahead: data management plans (DMPs)
-A Data Management Plan is about PLANning! Funders are increasingly requiring that you present a DMP together with your grant applications. Some grad schools are also asking their
-PhD students to prepair a DMP for their PhD project.
+A good data management is about PLANning!
+
+The (Data Management Plan) DMP's purpose is to make you think about your data
+before you even start the experiments.
+It should show that you are thinking about what will happen
+with your data during and after the project. Which of the actions
+mentioned above you will take and how you will execute them. Finally,
+how you are going to achieve FAIR.
 
 ![Figure 5.3. Planning ahead](../fig/05-planning.png)
-*Figure credits: Tomasz Zielinski and Andrés Romanowski*
+*Figure credits: Tomasz Zieliński and Andrés Romanowski*
 
-The DMP's purpose is to make you think about your data before you produce it. It must show that you were thinking about what will happen with your data during and after the project.
 You should think about:
 - how you will store the data
 - how you will organize and describe your data
 - how you will grant access to your data
 - how you will share your data
 - how you will preserve your data
+- how others can use your data
 - how much it will all cost
+
+Most of the funders require that you present a DMP together with your grant applications.
+Some institutions ask eve their PhD students to prepare a DMP for their PhD project.
+
+
+You should think how you are going to manage your data (our outputs, in general)
+for each of your projects (or even individual assay types). For individual project
+the main focus should be on:
+**what data will be produced, how they will be stored
+and organized, how you are going to describe them and track them**.
+For example what file formats will be generated, how you are going to
+name your files, and how you will link it to your laboratory notes.
+
+For grant applications, DMP tend to be less technical, for example no need
+to discuss folder structures, but, they should emphasize the **data safety
+(as preservation and access), data longevity, sharing, discovery and re-use**.
+
+> ## DMP Online
+> [DMP Online](https://dmponline.dcc.ac.uk/) is a UK tool that is available via subscription to many UK Universities and Institutions. It contains DMP templates
+> for the different funders requirements and information on how to fill each section.
+> Whenever you need to write DMP for a grant application, check
+> if this resource is available to you.
+>
+> Additionally, your own Institutions may have resources to help with your DMP.
+>
+{: .callout}
+
 
 > ## Challenge (2 minutes)
 > In pairs, discuss how writing a DMP would help planning how to make your data FAIR.
@@ -121,13 +156,7 @@ The benefits of writing a DMP include:
 >
 {: .challenge}
 
-> ## DMP Online
-> [DMP Online](https://dmponline.dcc.ac.uk/) is a UK tool that is available via subscription to many UK Universities and Institutions. It contains DMP templates
-> for the different funders requirements and information on how to fill each section. Whenever you need to write your next DMP, it is highly available to check
-> if this resource is available to you.
-> Additionally, many Universities may offer help and advise for your DMP. For example, [the BioRDM Team](https://www.wiki.ed.ac.uk/display/RDMS/Research+Data+Management+SynthSys+%28f1sysrdm%29+Home)
-> of the School of Biological Sciences of The University of Edinburgh offers free advice on how to write a DMP to UoE researchers.
-{: .callout}
+
 
 > ## Attribution
 > Content of this episode was adapted after:
