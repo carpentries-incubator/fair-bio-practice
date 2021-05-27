@@ -164,7 +164,7 @@ to discuss folder structures, but, they should emphasize the **data safety
 > > *	MS Metabolomics (mzML)
 > > *	processing scripts (Python, R)
 > >
-> > We envisage the project will generate a total of 4 Tb data.
+> > The project will generate a total of 4 Tb data.
 > >
 > > (2) The instrument specific raw data will be converted into the open formats mentioned above.
 > > Daily experimental work will be recorded using an electronic lab notebook (Benchling).

@@ -172,7 +172,8 @@ There are general "data agnostic" repositories, for example:
 Or domain specific, for example:
 [UniProt](https://www.uniprot.org/) protein data,
 [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) sequence data,
-[MetaboLights](https://www.ebi.ac.uk/metabolights/) metabolomics data.
+[MetaboLights](https://www.ebi.ac.uk/metabolights/) metabolomics data
+and [GitHub](https://github.com/) for code.
 
 *We will cover repositories in more details in a later episode.*
 
