@@ -36,59 +36,62 @@ or manually.
 This is a confocal microscopy image of a *C. elegans* nematode strain used
 as a proteostasis model (Pretty! Isn't it?). The image is part of the raw data
 associated to [Goya et al., 2020](https://doi.org/10.1016/j.celrep.2019.12.078),
-which was deposited in a [Public Omero Server](https://publicomero.bio.ed.ac.uk/).
+which was deposited in a [Public Omero Server](https://publicomero.bio.ed.ac.uk/webclient/?show=dataset-231).
 
 <img src="../fig/04-microscopy_with_metadata.png" alt="nematode_confocal_microscopy_image" width="600"/>
 *Figure credits: María Eugenia Goya*
 
+.
+What information **can you guess** without the associated description (metadata)?
+
 Let's see the associated metadata to the image and the dataset to which it belongs:
-  
-> ## Image metadata  
->  
-> Name: OP50 D10Ad_06.czi  
-> Image ID: 3485  
-> Owner: Maria Eugenia Goya  
+
+> ## Image metadata
+>
+> Name: OP50 D10Ad_06.czi
+> Image ID: 3485
+> Owner: Maria Eugenia Goya
 > ORCID: 0000-0002-5031-2470
 >
-> Acquisition Date: 2018-12-12 17:53:55  
-> Import Date: 2020-04-30 22:38:59  
-> Dimensions (XY): 1344 x 1024  
-> Pixels Type: uint16  
-> Pixels Size (XYZ) (µm): 0.16 x 0.16 x 1.00  
-> Z-sections/Timepoints: 56 x 1  
-> Channels: TL DIC, TagYFP  
+> Acquisition Date: 2018-12-12 17:53:55
+> Import Date: 2020-04-30 22:38:59
+> Dimensions (XY): 1344 x 1024
+> Pixels Type: uint16
+> Pixels Size (XYZ) (µm): 0.16 x 0.16 x 1.00
+> Z-sections/Timepoints: 56 x 1
+> Channels: TL DIC, TagYFP
 > ROI Count: 0
 >
 > Tags: time course; day 10; adults; food switching; E. coli OP50;
 > NL5901; C. elegans
 >
 > ## Dataset metadata
->  
-> Name: Figure2_Figure2B  
-> Dataset ID:	263  
-> Owner: Maria Eugenia Goya  
-> ORCID: 0000-0002-5031-2470
->  
 >
-> Description:  
+> Name: Figure2_Figure2B
+> Dataset ID:	263
+> Owner: Maria Eugenia Goya
+> ORCID: 0000-0002-5031-2470
+>
+>
+> Description:
 > The datasets contains a time course of α-syn aggregation in NL5901 C.
 > elegans worms after a food switch at the L4 stage:
 >
-> E. coli OP50 to OP50  
-> Day 01 adults  
-> Day 03 adults  
-> Day 05 adults  
-> Day 07 adults  
-> Day 10 adults  
-> Day 13 adults  
+> E. coli OP50 to OP50
+> Day 01 adults
+> Day 03 adults
+> Day 05 adults
+> Day 07 adults
+> Day 10 adults
+> Day 13 adults
 >
-> E. coli OP50 to B. subtilis PXN21  
-> Day 01 adults  
-> Day 03 adults  
-> Day 05 adults  
-> Day 07 adults  
-> Day 10 adults  
-> Day 13 adults  
+> E. coli OP50 to B. subtilis PXN21
+> Day 01 adults
+> Day 03 adults
+> Day 05 adults
+> Day 07 adults
+> Day 10 adults
+> Day 13 adults
 >
 > Images were taken at 6 developmental timepoints (D1Ad, D3Ad, D5Ad,
 > D7Ad, D10Ad, D13Ad)
@@ -101,36 +104,19 @@ Let's see the associated metadata to the image and the dataset to which it belon
 >
 > These images were used to construct Figure 2B of the Cell Reports
 > paper (<https://doi.org/10.1016/j.celrep.2019.12.078>).
->  
+>
 > Creation date: 2020-04-30 22:16:39
->  
+>
 > Tags: protein aggregation; time course; E. coli OP50 to B. subtilis PXN21; food switching; E. coli OP50;
 > 10.1016/j.celrep.2019.12.078; NL5901; C. elegans
 {: .callout}
 
 This is a lot of information!
 
-> ## Challenge (5 minutes)
->
-> -  Which information could you have guessed without the metadata?
-> -  Discuss in pairs: 
-> 	* how useful do you believe metadata is?
->	* should metadata be included with public datasets?
->
-{: .challenge}
-
-> ## Distinguishing data from metadata
->
-> What is "data" and what is "metadata" is thereby a matter of
-> perspective: Some researchers' metadata can be other researchers'
-> data.
->
-{: .callout}
-
 ## Types of metadata
 
 According to [How to FAIR](https://howtofair.dk/) we can distinguish
-between three main types of metadata:  
+between three main types of metadata:
 * **Administrative metadata:** are data about a project or resource
 that are relevant for managing it; for example, project/ resource owner,
 principal investigator, project collaborators, funder, project period,
@@ -150,6 +136,20 @@ the data. Descriptive and structural metadata should be added
 continuously throughout the project.
 
 
+> ## Where does data end and metadata start?
+>
+> What is "data" and what is "metadata" is can be a matter of
+> perspective: Some researchers' metadata can be other researchers'
+> data.
+>
+> For example, a funding body is a typical administrative metadata,
+> however, it can be used to calculate numbers of public datasets per funder.
+> And then used to compare effect of different funders' policies on open practices.
+>
+{: .callout}
+
+
+
 > ## Identifying metadata types (5 minutes)
 > Here we have an excel spreadsheet that contains project metadata for a made-up experiment
 > ![metadata-full-spreadhseet](../fig/04-metadatafull_spreadsheet.png)
@@ -165,17 +165,14 @@ continuously throughout the project.
 > {: .solution}
 {: .challenge}
 
-> ## Identifying metadata types - optional (5 minutes)
-> In groups, now repeat the excercise for the example of the previous section.
-{: .challenge}
 
 > ## Open Researcher and Contributor ID (ORCID)
-> 
+>
 > Have you ever done a search in pubmed and found that you have
 > *doppelganger*? So how can you uniquely associate something you created
 > to just you and no other researcher that has the same name?
-> Do not worry, there is a solution to that! It is called an ORCID. 
-> An [ORCID](https://orcid.org/) is a unique identifier that links the resources 
+> Do not worry, there is a solution to that! It is called an ORCID.
+> An [ORCID](https://orcid.org/) is a unique identifier that links the resources
 > you produced with you.
 >
 > If you do not have an [ORCID](https://orcid.org/), you should consider getting one!
@@ -188,20 +185,20 @@ Many fields have a set of defined ways in which to structure their
 metadata (this ensures it is consistent among the researchers of the
 field, and helps with machine readibility of metadata). A list of
 metadata standards can be found at the [The Digital Curation
-Center](http://www.dcc.ac.uk/resources/metadata-standards/list). Although, 
+Center](http://www.dcc.ac.uk/resources/metadata-standards/list). Although,
 for biologists [FAIR Share](https://fairsharing.org/standards/)
 is a much better and easier resource to navigate.
 
 > ## Finding a metadata standard (5 minutes)
 > Go to [FAIR Share](https://fairsharing.org/standards/) and find the 'MINSEQE'
-> metadata standard, usually used in high-throughput sequencing experiments. Download the specification 
+> metadata standard, usually used in high-throughput sequencing experiments. Download the specification
 > and spend some time exploring it.
 >
 {: .challenge}
-  
+
 > ## Tip
 > What can you do if there are no metadata standards defined for your
-> data / field of research?  
+> data / field of research?
 > Think about the minimum information that
 > someone else (from your lab or from any other lab in the world) would
 > need to know about your dataset to be able to work with it without any
@@ -211,26 +208,26 @@ is a much better and easier resource to navigate.
 ## Adding metadata to your experiments
 Collecting and adding metadata to your experimental data files could take many forms. It could as simple as including a ReadMe.txt file,
 or, as we saw in the previous example, including your metadata within a spreadsheet. In subsequent episodes we will see more examples in
-greater detail.  
+greater detail.
 For a template ReadMe.txt that you could use to include with your datasets, click here: [ReadMe.txt template](../files/readme_template_BioRDM.txt)
-    
+
 ## Metadata and FAIR guidelines
 Metadata provides valuable information for us and others to be able to interpret (and process) the research data it accompanies. Making your
 data and metadata public provides an extra location for others to find your work. Even if you have published your results, the data files may
-not be findable. Metadata are machine-readable, and when they have a persistent identifier, search engines can easily find them. 
+not be findable. Metadata are machine-readable, and when they have a persistent identifier, search engines can easily find them.
 To be FAIR, your data (and metadata) must have a findable persistent identifier. The persistent identifier is typically assigned when a digital
 resource is placed in a data repository.
-	
+
 > ## Metadata and FAIR guidelines - discussion (5 minutes)
-> 
+>
 > In groups, discuss how metadata can help the process of FAIRification.
->  
+>
 {: .challenge}
 
 
 > ## Attribution
 >
-> Content of this episode was adapted from: 
+> Content of this episode was adapted from:
 > - [Metadata - FAIR data for climate sciences](https://escience-academy.github.io/Lesson-FAIR-Data-Climate/metadata/index.html).
 > - [Metadata - How to FAIR](https://howtofair.dk/how-to-fair/metadata/)
 > - [Data Tidiness](https://datacarpentry.org/organization-genomics/01-tidiness/index.html)
