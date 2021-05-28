@@ -4,18 +4,17 @@ teaching: 14
 exercises: 16
 questions:
 - "What is the research data life cycle?"
-- "Can planning help me manage my data and make it FAIR?"
+- "How to plan for FAIR sharing?"
 - "What is a Data Management Plan (DMP)?"
 objectives:
-- "Learn that planing makes it easier to make your data FAIR."
-- "Differentiate the different stages/steps of the data life cycle."
-- "Learn how these steps will allow your data to become FAIR."
-- "Write a sample DMP for your project."
+- "Learn what actions can help in achieving FAIR."
+- "Learn to plan for different stages/steps of the data life cycle."
+- "Draft a simple DMP for your project."
 keypoints:
 - "Data within a project go through a set of steps known as the research data life cycle."
 - "Planning can help make your data FAIR."
-- "Data management is a continuous process and should not be done only at the end of a project."
-- "DMPs are a good way to plan ahead and be ready for to manage your data once the project starts."
+- "Data management is a continuous process and should not be left till the end of a project."
+- "DMPs are the best way to prepare for new projects."
 ---
 
 ## The research data life cycle
@@ -39,7 +38,7 @@ which would make it easier to share your data in a **Findable, Accessible,
 Interoperable and Reusable** way, while, helping
 you in your day to day activities.
 
-> ## Challenge (4 + 4 minutes)
+> ## Action plan challenge (4 + 4 minutes)
 > Where would you say the following actions belong in the Research Data Life Cycle?
 > How do they help in achieving FAIR principles?
 >
