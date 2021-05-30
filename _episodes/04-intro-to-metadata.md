@@ -5,17 +5,15 @@ exercises: 20
 questions:
 - "What is metadata?"
 - "What do we use metadata for?"
-- "Is metadata important for data Reuse (the **R** in FAIR)?"
 objectives:
 - "Recognise what metadata is"
 - "Distinguish different types of metadata"
-- "Recognise how to provide metadata"
-- "Recognise how FAIR guidelines apply to metadata"
+- "Understand what makes metadata interoperable"
+- "Know how to decide what to include in metadata"
 keypoints:
 - "Metadata provides contextual information so that other people understand our data."
-- "Several community metadata standards exist."
 - "Metadata is key for data reuse and complying with FAIR guidelines."
-- "Metadata can be included as a standalone ReadMe.txt file or included as a header on a data file"
+- "Metadata should be added incrementally throught out the project"
 ---
 
 ## What is (or are) metadata?
@@ -327,35 +325,6 @@ Findable, Accessible, Interoperable and Reusable apply to metadata.
 
 Ideally, metadata should not only be machine-readable, but also interoperable
 so that they can interlink or reasoned about by computer systems.
-
-
-> ## Tip
-> What can you do if there are no metadata standards defined for your
-> data / field of research?
-> Think about the minimum information that
-> someone else (from your lab or from any other lab in the world) would
-> need to know about your dataset to be able to work with it without any
-> further inputs from you.
-{: .callout}
-
-## Adding metadata to your experiments
-Collecting and adding metadata to your experimental data files could take many forms. It could as simple as including a ReadMe.txt file,
-or, as we saw in the previous example, including your metadata within a spreadsheet. In subsequent episodes we will see more examples in
-greater detail.
-For a template ReadMe.txt that you could use to include with your datasets, click here: [ReadMe.txt template](../files/readme_template_BioRDM.txt)
-
-## Metadata and FAIR guidelines
-Metadata provides valuable information for us and others to be able to interpret (and process) the research data it accompanies. Making your
-data and metadata public provides an extra location for others to find your work. Even if you have published your results, the data files may
-not be findable. Metadata are machine-readable, and when they have a persistent identifier, search engines can easily find them.
-To be FAIR, your data (and metadata) must have a findable persistent identifier. The persistent identifier is typically assigned when a digital
-resource is placed in a data repository.
-
-> ## Metadata and FAIR guidelines - discussion (5 minutes)
->
-> In groups, discuss how metadata can help the process of FAIRification.
->
-{: .challenge}
 
 
 > ## Attribution
