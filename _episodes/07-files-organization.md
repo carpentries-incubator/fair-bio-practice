@@ -103,7 +103,6 @@ and identify if something is missing.
 > {: .solution}
 {: .challenge}
 
-## Naming your files (and folders)
 Some things to take into account to decide on your naming convention are:
 
 - Does your convention make your files easy to sort
