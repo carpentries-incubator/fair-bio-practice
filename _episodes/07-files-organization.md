@@ -47,7 +47,7 @@ give you a sense of the content without opening the file,
 and identify if something is missing.
 
 
-> ## Naming and sorting (5 minutes)
+> ## Naming and sorting (3+2 minutes)
 > Have a look at the example files from a project, similar
 > to the one from metadata episode.
 >
@@ -57,7 +57,7 @@ and identify if something is missing.
 > For your information, to encode experimental details, following conventions were taken:
 > * phyB/phyA are sample genotype,
 > * sXX is sample number
-> * LD/SD are different light conditions
+> * LD/SD are different light conditions (long or short day)
 > * on/off are different media (on sucrose, off sucrose)
 > * measurement date
 > * other details are timepoint and raw or normalized data
@@ -97,7 +97,7 @@ and identify if something is missing.
 > > particular conditions or genotypes. It also masks the "logical" order of samples
 > > or timepoints.
 > > * Named months break the "expected" sorting, same as dates without leading 0
-> > * Without leading zeros, 's12' appear before s1 and s2 because.
+> > * Without leading zeros, 's12' appear before s1 and s2
 > > * the first (and second) parts of the name are easiest to spot
 > > * last file is also from LD conditions but do apearch after SD, same with 'phya' genotypes
 > > * the last 3 file names are easiest to read as all parts appear on top of each other,
@@ -138,55 +138,106 @@ Aim for filenames no longer than ~30 characters.
 - avoid using language specific characters (e.g óężé), unfortunately
 they still cause problems with may software or between operating systems (OS)
 - avoid long names
-- avoid repetition for ex. Directory name: Electron_Microscopy_Images,
-  and file ELN_MI_Img_20200101.img
+- avoid repetition, e.g if directory name is *Electron_Microscopy_Images*,
+  and file *ELN_MI_IMG_20200101.img* then ELN_MI_IMG is redundant
 - avoid deep paths with long names (i.e. deeply nested folders with long names)
 as archiving or moving between OS may fail
 
 
+If adding all the relevant details to file names makes them too long,
+it is often a signal that you should use folder to organize the files and
+capture some of those parameters.
 
-
-> ## Challenge (2.5 minutes)
-> Now imagine a case where you would have to rename thousands of files instead of 5-10.
-> Using the previous example, can you imagine a solution involving folder structure that could help if you had hundreds or thousands of files?
+> ## Folders vs Files (3 minutes)
+>
+> Have a look as these two different organization strategies:
+>
+> (1)
+> |-- Project
+> |-- |-- arab_LD_phyA_off_t04_2020-08-12.metab.xlsx
+>
+> (2)
+> |-- Project
+> |-- |-- arabidopsis
+> |-- |-- |-- long_day
+> |-- |-- |-- |-- phyA
+> |-- |-- |-- |-- |-- off_sucrose_2020-08-12
+> |-- |-- |-- |-- |-- |-- t04.metab.xlsx
+>
+> Can you think of scenarios in which one is better suited than other?
+> Hint: think of other files that could be present as well.
 >
 > > ## Solution
-> > One way to solve this would be to transform the elements of your file naming conventions into a folder structure:
-> > For example:
-> > .
-> > |-- LD
-> > |-- | arabidopsis
-> > |-- |-- | genotype
-> > |-- |-- |-- | media
-> > |-- |-- |-- |-- | sample ID
+> > The first strategies, can work very well if the project has only few files,
+> > so all of them can quickly be accessed (no need to change folders) and
+> > the different parameters are easily visible.
+> > For example a couple of conditions, couple of genotypes or species
 > >
-> > > ## Must do
-> > > Regardless of whether you are using long filenames or incorporating some of the variables within the folder structure, document it!
-> > > Always include a ReadMe file describing your file naming and folder organisation conventions.
-> > {: .callout}
+> > |-- Project
+> > |-- |-- arab_LD_phyA_off_t04_2020-08-12.metab.xlsx
+> > |-- |-- arab_LD_WILD_off_t03_2020-08-11.metab.xlsx
+> > |-- |-- arab_SD_phyA_off_t01_2020-05-12.metab.xlsx
+> > |-- |-- arab_SD_WILD_off_t02_2020-05-11.metab.xlsx
+> > |-- |-- rice_LD_phyA_off_t05_2020-05-02.metab.xlsx
+> > |-- |-- rice_LD_WILD_off_t06_2020-05-02.metab.xlsx
+> > |-- |-- rice_SD_phyA_off_t07_2020-06-02.metab.xlsx
+> > |-- |-- rice_SD_WILD_off_t08_2020-06-02.metab.xlsx
+> >
+> > The second strategy works better if we have a lot of individual files for
+> > each parameter.
+> > For example, imagine the metabolites are measured hourly throughout the day,
+> > and there are ten different genotypes, two species and 4 light conditions.
+> > You would not want to have all the 2000 files in one folder.
+> >
+> > |-- Project
+> > |-- |-- arabidopsis
+> > |-- |-- |-- long_day
+> > |-- |-- |-- |-- phyA
+> > |-- |-- |-- |-- |-- off_sucrose_2020-08-12
+> > |-- |-- |-- |-- |-- |-- t01.metab.xlsx
+> > |-- |-- |-- |-- |-- |-- t02.metab.xlsx
+> > |-- |-- |-- |-- |-- |-- t03.metab.xlsx
+> > |-- |-- |-- |-- |-- |--     ...
+> > |-- |-- |-- |-- |-- |-- t23.metab.xlsx
+> > |-- |-- |-- |-- |-- |-- t24.metab.xlsx
+> > |-- |-- rice
+> > |-- |-- |-- long_day
+> > |-- |-- |-- |-- phyA
+> > |-- |-- |-- |-- |-- off_sucrose_2020-06-03
+> > |-- |-- |-- |-- |-- |-- t01.metab.xlsx
+> > |-- |-- |-- |-- |-- |--     ...
+> > |-- |-- |-- |-- |-- |-- t24.metab.xlsx
+> >
 > {: .solution}
 {: .challenge}
 
-
-## Strategies to set up a clear folder structure
-Establishing a system that allows you to access your files, avoid duplication and ensure that your data can be easily found needs planning. You can start by developing a logical folder structure. To do so, you need to take into account the following suggestions:
-
-- Use folders: grouping related files within a single folder will make it easy to locate them.
-- Name folders appropriately: use descriptive names after the areas of work to which they relate. It is not recommended to use individual researchers or students as the folder name as this can lead to confusion in shared workspaces.
-- Be consistent: agree on a naming convention from the outset of your research project.
-- Structure folders hierarchically: use broader topics for your main folders and increase in specificity as you go down the hierarchy.
-
-> ## Before you begin
-> Always check if your group already has set up standard operating procedures for structuring research data folders. Don't reinvent the wheel, unless it is absolutely necessary.
+> ## Must do: Document your strategy
+> Regardless of whether you are using long filenames or incorporating
+> some of the variables within the folder structure, document it!
+> Always include a PROJECT_STRUCTURE (or README) file describing your file naming and folder organisation conventions.
 >
 {: .callout}
 
+## Strategies to set up a clear folder structure
+Establishing a system that allows you to access your files,
+avoid duplication and ensure that your data can be easily found
+needs planning.
+You can start by developing a logical folder structure. To do so, you need to take into account the following suggestions:
+
+- Use folders to group related files. A single folder will make it easy to locate them.
+- Name folders appropriately: use descriptive names after the areas of work to which they relate.
+- Structure folders hierarchically: use broader topics for your main folders and increase in specificity as you go down the hierarchy.
+- Be consistent: agree on a naming convention from the outset of your research project.
+- If you change the strategy, document it and update the files which followed the old convention.
+
 > ## Tip
-> Sometimes it is better to make separate folders for ongoing and completed work. In some cases it is a good idea to start thinking about separating your older documents from those you are currently working on. See if this fits with your project.
+> Sometimes it is better to make separate folders for ongoing and
+> completed work.
 {: .callout}
 
 > ## Challenge (5 minutes)
-> Take a look at the folder structure recommended by the [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510) paper.
+> Take a look at the folder structure recommended by the
+> [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510) paper.
 > >
 > > .
 > > |-- CITATION
