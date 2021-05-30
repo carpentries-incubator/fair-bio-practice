@@ -104,29 +104,46 @@ and identify if something is missing.
 > > thanks to using same 3 letter-lemgth codes ons and off
 > > * The lack of consistency makes it very difficult to get data from related samples/conditions.
 > >
-> > There are some good points too:
-> > * Normalised data has a consistent way to help you find the data: 'LD' vs 'SD' conditions, followed by genotype.
-> > * Keeping the same length of each section of the name makes it easier to read: 'ons' and 'off' (on succrose, off succrose) nicely ordered in the last three files.
 > {: .solution}
 {: .challenge}
 
 ## Naming your files (and folders)
 Some things to take into account to decide on your naming convention are:
 
-- Does your convention make your files easy to sort and find by the most important feature?
-	- date: consider using 'YYYYMMDD' or 'YYYY-MM-DD' as part of your name
-	- file version: consider including versioning as part of your system. Using leading zeroes will help keep a certain length in this element (i.e.: v005 instead of v5).
-	- other parameters that will help you sort your files: consider including a project acronym, researcher name, sample, experiment as part of your file name.
-- Is your file name as descriptive as possible?
-	- include any parameter that helps the name being as descriptive as possible (i.e.: project, experiment, researcher, sample, organism, date (range), data type, method)
-- Have you defined a standard vocabulary for file names?
-	- decide which elements go in which order. This will help everyone use a common language.
-- Have you defined a maximum name length? (is the name to long or too short?)
-	- aim for filenames no longer than ~30 characters. If you need to abbreviate your parameters to fit this criteria, remember to document it on your metadata.
-- Have you defined which punctuations to use?
-	- decide on conventions on when to use symbols, capitals, hyphens and spaces.
-- Are you using special symbols?
-	- Don't! Some software cannot recognise the symbols and this may bring problems in the long run.
+- Does your convention make your files easy to sort
+and find by the most important feature?
+	- include any parameter that helps the name being as descriptive as
+	possible (i.e.: project, experiment, researcher, sample, organism,
+	date (range), data type, method)
+    - defined a standard vocabulary (shortcuts) for parameters
+	- decide which elements go in which order.
+
+- Decide the convention when to use symbols, capitals, hyphens
+(e.g kebab-case, CamelCase, or snake_case).
+
+- Defined a maximum name length.
+Aim for filenames no longer than ~30 characters.
+
+- Document any abbreviation of your parameters.
+
+**Do's:**
+- for dates use the YYYY-MM-DD standard and place at the end of the file UNLESS you need to organise your files chronologically
+- include version number (if applicable), use leading zeroes (i.e.: v005 instead of v5).
+- make sure the 3-letter file format extension is present at the end of the name (e.g. .doc, .xls, .mov, .tif)
+- add a **PROJECT_STRUCTURE** (README) file in your top directory which details your naming convention, directory structure and abbreviations
+
+**Don'ts:**
+- avoid using spaces (use _ or - instead)
+- avoid dots, commas and special characters (e.g. ~ ! @ # $ % ^ & * ( ) ` ; < > ? , [ ] { } ‘ “)
+- avoid using language specific characters (e.g óężé), unfortunately
+they still cause problems with may software or between operating systems (OS)
+- avoid long names
+- avoid repetition for ex. Directory name: Electron_Microscopy_Images,
+  and file ELN_MI_Img_20200101.img
+- avoid deep paths with long names (i.e. deeply nested folders with long names)
+as archiving or moving between OS may fail
+
+
 
 
 > ## Challenge (2.5 minutes)
@@ -248,6 +265,7 @@ Did you realise that the suggestions we made above mean that you are including v
 > - [Organising your data](https://www.data.cam.ac.uk/data-management-guide/organising-your-data)
 > - [Organising files and folders](https://www.wur.nl/en/Value-Creation-Cooperation/Collaborating-with-WUR-1/Organising-files-and-folders.htm)
 > - [File naming](https://libguides.princeton.edu/c.php?g=102546&p=930626)
+> - [Library Caprenty FAIR](https://librarycarpentry.org/lc-fair-research/05-reusable/index.html)
 >
 {: .callout}
 
