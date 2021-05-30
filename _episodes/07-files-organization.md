@@ -230,10 +230,27 @@ You can start by developing a logical folder structure. To do so, you need to ta
 - Structure folders hierarchically: use broader topics for your main folders and increase in specificity as you go down the hierarchy.
 - Be consistent: agree on a naming convention from the outset of your research project.
 
+> ## Good enough practices for scientific computing recommendations
+> The [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510#sec009) paper makes the following simple recommendations:
+> * Put each project in its own directory, which is named after the project
+> * Put text documents associated with the project in the 'doc' directory
+> * Put raw data and metadata in a 'data' directory
+> * Put files generated during cleanup and analysis in a 'results' directory
+> * Put project source code in the 'src' directory
+> * Put compiled programs in the 'bin' directory
+> * Name all files to reflect their content or function:
+>   - Use names such as 'bird_count_table.csv', 'notebook.md', or 'summarized_results.csv'.
+>   - Do not use sequential numbers (e.g., result1.csv, result2.csv) or a location in a final manuscript (e.g., fig_3_a.png), since those numbers will almost certainly change as the project evolves.
+>
+{: .callout}
 
-> ## Challenge (5 minutes)
+
+> ## Organization for computing (3 minutes)
 > Take a look at the folder structure recommended by the
 > [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510) paper.
+>
+> Why do you think it is *recommended* layout and
+> suited for a computing project?
 > >
 > > .
 > > |-- CITATION
@@ -257,31 +274,27 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > > |   |-- runall.py
 > > |
 > >
-> > Note: This project doesn't have a bin directory because it does not rely on any compiled software.
 > {: .source}
 > > ## Solution
-> > The structure is a concrete example of how a simple scientific computing project might be organized.
-> > * The root directory contains a README file that provides an overview of the project as a whole, a CITATION file that explains how to reference it, and a LICENSE file that states the licensing.
-> > * The data directory contains a single CSV file with tabular data on bird counts (machine-readable metadata could also be included here).
-> > * The src directory contains sightings_analysis.py, a Python file containing functions to summarize the tabular data, and a controller script runall.py that loads the data table, applies functions imported from sightings_analysis.py, and saves a table of summarized results in the results directory.
+> > This project structure clearly separates the inputs (the raw data)
+> > from the outputs (the results) and the analysis procedure (python code).
+> > Following the same convention (like src folder for code) makes it easy
+> > to find interesting elements, for example the raw data or particular ploting procedure.
+> >
+> > The root directory contains a README file that provides an overview of the project as a whole,
+> > a CITATION file that explains how to reference it, and a LICENSE, all three make it **REUSABLE**.
+> > The src directory contains a controller script runall.py that loads the data and triggers the whole analysis.
 > {: .solution}
 {: .challenge}
 
-## Good enough practices for scientific computing recommendations
-The [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510#sec009) paper makes the following simple recommendations:
-* Put each project in its own directory, which is named after the project
-* Put text documents associated with the project in the 'doc' directory
-* Put raw data and metadata in a 'data' directory
-* Put files generated during cleanup and analysis in a 'results' directory
-* Put project source code in the 'src' directory
-* Put compiled programs in the 'bin' directory
-* Name all files to reflect their content or function:
-	- Use names such as 'bird_count_table.csv', 'notebook.md', or 'summarized_results.csv'.
-	- Do not use sequential numbers (e.g., result1.csv, result2.csv) or a location in a final manuscript (e.g., fig_3_a.png), since those numbers will almost certainly change as the project evolves.
 
 > ## After you have a plan
-> Your naming conventions might need some adjustments as the project progresses. Don't despair, just document it!
-> If you change the strategy, document it and update the files which followed the old convention
+> Your naming conventions might need some adjustments as the project progresses.
+> Don't despair, just document it!
+>
+> If you change the strategy, document it in PROJECT_STRUCTURE (or README)
+> stating why you made the change and when.
+> Update the locations and names of files which followed the old convention
 {: .callout}
 
 ## Backup your project files and folders
@@ -313,7 +326,7 @@ Did you realise that the suggestions we made above mean that you are including v
 > - [Organising your data](https://www.data.cam.ac.uk/data-management-guide/organising-your-data)
 > - [Organising files and folders](https://www.wur.nl/en/Value-Creation-Cooperation/Collaborating-with-WUR-1/Organising-files-and-folders.htm)
 > - [File naming](https://libguides.princeton.edu/c.php?g=102546&p=930626)
-> - [Library Caprenty FAIR](https://librarycarpentry.org/lc-fair-research/05-reusable/index.html)
+> - [Library Caprenty FAIR Data](https://librarycarpentry.org/lc-fair-research/05-reusable/index.html)
 >
 {: .callout}
 
