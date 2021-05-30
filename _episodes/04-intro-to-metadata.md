@@ -11,7 +11,7 @@ objectives:
 - "Understand what makes metadata interoperable"
 - "Know how to decide what to include in metadata"
 keypoints:
-- "Metadata provides contextual information so that other people understand our data."
+- "Metadata provides contextual information so that other people can understand the data."
 - "Metadata is key for data reuse and complying with FAIR guidelines."
 - "Metadata should be added incrementally throught out the project"
 ---
