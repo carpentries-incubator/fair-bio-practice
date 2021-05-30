@@ -256,7 +256,9 @@ from as simple as including a ReadMe.txt file,
 by embedding them inside the Excel files,
 to using domain specific metadata standard and format.
 
-But, **what to include in the metadata**?
+But,
+* **what to include in the metadata?**
+* **what public IDs to use?**
 
 For many assay methods and experiment types, there are defined recomendations
 and guidelines called **Minimal Information Standards**.
@@ -315,22 +317,17 @@ further inputs from you.
 > {: .solution}
 {: .challenge}
 
-## Metadata standards
+## Metadata and FAIR guidelines
+Metadata provides extreme valuable information for us and others
+to be able to interpret, process, reuse and reproduce
+the research data it accompanies.
 
-Many fields have a set of defined ways in which to structure their
-metadata (this ensures it is consistent among the researchers of the
-field, and helps with the machine readability of metadata). A list of
-metadata standards can be found at the [The Digital Curation
-Center](http://www.dcc.ac.uk/resources/metadata-standards/list). Although,
-for biologists [FAIR Share](https://fairsharing.org/standards/)
-is a much better and easier resource to navigate.
+Because metadata are data about data, all of the FAIR principles i.e.
+Findable, Accessible, Interoperable and Reusable apply to metadata.
 
-> ## Finding a metadata standard (5 minutes)
-> Go to [FAIR Share](https://fairsharing.org/standards/) and find the 'MINSEQE'
-> metadata standard, usually used in high-throughput sequencing experiments. Download the specification
-> and spend some time exploring it.
->
-{: .challenge}
+Ideally, metadata should not only be machine-readable, but also interoperable
+so that they can interlink or reasoned about by computer systems.
+
 
 > ## Tip
 > What can you do if there are no metadata standards defined for your
