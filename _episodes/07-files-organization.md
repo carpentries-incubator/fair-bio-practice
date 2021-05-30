@@ -297,9 +297,22 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > Update the locations and names of files which followed the old convention
 {: .callout}
 
-## Backup your project files and folders
-Always backup your data in 3 places, at least one off-site (cloud-storage). Don't just use a failure-prone option (i.e.: USB drive)
-Warning! You may not be able to put everything in a public cloud (check your institutional guidelines).
+## Backing up your project files and folders
+* Back up (almost) everything created by a human being or recorded by a machine
+as soon as it is created.
+* Always backup your files in 3 places, at least one should be off-site.
+* USB sticks are a failure-prone option and are not valid solution for backup of
+scientific data
+* A robust backup cannot be achieved manually
+
+Can you keep 3 copies of your data which are always up to date?
+
+Secure data preservation is very difficult to achieve without institutional support
+and know-how. One option is a cloud storage, but not all data
+may not be put in a public cloud.
+
+You should always check your institutional guidelines
+and what solutions are available in your organization.
 
 > ## Challenge (2.5 minutes)
 > How can you achieve this?
