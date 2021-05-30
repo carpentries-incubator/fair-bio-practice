@@ -46,18 +46,6 @@ allow you to easily find what you are looking for,
 give you a sense of the content without opening the file,
 and identify if something is missing.
 
-> > 2020-07-14_s12_phyB_on_SD_t04.raw.xlsx
-> > 2020-07-14_s1_phyA_on_LD_t05.raw.xlsx
-> > 2020-07-14_s2_phyB_on_SD_t11.raw.xlsx
-> > 2020-08-12_s03_phyA_on_LD_t03.raw.xlsx
-> {: .source}
-
-> 2020-07-14_s12_phyB_on_SD_t04.raw.xlsx
-> 2020-07-14_s1_phyA_on_LD_t05.raw.xlsx
-> 2020-07-14_s2_phyB_on_SD_t11.raw.xlsx
-> 2020-08-12_s03_phyA_on_LD_t03.raw.xlsx
-{: .source}
-
 
 > ## Naming and sorting (5 minutes)
 > Have a look at the example files from a project, similar
@@ -70,7 +58,7 @@ and identify if something is missing.
 > * phyB/phyA are sample genotype,
 > * sXX is sample number
 > * LD/SD are different light conditions
-> * on/off are different media
+> * on/off are different media (on sucrose, off sucrose)
 > * measurement date
 > * other details are timepoint and raw or normalized data
 >
@@ -83,6 +71,7 @@ and identify if something is missing.
 > > 2020-7-12_s2_phyB_on_SD_t01.raw.xlsx
 > > AUG-13_phyB_on_LD_s1_t11.raw.xlsx
 > > JUL-31_phyB_on_LD_s1_t03.raw.xlsx
+> >
 > > LD_phyA_off_t04_2020-08-12.norm.xlsx
 > > LD_phyA_on_t04_2020-07-14.norm.xlsx
 > > LD_phyB_off_t04_2020-08-12.norm.xlsx
@@ -94,15 +83,26 @@ and identify if something is missing.
 > > ld_phyA_ons_t04_2020-08-12.norm.xlsx
 > {: .source}
 >
-> How do you think the naming conventions will affect sorting of these files? Discuss in pairs.
+> * What are the problems with having date first?
+> * How do different date formats behave once sorted?
+> * Can you tell the importance of leading 0 (zeros)?
+> * Is it equally easy to find all data from LD conditions as ON media?
+> * Can you spot problem with when using different cases?
+> * Do you see benefits of keeping consistent lengths of each name parts?
+> * Do you see what happens when you mix conventions?
+>
 > > ## Solution
-> > There a series of issues with the way the files were named. Let's see if you found the same ones we spotted:
-> > * Using dates up front makes it difficult to find a particular file by genotype/conditions (though dates in front may have value when content has multiple variables).
-> > * Look at how 's12' would appear before s1 and s2 because a leading 0 is not used when naming the files.
-> > * You need dates to be numeric or the other will not be logical (example: Aug would appear before Jul, if using letters).
-> > * There is lack of consistency with the numerical date at the start: 2020-7 appears after 2020-08-13 (there is a missing leading zero that c).
-> > * Further lack of consistency as the files on top, middle, and bottom use different conventions.
-> > * There are some issues with cases, 'ld' is after 'SD', also 'phya' is after 'phyB'.
+> >
+> > * Using dates up front makes it difficult to quickly find data for
+> > particular conditions or genotypes. It also masks the "logical" order of samples
+> > or timepoints.
+> > * Named months break the "expected" sorting, same as dates without leading 0
+> > * Without leading zeros, 's12' appear before s1 and s2 because.
+> > * the first (and second) parts of the name are easiest to spot
+> > * last file is also from LD conditions but do apearch after SD, same with 'phya' genotypes
+> > * the last 3 file names are easiest to read as all parts appear on top of each other,
+> > thanks to using same 3 letter-lemgth codes ons and off
+> > * The lack of consistency makes it very difficult to get data from related samples/conditions.
 > >
 > > There are some good points too:
 > > * Normalised data has a consistent way to help you find the data: 'LD' vs 'SD' conditions, followed by genotype.
@@ -111,10 +111,9 @@ and identify if something is missing.
 {: .challenge}
 
 ## Naming your files (and folders)
-One important and often overlooked aspect of organizing, sharing, and keeping track of data files is standardising naming. It is important to develop naming conventions including elements that are important to the project. Your file (and folder) names should be consistent, meaningful to you and your collaborators, allow you to easily find what you are looking for, give you a sense of the content without opening the file, and identify if something is missing.
 Some things to take into account to decide on your naming convention are:
 
-- Does your convention make your files easy to sort?
+- Does your convention make your files easy to sort and find by the most important feature?
 	- date: consider using 'YYYYMMDD' or 'YYYY-MM-DD' as part of your name
 	- file version: consider including versioning as part of your system. Using leading zeroes will help keep a certain length in this element (i.e.: v005 instead of v5).
 	- other parameters that will help you sort your files: consider including a project acronym, researcher name, sample, experiment as part of your file name.
