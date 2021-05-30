@@ -305,7 +305,8 @@ as soon as it is created.
 scientific data
 * A robust backup cannot be achieved manually
 
-Can you keep 3 copies of your data which are always up to date?
+Do you know how and where to keep 3 copies of your data
+which are always up to date?
 
 Secure data preservation is very difficult to achieve without institutional support
 and know-how. One option is a cloud storage, but not all data
@@ -314,14 +315,6 @@ may not be put in a public cloud.
 You should always check your institutional guidelines
 and what solutions are available in your organization.
 
-> ## Challenge (2.5 minutes)
-> How can you achieve this?
-> > ## Solution:
-> > - Check your institutional services regarding data backup
-> > - Determine the 3 places where you will backup your data
-> > - You need to set up automatic software to backup
-> {: .solution}
-{: .challenge}
 
 
 ## Project organization and FAIR guidelines
