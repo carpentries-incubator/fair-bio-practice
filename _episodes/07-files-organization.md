@@ -1,22 +1,18 @@
 ---
 title: "Working with files"
 teaching: 15
-exercises: 20
+exercises: 16
 questions:
-- "How should a project folder be organized?"
-- "What are naming conventions?"
 - "How should I name my files?"
-- "How does project organisation help to make data FAIR?"
+- "How does folder organisation help me"
 objectives:
-- "Learn different file naming strategies"
-- "Engage in project organization"
-- "Be able to explain how it helps in being FAIR"
+- "Understand elements of good naming strategy"
+- "Evaluate pros and cons of different project organizations"
+- "Explain how files management helps in being FAIR"
 keypoints:
-- "You have to plan ahead your project layout"
-- "You have to decide on naming conventions and stick to them"
-- "Project organization helps you save time in the long run"
-- "Project organization helps to make your data Findable"
-- "Project organization can also help to make your data Interoperable"
+- "A good file name hints the file content"
+- "Good project organization saves you time"
+- "Describe your files organization in PROJECT_STRUCTURE"
 ---
 
 ## Project organization: planning file names and folders structure
@@ -37,7 +33,7 @@ Consistent naming and organizing files in folders has two main goals:
 
 ## Naming your files (and folders)
 One important and often overlooked aspect of organizing, sharing, and keeping track of data
-files is standardising naming.
+files is standardising naming.  
 It is important to develop naming conventions
 which permits encoding experimental factors which are important to the project.
 
@@ -62,25 +58,25 @@ and identify if something is missing.
 > * measurement date
 > * other details are timepoint and raw or normalized data
 >
-> > 2020-07-14_s12_phyB_on_SD_t04.raw.xlsx
-> > 2020-07-14_s1_phyA_on_LD_t05.raw.xlsx
-> > 2020-07-14_s2_phyB_on_SD_t11.raw.xlsx
-> > 2020-08-12_s03_phyA_on_LD_t03.raw.xlsx
-> > 2020-08-12_s12_phyB_on_LD_t01.raw.xlsx
-> > 2020-08-13_s01_phyB_on_SD_t02.raw.xlsx
-> > 2020-7-12_s2_phyB_on_SD_t01.raw.xlsx
-> > AUG-13_phyB_on_LD_s1_t11.raw.xlsx
-> > JUL-31_phyB_on_LD_s1_t03.raw.xlsx
+> > 2020-07-14_s12_phyB_on_SD_t04.raw.xlsx  
+> > 2020-07-14_s1_phyA_on_LD_t05.raw.xlsx  
+> > 2020-07-14_s2_phyB_on_SD_t11.raw.xlsx  
+> > 2020-08-12_s03_phyA_on_LD_t03.raw.xlsx  
+> > 2020-08-12_s12_phyB_on_LD_t01.raw.xlsx  
+> > 2020-08-13_s01_phyB_on_SD_t02.raw.xlsx  
+> > 2020-7-12_s2_phyB_on_SD_t01.raw.xlsx  
+> > AUG-13_phyB_on_LD_s1_t11.raw.xlsx  
+> > JUL-31_phyB_on_LD_s1_t03.raw.xlsx  
 > >
-> > LD_phyA_off_t04_2020-08-12.norm.xlsx
-> > LD_phyA_on_t04_2020-07-14.norm.xlsx
-> > LD_phyB_off_t04_2020-08-12.norm.xlsx
-> > LD_phyB_on_t04_2020-07-14.norm.xlsx
-> > SD_phyB_off_t04_2020-08-13.norm.xlsx
-> > SD_phyB_on_t04_2020-07-12.norm.xlsx
-> > SD_phya_off_t04_2020-08-13.norm.xlsx
-> > SD_phya_ons_t04_2020-07-12.norm.xlsx
-> > ld_phyA_ons_t04_2020-08-12.norm.xlsx
+> > LD_phyA_off_t04_2020-08-12.norm.xlsx  
+> > LD_phyA_on_t04_2020-07-14.norm.xlsx  
+> > LD_phyB_off_t04_2020-08-12.norm.xlsx  
+> > LD_phyB_on_t04_2020-07-14.norm.xlsx  
+> > SD_phyB_off_t04_2020-08-13.norm.xlsx  
+> > SD_phyB_on_t04_2020-07-12.norm.xlsx  
+> > SD_phya_off_t04_2020-08-13.norm.xlsx  
+> > SD_phya_ons_t04_2020-07-12.norm.xlsx  
+> > ld_phyA_ons_t04_2020-08-12.norm.xlsx  
 > {: .source}
 >
 > * What are the problems with having date first?
@@ -153,15 +149,15 @@ capture some of those parameters.
 > Have a look as these two different organization strategies:
 >
 > (1)
-> |-- Project
+> |-- Project  
 > |-- |-- arab_LD_phyA_off_t04_2020-08-12.metab.xlsx
 >
 > (2)
-> |-- Project
-> |-- |-- arabidopsis
-> |-- |-- |-- long_day
-> |-- |-- |-- |-- phyA
-> |-- |-- |-- |-- |-- off_sucrose_2020-08-12
+> |-- Project  
+> |-- |-- arabidopsis  
+> |-- |-- |-- long_day  
+> |-- |-- |-- |-- phyA  
+> |-- |-- |-- |-- |-- off_sucrose_2020-08-12  
 > |-- |-- |-- |-- |-- |-- t04.metab.xlsx
 >
 > Can you think of scenarios in which one is better suited than other?
@@ -173,15 +169,15 @@ capture some of those parameters.
 > > the different parameters are easily visible.
 > > For example a couple of conditions, couple of genotypes or species
 > >
-> > |-- Project
-> > |-- |-- arab_LD_phyA_off_t04_2020-08-12.metab.xlsx
-> > |-- |-- arab_LD_WILD_off_t03_2020-08-11.metab.xlsx
-> > |-- |-- arab_SD_phyA_off_t01_2020-05-12.metab.xlsx
-> > |-- |-- arab_SD_WILD_off_t02_2020-05-11.metab.xlsx
-> > |-- |-- rice_LD_phyA_off_t05_2020-05-02.metab.xlsx
-> > |-- |-- rice_LD_WILD_off_t06_2020-05-02.metab.xlsx
-> > |-- |-- rice_SD_phyA_off_t07_2020-06-02.metab.xlsx
-> > |-- |-- rice_SD_WILD_off_t08_2020-06-02.metab.xlsx
+> > |-- Project  
+> > |-- |-- arab_LD_phyA_off_t04_2020-08-12.metab.xlsx  
+> > |-- |-- arab_LD_WILD_off_t03_2020-08-11.metab.xlsx  
+> > |-- |-- arab_SD_phyA_off_t01_2020-05-12.metab.xlsx  
+> > |-- |-- arab_SD_WILD_off_t02_2020-05-11.metab.xlsx  
+> > |-- |-- rice_LD_phyA_off_t05_2020-05-02.metab.xlsx  
+> > |-- |-- rice_LD_WILD_off_t06_2020-05-02.metab.xlsx  
+> > |-- |-- rice_SD_phyA_off_t07_2020-06-02.metab.xlsx  
+> > |-- |-- rice_SD_WILD_off_t08_2020-06-02.metab.xlsx  
 > >
 > > The second strategy works better if we have a lot of individual files for
 > > each parameter.
@@ -189,31 +185,31 @@ capture some of those parameters.
 > > and there are ten different genotypes, two species and 4 light conditions.
 > > You would not want to have all the 2000 files in one folder.
 > >
-> > |-- Project
-> > |-- |-- arabidopsis
-> > |-- |-- |-- long_day
-> > |-- |-- |-- |-- phyA
-> > |-- |-- |-- |-- |-- off_sucrose_2020-08-12
-> > |-- |-- |-- |-- |-- |-- t01.metab.xlsx
-> > |-- |-- |-- |-- |-- |-- t02.metab.xlsx
-> > |-- |-- |-- |-- |-- |-- t03.metab.xlsx
-> > |-- |-- |-- |-- |-- |--     ...
-> > |-- |-- |-- |-- |-- |-- t23.metab.xlsx
-> > |-- |-- |-- |-- |-- |-- t24.metab.xlsx
-> > |-- |-- rice
-> > |-- |-- |-- long_day
-> > |-- |-- |-- |-- phyA
-> > |-- |-- |-- |-- |-- off_sucrose_2020-06-03
-> > |-- |-- |-- |-- |-- |-- t01.metab.xlsx
-> > |-- |-- |-- |-- |-- |--     ...
-> > |-- |-- |-- |-- |-- |-- t24.metab.xlsx
-> >
+> > |-- Project  
+> > |-- |-- arabidopsis  
+> > |-- |-- |-- long_day  
+> > |-- |-- |-- |-- phyA  
+> > |-- |-- |-- |-- |-- off_sucrose_2020-08-12  
+> > |-- |-- |-- |-- |-- |-- t01.metab.xlsx  
+> > |-- |-- |-- |-- |-- |-- t02.metab.xlsx  
+> > |-- |-- |-- |-- |-- |-- t03.metab.xlsx  
+> > |-- |-- |-- |-- |-- |--     ...  
+> > |-- |-- |-- |-- |-- |-- t23.metab.xlsx  
+> > |-- |-- |-- |-- |-- |-- t24.metab.xlsx  
+> > |-- |-- rice  
+> > |-- |-- |-- long_day  
+> > |-- |-- |-- |-- phyA  
+> > |-- |-- |-- |-- |-- off_sucrose_2020-06-03  
+> > |-- |-- |-- |-- |-- |-- t01.metab.xlsx  
+> > |-- |-- |-- |-- |-- |--     ...  
+> > |-- |-- |-- |-- |-- |-- t24.metab.xlsx  
+> >  
 > {: .solution}
 {: .challenge}
 
 > ## Must do: Document your strategy
 > Regardless of whether you are using long filenames or incorporating
-> some of the variables within the folder structure, document it!
+> some of the variables within the folder structure, document it!  
 > Always include a PROJECT_STRUCTURE (or README) file describing your file naming and folder organisation conventions.
 >
 {: .callout}
@@ -252,27 +248,27 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > Why do you think it is *recommended* layout and
 > suited for a computing project?
 > >
-> > .
-> > |-- CITATION
-> > |-- README
-> > |-- LICENSE
-> > |-- requirements.txt
-> > |
-> > |-- data
-> > |   |-- birds_count_table.csv
-> > |
-> > |-- doc
-> > |   |-- notebook.md
-> > |   |-- manuscript.md
-> > |   |-- changelog.txt
-> > |
-> > |-- results
-> > |   |-- summarized_results.csv
-> > |
-> > |-- src
-> > |   |-- sightings_analysis.py
-> > |   |-- runall.py
-> > |
+> > .  
+> > |-- CITATION  
+> > |-- README  
+> > |-- LICENSE  
+> > |-- requirements.txt  
+> > |  
+> > |-- data  
+> > |   |-- birds_count_table.csv  
+> > |  
+> > |-- doc  
+> > |   |-- notebook.md  
+> > |   |-- manuscript.md  
+> > |   |-- changelog.txt  
+> > |  
+> > |-- results  
+> > |   |-- summarized_results.csv  
+> > |  
+> > |-- src  
+> > |   |-- sightings_analysis.py  
+> > |   |-- runall.py  
+> > |  
 > >
 > {: .source}
 > > ## Solution
@@ -316,15 +312,25 @@ You should always check your institutional guidelines
 and what solutions are available in your organization.
 
 
+## Project files organization and FAIR guidelines
 
-## Project organization and FAIR guidelines
-Did you realise that the suggestions we made above mean that you are including valuable metadata as part of your folder and file names? As we mentioned in the [Introduction to Metadata episode](../04-intro-to-metadata), metadata provides valuable information for us and others to be able to interpret your research data.
 
-> ## Challenge - discussion (5 minutes)
+> ## FAIR Files (3+2 minutes)
 > In groups, discuss:
-> * how can planning project folder organisation and defining naming conventions help the process of FAIRification?
+> * how can strategy for folder organisation and naming convention
+> help in achieving FAIR data?
 {: .challenge}
 
+Have you realised that the following the above suggestions means
+including valuable metadata as part of your folder structure
+and file names?
+
+> ## Where to next
+> Bulk renaming of files can be done with the software such as
+> Ant Renamer, RenameIT or Rename4Mac.
+>
+> [Good enough practices in scientific computing (Wilson et al., 2017)](https://doi.org/10.1371/journal.pcbi.1005510)
+{: .callout}
 
 > ## Attribution
 > Content of this episode was created using the following references as inspiration:
