@@ -132,8 +132,10 @@ metadata describe, for example, the unit of analysis, collection method,
 sampling procedure, sample size, categories, variables, etc. Structural
 metadata have to be gathered by the researchers according to best
 practice in their research community and will be published together with
-the data. Descriptive and structural metadata should be added
-continuously throughout the project.
+the data.
+
+Descriptive and structural **metadata should be added
+continuously** throughout the project.
 
 
 > ## Where does data end and metadata starts?
@@ -239,7 +241,78 @@ are good places to start searching for a registry or a term.
 > > The metadata example contains genes IDs from The Arabidopsis Information Resource
 > > [TAIR](https://www.arabidopsis.org) and metabolites IDs from
 > > [KEGG](https://www.genome.jp/kegg/compound/)
+> >
+> {: .solution}
+{: .challenge}
+
+## Adding metadata to your experiments
+
+Good metadata are crucial for assuring re-usability of your outcomes.
+Adding metadata is also very time-consuming process if done manually,
+so collecting metadata should be done incrementally during your experiment.
+
+As we saw metadata can take many forms
+from as simple as including a ReadMe.txt file,
+by embedding them inside the Excel files,
+to using domain specific metadata standard and format.
+
+But, **what to include in the metadata**?
+
+For many assay methods and experiment types, there are defined recomendations
+and guidelines called **Minimal Information Standards**.
+
+> ## Minimal Information Standard
 >
+> The minimum information standard is a set of guidelines for reporting data
+> derived by relevant methods in biosciences.
+> If followed, it ensures that the data can be easily verified,
+> analysed and clearly interpreted by the wider scientific community.
+> Keeping with these recommendations also facilitates the foundation of structuralized
+> databases, public repositories and development of data analysis tools.
+> The individual minimum information standards are brought by the communities of cross-disciplinary
+> specialists focused on the problematic of the specific method used in experimental biology.
+>
+> Minimum Information for Biological and Biomedical Investigations [(MIBBI)](https://fairsharing.org/collection/MIBBI)
+> is the collection of the most known standards.
+>
+> [FAIRSharing](https://fairsharing.org/standards/) offers excellent search service
+> for finding standards
+>
+{: .callout}
+
+What can you do if there are no metadata standards defined for your
+data / field of research?
+
+Think about the minimum information that
+someone else (from your lab or from any other lab in the world) would
+need to know about your dataset to be able to work with it without any
+further inputs from you.
+
+**Think as a consumer** of your data not the producer!
+
+> ## What to include - discussion (5+5 minutes)
+>
+> Think of the data you generate in your projects,
+> and imagine you are going to share them.
+>
+> What information would another researcher need to understand or reproduce your data
+> (the structural metadata)?
+>
+> For example, we believe that any dataset should have:
+> * a name/title
+> * its purpose or experimental hypothesis
+>
+> Write down and compare your proposals, can we find some common elements?
+>
+> > ## Solution
+> > Some typical elements are:
+> > * biological material, e.g. Spciecies, Genotypes, Tissues type, Age, Health conditions
+> > * biological context, e.g. speciment growth, entrainment, samples prepartions
+> > * experimental factors and conditions, e.g. drug treatments, stress factors
+> > * specifics of data aquisition
+> > * specifics of data processing and analysis
+> >
+> {: .solution}
 {: .challenge}
 
 ## Metadata standards
@@ -293,7 +366,7 @@ resource is placed in a data repository.
 > Content of this episode was adapted from:
 > - [Metadata - FAIR data for climate sciences](https://escience-academy.github.io/Lesson-FAIR-Data-Climate/metadata/index.html).
 > - [Metadata - How to FAIR](https://howtofair.dk/how-to-fair/metadata/)
-> - [Data Tidiness](https://datacarpentry.org/organization-genomics/01-tidiness/index.html)
+> - [MIBBI](https://fairsharing.org/collection/MIBBI)
 {: .callout}
 
 {% include links.md %}
