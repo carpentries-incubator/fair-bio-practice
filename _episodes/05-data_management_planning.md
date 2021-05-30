@@ -1,7 +1,7 @@
 ---
 title: "It's all about planning"
-teaching: 14
-exercises: 16
+teaching: 10
+exercises: 12
 questions:
 - "What is the research data life cycle?"
 - "How to plan for FAIR sharing?"
@@ -13,8 +13,8 @@ objectives:
 keypoints:
 - "Data within a project go through a set of steps known as the research data life cycle."
 - "Planning can help make your data FAIR."
-- "Data management is a continuous process and should not be left till the end of a project."
-- "DMPs are the best way to prepare for new projects."
+- "Data management is a continuous process during a project."
+- "DMP is the best way to prepare for new project."
 ---
 
 ## The research data life cycle
@@ -133,7 +133,7 @@ to discuss folder structures, but, they should emphasize the **data safety
 > Working in pairs, think of your last paper (or project).
 > Pretend that you have a joined project that combines the outputs of both your papers/projects.
 >
-> Write a short DMP this joined project.
+> Write a short DMP for this **joined project**.
 >
 > Your DMP should contain the following three sections:
 >
@@ -142,13 +142,15 @@ to discuss folder structures, but, they should emphasize the **data safety
 > (for example ‘flow cytometry data’) as well as file formats and data volume.
 > these data will be stored under (include the meta data as well). Estimate the size of your data.
 >
-> 2. How you will store the date
+> 2. How you will store the data
 > Please describe how you will store and organize your data,
 > what metadata will you capture in a what form.
 > Tell how you or document the data during the duration of the project
 >
 > 3. How you will share the data
 > Please describe the strategies for data sharing, licensing and access information.
+>
+> **Remember it is a joined project**
 >
 > > ## Solution
 > > An example DMP can look like:
