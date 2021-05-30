@@ -222,18 +222,14 @@ capture some of those parameters.
 Establishing a system that allows you to access your files,
 avoid duplication and ensure that your data can be easily found
 needs planning.
+
 You can start by developing a logical folder structure. To do so, you need to take into account the following suggestions:
 
 - Use folders to group related files. A single folder will make it easy to locate them.
 - Name folders appropriately: use descriptive names after the areas of work to which they relate.
 - Structure folders hierarchically: use broader topics for your main folders and increase in specificity as you go down the hierarchy.
 - Be consistent: agree on a naming convention from the outset of your research project.
-- If you change the strategy, document it and update the files which followed the old convention.
 
-> ## Tip
-> Sometimes it is better to make separate folders for ongoing and
-> completed work.
-{: .callout}
 
 > ## Challenge (5 minutes)
 > Take a look at the folder structure recommended by the
@@ -285,6 +281,7 @@ The [Good enough practices in scientific computing](https://journals.plos.org/pl
 
 > ## After you have a plan
 > Your naming conventions might need some adjustments as the project progresses. Don't despair, just document it!
+> If you change the strategy, document it and update the files which followed the old convention
 {: .callout}
 
 ## Backup your project files and folders
