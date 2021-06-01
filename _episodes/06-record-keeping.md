@@ -47,28 +47,31 @@ In order to avoid data mismanagement and such unexplained discrepancies, it is i
 
 Before we start this session on good record keeping, it might be a good idea to make ourselves cup of tea. Here's a peer-reviewed protocol for making tea:
 <img src="../fig/06-handwritten-tea-protocol.jpg" alt="handwritten-tea-protocol" width="600"/>
+*Figure credits: Ines Boehm and Ben Thomas*
 
 ## Differences between analog and record keeping
 How did you find making your cup of tea from the above protocol?
-As you could see, one scientist put milk in before boiling water, another one put boiling water in before milk. Another couldn't find which type of milk was used. Whilst the steps can be followed to produce a cup of tea, the teas can vary wildly. Slight variations are acceptable, but such as in an experiment, it is *more important that steps can be repeated correctly* so that others can do the same. 
+As you could see, one scientist put milk in before boiling water, another one put boiling water in before milk. Another couldn't find which type of milk was used. Whilst the steps can be followed to produce a cup of tea, the teas can vary wildly. Slight variations are acceptable, but such as in an experiment, it is *more important that steps can be repeated correctly* so that others can do the same.
 
-Here is the same protocol typed out on [protocol.io](dx.doi.org/10.17504/protocols.io.buhknt4w). Which might you find easier to follow?
+Here is the same protocol typed out on [protocol.io](dx.doi.org/10.17504/protocols.io.buhknt4w). Which do you find easier to follow?
+
+Although digital protocols are the better of the two, analogue protocols certainly have their place. For example, it is often easier to make notes on analogue protocols which you can return to later. Additionally, your working environment may make it too risky to bring expensive technology (just in case), whereas pen and paper can be fine. In cases like these, a hybrid system is often best - where analogue notes are digitized. This can be the best of both worlds.
 
 > ## Task 
-> What are advantages and disadvantages of traditional analog record keeping vs. digital record keeping? Try to find at least a handful of advantages and disadvantages for each. With all of these, which system do you think is most advantageous?
+> What are advantages and disadvantages of traditional analog records vs. digital records? Try to find at least a handful of advantages and disadvantages for each. With all of these, which system do you think is most advantageous?
 >> ## Solution
->> **Advantages of traditional analog record keeping**
+>> **Advantages of traditional analog records**
 >> * Ability to directly draw on your records
 >> * works regardless of internet/power access
 >>
->> **Disadvantages of traditional analog record keeping**
+>> **Disadvantages of traditional analog records**
 >> * can be lost and/or damaged (not Findable or Accessible)
 >> * only in one location at any time (not Findable or Accessible)
 >> * handwriting can make it less intelligible
 >> * harder to edit/move elements around smoothly (not Interoperable)
 >> * can’t store most data types (e.g. imaging data) in a useable way (not Reusable)
 >>
->> **Advantages of digital record keeping**
+>> **Advantages of digital records**
 >> * Intelligible: can smoothly and easily move elements around to edit it
 >> * Findable and Accessible: can be shared instantly anywhere around the world, with anyone 
 >> * Interoperable: can be easily commented on by anyone anywhere
@@ -78,7 +81,7 @@ Here is the same protocol typed out on [protocol.io](dx.doi.org/10.17504/protoco
 >> * Reusable: can store protocols directly with other supporting data types (e.g. video explanations)
 >> * can you think of more? 
 >>
->> **Disadvantages of digital record keeping**
+>> **Disadvantages of digital records**
 >> * dependent on internet access and power (not Accessible)
 >> * some digital record keeping services charge a fee
 >> * risk of corruption if data is not backed up (either yourself or by the service used - not Reusable)
@@ -86,7 +89,7 @@ Here is the same protocol typed out on [protocol.io](dx.doi.org/10.17504/protoco
 {: .challenge}
 
 ## Why do we want to keep FAIR records?
-Focusing on FAIR this keeps our records Findable, Accessible, Interoperable/Intelligible as well as Re-usable. Accessibility that allows better reuse increases our citations and visibility in the field, digital record keeping increases the legibility of notes and provenance (tracking of dates and origins of work) allow for better reproducibility which we have discussed in the previous lesson.
+Focusing on FAIR this keeps our records Findable, Accessible, Interoperable/Intelligible as well as Re-usable. Accessibility that allows better reuse increases our citations and visibility in the field, digital record keeping increases the legibility of notes and provenance (tracking of dates and origins of work) allow for better reproducibility which we have discussed in the previous lesson. Additionally, greater accessibility affords accountability to the original creator of the work.
 We will now show you how easy it is to share records once they are online, and address some benefits that new repositories such as electronic lab notebooks (ELNs) or online protocols have. There are multiple repo's for ELNs and online protocols. We will discuss two free options that are easy to use: [Benchling](https://www.benchling.com/) and [procols.io](https://www.protocols.io/welcome) 
 If you have not created accounts yet for both of them, please do so now as you will need them for the following exercises.
 
@@ -94,18 +97,22 @@ If you have not created accounts yet for both of them, please do so now as you w
 ### Electronic lab notebooks
 By now you should be familiar with the concept of why digital record keeping is important, as this is ultimately more reproducible. It is self-explanatory that handwritten notes and laboratory notebook entries take more time to search when looking for an entry. Electronic lab notebooks allow organisation by project, and the search function, or filters, can quickly find what we are looking for. We will now show how to reuse a lab entry that has already been created by someone else. 
 
-> ## Create a lab-project on Benchling and clone a lab entry
+> ## ELN excercise:
 > To highlight how easy it is to reuse protocols someone else has used in their lab entry, integrate these into your electronic lab notebooks, and export these for e.g. printing we will be looking at the following [Benchling lab entry, making Breakfast](https://benchling.com/s/etr-SY8fi7L8ZIDSMCLCf92o).
 > ~~~
-> # Create a new project in Benchling and clone lab entries
+> # Re-use a published lab entry
 > 1. First within your own workspace click the big '+' (Create Project) right next to Projects in your Benchling workspace
 > 2. Call the project 'Breakfast', and add an appropriate description, click 'Create project'
 > 3. Click on the above 'Benchling lab entry' link bringing you to the public lab entry 'Eggs Florentine in Portobello Mushrooms'.
 > 4. Select the clock symbol on the right hand side underneath Share: Now you can see the history of the entry and changes that have previously been made to the document with a timestamp. If someone had tried to 'manipulate' data, you would be able to see this here. You also see the owner of the document.
 > 5. Click 'Clone from version'
 > 6. Select the 'Breakfast' folder to clone it to
->
-> # Reuse our existing breakfast records and export them
+> {: .source}
+{: .challenge}
+
+With your newly set up lab entry, play around with it to explore the interface. Add or remove some text, use the tool to embed a picture etc... You can add text beside the image to 'annotate' this appropriately for example. Explore the various things you can interact with to get an understanding of the interface on Benchling.
+ 
+> ## Adapting a protocol to your needs
 > 1. You have now accessed a digital record and want to reuse it to make your own breakfast. To show how reusable digital recors are we will first navigate through the cloned file you made in your project.
 > 2. Navigate to your Project 'Breakfast', you can tell you are in your Project, if your initials show in a red circle next to entries in the side bar. You should see the lab entry 'Eggs Florentine in Portobello Mushrooms', and the top bar above the title and toolbar should read 'Tea', 'Portobello Mushrooms and Spinach', 'Poached Egg and Hollandaise Sauce', 'Add Protocol', 'Notes', and 'Metadata'.
 > 3. Click through those tabs and you will see that in your notes you have your lab entry describing how breakfast was made with embedded graphics and a shopping list and current prices. The other three tabs describe the protocols that were used, and you can add additional protocols with the 'add protocol' tab. We want you to adapt the 'Tea' protocol to suit your ingredients and methods.
@@ -113,8 +120,12 @@ By now you should be familiar with the concept of why digital record keeping is 
 > 5. Once you have made all suggested change have a look at the history of the record (clock button), you can see the changes you have recently made, and you can see it still relates to the original document. It tells you what record it has been cloned from and when.
 > 6. Click the link to the original record. As you can see digital record keeping allows provenance, crediting the original author, but also allowing you to keep track of your sources.
 > 7. Navigate back to your lab entry in your project (your initials are a sign that you are in the right place).
->
-> # Export lab entries
+> {: .source}
+{: .challenge}
+
+You hopefully should have set your tea making protocol up so that it's just the way you like it. Moreover, it should have been easy to make the changes to the protocol. Looking at the history of the record allows you to see the original protocol from which you adapted, and linked your adaptation.
+
+> ## How easy it is to share your record
 > 1. Click the info icon on the right hand side underneath the clock symbol you used previously and select 'Export entry'
 > 2. Your export is now running, you will receive an email when the export is complete
 > 3. Click the link in the email to download your protocol as a .zip
@@ -124,11 +135,13 @@ By now you should be familiar with the concept of why digital record keeping is 
 > {: .source}
 {: .challenge}
 
+Now that you have your export you can easily share it with others and use it yourself elsewhere, while your digital record (and links to the original record) are maintained online. You can share the PDF that you have exported with others (or print it and store it the lab/workspace), or link them to your digital record, allowing them to make further changes if you wish.
+
 ### Electronic Protocols
 As you could see, Benchling has an integrated platform for protocols. But there are other repositories, such as protocols.io that we briefly mentioned beforehand, which have been developed to help make protocols FAIR. One can publish protocols with a DOI which has many benefits that we discussed in the previous lesson. Another strength is, that you can create a protocol, fork the original protocol if your lab started implementing small changes, and retain **both** versions that you can cite in your publications or share with your collaborators. 
 
 
-> ## Adapt protocols on protocols.io and export them
+> ## Adapt public protocols and retain provenance
 > To copy protocols from protocols.io, edit them and export them as a .pdf there are a few simple steps to follow. We will be using the [making a cup of tea protocol](dx.doi.org/10.17504/protocols.io.buhknt4w).
 > ~~~
 > # Fork the protocol, preserving the original for crediting
@@ -148,19 +161,27 @@ As you could see, Benchling has an integrated platform for protocols. But there 
 > 5. Click 'View', you will now see the reader view of your protocol. It clearly states underneath the title 'Forked from How to make a cup of tea' and the original protocol is linked. This allows clear identification of your source.
 > 6. Click 'Edit'
 >
-> # Export the forked protocol
+> # Optional: Export the forked protocol
 > 1. Click 'More' in the top tool-bar, select 'Export' > 'PDF' > 'To your computer' and click export (leave selections blank)
 > ~~~
 > {: .source}
 {: .challenge}
 
-## How to chose the right platform?
-There is more than a 100 platforms that provide services to host electronic lab notebooks or protocols, therefore it can seem quite daunting trying to find the right platform. There is some advice we can offer when looking for the right service. Make sure they are in compliance with departmental, institutional, and other regulatory and legal requirements (including where data is geographically located, and which types of data can and cannot be stored). You want an acceptable pricing model (is it free?), check if your institution has a subscription to any.
-What is the longevity of the ELN (is it a brand new ELN, or has it been established for a while now, i.e. is there a risk of the ELN folding & data being lost?).
-What is the ability to share & export entries, experience of colleagues, availability of support, integration with other relevant platforms (e.g. dropbox), and the potential for use with mobile devices if required?
-What is the user interface like? Does it feel intuitive or does it take you days to find what you are looking for. Check for operating system compatibility and real time collaboration. Preferably it should be Open Source.
+Now, if you go back to the original protocols.io protocol that you have forked from, and click on metrics, you will see how that views have increased. Additionally, if you click on 'Forks', it will show you that there are a multitude of private forks and if you click on one of these forks, e.g. 'Cup of tea (polish way)' you will be taken to the protocol. A particular perk of this is accessibility and accompanying accountability to the original creator of the work. 
 
-It is best to use a free version or trial version to test them and see which features you are missing and which ones you prefer. Luckily some dedicated people have created comprehensive pro- and con-lists that can be found on [splice-bio](https://www.splice-bio.com/best-eln-review-for-your-lab-2021/). Some of the highest rated ones are:
+## How to chose the right platform?
+There are more than a 100 platforms that provide services to host electronic lab notebooks or protocols, therefore it can seem quite daunting trying to find the right platform. There is some advice we can offer when looking for the right service. 
+* Make sure they are in compliance with departmental, institutional, and other regulatory and legal requirements (including where data is geographically located, and which types of data can and cannot be stored). 
+* You want an acceptable pricing model (is it free?), check if your institution has a subscription to any.
+* What is the longevity of the ELN (is it a brand new ELN, or has it been established for a while now, i.e. is there a risk of the ELN folding & data being lost?).
+* What is the ability to share & export entries, experience of colleagues, availability of support, integration with other relevant platforms (e.g. dropbox), and the potential for use with mobile devices if required?
+* What is the user interface like? Does it feel intuitive or does it take you days to find what you are looking for. 
+* Check for operating system compatibility and real time collaboration. 
+* Preferably it should be Open Source.
+
+The BioRDM team has put together a comprehensive summary of [ELNs on the University of Edinburgh Wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=463750271) where they test-ran a handful of ELNs for you so you can make a more informed choice.
+
+It is always best to use a free version or trial version to test an ELN first and see which features you are missing and which ones you prefer. Luckily plenty of dedicated people created comprehensive pro- and con-lists that can be found on [splice-bio](https://www.splice-bio.com/best-eln-review-for-your-lab-2021/). Some of the highest rated ones are:
 
 * Scinote (free)
 * Rspace
@@ -184,12 +205,12 @@ Accessibility of your protocols online allows to share them with collaborators w
 > * There are no advantageous to analogue record keeping. (F)
 > * Digital record keeping allows multiple people, anywhere on the planet, to view a protocol simultaneously. (T)
 > * Digitally kept records can be quickly and easily edited. (T)
-> * Digital records have automatic version controls; analog records cannot. (F)
+> * Version controls are automatically applied to digital records; analogue records cannot have version controls. (F)
 > * On balance, digital record keeping is more advantageous than analog record keeping. (T)
-> * At the University of Edinburgh, we’re required to use either Benchling or Protocols.io (F)
-> * People are not real scientists until they have made tea. (F)
+> * Scientists are required to use either Benchling or Protocols.io (F)
+> * Digital records are automatically assigned a DOI once published (F)
 > * A protocol is considered invalid unless it’s stored in an online database. (F)
-> * Digital records are generally easier to search than analog records. (T)
+> * Digital records are easier to search than analog records. (T)
 >
 >> ## Solution
 >> copied form above once the wording is corrected
@@ -200,6 +221,7 @@ Accessibility of your protocols online allows to share them with collaborators w
 
 >## Further Reading
 > [ELN Guide](https://www.scinote.net/electronic-lab-notebook-guide/)
+> [BioRDM - ELN resources](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=463750271)
 {: .callout}
 
 {% include links.md %}
