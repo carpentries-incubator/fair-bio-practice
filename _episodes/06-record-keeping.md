@@ -46,7 +46,9 @@ In order to avoid data mismanagement and such unexplained discrepancies, it is i
 {: .callout}
 
 Before we start this session on good record keeping, it might be a good idea to make ourselves cup of tea. Here's a peer-reviewed protocol for making tea:
+
 <img src="../fig/06-handwritten-tea-protocol.jpg" alt="handwritten-tea-protocol" width="600"/>
+
 *Figure credits: Ines Boehm and Ben Thomas*
 
 ## Differences between analog and record keeping
