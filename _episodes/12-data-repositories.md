@@ -107,7 +107,7 @@ So how do you go about finding a repository:
 - Check [Fairsharing recommendations](https://fairsharing.org/recommendations/?q=)
 	- alternatively, check the [Registry of research data repositories - re3data](https://www.re3data.org/)
 
-> ## Challenge 4. Fiding repository (4 minutes).
+> ## Challenge 4. Fiding a repository (4 minutes).
 >
 > a) Find a repo for data Z.
 > Z is in the Wellcome or publisher list ... easy.
@@ -146,8 +146,8 @@ You can evaluate the repositories by following this criteria:
 - policy and process: does it help you meet community standards of good practice and comply with policies stipulating data deposit? 
 
 An interesting take can be found at Peter Murray-Rust's blog post [Criteria for succesful repositories](https://blogs.ch.cam.ac.uk/pmr/2011/08/19/criteria-for-successful-repositories/).
-
-
+    
+    
 > ## Challenge 5, Wrap up discussion (3 minutes).
 > Discuss the following questions:
 > - Why is choosing a domain specific repositories over zenodo more FAIR?
