@@ -1,58 +1,83 @@
 ---
 title: "Public repositories"
-teaching: 0
-exercises: 0
+teaching: 10
+exercises: 20
 questions:
-- ""
-- ""
-- ""
+- "Where can we deposit and find research datasets?"
+- "What are general (research data) repositories?"
+- "What are specific (research data) repositories?"
+- "How do repositories help make research data FAIR?"
 objectives:
-- "Benefits of data repositories"
-- "Find suitable repository"
-- "Repos and FAIR"
+- "See the benefits of using research data repositories."
+- "Be able to find a suitable repository."
+- "Be able to differentiate between general and specific repositories."
+- "See how repositories help make research data FAIR."
 keypoints:
-- ""
-- ""
-- ""
+- "Repositories help researchers share their research data."
+- "Some repositories are general and others are more data-type specific."
+- "Repositories are key players in data reuse."
 ---
 
-> ## Excersize 1. The general repository
->
-> Have a look at the following data set in Zenodo, what elements make it FAIR.
->
->> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
+## What are research data repositories?
+Research data repositories are online repositories that enable the preservation, curation and publication of research 'products'. These repositories are mainly used to deposit research 'data'. However, the scope of the repositories is broader as we can also deposit/publish 'code' or 'protocols' (as we will see later).  
+Research outputs should be submitted to discipline/domain-specific repositories whenever it is possible. When such a resource does not exist, data should be submitted to a 'general' repository.
+Research data repositories are a key resource to help in data FAIRification. 
+
+> ## Challenge 1. The general repository (5 minutes).
+> Have a look at the following data set in Zenodo: [link to Zenodo perfect deposit]()  
+> Discuss: What elements make it FAIR?    
+>   
+> > ## Solution  
+> > The elements that make this deposit FAIR are:  
+> >   
+> > Findable:  
+> > - F1. (Meta)data are assigned a globally unique and persistent identifier - YES  
+> > - F2. Data are described with rich metadata (defined by R1 below)- YES  
+> > - F3. Metadata clearly and explicitly include the identifier of the data they describe - YES  
+> > - F4. (Meta)data are registered or indexed in a searchable resource - YES  
+> >   
+> > Accessible:  
+> > - A1. (Meta)data are retrievable by their identifier using a standardised communications protocol - YES  
+> > - A2.  Metadata are accessible, even when the data are no longer available - YES  
+> >   
+> > Interoperable:  
+> > - I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation. - YES  
+> > - I2. (Meta)data use vocabularies that follow FAIR principles - PARTIALLY  
+> > - I3. (Meta)data include qualified references to other (meta)data - YES  
+> >   
+> > Reusable:  
+> > - R1. (Meta)data are richly described with a plurality of accurate and relevant attributes - YES  
+> > 	- R1.1. (Meta)data are released with a clear and accessible data usage license - YES  
+> > 	- R1.2. (Meta)data are associated with detailed provenance - YES  
+> > 	- R1.3. (Meta)data meet domain-relevant community standards - YES/PARTIALLY  
+> >    
 > {: .solution}
 {: .challenge}
 
-> ## Excersize 2. Discovery issue
->
-> Can you easily find similar data sets in Zenodo? Can you easily find data interesting for you.
->> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
+> ## Challenge 2. Datasets discovery (4 minutes).  
+>  
+> Can you easily find similar data sets in Zenodo? Try to find an interesting dataset for you  
+>   
+> Hint 1: Verify the completeness/richness of the associated metadata. Is it complete? Are some bits missing?   
+> Hint 2: Does the dataset include a ReadMe.txt file?   
+>  
+> > ## Solution
+> > Zenodo is a good place to keep your data separate from paper. It gives access to all files, allowing you to cite the data as well (or instead of) the paper.  
+> > However, it is not good for disovery, and does not enforce most metadata!  
+> >   
 > {: .solution}
 {: .challenge}
 
-
-Expected conclussion: Zenodo is a good place to keep your data separate from paper, give access to all files, beining
-able to cite the data rather than paper. 
-But it is not good for disovery, and does not enforces any metadata.
-
-
-> ## Excersize 3. Domain specific repositories
+> ## Challenge 3. Domain specific repositories (4 minutes).
 > 
-> Select one of the following repositories based on your expertize/interests.
+> Select one of the following repositories based on your expertise/interests.
 >
 > - Have a look at the record X in the repor R1 (data type D1, domain D1)
 > - Have a look at the record Y in the repor R2 (data type D2, domain D2)
 > - Have a look at the record Z in the repor R3 (data type D3, domain D3)
 > - Have a look at the record W in the repor R4 (data type D4, domain D3)
 >
-> Report to the group, what advantages can you see in using the repo over a general repo like Zenodo.
+> Report to the group, what advantages can you see in using the a specific repositoy over a generalist repo like Zenodo.
 > 
 >> ## Solution
 >>
@@ -61,16 +86,28 @@ But it is not good for disovery, and does not enforces any metadata.
 > {: .solution}
 {: .challenge}
 
+## How do we choose a research data repository?
+As a general rule, your research needs to be deposited in discipline/data specific repository. If no specific repository can be found, then you can use a generalist repository. Having said this, there are tons of data repositories to choose from. Choosing one can be time consuming and challenging as well.
+So how do you go about finding a repository:
+- Check the publisher's / funder' recommended list of repositories, some of which can be found below:
+	- [BioMed Central / Springer Nature](https://www.springernature.com/gp/authors/research-data-policy/recommended-repositories)
+	- [eLife](https://submit.elifesciences.org/html/elife_author_instructions.html#policies)
+	- [Elsevier](https://www.elsevier.com/about/policies/research-data)
+	- [EMBO Press](https://www.embopress.org/page/journal/14602075/authorguide#datadeposition)
+	- [F1000 Research](https://f1000research.com/for-authors/data-guidelines)
+	- [GIGAscience - OUP](https://academic.oup.com/gigascience/pages/instructions_to_authors)
+	- [PLoS](https://journals.plos.org/plosbiology/s/data-availability#loc-recommended-repositories)
+	- [Scientific Data - Nature](https://www-nature-com.ezproxy.is.ed.ac.uk/sdata/policies/repositories)
+	- [Taylor and Francis](https://authorservices.taylorandfrancis.com/data-sharing-policies/repositories/)
+	- [BBSRC](https://bbsrc.ukri.org/research/resources/)
+	- [NERC](https://nerc.ukri.org/research/sites/environmental-data-service-eds/policy/)
+	- [Royal Society](https://royalsociety.org/journals/ethics-policies/data-sharing-mining/)
+	- [Wellcome Open Research](https://wellcomeopenresearch.org/for-authors/data-guidelines)  
+   
+- Check [Fairsharing recommendations](https://fairsharing.org/recommendations/?q=)
+	- alternatively, check the [Registry of research data repositories - re3data](https://www.re3data.org/)
 
-Finding a repository:
-- check the publishers / funders list (give the links)
-- Fairsharing
-
-You can evaluate the repositories by following criteria:
-- c1
-- c2
-
-> ## Excersize 4 Fiding repository
+> ## Challenge 4. Fiding repository (4 minutes).
 >
 > a) Find a repo for data Z.
 > Z is in the Wellcome or publisher list ... easy.
@@ -85,78 +122,47 @@ You can evaluate the repositories by following criteria:
 > {: .solution}
 {: .challenge}
 
-> ## Excersize 5, Wrap up discussion
+A list of UoE BioRDM's recommended data repositories can be found [here](https://www.wiki.ed.ac.uk/display/RDMS/Suggested+data+repositories).
+
+> ## What comes first? the repository or the metadata?
+> Finding repository first may help in deciding what metadata to collect and how!  
+>   
+{: .callout}  
+  
+> ## Extra features
+> It is also worth considering that some repositories offer extra features, such as running simulations or providing visualisation. For example, [FAIRDOMhub](https://fairdomhub.org/) can run model simulations and has project structures. Do not forget to take this into account when choosing your repository. Extra features might come in handy.  
+>  
+{: .callout}  
+  
+> ## Can GitHub be cited?  
+> To make your code repositories easier to reference in academic literature, you can create persistent identifiers for them. Particularly, you can use the data archiving tool in Zenodo to archive a GitHub repository and issue a DOI for it.  
+>  
+{: .callout}  
+
+## Evaluating a research data repository
+You can evaluate the repositories by following this criteria:
+- quality of interaction: is the interaction for purposes of data deposit or reuse efficient, effective and satisfactory for you?
+- take-up and impact: what can I put in it? Is anyone else using it? Will others be able to find stuff deposited in it? Is the repository linked to other data repositories so I don't have to search tehre as well? Can anyone reuse the data? Can others cite the data, and will depositing boost citations to related papers?  
+- policy and process: does it help you meet community standards of good practice and comply with policies stipulating data deposit? 
+
+An interesting take can be found at Peter Murray-Rust's blog post [Criteria for succesful repositories](https://blogs.ch.cam.ac.uk/pmr/2011/08/19/criteria-for-successful-repositories/).
+
+
+> ## Challenge 5, Wrap up discussion (3 minutes).
+> Discuss the following questions:
+> - Why is choosing a domain specific repositories over zenodo more FAIR?
+> - How can selecting a repository for your data as soon as you do an experiment (or even before!) can benefit you research and help your data become FAIR?
+> - What's your favourite research data repository? Why?
 >
-> Why using domain specific repo over zenodo is more FAIR?
-> How selecting a repo for your data as soon as you do experiment can benefit you research and being FAIR?
->
->> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
-> {: .solution}
-{: .challenge}
- 
-
-
------ The END
-
-
-
-
-
-
-Show domain specific vs general 
-(e.g. this omero based showcase datasets vs images in zenodo/fig share)
-(or biodare vs zenodo/fig)
-Both have problem that not having dois, or maybe the omero one has.
-Faridom hub vs zenodo. Fairdom hub can run model simulations! And has project structures
-maybe good to show
-
-Recommend the most obvious repos.
-
-Teach how to find a repo, that best way is to start with lists from publishers and funders,
-
-Fairsharing, shows toooooo many. How to choose then, what criteria to use (standards, funding)
-
-Finding repo first may help in deciding what metdata to collect and how.
-
-## I am a section
-
-With a text.
-
-![Figure 1. I am some figure](../fig/figure_file.jpg)
-
-*After [Figure source](https://www.figure.link/)*
-
-
-> ## I am a yellow info
->
-> And my text.
-{: .callout}
-
-
-~~~
-I am code
-~~~
-{: .source}
-
-
-> ## I am a problem
->
-> Defined here.
->
->> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
-> {: .solution}
 {: .challenge}
 
 
 > ## Attribution
-> Content of this episode was adopted after XXX et al.
-> [YYY](https://biodare2.ed.ac.uk).
+> Content of this episode was adapted or inspired by:.
+> - [FAIR principles](https://www.go-fair.org/fair-principles/)
+> - [BioRDM suggested data repositories](https://www.wiki.ed.ac.uk/display/RDMS/Suggested+data+repositories)
+> - [DCC - How can we evaluate data repositories?](https://www.dcc.ac.uk/news/how-can-we-evaluate-data-repositories-pointers-dryaduk)
+> - [Criteria for succesful repositories](https://blogs.ch.cam.ac.uk/pmr/2011/08/19/criteria-for-successful-repositories/)
 {: .callout}
 
 
