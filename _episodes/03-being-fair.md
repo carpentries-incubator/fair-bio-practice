@@ -1,7 +1,7 @@
 ---
 title: "Being FAIR"
-teaching: 0
-exercises: 0
+teaching: 25
+exercises: 25
 questions:
 - "How to get more value from your own data?"
 - "What are the FAIR guidelines?"
@@ -15,10 +15,11 @@ keypoints:
 - "FAIR assures easy reuse of data underlying scientific findings"
 ---
 
-Thanks to funding bodies policies that mandate Open Access,
-there is a wide implementation of Open Access principles which result in easy access
-to more recent biomedical publications.
-Unfortunately, the same cannot be said about data and software code
+We have seen how Open practices can benefit both scientific community as
+a whole and individual practitioner.
+The wide adoption of Open Access principles has resulted in an easy access
+to the recent biomedical publications.
+Unfortunately, the same cannot be said about data and software
 that accompanies those publications.
 
 > ## What is data
@@ -35,24 +36,25 @@ that accompanies those publications.
 >
 {: .callout}
 
-Let's have a look how difficult it is to access data from
-published biological papers.
+Let's have a look how challenging it can be to access and use
+data from published biological papers.
 
-> ## Impossible protocol
+> ## Impossible protocol (5+3)
 >
-> Imagine you have discovered a protein of interest during an RNA-seq or
-> proteomics experiment and are wanting to validate your data via a
-> western blot of your samples. That protein is Titin, the largest
-> protein in the body with a molecular weight of 3,800 kDa, and you are
-> now looking for protocols on how to best separate and transfer this
-> large protein. You found an antibody that has been validated in
-> western blots and immunofluorescence, have ordered it and are now
-> looking through those publications which have successfully used it.
-> Sigma Aldrich lists [this paper](https://doi.org/10.1002/acn3.50831)
-> which uses their antibody.
-> Can you find a complete protocol in their Methods under Western blot
-> analysis (p. 1312), where their reference (ref 17) leads you to another
-> publication?
+> You need to do a western blot to identify Titin proteins,
+> the largest proteins in the body, with a molecular weight of 3,800 kDa.
+> You found an antibody sold by Sigma Aldrich that has been validated
+> in western blots and immunofluorescence. Sigma Aldrich lists the
+> [Yu et al., 2019](https://doi.org/10.1002/acn3.50831)
+> paper as reference.
+>
+> Find details of how to separate and transfer this large protein in
+> the reference paper.
+>
+> Hint 1: Methods section has a Western blot analysis subsection.
+> Hint 2: Follow the references.
+>
+> Would you say that the methods was Findable? Accessible? Reusable?
 >
 >> ## Solution
 >>
@@ -74,8 +76,16 @@ published biological papers.
 
 > ## Impossible numbers
 >
-> Systems biologists usually require raw numerical data to build their models. However, those are sometimes not easy to find. It was not customary to include raw numerical data in biological papers. Take a look at the following example:
-> Try to find the numerical data behind the graph shown in [Figure 6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/figure/F6/) of [Sharrock RA and Clack T, 2002](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/). Is this possible?
+> Systems biologists usually require raw numerical data to build their models.
+> Take a look at the following example: Try to find the numerical data behind the
+> graph shown in [Figure 6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/figure/F6/)
+> which demonstrates changes in levels of phytochrome proteins from [Sharrock RA and Clack T, 2002](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/).
+>
+> Hint 1: Materials and methods describe quantification procedure
+> Hint 2: Supporting Information or Supplementary Materials sections often contain data files.
+>
+> How easy it was?
+>
 >
 {: .challenge}
 
@@ -162,7 +172,8 @@ There are general "data agnostic" repositories, for example:
 Or domain specific, for example:
 [UniProt](https://www.uniprot.org/) protein data,
 [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) sequence data,
-[MetaboLights](https://www.ebi.ac.uk/metabolights/) metabolomics data.
+[MetaboLights](https://www.ebi.ac.uk/metabolights/) metabolomics data
+and [GitHub](https://github.com/) for code.
 
 *We will cover repositories in more details in a later episode.*
 
@@ -210,17 +221,7 @@ Or domain specific, for example:
 
 #### Reusable
 
-1. Attach license files.
-Licenses explicitly declare conditions and terms by which data and software can be re-used.
-Here, we recommend:
-    * for data [Creative Commons Attribution (CC BY)](https://creativecommons.org/licenses/by/4.0/)
-license,
-    * for code a permissive open source license such
-as the [MIT](https://opensource.org/licenses/MIT),
-[BSD](https://opensource.org/licenses/BSD-2-Clause),
-or [Apache license](http://www.apache.org/licenses/).
-
-2. Describe your data well / provide good metadata
+1. Describe your data well / provide good metadata
     * write README file describing the data
     * user descriptive column headers for the data tables
     * tidy data tables, make them analysis friendly
@@ -231,7 +232,89 @@ or [Apache license](http://www.apache.org/licenses/).
 *Describing data well is the most challenging part of the data sharing process.
 We will cover this in more detail later on.*
 
-> ## FAIR and You
+
+2. Attach license files.
+Licenses explicitly declare conditions and terms by which data and software can be re-used.
+Here, we recommend:
+    * for data [Creative Commons Attribution (CC BY)](https://creativecommons.org/licenses/by/4.0/)
+license,
+    * for code a permissive open source license such
+as the [MIT](https://opensource.org/licenses/MIT),
+[BSD](https://opensource.org/licenses/BSD-2-Clause),
+or [Apache license](http://www.apache.org/licenses/).
+
+> ## Copyright and data
+>
+> Software code (the text) automatically gets the default
+> copyright protection
+> which prevents others from copying or modifying it.
+> Only by adding the explicit licence you can permit re-use by others.
+>
+> Data, being factual, cannot be copyrighted. **So why, do we need a licence?**
+>
+> While the data itself cannot be copyrighted,
+> the way how it is presented can be. The extend to which it is protected needs ultimately
+> to be settled by the court.
+>
+> The "good actors" will restrain from using your data to avoid "court" risks.
+> The "bad actors" will either ignore the risk or can afford the lawyers
+> fees.
+>
+{: .callout}
+
+
+
+> ## Achieving FAIR (2)
+>
+> Which part of **Findable, Accessible, Interoperable, Reusable**
+> seems to be the easiest to achieve by you and
+> which looks like the most challenging for data producers.
+>
+>> ## Solution
+>>
+>> *Accessible* is probably the easiest to achieve as it can
+>> be delivered by depositing to any of the general repositories.
+>> *Findable* as accessible by persistent identifiers (PIDs) is also easy
+>> as offered by the same repositories. However, *findable* in the sense of search
+>> results by some features and characteristics may not be so simple.
+>>
+>> *Interoperable* and *Reusable* are the most challenging as they require
+>> substantial effort and time to convert existing data into well documented
+>> and in suitable format.
+>>
+> {: .solution}
+{: .challenge}
+
+
+> ## Example of FAIR data (5+3)
+>
+> The Nucleotide database is a collection of sequences from several
+> sources, including GenBank, RefSeq, TPA and PDB.
+> Genome, gene and transcript sequence data provide the foundation for biomedical research and discovery.
+>
+> Have a look at record for myoglobin gen [https://www.ncbi.nlm.nih.gov/nuccore/AH002877.2](https://www.ncbi.nlm.nih.gov/nuccore/AH002877.2)
+>
+> Identify how each of F.A.I.R principles has been met.
+>
+> *Alternative records to check:*
+> *https://www.uniprot.org/uniprot/P42212 https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1*
+>
+>> ## Solution
+>>
+>> All entries are uniquely identified by a stable URL ('F'),
+>> that provides access to the record in a variety of formats including
+>> a web page, plain-text, FASTA, and GENBANK ('A', 'I').
+>> The record contains rich metadata (‘R’) that is both human-readable (HTML) and machine-readable (text) ('I').
+>> There search options that uses both records IDs and the rich metadata ('F').
+>> The graphical pane shows how the data are re-usable. Metadata uses ontological
+>> terms (e.g. taxonomy) and shared vocabularies (e.g. genbank features) ('I').
+>> Interlinking with other databases: UniProt, Pubmed ('I', 'R') enabling automated retrieval of records and cross-referencing information.
+>>
+> {: .solution}
+{: .challenge}
+
+
+> ## FAIR and You (5)
 >
 > The FAIR acronym is sometimes accompanied with the following labels:
 > * Findable - Citable
@@ -249,7 +332,11 @@ We will cover this in more detail later on.*
 >> * Data accessibility over the Internet using standard protocols can be
 >> easily monitored (for example using Google analytics). This results in metrics
 >> on data popularity or even geo-locations of data users.
->> * Data that is interoperable can be used across many different platforms and subsequently allows reuse of data. Additionally, use of accessible and broadly applicable vocabulary for knowledge representation make (meta)data more intelligible, which allows you to keep better track of your (meta)data and others who might not be in your field to use your data.  
+>> * Interoperable data can benefit the future you, for example you will be
+>> able to still read your data even when you no longer have access to the specialized,
+>> vendor specific software with which you worked with them before.
+>> Also the future you may not remember abreviations and ad-hoc conventions you used before
+>> (Intelligible).
 >> * Well documented data should contain all the details necessary to
 >> reproduce the experiments, helping the future you or someone taking over
 >> from you in the laboratory.
@@ -257,20 +344,29 @@ We will cover this in more detail later on.*
 > {: .solution}
 {: .challenge}
 
-> ## TODO example of FAIR data
->
-> Idea. Look at the record of X in Uniprot (link).
-> Identify how each of F.A.I.R principles has been met.
->
->> ## Solution
->>
->> Record has id which makes it Findable. It can downloaded in X formats
->> making it Accessible and Interoperable. TODO...
-> {: .solution}
-{: .challenge}
+## FAIR vs Open Science
+
+**FAIR does not mean Open**. Actually, FAIR guideline only requires
+that the metadata record is always accessible.
+For example, the existence of the data can be known (their metadata),
+the data can have easy to use PID to reference them, but the actual
+data files can only be downloaded after the login and authorization.
+
+However, if data are already in the FAIR form, i.e. accessible over the internet,
+in interoperable format and well documented, then it is almost
+effortless to "open" the dataset and make it available to the whole public.
+The data owner can do it any time when he no longer perceives oppening
+as a risk.
+
+At the same time, Open data which does not follow FAIR guidelines have
+little value. If they are not well described, not in open formats then they
+are not going to be re-used even if they were made "open" by posting them on some
+website.
 
 
-> ## FAIR Quiz
+
+
+> ## FAIR Quiz (2 ... run through break)
 >
 > Which of the following statements is true/false (T or F).
 >
