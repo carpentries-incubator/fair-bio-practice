@@ -427,5 +427,17 @@ Content of this episode was adopted after:
 > {: .solution}
 {: .challenge}
 
+
+> ## Attribution
+>
+> Content of this episode was adapted from:
+> - [Science is necessarily collaborative - The Biochemist article](https://portlandpress.com/biochemist/article/42/3/58/225220/Science-is-necessarily-collaborative).
+>
+> Further reading/links:
+> - [Challenges & benefits of OS](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000246)
+> - [Centre for Open Science](https://www.cos.io/)
+> - [Ted talk supporting OS](https://www.youtube.com/watch?v=c-bemNZ-IqA)
+{: .callout}
+
 {% include links.md %}
 
