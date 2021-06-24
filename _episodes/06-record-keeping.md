@@ -1,7 +1,7 @@
 ---
 title: "Record keeping"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 40
 questions:
 - "How and why to keep good quality records for experiments?"
 - "How to streamline and simplify record keeping and its maintenance with electronic lab notebooks and online protocols?"
@@ -16,38 +16,11 @@ keypoints:
 - ""
 - ""
 ---
-## Why do we need to keep good quality records?
-Good scientific practice includes good record keeping, which ensures not only transparency and reproducibility, but also accountability. One prime example of why this is necessary is the recent data scandal surrounding [Novartis' FDA approved gene therapy](https://www.biopharmadive.com/news/novartis-gene-therapy-application-contained-manipulated-data-fda-says/560346/) Zolgensma, for the fatal childhood motor neuron disease Spinal Muscular Atrophy (the most expensive treatment ever approved).
-Novartis submitted manipulated data, showing that the comparison of two versions of Zolgensma in Phase 1 and Phase 3 testing had similar therapeutic activity. 
-How can we prevent the occurrence of data manipulation such as this in the future, or how can we as a research community implement practices to make it easier to find manipulated records? FAIR record keeping, for example version control can help, as it shows what changes have been made when in electronic laboratory notebooks (ELNs), which will make it difficult to manipulate results such as this without leaving a trace.
 
-In order to avoid data mismanagement and such unexplained discrepancies, it is imperative to keep dated, accurate, complete and intelligible records of our experiments and the protocols we use. This means they should include enough detail for others to reproduce under ideally the same conditions. You are, legally (!!) the one responsible for your records, not your colleague, or your PI.
-
->## What designates a good record?
->Both protocols and laboratory records need to be detailed and kept accurate and complete. They should be accessible (physically and/or electronically) to others both short and long term. Regular back-ups on a cloud and physical hard-drive are necessary to ensure appropriate archiving. All your records should be kept in compliance with departmental, institutional, and other regulatory requirements, with special care given to human and animal research records. A few common guidelines of good record keeping for protocols and laboratory notebooks are the following:
->
-> **Protocols**
-> * who thought of the protocol if not you
-> * complete and detailed instructions describing why and how to do an experiment
-> * what special materials and instruments are being used and where they were obtained
-> * health and safety advice and how to dispose of waste
-> * allow repetition of your procedures and studies by yourself and others
->
-> **Laboratory Notebooks**
-> * contain all relevant details (what, when why and how you did it)
-> * who you are (the person creating the record)
-> * what project(s) is the record part of
-> * information on LOT numbers and batch numbers of cells and antibodies used
-> * what happened and what did not happen (data, including images)
-> * how you manipulated and analysed the results
-> * your interpretation (and the interpretations of others if important) and next steps in the project based on these results
-> * should be well organised for ease of navigation (indexed, labelled, catalogued)
-> * accurate and complete: include all irginal data and important study details (metadata) and successful and unsuccessful studies
-{: .callout}
-
+## Before we start...
 Before we start this session on good record keeping, it might be a good idea to make ourselves cup of tea. Here's a peer-reviewed protocol for making tea:
 <img src="../fig/06-handwritten-tea-protocol.jpg" alt="handwritten-tea-protocol" width="600"/>
-*Figure credits: Ines Boehm and Ben Thomas*
+*Figure credits: Ines Boehm and Ben Thomas*  
 
 ## Differences between analog and record keeping
 How did you find making your cup of tea from the above protocol?
@@ -57,7 +30,7 @@ Here is the same protocol typed out on [protocol.io](dx.doi.org/10.17504/protoco
 
 Although digital protocols are the better of the two, analogue protocols certainly have their place. For example, it is often easier to make notes on analogue protocols which you can return to later. Additionally, your working environment may make it too risky to bring expensive technology (just in case), whereas pen and paper can be fine. In cases like these, a hybrid system is often best - where analogue notes are digitized. This can be the best of both worlds.
 
-> ## Task 
+> ## Challenge (5 minutes)
 > What are advantages and disadvantages of traditional analog records vs. digital records? Try to find at least a handful of advantages and disadvantages for each. With all of these, which system do you think is most advantageous?
 >> ## Solution
 >> **Advantages of traditional analog records**
@@ -88,6 +61,35 @@ Although digital protocols are the better of the two, analogue protocols certain
 > {: .solution}
 {: .challenge}
 
+## Why do we need to keep good quality records?
+Good scientific practice includes good record keeping, which ensures not only transparency and reproducibility, but also accountability. One prime example of why this is necessary is the recent data scandal surrounding [Novartis' FDA approved gene therapy](https://www.biopharmadive.com/news/novartis-gene-therapy-application-contained-manipulated-data-fda-says/560346/) Zolgensma, for the fatal childhood motor neuron disease Spinal Muscular Atrophy (the most expensive treatment ever approved).
+Novartis submitted manipulated data, showing that the comparison of two versions of Zolgensma in Phase 1 and Phase 3 testing had similar therapeutic activity. 
+How can we prevent the occurrence of data manipulation such as this in the future, or how can we as a research community implement practices to make it easier to find manipulated records? FAIR record keeping, for example version control can help, as it shows what changes have been made when in electronic laboratory notebooks (ELNs), which will make it difficult to manipulate results such as this without leaving a trace.
+
+In order to avoid data mismanagement and such unexplained discrepancies, it is imperative to keep dated, accurate, complete and intelligible records of our experiments and the protocols we use. This means they should include enough detail for others to reproduce under ideally the same conditions. You are, legally (!!) the one responsible for your records, not your colleague, or your PI.
+
+>## What designates a good record?
+>Both protocols and laboratory records need to be detailed and kept accurate and complete. They should be accessible (physically and/or electronically) to others both short and long term. Regular back-ups on a cloud and physical hard-drive are necessary to ensure appropriate archiving. All your records should be kept in compliance with departmental, institutional, and other regulatory requirements, with special care given to human and animal research records. A few common guidelines of good record keeping for protocols and laboratory notebooks are the following:
+>
+> **Protocols**
+> * who thought of the protocol if not you
+> * complete and detailed instructions describing why and how to do an experiment
+> * what special materials and instruments are being used and where they were obtained
+> * health and safety advice and how to dispose of waste
+> * allow repetition of your procedures and studies by yourself and others
+>
+> **Laboratory Notebooks**
+> * contain all relevant details (what, when why and how you did it)
+> * who you are (the person creating the record)
+> * what project(s) is the record part of
+> * information on LOT numbers and batch numbers of cells and antibodies used
+> * what happened and what did not happen (data, including images)
+> * how you manipulated and analysed the results
+> * your interpretation (and the interpretations of others if important) and next steps in the project based on these results
+> * should be well organised for ease of navigation (indexed, labelled, catalogued)
+> * accurate and complete: include all irginal data and important study details (metadata) and successful and unsuccessful studies
+{: .callout}
+  
 ## Why do we want to keep FAIR records?
 Focusing on FAIR this keeps our records Findable, Accessible, Interoperable/Intelligible as well as Re-usable. Accessibility that allows better reuse increases our citations and visibility in the field, digital record keeping increases the legibility of notes and provenance (tracking of dates and origins of work) allow for better reproducibility which we have discussed in the previous lesson. Additionally, greater accessibility affords accountability to the original creator of the work.
 We will now show you how easy it is to share records once they are online, and address some benefits that new repositories such as electronic lab notebooks (ELNs) or online protocols have. There are multiple repo's for ELNs and online protocols. We will discuss two free options that are easy to use: [Benchling](https://www.benchling.com/) and [procols.io](https://www.protocols.io/welcome) 
@@ -97,7 +99,7 @@ If you have not created accounts yet for both of them, please do so now as you w
 ### Electronic lab notebooks
 By now you should be familiar with the concept of why digital record keeping is important, as this is ultimately more reproducible. It is self-explanatory that handwritten notes and laboratory notebook entries take more time to search when looking for an entry. Electronic lab notebooks allow organisation by project, and the search function, or filters, can quickly find what we are looking for. We will now show how to reuse a lab entry that has already been created by someone else. 
 
-> ## ELN excercise:
+> ## ELN excercise (5 minutes):
 > To highlight how easy it is to reuse protocols someone else has used in their lab entry, integrate these into your electronic lab notebooks, and export these for e.g. printing we will be looking at the following [Benchling lab entry, making Breakfast](https://benchling.com/s/etr-SY8fi7L8ZIDSMCLCf92o).
 > ~~~
 > # Re-use a published lab entry
@@ -112,7 +114,7 @@ By now you should be familiar with the concept of why digital record keeping is 
 
 With your newly set up lab entry, play around with it to explore the interface. Add or remove some text, use the tool to embed a picture etc... You can add text beside the image to 'annotate' this appropriately for example. Explore the various things you can interact with to get an understanding of the interface on Benchling.
  
-> ## Adapting a protocol to your needs
+> ## Adapting a protocol to your needs (6 minutes)
 > 1. You have now accessed a digital record and want to reuse it to make your own breakfast. To show how reusable digital recors are we will first navigate through the cloned file you made in your project.
 > 2. Navigate to your Project 'Breakfast', you can tell you are in your Project, if your initials show in a red circle next to entries in the side bar. You should see the lab entry 'Eggs Florentine in Portobello Mushrooms', and the top bar above the title and toolbar should read 'Tea', 'Portobello Mushrooms and Spinach', 'Poached Egg and Hollandaise Sauce', 'Add Protocol', 'Notes', and 'Metadata'.
 > 3. Click through those tabs and you will see that in your notes you have your lab entry describing how breakfast was made with embedded graphics and a shopping list and current prices. The other three tabs describe the protocols that were used, and you can add additional protocols with the 'add protocol' tab. We want you to adapt the 'Tea' protocol to suit your ingredients and methods.
@@ -125,7 +127,7 @@ With your newly set up lab entry, play around with it to explore the interface. 
 
 You hopefully should have set your tea making protocol up so that it's just the way you like it. Moreover, it should have been easy to make the changes to the protocol. Looking at the history of the record allows you to see the original protocol from which you adapted, and linked your adaptation.
 
-> ## How easy it is to share your record
+> ## How easy it is to share your record (4 minutes)
 > 1. Click the info icon on the right hand side underneath the clock symbol you used previously and select 'Export entry'
 > 2. Your export is now running, you will receive an email when the export is complete
 > 3. Click the link in the email to download your protocol as a .zip
@@ -141,7 +143,7 @@ Now that you have your export you can easily share it with others and use it you
 As you could see, Benchling has an integrated platform for protocols. But there are other repositories, such as protocols.io that we briefly mentioned beforehand, which have been developed to help make protocols FAIR. One can publish protocols with a DOI which has many benefits that we discussed in the previous lesson. Another strength is, that you can create a protocol, fork the original protocol if your lab started implementing small changes, and retain **both** versions that you can cite in your publications or share with your collaborators. 
 
 
-> ## Adapt public protocols and retain provenance
+> ## Adapt public protocols and retain provenance (10 minutes)
 > To copy protocols from protocols.io, edit them and export them as a .pdf there are a few simple steps to follow. We will be using the [making a cup of tea protocol](dx.doi.org/10.17504/protocols.io.buhknt4w).
 > ~~~
 > # Fork the protocol, preserving the original for crediting
@@ -181,22 +183,26 @@ There are more than a 100 platforms that provide services to host electronic lab
 
 The BioRDM team has put together a comprehensive summary of [ELNs on the University of Edinburgh Wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=463750271) where they test-ran a handful of ELNs for you so you can make a more informed choice.
 
-It is always best to use a free version or trial version to test an ELN first and see which features you are missing and which ones you prefer. Luckily plenty of dedicated people created comprehensive pro- and con-lists that can be found on [splice-bio](https://www.splice-bio.com/best-eln-review-for-your-lab-2021/). Some of the highest rated ones are:
+It is always best to use a free version or trial version to test an ELN first and see which features you are missing and which ones you prefer. Some often used ones are:
 
-* Scinote (free)
-* Rspace
-* Benchling (free)
-* Elabjournal
-* Labguru (free)
-* Labfolder
-* Labarchives
-* Mbook
-* Hivebench
+* Scinote (free version available)
+* Rspace (trial possible)
+* Benchling (free version available)
+* Labarchives (trial possible contacting the company)
+* WikiBench (works on top of Confluence)
+
+> ## ELN challenge (7 minutes)
+>  
+> Do you use an ELNs? Which one? What features do you like?  
+>  
+{: .challenge}
+
+
 
 ## How does good record keeping help us get FAIR ready?
 Accessibility of your protocols online allows to share them with collaborators who need them for a publication and a DOI of said protocols allows to cite them with credibility. Electronic lab records allow for easier re-usability and access of your data across multiple platforms. Changes in your records can be traced back, therefore giving accountability.
 
-> ## FAIR record keeping - Quiz
+> ## FAIR record keeping - Quiz (3 minutes)
 >
 > Which of the following statement are true/false.
 >
