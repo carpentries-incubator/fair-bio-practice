@@ -12,9 +12,9 @@ objectives:
 - "Use an existing protocol on protocols.io and adapt it to your own needs"
 - "Find out where to track the history of a record in Benchling and protocols.io"
 keypoints:
-- ""
-- ""
-- ""
+- "Good record keeping ensures transparency and reproducibility."
+- "Record keeping is an integral part of data FAIRification."
+- "Record keeping is key to good data management practices."
 ---
 
 ## Before we start...
@@ -26,7 +26,7 @@ Before we start this session on good record keeping, it might be a good idea to 
 How did you find making your cup of tea from the above protocol?
 As you could see, one scientist put milk in before boiling water, another one put boiling water in before milk. Another couldn't find which type of milk was used. Whilst the steps can be followed to produce a cup of tea, the teas can vary wildly. Slight variations are acceptable, but such as in an experiment, it is *more important that steps can be repeated correctly* so that others can do the same.
 
-Here is the same protocol typed out on [protocol.io](dx.doi.org/10.17504/protocols.io.buhknt4w). Which do you find easier to follow?
+Here is the same protocol typed out on [protocol.io](https://dx.doi.org/10.17504/protocols.io.buhknt4w). Which do you find easier to follow?
 
 Although digital protocols are the better of the two, analogue protocols certainly have their place. For example, it is often easier to make notes on analogue protocols which you can return to later. Additionally, your working environment may make it too risky to bring expensive technology (just in case), whereas pen and paper can be fine. In cases like these, a hybrid system is often best - where analogue notes are digitized. This can be the best of both worlds.
 
@@ -144,7 +144,7 @@ As you could see, Benchling has an integrated platform for protocols. But there 
 
 
 > ## Adapt public protocols and retain provenance (10 minutes)
-> To copy protocols from protocols.io, edit them and export them as a .pdf there are a few simple steps to follow. We will be using the [making a cup of tea protocol](dx.doi.org/10.17504/protocols.io.buhknt4w).
+> To copy protocols from protocols.io, edit them and export them as a .pdf there are a few simple steps to follow. We will be using the [making a cup of tea protocol](https://dx.doi.org/10.17504/protocols.io.buhknt4w).
 > ~~~
 > # Fork the protocol, preserving the original for crediting
 > 1. Open the link to the above protocol, as you can see we have assigned it its own DOI
@@ -207,20 +207,21 @@ Accessibility of your protocols online allows to share them with collaborators w
 > Which of the following statement are true/false.
 >
 > * Good record keeping ensures transparency and reproducibility. (T)
-> * The legal responsibility for record keeping falls on the principle investigator of a project. (F)
-> * There are no advantageous to analogue record keeping. (F)
-> * Digital record keeping allows multiple people, anywhere on the planet, to view a protocol simultaneously. (T)
+> * There are no advantages to using analog record keeping when compared to digital record keeping. (F)
+> * Digital records help people view a protocol simultaneously. (T)
 > * Digitally kept records can be quickly and easily edited. (T)
-> * Version controls are automatically applied to digital records; analogue records cannot have version controls. (F)
 > * On balance, digital record keeping is more advantageous than analog record keeping. (T)
-> * Scientists are required to use either Benchling or Protocols.io (F)
-> * Digital records are automatically assigned a DOI once published (F)
-> * A protocol is considered invalid unless it’s stored in an online database. (F)
 > * Digital records are easier to search than analog records. (T)
 >
->> ## Solution
->> copied form above once the wording is corrected
->>
+>> ## Solution  
+>>  
+>> * Good record keeping ensures transparency and reproducibility. (T)  
+>> * There are no advantages to using analog record keeping when compared to digital record keeping. (F)  
+>> * Digital records help people view a protocol simultaneously. (T)  
+>> * Digitally kept records can be quickly and easily edited. (T)  
+>> * On balance, digital record keeping is more advantageous than analog record keeping. (T)  
+>> * Digital records are easier to search than analog records. (T)  
+>>  
 > {: .solution}
 {: .challenge}
 
