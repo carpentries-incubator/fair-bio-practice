@@ -171,7 +171,7 @@ As you could see, Benchling has an integrated platform for protocols. But there 
 
 Now, if you go back to the original protocols.io protocol that you have forked from, and click on metrics, you will see how that views have increased. Additionally, if you click on 'Forks', it will show you that there are a multitude of private forks and if you click on one of these forks, e.g. 'Cup of tea (polish way)' you will be taken to the protocol. A particular perk of this is accessibility and accompanying accountability to the original creator of the work. 
 
-## How to chose the right platform?
+## How to choose the right platform?
 There are more than a 100 platforms that provide services to host electronic lab notebooks or protocols, therefore it can seem quite daunting trying to find the right platform. There is some advice we can offer when looking for the right service. 
 * Make sure they are in compliance with departmental, institutional, and other regulatory and legal requirements (including where data is geographically located, and which types of data can and cannot be stored). 
 * You want an acceptable pricing model (is it free?), check if your institution has a subscription to any.
@@ -227,7 +227,7 @@ Accessibility of your protocols online allows to share them with collaborators w
 
 
 >## Further Reading
-> [ELN Guide](https://www.scinote.net/electronic-lab-notebook-guide/)
+> [ELN Guide](https://www.scinote.net/electronic-lab-notebook-guide/)  
 > [BioRDM - ELN resources](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=463750271)
 {: .callout}
 
