@@ -24,7 +24,8 @@ Research outputs should be submitted to discipline/domain-specific repositories 
 Research data repositories are a key resource to help in data FAIRification. 
 
 > ## Challenge 1. The general repository (5 minutes).
-> Have a look at the following data set in Zenodo: [link to Zenodo perfect deposit]()  
+> Have a look at the following data set in Zenodo:
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5045374.svg)](https://doi.org/10.5281/zenodo.5045374)  
 > Discuss: What elements make it FAIR?    
 >   
 > > ## Solution  
