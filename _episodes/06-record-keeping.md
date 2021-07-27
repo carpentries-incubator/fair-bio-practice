@@ -224,4 +224,9 @@ Accessibility of your protocols online allows to share them with collaborators w
 > [BioRDM - ELN resources](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=463750271)
 {: .callout}
 
+>## For instructors: Advanced teaching
+> There is also so-called "Laboratory Information Management Systems" (LIMS) which allow to register barcoded samples in laboratories (e.g. covid tests). This allows easier management of workflows, result input and tracking of samples. These systems provide enhanced levels of record keeping and researchers might encounter them in particular in clinical research settings.  
+> 
+{: .callout}
+
 {% include links.md %}
