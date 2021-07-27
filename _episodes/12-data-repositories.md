@@ -24,7 +24,8 @@ Research outputs should be submitted to discipline/domain-specific repositories 
 Research data repositories are a key resource to help in data FAIRification. 
 
 > ## Challenge 1. The general repository (5 minutes).
-> Have a look at the following data set in Zenodo: [link to Zenodo perfect deposit]()  
+> Have a look at the following data set in Zenodo:
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5045374.svg)](https://doi.org/10.5281/zenodo.5045374)  
 > Discuss: What elements make it FAIR?    
 >   
 > > ## Solution  
@@ -68,21 +69,24 @@ Research data repositories are a key resource to help in data FAIRification.
 > {: .solution}
 {: .challenge}
 
-> ## Challenge 3. Domain specific repositories (4 minutes).
-> 
-> Select one of the following repositories based on your expertise/interests.
->
-> - Have a look at the record X in the repor R1 (data type D1, domain D1)
-> - Have a look at the record Y in the repor R2 (data type D2, domain D2)
-> - Have a look at the record Z in the repor R3 (data type D3, domain D3)
-> - Have a look at the record W in the repor R4 (data type D4, domain D3)
->
-> Report to the group, what advantages can you see in using the a specific repositoy over a generalist repo like Zenodo.
+> ## Challenge 3. Domain specific repositories (4 minutes).  
+>  
+> Select one of the following repositories based on your expertise/interests:  
+>  
+> - Have a look at mRNAseq accession 'E-MTAB-7933' in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-7933/)  
+> - Have a look at microscopy 'project-1101' in [IDR](https://idr.openmicroscopy.org/webclient/?show=project-1101)  
+> - Have a look at the synthethic part record 'SubtilinReceiver_spaRK_separated' within the 'bsu' collection in [SynBioHub](https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1)  
+> - Have a look at the proteomics record 'PXD013039' in [PRIDE](https://www.ebi.ac.uk/pride/archive/projects/PXD013039)  
+> - Have a look at the metabolomics record 'MTBLS2289' in [Metabolights](https://www.ebi.ac.uk/metabolights/MTBLS2289/descriptors)  
+> - Have a look at the scripts deposit 'RNA-Seq-validation' in [GitHub](https://github.com/PauloFlores/RNA-Seq-validation)  
+>  
+> Report to the group, what advantages can you see in using a specific repository over a generalist repository like Zenodo.
 > 
 >> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
+>> Some advantages are:
+>> *   The repository is more relevant to your discipline than a generalist one.
+>> *   Higher exposure (people looking for those specific types of data will usually first look at the specific repository).
+>> *   Higher number of citations (see above).
 > {: .solution}
 {: .challenge}
 
@@ -107,25 +111,23 @@ So how do you go about finding a repository:
 - Check [Fairsharing recommendations](https://fairsharing.org/recommendations/?q=)
 	- alternatively, check the [Registry of research data repositories - re3data](https://www.re3data.org/)
 
-> ## Challenge 4. Fiding a repository (4 minutes).
+> ## Challenge 4. Finding a repository (4 minutes).
 >
-> a) Find a repo for data Z.
-> Z is in the Wellcome or publisher list ... easy.
+> a) Find a repo for genomics data.  
+> b) Find a repo for microscopy data.  
+> Note to instructor: Fairsharing gives few options, people may give different answer follow up why they selected particular ones.
 >
-> b) Z is not on the list, 
-> Fairsharing gives few options, people may give different answer follow up why they selected particular ones.
->
->> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
-> {: .solution}
-{: .challenge}
+>> ## Solution  
+>>  
+>> a) GEO/SRA and ENA/ArrayExpress are good examples. Interestingly these repositories do not issue a DOI.  
+>> b) IDR and UoE Public Omero are good examples. Once again, these repositories do not issue a DOI.  
+> {: .solution}  
+{: .challenge}  
 
 A list of UoE BioRDM's recommended data repositories can be found [here](https://www.wiki.ed.ac.uk/display/RDMS/Suggested+data+repositories).
 
 > ## What comes first? the repository or the metadata?
-> Finding repository first may help in deciding what metadata to collect and how!  
+> Finding a repository first may help in deciding what metadata to collect and how!  
 >   
 {: .callout}  
   
