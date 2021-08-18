@@ -102,7 +102,7 @@ By now you should be familiar with the concept of why digital record keeping is 
 > ## ELN excercise (5 minutes):
 > To highlight how easy it is to reuse protocols someone else has used in their lab entry, integrate these into your electronic lab notebooks, and export these for e.g. printing we will be looking at the following [Benchling lab entry, making Breakfast](https://benchling.com/s/etr-SY8fi7L8ZIDSMCLCf92o).
 > ~~~
-> # Re-use a published lab entry
+> ### Re-use a published lab entry
 > 1. First within your own workspace click the big '+' (Create Project) right next to Projects in your Benchling workspace
 > 2. Call the project 'Breakfast', and add an appropriate description, click 'Create project'
 > 3. Click on the above 'Benchling lab entry' link bringing you to the public lab entry 'Eggs Florentine in Portobello Mushrooms'.
