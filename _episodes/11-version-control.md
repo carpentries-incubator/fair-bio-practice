@@ -13,7 +13,7 @@ objectives:
 - "Why to use version control system"
 - "Understand semantic versioning"
 keypoints:
-- "Version control systems help maintain good practices"
+- "Version control system helps maintaining good practices"
 - "Version control system keeps your work safe"
 ---
 
@@ -24,16 +24,18 @@ keypoints:
 >
 > Which of this issues can you relate to ?
 > 
-> * I have fifteen versions of this file and I don’t know which is which
+> * I have fifteen versions of this file and I don’t know which one to use
 > * I can’t remake this figure from last year
-> * I modified my code and something apparently unrelated does not work anymore
+> * I modified slightly my code in one place but everything stopped working
 > * I have several copies of the same directory because I'm worried about breaking something
-> * Somebody duplicated a record in a shared file with samples
+> * Somebody duplicated records in a shared file with samples
 > * You remember seing a data file but cannot find it anymore : is it deleted ? Moved away ?
 > * I tried multiple analysis and I don't remember which one I chose to generate my output data
-> * I have to merge changes to a paper from mails with collaborators
+> * I have to merge changes to our manuscript from 10 different emails with collaborators
+> * I had a short abstract(paragraph) in paper draft which I could use for my poster but it is no longer present in the final paper
 > * I accidently deleted a part of my work
 > * I came to an old project and forgot where I left it
+> * I reorganized my data files but it broke analisis pipeline and I don't know how to fix it
 > * I have trouble to find the source of a mistake in an experiment
 > * My directory is polluted with a lot of unused/temporary/old folders because I'm afraid of losing something important
 > * I made a lot of changes to my paper but only want to bring back one of paragraph
