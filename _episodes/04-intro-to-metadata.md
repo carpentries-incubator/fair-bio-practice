@@ -13,21 +13,12 @@ objectives:
 keypoints:
 - "Metadata provides contextual information so that other people can understand the data."
 - "Metadata is key for data reuse and complying with FAIR guidelines."
-- "Metadata should be added incrementally throught out the project"
+- "Metadata should be added incrementally through out the project"
 ---
 
 ## What is (or are) metadata?
 
-Simply put, metadata is the data about the data. Does this sound
-confusing? Let's clarify: metadata is the *description of your data*. It
-allows others to gain deeper understanding about your data and provides
-insight for its interpretation. Hence, you should consider your metadata
-as important as your data. Further, metadata plays a very important role
-in making your data FAIR. It has to be continuously added to your
-research data (not just at the beginning or end of your project!).
-Metadata can be produced in an automated way (e.g.: when you create a
-microscopy image usually the accompanying software saves metadata on it)
-or manually.
+Simply put, metadata is data about the data. Sound confusing? Lets clarify: metadata is the *description of data*. It allows deeper understanding of data and provides insight for its interpretation. Hence, your metadata should be considered as important as your data. Further, metadata plays a very important role in making your data FAIR. It should be continuously added to your research data (not just at the beginning or end of a project!). Metadata can be produced in an automated way (e.g. when you capture a microscopy image usually the accompanying software saves metadata as part of it) or manually.
 
 <ins>Let's take a look at an example:</ins>
 
@@ -40,9 +31,9 @@ which was deposited in a [Public Omero Server](https://publicomero.bio.ed.ac.uk/
 *Figure credits: María Eugenia Goya*
 
 .
-What information **can you guess** without the associated description (metadata)?
+What information **can you get** from the image, without the associated description (metadata)?
 
-Let's see the associated metadata to the image and the dataset to which it belongs:
+Let's see the associated metadata of the image and the dataset to which it belongs:
 
 > ## Image metadata
 >
@@ -115,36 +106,35 @@ This is a lot of information!
 
 According to [How to FAIR](https://howtofair.dk/) we can distinguish
 between three main types of metadata:
-* **Administrative metadata:** are data about a project or resource
-that are relevant for managing it; for example, project/ resource owner,
+* **Administrative metadata:** data about a project or resource
+that are relevant for managing it; E.g. project/resource owner,
 principal investigator, project collaborators, funder, project period,
 etc. They are usually assigned to the data, before you collect or create
 them.
-* **Descriptive or citation metadata:** are data about a dataset or
-resource that allow people to discover and identify it; for example,
+* **Descriptive or citation metadata:** data about a dataset or
+resource that allow people to discover and identify it; E.g.
 authors, title, abstract, keywords, persistent identifier, related
 publications, etc.
-* **Structural metadata:** are data about how a dataset or resource
-came about, but also how it is internally structured. Structural
-metadata describe, for example, the unit of analysis, collection method,
-sampling procedure, sample size, categories, variables, etc. Structural
-metadata have to be gathered by the researchers according to best
-practice in their research community and will be published together with
-the data.
+* **Structural metadata:** data about how a dataset or resource
+came about, but also how it is internally structured. E.g. the unit 
+of analysis, collection method, sampling procedure, sample size, 
+categories, variables, etc. Structural metadata have to be gathered by 
+the researchers according to best practice in their research community 
+and will be published together with the data.
 
 Descriptive and structural **metadata should be added
 continuously** throughout the project.
 
 
-> ## Where does data end and metadata starts?
+> ## Where does data end and metadata start?
 >
-> What is "data" and what is "metadata" is can be a matter of
+> What is "data" and what is "metadata" can be a matter of
 > perspective: Some researchers' metadata can be other researchers'
 > data.
 >
-> For example, a funding body is a typical administrative metadata,
-> however, it can be used to calculate numbers of public datasets per funder.
-> And then used to compare effect of different funders' policies on open practices.
+> For example, a funding body is categorised as typical administrative metadata,
+> however, it can be used to calculate numbers of public datasets per funder
+> and then used to compare effects of different funders' policies on open practices.
 >
 {: .callout}
 
@@ -185,11 +175,11 @@ One of the easiest examples is the problem of author disambiguation.
 
 > ## Open Researcher and Contributor ID (ORCID)
 >
-> Have you ever done a search in pubmed and found that you have
+> Have you ever searched yourself in pubmed and found that you have a
 > *doppelganger*? So how can you uniquely associate something you created
-> to just you and no other researcher that has the same name?
+> to just yourself and no other researcher with the same name?
 >
-> [ORCID](https://orcid.org/) iD is a free, unique, persistent identifier that you own and control—forever.
+> [ORCID](https://orcid.org/) is a free, unique, persistent identifier that you own and control—forever.
 > It distinguishes you from every other researcher across disciplines,
 > borders, and time.
 >
@@ -246,19 +236,19 @@ are good places to start searching for a registry or a term.
 ## Adding metadata to your experiments
 
 Good metadata are crucial for assuring re-usability of your outcomes.
-Adding metadata is also very time-consuming process if done manually,
+Adding metadata is also a very time-consuming process if done manually,
 so collecting metadata should be done incrementally during your experiment.
 
 As we saw metadata can take many forms
 from as simple as including a ReadMe.txt file,
 by embedding them inside the Excel files,
-to using domain specific metadata standard and format.
+to using domain specific metadata standards and formats.
 
 But,
-* **what to include in the metadata?**
-* **what public IDs to use?**
+* **What should be included in metadata?**
+* **What public IDs should be used?**
 
-For many assay methods and experiment types, there are defined recomendations
+For many assay methods and experiment types, there are defined recommendations
 and guidelines called **Minimal Information Standards**.
 
 > ## Minimal Information Standard
@@ -269,8 +259,8 @@ and guidelines called **Minimal Information Standards**.
 > analysed and clearly interpreted by the wider scientific community.
 > Keeping with these recommendations also facilitates the foundation of structuralized
 > databases, public repositories and development of data analysis tools.
-> The individual minimum information standards are brought by the communities of cross-disciplinary
-> specialists focused on the problematic of the specific method used in experimental biology.
+> Individual minimum information standards are brought by the communities of cross-disciplinary
+> specialists focused on issues of the specific method used in experimental biology.
 >
 > Minimum Information for Biological and Biomedical Investigations [(MIBBI)](https://fairsharing.org/collection/MIBBI)
 > is the collection of the most known standards.
@@ -280,13 +270,11 @@ and guidelines called **Minimal Information Standards**.
 >
 {: .callout}
 
-What can you do if there are no metadata standards defined for your
-data / field of research?
+What if there are no metadata standards defined for your data / field of research?
 
-Think about the minimum information that
-someone else (from your lab or from any other lab in the world) would
-need to know about your dataset to be able to work with it without any
-further inputs from you.
+Think about the minimum information that someone else (from your lab or from any 
+other lab in the world) would need to know  to be able to work with your dataset 
+without any further input from you.
 
 **Think as a consumer** of your data not the producer!
 
@@ -306,25 +294,24 @@ further inputs from you.
 >
 > > ## Solution
 > > Some typical elements are:
-> > * biological material, e.g. Spciecies, Genotypes, Tissues type, Age, Health conditions
-> > * biological context, e.g. speciment growth, entrainment, samples prepartions
+> > * biological material, e.g. Species, Genotypes, Tissue type, Age, Health conditions
+> > * biological context, e.g. speciment growth, entrainment, samples preparation
 > > * experimental factors and conditions, e.g. drug treatments, stress factors
-> > * specifics of data aquisition
+> > * specifics of data acquisition
 > > * specifics of data processing and analysis
 > >
 > {: .solution}
 {: .challenge}
 
 ## Metadata and FAIR guidelines
-Metadata provides extreme valuable information for us and others
-to be able to interpret, process, reuse and reproduce
-the research data it accompanies.
+Metadata provides extremely valuable information for us and others to be able to 
+interpret, process, reuse and reproduce the research data it accompanies.
 
 Because metadata are data about data, all of the FAIR principles i.e.
 Findable, Accessible, Interoperable and Reusable apply to metadata.
 
 Ideally, metadata should not only be machine-readable, but also interoperable
-so that they can interlink or reasoned about by computer systems.
+so that they can interlink or be reasoned about by computer systems.
 
 
 > ## Attribution

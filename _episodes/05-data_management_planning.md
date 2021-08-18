@@ -11,18 +11,17 @@ objectives:
 - "Learn to plan for different stages/steps of the data life cycle."
 - "Draft a simple DMP for your project."
 keypoints:
-- "Data within a project go through a set of steps known as the research data life cycle."
+- "Data within a project undergo a set of steps known as the research data life cycle."
 - "Planning can help make your data FAIR."
 - "Data management is a continuous process during a project."
-- "DMP is the best way to prepare for new project."
+- "A DMP is the best way to prepare for new project."
 ---
 
 ## The research data life cycle
-The Research Data Life Cycle is composed of a sequential series of stages/steps in which data is produced,
-processed and shared.
+The Research Data Life Cycle is composed of a sequential series of stages/steps in which data is produced, processed and shared.
 The arrows between circles represent the transitions that occur in research
-as work is finished and passed to the next stage/step.
-The re-use is the driving force of the cycle, cause as if you (or others) were
+as work is finished and passed onto the next stage/step.
+The re-use is the driving force of the cycle, because if you (or others) were
 not going to use the data you would not need to store it or even process it.
 
 
@@ -35,8 +34,7 @@ If you wait till the end, it will take a massive effort on your side and will be
 
 There are many actions/steps which you can take during your research workflow
 which would make it easier to share your data in a **Findable, Accessible,
-Interoperable and Reusable** way, while, helping
-you in your day to day activities.
+Interoperable and Reusable** way, while, helping you in your day to day activities.
 
 > ## Action plan challenge (4 + 4 minutes)
 > Where would you say the following actions belong in the Research Data Life Cycle?
@@ -45,23 +43,23 @@ you in your day to day activities.
 > * clarify usage rights
 > * give credit through citations
 > * use open source software
-> * attach PID to your data
+> * attach PIDs to your data
 > * attach descriptive metadata
-> * produce standard metadata
+> * produce standardised metadata
 > * backup your data
 > * create figures and plots in python/R
 > * organize your files in folders
-> * select data repository
+> * select data repositories
 > * add open licence
 > * link publications, data and methods
-> * create a template for assay description
+> * create a template for assay descriptions
 > * use institutional repositories
 > * use controlled vocabularies
 > * convert numerical data to csv
 > * track versions of files
-> * performing statistical analysis
+> * perform statistical analysis
 > * deposit datasets to Zenodo/Dryad
-> * record experiment details in Electronic Lab Notebook
+> * record experiment details in an Electronic Lab Notebook
 > * use github for your code
 > * ask someone to revise your project structure
 > * reformat and clean data tables
@@ -85,33 +83,33 @@ before you even start the experiments.
 It should show that you are thinking about what will happen
 with your data during and after the project. Which of the actions
 mentioned above you will take and how you will execute them. Finally,
-how you are going to achieve FAIR.
+how your project is going to be FAIR.
 
 ![Figure 5.3. Planning ahead](../fig/05-planning.png)
 *Figure credits: Tomasz Zieliński and Andrés Romanowski*
 
 You should think about:
-- how you will store the data
-- how you will organize and describe your data
-- how you will grant access to your data
-- how you will share your data
-- how you will preserve your data
-- how others can use your data
-- how much it will all cost
+- How you will store the data
+- How you will organize and describe your data
+- How you will grant access to your data
+- How you will share your data
+- How you will preserve your data
+- How others can use your data
+- How much it will all cost
 
-Most of the funders require that you present a DMP together with your grant applications.
-Some institutions ask eve their PhD students to prepare a DMP for their PhD project.
+Most funders require a DMP with grant applications. 
+Some institutions even ask their PhD students to prepare a DMP for their PhD project.
 
 
-You should think how you are going to manage your data (our outputs, in general)
+You should think how you are going to manage your data (or outputs, in general)
 for each of your projects (or even individual assay types). For individual project
 the main focus should be on:
-**what data will be produced, how they will be stored
+**what data will be produced, how will they be stored
 and organized, how you are going to describe them and track them**.
 For example what file formats will be generated, how you are going to
 name your files, and how you will link it to your laboratory notes.
 
-For grant applications, DMP tend to be less technical, for example no need
+For grant applications, DMPs tend to be less technical, for example no need
 to discuss folder structures, but, they should emphasize the **data safety
 (as preservation and access), data longevity, sharing, discovery and re-use**.
 
@@ -129,7 +127,7 @@ to discuss folder structures, but, they should emphasize the **data safety
 {: .callout}
 
 
-> ## Challenge (given as homework but starts in class 5 minutes)
+> ## Challenge (given as homework but starts in class - 5 minutes)
 > Working in pairs, think of your last paper (or project).
 > Pretend that you have a joined project that combines the outputs of both your papers/projects.
 >
@@ -140,12 +138,12 @@ to discuss folder structures, but, they should emphasize the **data safety
 > 1. What data you will acquire during the project.
 > Please describe the type of data you will generate
 > (for example ‘flow cytometry data’) as well as file formats and data volume.
-> these data will be stored under (include the meta data as well). Estimate the size of your data.
+> These data will be stored under (include the meta data as well). Estimate the size of your data.
 >
 > 2. How you will store the data
 > Please describe how you will store and organize your data,
-> what metadata will you capture in a what form.
-> Tell how you or document the data during the duration of the project
+> what metadata will you capture and in a what form.
+> Tell how you will document the data during the duration of the project
 >
 > 3. How you will share the data
 > Please describe the strategies for data sharing, licensing and access information.
@@ -171,11 +169,11 @@ to discuss folder structures, but, they should emphasize the **data safety
 > > Daily experimental work will be recorded using an electronic lab notebook (Benchling).
 > > We will use ISA templates from MetaboLights for MS data.
 > >
-> > All the research data will be stored using the University file system.
+> > All research data will be stored using the University file system.
 > > This is a high quality storage with guaranteed backup.
-> > Scripts/codes will be stored under version control using GitHun.
+> > Scripts/codes will be stored under version control using GitHub.
 > >
-> > (3) Metabolomics data will be made available through MetaboLights (https://www.ebi.ac.uk/metabolights/)
+> > (3) Metabolomics data will be made available through the MetaboLights (https://www.ebi.ac.uk/metabolights/)
 > > repository. The remaining datasets will be made available through Zenodo.
 > > The data will be released no later than a year after the project ends.
 > > All data will be made available under CC-BY and the code under MIT licensing.

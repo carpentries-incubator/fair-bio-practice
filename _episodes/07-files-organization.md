@@ -8,9 +8,9 @@ questions:
 objectives:
 - "Understand elements of good naming strategy"
 - "Evaluate pros and cons of different project organizations"
-- "Explain how files management helps in being FAIR"
+- "Explain how file management helps in being FAIR"
 keypoints:
-- "A good file name hints the file content"
+- "A good file name suggests the file content"
 - "Good project organization saves you time"
 - "Describe your files organization in PROJECT_STRUCTURE"
 ---
@@ -32,10 +32,8 @@ Consistent naming and organizing files in folders has two main goals:
 * being able to tell the file content without opening it
 
 ## Naming your files (and folders)
-One important and often overlooked aspect of organizing, sharing, and keeping track of data
-files is standardising naming.  
-It is important to develop naming conventions
-which permits encoding experimental factors which are important to the project.
+One important and often overlooked aspect of organizing, sharing, and keeping track of data files is standardised naming.  
+It is important to develop naming conventions which permit the encoding of experimental factors which are important to the project.
 
 File (folder) names should be consistent, meaningful to you and your collaborators,
 allow you to easily find what you are looking for,
@@ -50,8 +48,8 @@ and identify if something is missing.
 > All the files have been sorted by name and
 > demonstrate consequences of different naming strategies.
 >
-> For your information, to encode experimental details, following conventions were taken:
-> * phyB/phyA are sample genotype,
+> For your information, to encode experimental details, the following conventions were taken:
+> * phyB/phyA are sample genotypes,
 > * sXX is sample number
 > * LD/SD are different light conditions (long or short day)
 > * on/off are different media (on sucrose, off sucrose)
@@ -79,11 +77,11 @@ and identify if something is missing.
 > > ld_phyA_ons_t04_2020-08-12.norm.xlsx  
 > {: .source}
 >
-> * What are the problems with having date first?
+> * What are the problems with having the date first?
 > * How do different date formats behave once sorted?
 > * Can you tell the importance of leading 0 (zeros)?
 > * Is it equally easy to find all data from LD conditions as ON media?
-> * Can you spot problem with when using different cases?
+> * Can you spot the problem when using different cases (upper/lower)?
 > * Do you see benefits of keeping consistent lengths of each name parts?
 > * Do you see what happens when you mix conventions?
 >
@@ -95,9 +93,9 @@ and identify if something is missing.
 > > * Named months break the "expected" sorting, same as dates without leading 0
 > > * Without leading zeros, 's12' appear before s1 and s2
 > > * the first (and second) parts of the name are easiest to spot
-> > * last file is also from LD conditions but do apearch after SD, same with 'phya' genotypes
+> > * last file is also from LD conditions but do appear after SD, same with 'phya' genotypes
 > > * the last 3 file names are easiest to read as all parts appear on top of each other,
-> > thanks to using same 3 letter-lemgth codes ons and off
+> > thanks to using same 3 letter-length codes ons and off
 > > * The lack of consistency makes it very difficult to get data from related samples/conditions.
 > >
 > {: .solution}
@@ -107,22 +105,18 @@ Some things to take into account to decide on your naming convention are:
 
 - Does your convention make your files easy to sort
 and find by the most important feature?
-	- include any parameter that helps the name being as descriptive as
+- include any parameter that helps the name being as descriptive as
 	possible (i.e.: project, experiment, researcher, sample, organism,
 	date (range), data type, method)
-    - defined a standard vocabulary (shortcuts) for parameters
-	- decide which elements go in which order.
-
+- defined a standard vocabulary (shortcuts) for parameters
+- decide which elements go in which order.
 - Decide the convention when to use symbols, capitals, hyphens
 (e.g kebab-case, CamelCase, or snake_case).
-
-- Defined a maximum name length.
-Aim for filenames no longer than ~30 characters.
-
+- Define a maximum name length. Aim for filenames no longer than ~30 characters.
 - Document any abbreviation of your parameters.
 
 **Do's:**
-- for dates use the YYYY-MM-DD standard and place at the end of the file UNLESS you need to organise your files chronologically
+- for dates use the YYYY-MM-DD standard and place at the end of the file UNLESS you need to organize your files chronologically
 - include version number (if applicable), use leading zeroes (i.e.: v005 instead of v5).
 - make sure the 3-letter file format extension is present at the end of the name (e.g. .doc, .xls, .mov, .tif)
 - add a **PROJECT_STRUCTURE** (README) file in your top directory which details your naming convention, directory structure and abbreviations
@@ -131,7 +125,7 @@ Aim for filenames no longer than ~30 characters.
 - avoid using spaces (use _ or - instead)
 - avoid dots, commas and special characters (e.g. ~ ! @ # $ % ^ & * ( ) ` ; < > ? , [ ] { } ‘ “)
 - avoid using language specific characters (e.g óężé), unfortunately
-they still cause problems with may software or between operating systems (OS)
+they still cause problems with most software or between operating systems (OS)
 - avoid long names
 - avoid repetition, e.g if directory name is *Electron_Microscopy_Images*,
   and file *ELN_MI_IMG_20200101.img* then ELN_MI_IMG is redundant
@@ -234,8 +228,8 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > * Put project source code in the 'src' directory
 > * Put compiled programs in the 'bin' directory
 > * Name all files to reflect their content or function:
->   - Use names such as 'bird_count_table.csv', 'notebook.md', or 'summarized_results.csv'.
->   - Do not use sequential numbers (e.g., result1.csv, result2.csv) or a location in a final manuscript (e.g., fig_3_a.png), since those numbers will almost certainly change as the project evolves.
+> * Use names such as 'bird_count_table.csv', 'notebook.md', or 'summarized_results.csv'.
+> * Do not use sequential numbers (e.g., result1.csv, result2.csv) or a location in a final manuscript (e.g., fig_3_a.png), since those numbers will almost certainly change as the project evolves.
 >
 {: .callout}
 
@@ -296,16 +290,15 @@ You can start by developing a logical folder structure. To do so, you need to ta
 * Back up (almost) everything created by a human being or recorded by a machine
 as soon as it is created.
 * Always backup your files in 3 places, at least one should be off-site.
-* USB sticks are a failure-prone option and are not valid solution for backup of
+* USB sticks are a failure-prone option and are not a valid solution for backup of
 scientific data
 * A robust backup cannot be achieved manually
 
-Do you know how and where to keep 3 copies of your data
-which are always up to date?
+Do you know how and where to keep 3 copies of your data which are always up to date?
 
 Secure data preservation is very difficult to achieve without institutional support
 and know-how. One option is a cloud storage, but not all data
-may not be put in a public cloud.
+may be put in a public cloud.
 
 You should always check your institutional guidelines
 and what solutions are available in your organization.
@@ -320,9 +313,7 @@ and what solutions are available in your organization.
 > help in achieving FAIR data?
 {: .challenge}
 
-Have you realised that the following the above suggestions means
-including valuable metadata as part of your folder structure
-and file names?
+Have you realised that the above suggestions mean including valuable metadata as part of your folder structure and file names?
 
 > ## Where to next
 > Bulk renaming of files can be done with the software such as
