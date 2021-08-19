@@ -223,6 +223,12 @@ and thereby require less self-discipline for more reliable results.
 > version control system will detect the collision and require them to
 > resolve any conflicts. 
 {: .callout}
+
+![Figure 2. How VCS works](../fig/vc-play-changes.svg)  
+![](../fig/vc-play-changes2.svg)  
+![](../fig/vc-merges.svg)  
+*from: Version control with git (https://carpentries-incubator.github.io/git-novice-branch-pr/01-basics/)*
+
   
 Tool-based version control has several benefits over manual version
 control:
