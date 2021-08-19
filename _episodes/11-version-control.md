@@ -20,15 +20,26 @@ keypoints:
 ![Figure 1. Versioning Hell](../fig/ew-versions.png)  
 *from: Wit and wisdom from Jorge Cham (http://phdcomics.com/)*
 
+Our projects are not static we:
+* add new files
+* add data entry to files
+* modify manuscripts / methods
+* reformat / reorganize data tables
+* reanlyse data / regenerate figures
+* experiment with data cleaning / processing / visualization
+* share and co-edit data or text files
+
+All those actions introduce change to files of our project.
+
 > ## Problems with change
 >
-> Which of this issues can you relate to ?
+> Which of these issues can you relate to ?
 > 
 > * I have fifteen versions of this file and I don’t know which one to use
 > * I can’t remake this figure from last year
 > * I modified slightly my code in one place but everything stopped working
 > * I have several copies of the same directory because I'm worried about breaking something
-> * Somebody duplicated records in a shared file with samples
+> * Somebody added errnoes records in a shared file with samples, cannot find who and why
 > * You remember seing a data file but cannot find it anymore : is it deleted ? Moved away ?
 > * I tried multiple analysis and I don't remember which one I chose to generate my output data
 > * I have to merge changes to our manuscript from 10 different emails with collaborators
@@ -38,111 +49,28 @@ keypoints:
 > * I reorganized my data files but it broke analisis pipeline and I don't know how to fix it
 > * I have trouble to find the source of a mistake in an experiment
 > * My directory is polluted with a lot of unused/temporary/old folders because I'm afraid of losing something important
-> * I made a lot of changes to my paper but only want to bring back one of paragraph
+> * I made a lot of changes to my paper but want to bring back one of paragraph
 {: .challenge}
 
+When making change to files and their content, we:
+* loose the old content or whole files (hoping they won't be needed)
+* may introduce side effect, e.g. renaming file may break analysis pipeline
+* introduce multiple changes to multiple files which should be treated as one change, 
+e.g. new version of a figure and a paragraph that describes it
+* need to collade concurrent changes from collaborators, "resolve conflicts"
 
-Keeping track of changes that you or your collaborators make to data and
-software is a critical part of research. Being able to reference or
-retrieve a specific version of the entire project aids in
-reproducibility for you leading up to publication, when responding to
-reviewer comments, and when providing supporting information for
-reviewers, editors, and readers.
+Addressing those issues by tracking changes is called **version control**.
+Version control decouples the fact of making changes from the physicial changes itself.
+It identyfies (tags) collection of changes to files and reference them toghether,
+potentially permitting coming back in time to the state before or after that change and
+retrieve details about that change.
 
-We believe that the best tools for tracking changes are the version
-control systems that are used in software development, such as Git,
-Mercurial, and Subversion. They keep track of what was changed in a file
-when and by whom, and synchronize changes to a central server so that
-many users can manage changes to the same set of files.
-
-While these version control tools make tracking changes easier, they can
-have a steep learning curve. So, we provide two sets of recommendations:
-1. a systematic manual approach for managing changes and 
-2. version control in its full glory, 
-
-and you can use the first while working
-towards the second, or just jump in to version control.
-
-Whatever system you chose, we recommend that you:
-
-### Back up (almost) everything created by a human being as soon as it is created.
-
-This includes scripts and programs of all kinds, software packages that
-your project depends on, and documentation. A few exceptions to this
-rule are discussed below.
-
-### Keep changes small.
-
-Each change should not be
-so large as to make the change tracking irrelevant. For example, a
-single change such as "Revise script file" that adds or changes
-several hundred lines is likely too large, as it will not allow
-changes to different components of an analysis to be investigated
-separately. Similarly, changes should not be broken up into pieces
-that are too small. As a rule of thumb, a good size for a single
-change is a group of edits that you could imagine wanting to undo in
-one step at some point in the future.
-
-### Share changes frequently.
-
-Everyone working on
-the project should share and incorporate changes from others on a
-regular basis. Do not allow individual investigator's versions of
-the project repository to drift apart, as the effort required to
-merge differences goes up faster than the size of the difference.
-This is particularly important for the manual versioning procedure
-describe below, which does not provide any assistance for merging
-simultaneous, possibly conflicting, changes.
-
-### Create, maintain, and use a checklist for saving and sharing changes to the project.
-
-The list should include writing log messages that clearly explain
-any changes, the size and content of individual changes, style
-guidelines for code, updating to-do lists, and bans on committing
-half-done work or broken code. See [[gawande2011](https://books.google.co.uk/books/about/The_Checklist_Manifesto.html?id=qoZCRAAACAAJ&redir_esc=y)] for more on the
-proven value of checklists.
-
-### Store each project in a folder that is mirrored off the researcher's working machine
-
-* using a system such as Dropboxor 
-* a remote version control repository such as GitHub. 
-
-Synchronize that folder at least daily. It may take a few minutes, but that time is repaid the
-moment a laptop is stolen or its hard drive fails.
-
-> ## How to document a change
->
-> A good entry that documents changes should contain:
-> * date of the change
-> * author of the change
-> * list of affected files
-> * A short description of the nature of the introduced changes AND/OR motivation behind the change.
->
-> Examples of the descriptions are:
-> * added flow cytometry data for the control and starvation stressed samples
->
-> * updated matplot library to version 3.4.3 and regenerated figures
->
-> * added pane with protein localization to the Figure 3 and its discussion in the text
->
-> * reverted to the previous version of the abstract text as the manuscript reached word limits
-> 
-> * cleaned the strain inventory  
-> Recent freezer cleaning and ordering indicated a lot of problem with the strains data. The missing physical samples were removed from the table, the duplicated ids are marked for checking with PCR. The antibiotic resistence were moved from phenotype description to its own column.
->
-> * new regulation heatmap  
-> As suggested by Will I used the normalization and variance stabilization procedure from Hafemeister et al prior to clustering and heatmap generation
->
-> The largest the project (measured either in: collaborators, file numbers, or workflow complexity) the more detailed the change description should be.
-> While your personal project can get away with one liner descrptions, the largest projects should always contain inforamtion about motivation behind the change and 
-> what are the consequences. 
->
-{: .callout}
+It is possible to achieve it manually by a systematic approach for managing changes.
 
 ## Manual Versioning
 
 Our first suggested approach, in which everything is done by hand, has
-two additional parts:
+two main parts:
 
 1.  ***Add a file called `CHANGELOG.txt` to the project's
     `docs` subfolder***, and make dated
@@ -177,7 +105,7 @@ two additional parts:
         |       -- ...content of 'current' on Feb 19, 2016
 
     Here, the `project_name` folder is mapped to external storage (such
-    as Dropbox), `current` is where development is done, and other
+    as Dropbox), `current` is where the current work is done, and other
     folders within `project_name` are old versions.
 
     > **Data is Cheap, Time is Expensive**
@@ -189,14 +117,79 @@ two additional parts:
     > (discussed below), this approach costs less than the time it would
     > take to select files by hand for copying.
 
-This manual procedure satisfies the requirements outlined above without
+3.  ***Keep changes small.***  
+    Each change should not be
+    so large as to make the change tracking irrelevant. 
+	For example, a single change such as "Data for paper" that adds or changes
+	several differnt type of data sets and their analysis scripts and results 
+	is likely too large, as it will not allow
+	changes to different components of an analysis to be investigated separately.
+	Similarly, changes should not be broken up into pieces that are too small.   
+	As a rule of thumb, a good size for a single
+	change is a group of edits that you could imagine wanting to undo in
+	one step at some point in the future.
+
+4. ***Store each project in a folder that is mirrored off the researcher's working machine***  
+	Use a system such as Dropboxor or Google Drive and synchronize that folder at least daily. 
+	It may take a few minutes, but that time is repaid the moment a laptop is stolen or its hard drive fails.
+
+5. ***Share changes frequently.***  
+	Everyone working on the project should share and incorporate changes from others on a regular basis. 
+	Do not allow individual investigator's versions of the project repository to drift apart, 
+	as the effort required to merge differences goes up faster than the size of the difference.
+	
+
+> ## How to document a change
+>
+> A good entry that documents changes should contain:
+> * date of the change
+> * author of the change
+> * list of affected files
+> * A short description of the nature of the introduced changes AND/OR motivation behind the change.
+>
+> Examples of the descriptions are:
+> * added flow cytometry data for the control and starvation stressed samples
+>
+> * updated matplot library to version 3.4.3 and regenerated figures
+>
+> * added pane with protein localization to the Figure 3 and its discussion in the text
+>
+> * reverted to the previous version of the abstract text as the manuscript reached word limits
+> 
+> * cleaned the strain inventory  
+> Recent freezer cleaning and ordering indicated a lot of problem with the strains data. The missing physical samples were removed from the table, the duplicated ids are marked for checking with PCR. The antibiotic resistence were moved from phenotype description to its own column.
+>
+> * new regulation heatmap  
+> As suggested by Will I used the normalization and variance stabilization procedure from Hafemeister et al prior to clustering and heatmap generation
+>
+> The largest the project (measured either in: collaborators, file numbers, or workflow complexity) the more detailed the change description should be.  
+> While your personal project can get away with one liner descrptions, the largest projects should always contain inforamtion about motivation behind the change and 
+> what are the consequences. 
+>
+{: .callout}
+
+> ## Manual versioning
+>
+> Which of these issues the manual versioning helps to tackle?
+> 
+> * I have fifteen versions of this file and I don’t know which one to use
+> * I can’t remake this figure from last year
+> * I modified slightly my code in one place but everything stopped working
+> * I have several copies of the same directory because I'm worried about breaking something
+> * Somebody added errnoes records in a shared file with samples, cannot find who and why
+> * You remember seing a data file but cannot find it anymore : is it deleted ? Moved away ?
+> * I tried multiple analysis and I don't remember which one I chose to generate my output data
+> * I have to merge changes to our manuscript from 10 different emails with collaborators
+> * I made a lot of changes to my paper but want to bring back one of paragraph
+{: .challenge}
+ 
+ 
+This manual procedure satisfies the requirements of version tracking without
 needing any new tools. If multiple researchers are working on the same
 project, though, they will need to coordinate so that only a single
 person is working on specific files at any time. In particular, they may
 wish to create one change log file per contributor, and to merge those
 files whenever a backup copy is made.
-
-## Version Control Systems
 
 What the manual process described above requires most is
 self-discipline. The version control tools that underpin our second
@@ -204,58 +197,59 @@ approach—the one we use in our own projects–don't just accelerate the
 manual process: they also automate some steps while enforcing others,
 and thereby require less self-discipline for more reliable results.
 
-  1.  ***Use a version control
-      system ***, to manage changes to a
-      project.
+## Version Control Systems
 
-  Box 2 briefly explains how version control systems work. It's hard to
-  know what version control tool is most widely used in research today,
-  but the one that's most talked about is undoubtedly Git. This is largely because of
-  GitHub, a popular hosting site that combines the technical infrastructure for collaboration via Git with a
-  modern web interface. GitHub is free for public and open source projects
-  and for users in academia and nonprofits.
-  GitLab is a well-regarded alternative
-  that some prefer, because the GitLab platform itself is free and open
-  source. Bitbucket provides free hosting
-  for both Git and Mercurial repositories, but does not have nearly as
-  many scientific users.
+> ## How Version Control Systems Work
+> 
+> A version control system is a tool that keeps track of file changes for us and helps us version and merge our files. 
+> It allows you to decide which changes make up the next version, called a commit, and keeps useful metadata about them. 
+> The complete history of commits for a particular project and their metadata make up a repository. 
+>
+> A version control system stores snapshots of a project's files in a
+> repository. Users modify their working copy of the project, and then
+> save changes to the repository when they wish to make a permanent record
+> and/or share their work with colleagues. The version control system
+> automatically records when the change was made and by whom along with
+> the changes themselves.
+>
+> Repositories can be kept in sync across different computers facilitating collaboration among different people.
+>
+> Crucially, if several people have edited files simultaneously, the
+> version control system will detect the collision and require them to
+> resolve any conflicts. 
+{: .callout}
+  
+Tool-based version control has several benefits over manual version
+control:
 
-  > ## Box 2: How Version Control Systems Work
-  >
-  > A version control system stores snapshots of a project's files in a
-  > repository. Users modify their working copy of the project, and then
-  > save changes to the repository when they wish to make a permanent record
-  > and/or share their work with colleagues. The version control system
-  > automatically records when the change was made and by whom along with
-  > the changes themselves.
-  >
-  > Crucially, if several people have edited files simultaneously, the
-  > version control system will detect the collision and require them to
-  > resolve any conflicts before recording the changes. Modern version
-  > control systems also allow repositories to be synchronized with each
-  > other, so that no one repository becomes a single point of failure.
-  > Tool-based version control has several benefits over manual version
-  > control:
-  >
-  > -   Instead of requiring users to make backup copies of the whole
-  >     project, version control safely stores just enough information to
-  >     allow old versions of files to be re-created on demand.
-  >
-  > -   Instead of relying on users to choose sensible names for backup
-  >     copies, the version control system timestamps all saved changes
-  >     automatically.
-  >
-  > -   Instead of requiring users to be disciplined about completing the
-  >     changelog, version control systems prompt them every time a change
-  >     is saved. They also keep a 100% accurate record of what was
-  >     *actually* changed, as opposed to what the user *thought* they
-  >     changed, which can be invaluable when problems crop up later.
-  >
-  > -   Instead of simply copying files to remote storage, version control
-  >     checks to see whether doing that would overwrite anyone else's work.
-  >     If so, they facilitate identifying conflict and merging changes.
-  {: .callout}
+*   Instead of requiring users to make backup copies of the whole
+project, version control safely stores just enough information to
+allow old versions of files to be re-created on demand.
 
+*   Instead of relying on users to choose sensible names for backup
+copies, the version control system timestamps all saved changes
+automatically.
+
+*   Instead of requiring users to be disciplined about completing the
+changelog, version control systems prompt them every time a change
+is saved. They also keep a 100% accurate record of what was
+*actually* changed, as opposed to what the user *thought* they
+changed, which can be invaluable when problems crop up later.
+
+*   Instead of simply copying files to remote storage, version control
+checks to see whether doing that would overwrite anyone else's work.
+If so, they facilitate identifying conflict and merging changes.
+
+
+We believe that the best tools for tracking changes are the version
+control systems that are used in software development, such as Git. 
+Git keeps track of what was changed in a file
+when and by whom, and it can synchronize changes to a central server (GitHub) so that
+many users can manage changes to the same set of files. 
+
+Simplifying Git is a local program (like Word) that runs on your machine and knows how to track changes.
+Github is an online system that can communicate with Git and propagate your changes to other computers 
+(like OneDrive can do for Word documents).
 
 > ## Changelog in action
 >
@@ -284,50 +278,45 @@ and thereby require less self-discipline for more reliable results.
 {: .challenge}
 
 
-## What Not to Put Under Version Control
+Keeping track of changes that you or your collaborators make to data and
+software is a critical part of research. Being able to reference or
+retrieve a specific version of the entire project aids in
+reproducibility for you leading up to publication, when responding to
+reviewer comments, and when providing supporting information for
+reviewers, editors, and readers.
 
-The benefits of version control systems don't apply equally to all file
-types. In particular, version control can be more or less rewarding
-depending on file size and format. First, file comparison in version
-control systems is optimized for plain text files, such as source code.
-The ability to see so-called "diffs" is one of the great joys of version
-control. Unfortunately, Microsoft Office files (like the `.docx` files
-used by Word) or other binary files, e.g., PDFs, can be stored in a
-version control system, but it is not possible to pinpoint specific
-changes from one version to the next. Tabular data (such as CSV files)
-can be put in version control, but changing the order of the rows or
-columns will create a big change for the version control system, even if
-the data itself has not changed.
+Five reasons to use a version control system in research
+* Tell the story: The history of your commit messages will describe your project progress.
+* Travel back in time: a version control system makes it easy to compare different time points of your project smoothly. If you want to compare the stage of your project a year ago from now, it only takes one command-line of code.
+* Experiment with changes: if you want to make changes in a script, you can first make a “snapshot” of the project status before experimenting with changes. As a researcher, this might be a second nature for you!
+* Backup your work: by being able to linking your local repository (folder) to a distant online host (GitHub), a version control system backs up your precious work instantly.
+* Collaborate easily on projects: having a web-hosted synchronised version of your project will encourage collaboration with other researchers. Think about a colleague of yours being able to add a script to make a figure for your publication for instance.
+The repository will track his contribution and evidence his participation in the project.
 
-Second, raw data should not change, and therefore should not require
-version tracking. Keeping intermediate data files and other results
-under version control is also not necessary if you can re-generate them
-from raw data and software. However, if data and results are small, we
-still recommend versioning them for ease of access by collaborators and
-for comparison across versions.
-
-Third, today's version control systems are not designed to handle
-megabyte-sized files, never mind gigabytes, so large data or results
-files should not be included. (As a benchmark for "large", the limit for
-an individual file on GitHub is 100MB.) Some emerging hybrid systems
-such as [Git LFS](https://git-lfs.github.com/) put textual notes under
-version control, while storing the large data itself in a remote server,
-but these are not yet mature enough for us to recommend.
-
-> ## **Inadvertent Sharing**
+> ## Version Control System and FAIR
 >
-> Researchers dealing with data subject to legal restrictions that
-> prohibit sharing (such as medical data) should be careful not to put
-> data in public version control systems. Some institutions may provide
-> access to private version control systems, so it is worth checking
-> with your IT department.
+> Looking at the reasons to use a version control system (VCS) in researech, 
+> how using VCS helps in being FAIR.
 >
-> Additionally, be sure not to unintentionally place security
-> credentials, such as passwords and private keys, in a version control
-> system where it may be accessed by others.
-{: .callout}
+>> ## Solution
+>>
+>> *   Online respository is a Findable and Accessible resource.
+>> *   The 'telling story' and being able to travel back in time help in reuse and reproducibility.
+> {: .solution}
+{: .challenge}
 
-> ## Some git resources
+> ## Learning git
+>
+> If you do any form of scientific computing: Python, R, Matlap or even bash script you simply must learn git and
+> use it on daily bases (sorry no excuses).
+>
+> For lab-bench biologist git can have a steep learning curve. 
+> It was designed and developped for and by Linux developers so 
+> ... user experience has never been its top priority. 
+> We encourage biologist to follow the best practice of manual versioning and then try to see git in actions. 
+> We are sure that after manual experience you apreciate the benefits of git, and accept the learning overhead.
+>
+> Some git resources:
 >
 > - Software Carpentry git workshop https://swcarpentry.github.io/git-novice/
 > - Edinburgh Carpentries runs courses: https://edcarp.github.io/
@@ -337,6 +326,9 @@ but these are not yet mature enough for us to recommend.
 > - Learn git-game: https://github.com/git-game/git-game
 >
 {: .callout}
+
+## Semantic versioning
+
 
 
 > ## Attribution
