@@ -8,10 +8,9 @@ questions:
 - "What is git and github?"
 objectives:
 - "What are the problems with introducing changes to files"
-- "How to document changes"
-- "Making a good change description"
+- "Making a good file change description"
 - "Why to use version control system"
-- "Understand semantic versioning"
+- "Use of semantic versioning"
 keypoints:
 - "Version control system helps maintaining good practices"
 - "Version control system keeps your work safe"
@@ -296,22 +295,23 @@ reproducibility for you leading up to publication, when responding to
 reviewer comments, and when providing supporting information for
 reviewers, editors, and readers.
 
-Five reasons to use a version control system in research
-* Tell the story: The history of your commit messages will describe your project progress.
-* Travel back in time: a version control system makes it easy to compare different time points of your project smoothly. If you want to compare the stage of your project a year ago from now, it only takes one command-line of code.
-* Experiment with changes: if you want to make changes in a script, you can first make a “snapshot” of the project status before experimenting with changes. As a researcher, this might be a second nature for you!
-* Backup your work: by being able to linking your local repository (folder) to a distant online host (GitHub), a version control system backs up your precious work instantly.
-* Collaborate easily on projects: having a web-hosted synchronised version of your project will encourage collaboration with other researchers. Think about a colleague of yours being able to add a script to make a figure for your publication for instance.
-The repository will track his contribution and evidence his participation in the project.
 
 > ## Version Control System and FAIR
+>
+> Five reasons to use a version control system in research
+> * Tell the story: The history of your commit messages will describe your project progress.
+> * Travel back in time: a version control system makes it easy to compare different time points of your project smoothly. If you want to compare the stage of your project a year ago from now, it only takes one command-line of code.
+> * Experiment with changes: if you want to make changes in a script, you can first make a “snapshot” of the project status before experimenting with changes. As a researcher, this might be a second nature for you!
+> * Backup your work: by being able to linking your local repository (folder) to a distant online host (GitHub), a version control system backs up your precious work instantly.
+> * Collaborate easily on projects: having a web-hosted synchronised version of your project will encourage collaboration with other researchers. Think about a colleague of yours being able to add a script to make a figure for your publication for instance.
+> The repository will track his contribution and evidence his participation in the project.
 >
 > Looking at the reasons to use a version control system (VCS) in researech, 
 > how using VCS helps in being FAIR.
 >
 >> ## Solution
 >>
->> *   Online respository is a Findable and Accessible resource.
+>> *   Online respository is a Findable and Accessible resource (also Trackable).
 >> *   The 'telling story' and being able to travel back in time helps in reuse and reproducibility.
 > {: .solution}
 {: .challenge}
@@ -352,12 +352,12 @@ consumed by others) is called ***release***.
 If you are a user of a software/library, unilke when accessing manuscript, you may not always want to use the latest version of a software. For example, it may not support your old Windows version, it may changes how it process the data, or how its outputs formats. Updating software may introduce a lot of side effects to your pipeline.
 
 Moders software is built using a lot of external software libraries, the potential issues when using "newer version" of a library
-is well known and called "dependency hell". To help dealing with this problem, ***semantic versionsing*** has been proposed
+is well known and called "dependency hell". To help dealing with this problem, ***semantic versioning*** has been proposed
 (https://semver.org/)[https://semver.org/].
 
 In brief, it’s a way for numbering the software releases (naming particular version).
 
-![Figure 2. Semantic versioning](../fig/semver-def.png)  
+![Figure 3. Semantic versioning](../fig/semver-def.png)  
 *from: Semanitc versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
 
 Semantic Versioning is a 3-component number in the format of X.Y.Z, where :  
@@ -373,7 +373,7 @@ For example, your plot library can now plot in colors not only black and white o
 * Z stands for a Patch Versions: Versions for patches are used for bug fixes and security updates. 
 There are no functionality changes in the patch version upgrades. 
 
-![Figure 2. Semantic versioning](../fig/semver-upgrade.png)  
+![Figure 4. Semantic versioning](../fig/semver-upgrade.png)  
 *from: Semanitc versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
 
 When you increase Major version you zero the remaining ones, when you increase Minor you zero the patch number.
