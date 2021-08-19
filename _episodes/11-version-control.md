@@ -65,7 +65,10 @@ It identyfies (tags) collection of changes to files and reference them toghether
 potentially permitting coming back in time to the state before or after that change and
 retrieve details about that change.
 
-It is possible to achieve it manually by a systematic approach for managing changes.
+With version control, file names do not reflect their versions. Information about versions and changes 
+are kept separete from the files. 
+
+It is possible to achieve version control manually by a systematic approach for managing changes.
 
 ## Manual Versioning
 
@@ -139,6 +142,24 @@ two main parts:
 	as the effort required to merge differences goes up faster than the size of the difference.
 	
 
+
+
+> ## Manual versioning
+>
+> Which of these issues the manual versioning helps to tackle?
+> 
+> * I have fifteen versions of this file and I don’t know which one to use
+> * I can’t remake this figure from last year
+> * I modified slightly my code in one place but everything stopped working
+> * I have several copies of the same directory because I'm worried about breaking something
+> * Somebody added errnoes records in a shared file with samples, cannot find who and why
+> * You remember seing a data file but cannot find it anymore : is it deleted ? Moved away ?
+> * I tried multiple analysis and I don't remember which one I chose to generate my output data
+> * I have to merge changes to our manuscript from 10 different emails with collaborators
+> * I made a lot of changes to my paper but want to bring back one of paragraph
+{: .challenge}
+ 
+
 > ## How to document a change
 >
 > A good entry that documents changes should contain:
@@ -167,22 +188,6 @@ two main parts:
 > what are the consequences. 
 >
 {: .callout}
-
-> ## Manual versioning
->
-> Which of these issues the manual versioning helps to tackle?
-> 
-> * I have fifteen versions of this file and I don’t know which one to use
-> * I can’t remake this figure from last year
-> * I modified slightly my code in one place but everything stopped working
-> * I have several copies of the same directory because I'm worried about breaking something
-> * Somebody added errnoes records in a shared file with samples, cannot find who and why
-> * You remember seing a data file but cannot find it anymore : is it deleted ? Moved away ?
-> * I tried multiple analysis and I don't remember which one I chose to generate my output data
-> * I have to merge changes to our manuscript from 10 different emails with collaborators
-> * I made a lot of changes to my paper but want to bring back one of paragraph
-{: .challenge}
- 
  
 This manual procedure satisfies the requirements of version tracking without
 needing any new tools. If multiple researchers are working on the same
@@ -261,7 +266,7 @@ Github is an online system that can communicate with Git and propagate your chan
 > * what makes them good changelog
 > * what could be improved
 >
-> Think what would be the most dificult feature to replicate with manual version control?
+> Think which are the most dificult features to replicate with manual version control?
 >
 >> ## Solution
 >> The good things:
@@ -301,7 +306,7 @@ The repository will track his contribution and evidence his participation in the
 >> ## Solution
 >>
 >> *   Online respository is a Findable and Accessible resource.
->> *   The 'telling story' and being able to travel back in time help in reuse and reproducibility.
+>> *   The 'telling story' and being able to travel back in time helps in reuse and reproducibility.
 > {: .solution}
 {: .challenge}
 
@@ -327,13 +332,132 @@ The repository will track his contribution and evidence his participation in the
 >
 {: .callout}
 
-## Semantic versioning
+## Semantic versioning (Optional)
 
+Although we recommend to record small changes, often a particular point in time
+(the set of changes) has its logical meaning. 
 
+Probably all of us made folders: submission, revision 1, revision 2
+when publishing an article. Each containing the complete set of files. 
+
+In software engineering terminology, such "oficial" point in time (especially if it is meant to be
+consumed by others) is called ***release***.
+
+If you are a user of a software/library, unilke when accessing manuscript, you may not always want to use the latest version of a software. For example, it may not support your old Windows version, it may changes how it process the data, or how its outputs formats. Updating software may introduce a lot of side effects to your pipeline.
+
+Moders software is built using a lot of external software libraries, the potential issues when using "newer version" of a library
+is well known and called "dependency hell". To help dealing with this problem, ***semantic versionsing*** has been proposed
+(https://semver.org/)[https://semver.org/].
+
+In brief, it’s a way for numbering the software releases (naming particular version).
+
+![Figure 2. Semantic versioning](../fig/semver-def.png)  
+*from: Semanitc versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
+
+Semantic Versioning is a 3-component number in the format of X.Y.Z, where :  
+
+* The leftmost number X denotes a major version. Major version introduces "braeking changes",
+ie changes will affect other software that interacts with it. For example, if the file format for inputs or outputs changes it is a breaking change, as the existing files cannot be read (in case of input change) or the outpus files cannot be read the same way by consumer. Another exapmles are renaming program functions or changing their call parameters.
+
+* Y stands for a minor version. It is used for the release of new functionality in the system. 
+When you increase the minor version, you communicate that the software can be used exactly as the old version but it
+also offers some new features. 
+For example, your plot library can now plot in colors not only black and white or the new version of software can output the results to both Excel and CSV files rather than just CSV. 
+
+* Z stands for a Patch Versions: Versions for patches are used for bug fixes and security updates. 
+There are no functionality changes in the patch version upgrades. 
+
+![Figure 2. Semantic versioning](../fig/semver-upgrade.png)  
+*from: Semanitc versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
+
+When you increase Major version you zero the remaining ones, when you increase Minor you zero the patch number.
+
+Having "." between major, minor and patch assures that when lexically sorted, major version will "dominate" minor, and minor patch number, see the sorted releases:
+
+	1.91.12
+	1.91.8
+	2.13.3-alpha 
+	2.14-alpha 
+	2.15-beta
+	3.0.923
+ 
+Semantic versioning permits dependency software to automatically choose the most recent version of a library, 
+or automatically update libary to a patched version, while avoiding problems with changing to new major release. 
+
+While semantic versioning is mainly used for software, it is also adopoted for datasets or collaborative documents,
+as it communicates the *serverity of changes*. For exaple if you as coauthor read: `manuscript.2.1.5.docx` and now there is `manuscript.2.1.10.docx` you probably dont need to do anything, while `manuscript.3.0.10.docx` should capture your attention.
+
+For data and documents, often only major.minor numbers are used.
+
+> ## Semantic versioning quiz
+>
+> 1. Which of the library version is the latest:
+> * a) 0.12.4
+> * b) 1.1.0
+> * c) 1.12.3-alpha
+> * d) 1.12.2
+>
+> 2. You use library fair.2.3.1 to automaticaly upload your data after analysis.
+> You found out that there is avaialble new versin of the library fair.4.3.1. 
+> Which situation is the most probable:
+> * a) fair.4.3.1 uploads data twice as fast as fair.2.3.1
+> * b) you need to reserve time to test the new version and adapot your analysis pipeline to work with it
+> * c) both version offer the same features and bug fixes as they have the same minor/path version 3.1
+>
+> 3. You developed code that helps to plot detrended and normalized data, the last release has version 1.2.1.
+> You added Z-score to the available normalization methods and fixed the spelling errors in the user messages. 
+> Which version number you should give to the new realease:
+> * a) 2.0.0
+> * b) 1.3.0
+> * c) 1.3.2
+> * d) 1.2.2
+> * e) 2.2.1
+>
+> 4. Your group releases data about studied cancer patients following semantic versioning. 
+> The last data sets is realeased as 1.11, you added data from a new patient,  
+> what version should you use:
+> * a) 1.12
+> * b) 2.11
+> * c) 2.0
+>
+> 5. You were asked to better anonimize the above cancer data (v1.11) in future realses. 
+> Instead of data and time of patient visit you
+> realease only year, the hospital names has been encoded and patient age has been obscured by random noise.  
+> What version should you use:
+> * a) 1.12
+> * b) 2.11
+> * c) 2.0
+>
+>> ## Solution
+>>
+>> 1. c
+>> 2. b
+>> 3. b
+>> 4. a
+>> 5. c
+>> 
+> {: .solution}
+{: .challenge}
+
+***Remember*** semantic versioning it is only a convention, there is no guarantee that updating to next patch version 
+won't break your pipeline.
+
+> ## Semantic versioning and FAIR
+>
+> How semantic versioning helps being FAIR
+>
+>> ## Solution
+>>
+>> Release version helps to be findable, the semantic notations helps in achieving interoperability, reuse and reproducibility.
+>> 
+> {: .solution}
+{: .challenge}
 
 > ## Attribution
-> Content of this episode was adopted after Wilson et al.
+> * Majority of the content of this episode was adopted after Wilson et al.
 > [Good Enough Practices for Scientific Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing).
+> * Semantic annotations after (Parikshit Hooda)[https://www.geeksforgeeks.org/introduction-semantic-versioning/]
+>
 {: .callout}
 
 
