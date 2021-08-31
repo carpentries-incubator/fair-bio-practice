@@ -131,10 +131,14 @@ White et al, 2013, explain good choices for indicating null values for different
 ![White et al.](../fig/null_values_table_1.jpg)
 
 
-### <a name="formatting"></a> 5. Using formatting to convey information
+### <a name="formatting"></a> 5. Using formatting to convey information organizing data
 
 Never highlight cells, rows or columns that should be excluded from an analysis,
-or to mark particular properties/conditions as in our example files.
+or to mark particular properties/conditions.
+
+In our example files information about light conditions is only encoded as a color.
+Formatting information is not available to analysis software and alsmost ceratinly will be lost during
+processing.
 
 All the information should be encoded as a field value, for example in columns like:
 condition, calibrated,
@@ -145,7 +149,9 @@ not distract) but no information should be lost if the data is exported to plain
 
 If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise
 your computer’s ability to see associations in the data.
-Never merge cells, as it will make your data unreadable by statistics software.
+
+**Never merge cells, as it will make your data unreadable by statistics software**.
+Don't leave blank rows to indicate separations in data
 
 ## <a name="units"></a> 6. Placing comments or units in cells
 
@@ -169,7 +175,13 @@ This will limit the ways in which you can analyze your data.
 Design your data sheet to include this information. For example, include one column for age of
 individuals and a separate column for sex.
 
-## <a name="field_name"></a> 8. Using problematic field names
+## <a name="consistency"></a> 8. Inconsistency in used values
+
+Using "synonyms" or alternatives to describe the same values.
+
+For example: `E. Coli`, `EColi`, `Escherichia coli` in the same table
+
+## <a name="field_name"></a> 9. Using problematic field names
 Choose descriptive field names, but be careful not to include spaces, numbers, or **special characters** of any kind (incluiding natinal characters: óęłń).
 Spaces can be misinterpreted by parsers that use whitespace as delimiters and
 some programs don’t like field names that are text strings that start with numbers.
@@ -229,7 +241,7 @@ Or add it in seperate row to help automatic unit conversions.
 </tr>
 </table>
 
-## <a name="special"></a> 9. Using special characters in data
+## <a name="special"></a> 10. Using special characters in data
 
 For example, when writing longer text in a cell, people often include line breaks, em-dashes,
 etc in their spreadsheet.  Also, when copying data in from applications such as Word, formatting and fancy non-standard characters (such
@@ -241,7 +253,7 @@ General best practice is to avoid adding characters such as newlines, tabs, vert
 In other words, treat a text cell as if it were a simple web form that can only contain text and spaces.
 
 
-## <a name="metadata"></a> 10. Values without field labels
+## <a name="metadata"></a> 11. Values without field labels
 
 It may be obvious for us that a cell `Ann Smart and Daniele Hardwork` contains authors and
 `Starch content in Arrabidopis T. under different light conditions` is a title, but not so
@@ -253,6 +265,37 @@ Author  |  Ann Samart  |  Daniele Hardwork
 Title   |  Starch content in Arrabidopis T. under different light conditions
 ```
 
+> ## Spotting problems
+>
+> Which of the problems discussed above:
+>
+> 1. Using multiple tables
+>  2. Using multiple tabs
+>  3. Not filling in zeros
+>  4. Using problematic null values
+>  5. Using formatting to convey information and organizing data
+>  6. Placing comments or units in cells
+>  7. Entering more than one piece of information in a cell
+>  8. Inconsistency in used values
+>  9. Using problematic field names
+>  10. Using special characters in data
+>  11. Values without field labels
+>
+> Can you spot in:
+> * Row 5
+> * Row 2
+> * Column C
+> * Column E
+> * Column L
+>> ## Solution
+>>
+>> *  5, 9
+>> *  11, 7
+>> *  8
+>> *  6, 5
+>> *  3
+> {: .solution}
+{: .challenge}
 
 As in objectives,
 ?maybe mention adding PIDs where possible, or discuss how to future proof your data
