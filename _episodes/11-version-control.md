@@ -43,7 +43,7 @@ All those actions introduce change to files of our project.
 > * I tried multiple analysis and I don't remember which one I chose to generate my output data
 > * I have to merge changes to our manuscript from 10 different emails with collaborators
 > * I had a short abstract(paragraph) in a paper draft which I could use for my poster, but it is no longer present in the final paper
-> * I accidently deleted a part of my work
+> * I accidentally deleted a part of my work
 > * I came to an old project and forgot where I left/saved it
 > * I reorganized my data files, but broke the analysis pipeline and don't know how to fix it
 > * I have trouble to find the source of a mistake in an experiment
