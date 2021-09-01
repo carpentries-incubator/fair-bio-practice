@@ -32,7 +32,7 @@ All those actions introduce change to files of our project.
 
 > ## Problems with change
 >
-> Which of these issues can you relate to ?
+> Which of these issues can you relate to?
 > 
 > * I have fifteen versions of this file - which one do I use?
 > * I can’t remake this figure from last year
@@ -148,7 +148,7 @@ two main parts:
 > * I slightly modified my code in one place, everything stopped working
 > * I have several copies of the same directory because I'm worried about breaking something
 > * Somebody added erroneous records in a shared file with samples, I cannot find who and why
-> * You remember seing a data file but cannot find it anymore: is it deleted? Moved away?
+> * You remember seeing a data file but cannot find it anymore: is it deleted? Moved away?
 > * I tried multiple analysis and I don't remember which one I chose to generate my output data
 > * I have to merge changes to our manuscript from 10 different emails from collaborators
 > * I made a lot of changes to my paper but want to bring back one paragraph
@@ -252,7 +252,7 @@ Github is an online system that can communicate with Git and propagate your chan
 
 > ## Changelog in action
 >
-> Have a look at one of the example Github repositories and how they track changes*:
+> Have a look at one of the example Github repositories and how they track changes:
 > * [data from E.R. Ballou et al. 2020](https://github.com/ewallace/pseudonuclease_evolution_2020/commits/master)
 > * [data from I. Boehm et al. 2020](https://github.com/BioRDM/nmj-pig/commits/main)
 >
@@ -349,7 +349,7 @@ In brief, it is a way for numbering software releases (naming particular version
 ![Figure 3. Semantic versioning](../fig/semver-def.png)  
 *from: Semantic versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
 
-Semantic Versioning is a 3-component number in the format of X.Y.Z, where :  
+Semantic Versioning is a 3-component number in the format of X.Y.Z, where:  
 
 * The leftmost number X denotes a major version. Major versions introduce "breaking changes",
 i.e. changes will affect other software that interacts with it. For example, if the file format for inputs or outputs changes it is a breaking change as the existing files cannot be read (in case of input change) or the output files cannot be read. Another example are renaming program functions or changing their call parameters.
@@ -385,22 +385,22 @@ For data and documents often only major.minor numbers are used.
 
 > ## Semantic versioning quiz
 >
-> 1. Which of the library version is the latest:
+> 1. Which of the library version is the latest?
 > * a) 0.12.4
 > * b) 1.1.0
 > * c) 1.12.3-alpha
 > * d) 1.12.2
 >
-> 2. You use library fair.2.3.1 to automaticaly upload your data after analysis.
-> You found out that there is avaialble new versin of the library fair.4.3.1. 
-> Which situation is the most probable:
+> 2. You use library fair.2.3.1 to automatically upload your data after analysis.
+> You found out that there is avaialble new version of the library fair.4.3.1. 
+> Which situation is the most probable?
 > * a) fair.4.3.1 uploads data twice as fast as fair.2.3.1
-> * b) you need to reserve time to test the new version and adapot your analysis pipeline to work with it
-> * c) both version offer the same features and bug fixes as they have the same minor/path version 3.1
+> * b) you need to reserve time to test the new version and adapt your analysis pipeline to work with it
+> * c) both versions offer the same features and bug fixes as they have the same minor/path version 3.1
 >
 > 3. You developed code that helps to plot detrended and normalized data, the last release has version 1.2.1.
 > You added Z-score to the available normalization methods and fixed the spelling errors in the user messages. 
-> Which version number you should give to the new realease:
+> Which version number should you give to the new realease:
 > * a) 2.0.0
 > * b) 1.3.0
 > * c) 1.3.2
@@ -408,15 +408,15 @@ For data and documents often only major.minor numbers are used.
 > * e) 2.2.1
 >
 > 4. Your group releases data about studied cancer patients following semantic versioning. 
-> The last data sets is realeased as 1.11, you added data from a new patient,  
+> The last data sets are released as 1.11, you added data from a new patient,  
 > what version should you use:
 > * a) 1.12
 > * b) 2.11
 > * c) 2.0
 >
-> 5. You were asked to better anonymize the above cancer data (v1.11) in future realses. 
+> 5. You were asked to better anonymize the above cancer data (v1.11) in future releases. 
 > Instead of data and time of patient visit you
-> realease only year, the hospital names has been encoded and patient age has been obscured by random noise.  
+> release only the year, the hospital names have been encoded and patient age has been obscured by random noise.  
 > What version should you use:
 > * a) 1.12
 > * b) 2.11
