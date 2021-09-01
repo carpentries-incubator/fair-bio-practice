@@ -56,6 +56,7 @@ and allow you to easily identify if something is missing.
 > * measurement date
 > * other details are timepoint and raw or normalized data
 >
+> > ```
 > > 2020-07-14_s12_phyB_on_SD_t04.raw.xlsx  
 > > 2020-07-14_s1_phyA_on_LD_t05.raw.xlsx  
 > > 2020-07-14_s2_phyB_on_SD_t11.raw.xlsx  
@@ -65,7 +66,6 @@ and allow you to easily identify if something is missing.
 > > 2020-7-12_s2_phyB_on_SD_t01.raw.xlsx  
 > > AUG-13_phyB_on_LD_s1_t11.raw.xlsx  
 > > JUL-31_phyB_on_LD_s1_t03.raw.xlsx  
-> >
 > > LD_phyA_off_t04_2020-08-12.norm.xlsx  
 > > LD_phyA_on_t04_2020-07-14.norm.xlsx  
 > > LD_phyB_off_t04_2020-08-12.norm.xlsx  
@@ -75,6 +75,7 @@ and allow you to easily identify if something is missing.
 > > SD_phya_off_t04_2020-08-13.norm.xlsx  
 > > SD_phya_ons_t04_2020-07-12.norm.xlsx  
 > > ld_phyA_ons_t04_2020-08-12.norm.xlsx  
+> > ```
 > {: .source}
 >
 > * What are the problems with having the date first?
