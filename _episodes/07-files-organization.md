@@ -15,47 +15,48 @@ keypoints:
 - "Describe your files organization in PROJECT_STRUCTURE"
 ---
 
-## Project organization: planning file names and folders structure
+## Project organization: planning file names and folder structure
 
-Before you even start collecting or working with data, you should decide how you will structure and name files and folders. This will:
-* allow for standardized data collecting and analysis by many team members.
+Before you even start collecting or working with data you should decide how to structure and name files and folders. This will:
+* allow for standardized data collection and analysis by many team members.
 * make it easier for the researcher to determine where files should be saved.
 * avoid file duplication.
-* help to make retrieval and archiving more efficient.
+* help make retrieval and archiving more efficient.
 
 
 ![Intro to folder structure](../fig/07-intro_folder_structure.png)
 *Figure credits: Andrés Romanowski*
 
-Consistent naming and organizing files in folders has two main goals:
-* quick finding needed files
-* being able to tell the file content without opening it
+Consistent naming and organization of files in folders has two main goals:
+* quick to find files
+* ability to tell the file content without opening it
 
 ## Naming your files (and folders)
-One important and often overlooked aspect of organizing, sharing, and keeping track of data files is standardised naming.  
+One important and often overlooked practice of organizing, sharing, and keeping track of data files is standardized naming.  
 It is important to develop naming conventions which permit the encoding of experimental factors which are important to the project.
 
 File (folder) names should be consistent, meaningful to you and your collaborators,
 allow you to easily find what you are looking for,
 give you a sense of the content without opening the file,
-and identify if something is missing.
+and allow you to easily identify if something is missing.
 
 
 > ## Naming and sorting (3+2 minutes)
 > Have a look at the example files from a project, similar
-> to the one from metadata episode.
+> to the one from the previous metadata episode.
 >
 > All the files have been sorted by name and
 > demonstrate consequences of different naming strategies.
 >
-> For your information, to encode experimental details, the following conventions were taken:
-> * phyB/phyA are sample genotypes,
-> * sXX is sample number
+> For your information, to encode experimental details the following conventions were taken:
+> * phyB/phyA are sample genotypes
+> * sXX is the sample number
 > * LD/SD are different light conditions (long or short day)
 > * on/off are different media (on sucrose, off sucrose)
 > * measurement date
 > * other details are timepoint and raw or normalized data
 >
+> > ```
 > > 2020-07-14_s12_phyB_on_SD_t04.raw.xlsx  
 > > 2020-07-14_s1_phyA_on_LD_t05.raw.xlsx  
 > > 2020-07-14_s2_phyB_on_SD_t11.raw.xlsx  
@@ -65,7 +66,6 @@ and identify if something is missing.
 > > 2020-7-12_s2_phyB_on_SD_t01.raw.xlsx  
 > > AUG-13_phyB_on_LD_s1_t11.raw.xlsx  
 > > JUL-31_phyB_on_LD_s1_t03.raw.xlsx  
-> >
 > > LD_phyA_off_t04_2020-08-12.norm.xlsx  
 > > LD_phyA_on_t04_2020-07-14.norm.xlsx  
 > > LD_phyB_off_t04_2020-08-12.norm.xlsx  
@@ -75,14 +75,15 @@ and identify if something is missing.
 > > SD_phya_off_t04_2020-08-13.norm.xlsx  
 > > SD_phya_ons_t04_2020-07-12.norm.xlsx  
 > > ld_phyA_ons_t04_2020-08-12.norm.xlsx  
+> > ```
 > {: .source}
 >
 > * What are the problems with having the date first?
 > * How do different date formats behave once sorted?
-> * Can you tell the importance of leading 0 (zeros)?
+> * Can you tell the importance of a leading 0 (zeros)?
 > * Is it equally easy to find all data from LD conditions as ON media?
 > * Can you spot the problem when using different cases (upper/lower)?
-> * Do you see benefits of keeping consistent lengths of each name parts?
+> * Do you see benefits of keeping consistent lengths of the naming conventions?
 > * Do you see what happens when you mix conventions?
 >
 > > ## Solution
@@ -92,10 +93,10 @@ and identify if something is missing.
 > > or timepoints.
 > > * Named months break the "expected" sorting, same as dates without leading 0
 > > * Without leading zeros, 's12' appear before s1 and s2
-> > * the first (and second) parts of the name are easiest to spot
-> > * last file is also from LD conditions but do appear after SD, same with 'phya' genotypes
-> > * the last 3 file names are easiest to read as all parts appear on top of each other,
-> > thanks to using same 3 letter-length codes ons and off
+> > * the first (and second) part of the name are easiest to spot
+> > * the last file is also from LD conditions, but appears after SD, same with 'phya' genotypes
+> > * the last 3 file names are easiest to read as all parts appear on top of each other
+> > due to the same 3 letter-length codes ons and off
 > > * The lack of consistency makes it very difficult to get data from related samples/conditions.
 > >
 > {: .solution}
@@ -104,16 +105,16 @@ and identify if something is missing.
 Some things to take into account to decide on your naming convention are:
 
 - Does your convention make your files easy to sort
-and find by the most important feature?
-- include any parameter that helps the name being as descriptive as
-	possible (i.e.: project, experiment, researcher, sample, organism,
-	date (range), data type, method)
-- defined a standard vocabulary (shortcuts) for parameters
-- decide which elements go in which order.
+and find (e.g. by important features)?
+- Include parameters that are as descriptive as possible 
+	(i.e.: project, experiment, researcher, sample, organism,
+	date/range, data type, method).
+- Defined a standard vocabulary (shortcuts) for parameters and
+  document any abbreviation.
+- Decide which elements go in which order.
 - Decide the convention when to use symbols, capitals, hyphens
 (e.g kebab-case, CamelCase, or snake_case).
 - Define a maximum name length. Aim for filenames no longer than ~30 characters.
-- Document any abbreviation of your parameters.
 
 **Do's:**
 - for dates use the YYYY-MM-DD standard and place at the end of the file UNLESS you need to organize your files chronologically
@@ -134,7 +135,7 @@ as archiving or moving between OS may fail
 
 
 If adding all the relevant details to file names makes them too long,
-it is often a signal that you should use folder to organize the files and
+it is often a signal that you should use folders to organize the files and
 capture some of those parameters.
 
 > ## Folders vs Files (3 minutes)
@@ -238,7 +239,7 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > Take a look at the folder structure recommended by the
 > [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510) paper.
 >
-> Why do you think it is *recommended* layout and
+> Why do you think this layout is *recommended* and
 > suited for a computing project?
 > >
 > > .  
@@ -268,10 +269,10 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > > This project structure clearly separates the inputs (the raw data)
 > > from the outputs (the results) and the analysis procedure (python code).
 > > Following the same convention (like src folder for code) makes it easy
-> > to find interesting elements, for example the raw data or particular ploting procedure.
+> > to find interesting elements, for example the raw data or particular plotting procedure.
 > >
 > > The root directory contains a README file that provides an overview of the project as a whole,
-> > a CITATION file that explains how to reference it, and a LICENSE, all three make it **REUSABLE**.
+> > a CITATION file that explains how to reference it and a LICENSE, all three make it **REUSABLE**.
 > > The src directory contains a controller script runall.py that loads the data and triggers the whole analysis.
 > {: .solution}
 {: .challenge}
@@ -281,7 +282,7 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > Your naming conventions might need some adjustments as the project progresses.
 > Don't despair, just document it!
 >
-> If you change the strategy, document it in PROJECT_STRUCTURE (or README)
+> If you change the strategy document it in PROJECT_STRUCTURE (or README)
 > stating why you made the change and when.
 > Update the locations and names of files which followed the old convention
 {: .callout}
@@ -297,14 +298,14 @@ scientific data
 Do you know how and where to keep 3 copies of your data which are always up to date?
 
 Secure data preservation is very difficult to achieve without institutional support
-and know-how. One option is a cloud storage, but not all data
+and know-how. One option is cloud storage, but not all data
 may be put in a public cloud.
 
 You should always check your institutional guidelines
-and what solutions are available in your organization.
+and what solutions are available in your organisation.
 
 
-## Project files organization and FAIR guidelines
+## Project file organization and FAIR guidelines
 
 
 > ## FAIR Files (3+2 minutes)
