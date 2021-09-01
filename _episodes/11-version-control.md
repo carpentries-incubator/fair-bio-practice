@@ -51,8 +51,8 @@ All those actions introduce change to files of our project.
 > * I made a lot of changes to my paper but want to bring back one of paragraph
 {: .challenge}
 
-When making change to files and their content, we:
-* loose the old content or whole files (hoping they won't be needed)
+When introducing changes to files and their content, we:
+* overwrtie the old content or loose whole files (hoping they won't be needed)
 * may introduce side effect, e.g. renaming file may break analysis pipeline
 * introduce multiple changes to multiple files which should be treated as one change, 
 e.g. new version of a figure and a paragraph that describes it
