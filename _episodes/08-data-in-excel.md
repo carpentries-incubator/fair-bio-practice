@@ -3,18 +3,14 @@ title: "(Meta)data in Excel"
 teaching: 0
 exercises: 0
 questions:
-- ""
-- ""
-- ""
+- "How to represent data in tables"
 objectives:
 - "Does and donts in Excel"
-- "Data cleaning"
-- "Excel vs cvs"
-- "How tidy data helps FAIR"
+- "How good table organization help in re-use"
 keypoints:
-- ""
-- ""
-- ""
+- "Never use formatting to encode information"
+- "Include only one piece of information in a cell"
+- "It is easier to store data in the correct form than to clean data for reuse"
 ---
 
 Tables are one of the best forms of storing and representing information.
@@ -304,6 +300,11 @@ Title   |  Starch content in Arrabidopis T. under different light conditions
 >
 > Look how easy it is to calculate the average biomas, and if you have Office365, see how
 > easy it is to get average value per genotype.
+>
+> Do you think it would take more effort to record the data in the clean way to start with
+> comparing to the 'bad example' presented before?
+>
+> How long do you think it took to "clean" the original, problematic data?
 {: .callout}
 
 ## Outsmarted by Excel
