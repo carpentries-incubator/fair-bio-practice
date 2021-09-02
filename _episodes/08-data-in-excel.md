@@ -269,7 +269,7 @@ Title   |  Starch content in Arrabidopis T. under different light conditions
 >
 > Which of the problems discussed above:
 >
-> 1. Using multiple tables
+>  1. Using multiple tables
 >  2. Using multiple tabs
 >  3. Not filling in zeros
 >  4. Using problematic null values
@@ -282,11 +282,12 @@ Title   |  Starch content in Arrabidopis T. under different light conditions
 >  11. Values without field labels
 >
 > Can you spot in:
-> * Row 5
-> * Row 2
-> * Column C
-> * Column E
-> * Column L
+>   * Row 5
+>   * Row 2
+>   * Column C
+>   * Column E
+>   * Column L
+>
 >> ## Solution
 >>
 >> *  5, 9
