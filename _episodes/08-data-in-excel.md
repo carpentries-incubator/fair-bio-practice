@@ -297,6 +297,14 @@ Title   |  Starch content in Arrabidopis T. under different light conditions
 > {: .solution}
 {: .challenge}
 
+> ## Clean data tables make life easier
+>
+> Let's check the cleaned version of the previous [file](../files/04-better-metadata.xlsx).
+>
+> Look how easy it is to calculate the average biomas, and if you have Office365, see how
+> easy it is to get average value per genotype.
+{: .callout}
+
 ## Outsmarted by Excel
 
 Excel has built in autoformating function which can make biologist's life more difficult
