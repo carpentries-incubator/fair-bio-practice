@@ -297,11 +297,107 @@ Title   |  Starch content in Arrabidopis T. under different light conditions
 > {: .solution}
 {: .challenge}
 
-As in objectives,
-?maybe mention adding PIDs where possible, or discuss how to future proof your data
-for example have a tab in which shortcuts for strains or conditions are explained
-then they could be also enriched with PID rather than use PIDs through out documents
-as those are prone to human errors unlike labels which are easy to spot or correct?
+## Outsmarted by Excel
+
+Excel has built in autoformating function which can make biologist's life more difficult
+
+> ## Finding the right date
+>
+> Open excel and type following values into the cells:
+>
+> |------|-------|--------|------|--------|--------|
+> | Gene | SEPT2 | Sample | 0013 | Record | 12/5/4 |
+> | Mar1 | 1 March | Mar-1 | 1-3 |14/3/20 | 43904
+>
+> * Is what you see what typed?
+> * Can you force it?
+> * Do you know which year the dates represent?
+>
+> {: .solution}
+{: .challenge}
+
+A team of Australian researchers analyzed nearly 3,600 genetics papers [Ziemann 2016](https://doi.org/10.1186/s13059-016-1044-7).
+As is common practice in the field, these papers all came with supplementary files
+containing lists of genes used in the research.
+
+The Australian researchers found that roughly 1 in 5 of
+these papers included errors in their gene lists that were due to Excel
+automatically converting gene names to things like calendar dates or random numbers.
+
+Those errors actually forced the renaming of 27 gene symbols
+including SEPT4 (now SEPTIN4) and MARCH1 (now MARCHF1).
+
+Storing and handling dates is generally problematic even in program languages,
+as we tend to use dates in various formats and those formats are region specific.
+
+Have you ever got confused by a meeting date from american collaborator?
+
+If the dates are "real" data, for example sample collection from patient,
+field measurement, and preventing misinterpretations is crucial, there are two safe options:
+
+1. Store dates in 3 columns for year, month and day:
+
+| Year | Month | Day
+|------|-------|----
+| 2021 | 3 | 16
+| 2021 | 10 | 1
+
+2. Store the date as an [ISO](https://en.wikipedia.org/wiki/ISO_8601) string:
+`YYYYMMDD` e.g. `20210316`
+
+Even though, normally `YYYY-MM-DD` format is preferred, it will be sadly reformatted by Excel according
+to your locale!
+
+When using text files (.csv, .tsv), You should always document what format you are using to represent dates.
+
+> ## To use or not to use Excel
+>
+> Excel file format `.xlsx` is now an open, it is widely used and supported by external libraries
+> and thus it could be considered interoperable, and nowadays it is admissible as being FAIR.
+>
+> However, plain text files like coma or tab separated values (.csv, .tsv) can be accessed without
+> any special software. Data in a CSV file can also be easily imported into other formats
+> and environments, such as SQLite and R. We’re not tied to a certain version of a certain
+> expensive program when we work with CSV files,
+> so it’s a good format to work with for maximum portability and endurance.
+> If such files are handled only with text editors or programmatically (R, python)
+> then they are safer option as prevent autoformating issues described before.
+>
+> If you analyse your data with R or python, or you know that your data are meant
+> to be processed that way
+> you should be using text formats whenever possible and as soon as you capture your data.
+>
+> However, if you only use Excel, and so does your community, just keep using it.
+> Just be aware of possible pitfalls, especially when working with genes(protein)' names(accession numbers).
+>
+>
+{: .callout}
+
+> ## Cleaning data with Open Refine
+>
+> There are tools that help you to clean and reorganize existing data.
+>
+> [OpenRefine](https://openrefine.org/) is a powerful tool for working with messy data:
+> cleaning it; transforming it from one format into another;
+> and extending it with web services and external data.
+>
+> With OpenRefine you can find and merge the synonyms like: `E. Coli`, `EColi`, `Escherichia coli` into one,
+> or split values in the `Name` field into `FirstName` and `LastName`.
+>
+> There is a carpentry course available:
+> [Data Cleaning with OpenRefine for Ecologists](https://datacarpentry.org/OpenRefine-ecology-lesson/)
+>
+{: .callout}
+
+
+> ## Data tables and FAIR
+>
+> How the described practices for representing data in tables (Excel, .csv or .tsv)
+> help in achieving FAIR? Which aspects of FAIR they help with.
+>
+>
+{: .challenge}
+
 
 ## I am a section
 
