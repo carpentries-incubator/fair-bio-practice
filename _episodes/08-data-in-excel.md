@@ -314,10 +314,10 @@ Excel has built in autoformating function which can make biologist's life more d
 >
 > Open excel and type following values into the cells:
 >
-> | A | B | C | D | E | F |
+> | A    | B     | C      | D    | E      | F      |
 > |------|-------|--------|------|--------|--------|
 > | Gene | SEPT2 | Sample | 0013 | Record | 12/5/4 |
-> | Mar1 | 1 March | Mar-1 | 1-3 |14/3/20 | 43904
+> | Mar1 | 1 March | Mar-1 | 1-3 |14/3/20 | 43904  |
 >
 > * Is what you see what typed?
 > * Can you force it?
