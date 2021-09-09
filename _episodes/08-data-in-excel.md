@@ -5,8 +5,8 @@ exercises: 0
 questions:
 - "How to represent data in tables"
 objectives:
-- "Does and donts in Excel"
-- "How good table organization help in re-use"
+- "Do's and don'ts in Excel"
+- "How good table organization can helps to re-use data"
 keypoints:
 - "Never use formatting to encode information"
 - "Include only one piece of information in a cell"
@@ -14,12 +14,12 @@ keypoints:
 ---
 
 Tables are one of the best forms of storing and representing information.
-That is why we find them almost everywhere, from a menue in a restaurant, by a bank
-statement to professional databases. No surprise then, that we biologists love tables,
-and we tend to love them in Excel.
+That is why we find them almost everywhere, from a menu in a restaurant, a bank
+statement, to professional databases. No surprise then that we biologists love tables
+and we tend to predominantly use Excel.
 
-Excel by being easy to use, yet flexible and powerful, often gives us too much freedom
-which leads to bad practices and difficut to re-use data and metadata.
+Excel is easy to use, flexible and powerful, however, it often gives us too much freedom
+which leads to bad practices and difficult to re-use data and metadata.
 
 > ## What can go wrong with data in Excel
 >
@@ -27,35 +27,35 @@ which leads to bad practices and difficut to re-use data and metadata.
 >
 > ![bad-metadata](../fig/bad-metadata.png)
 >
-> It contains data similar to the presented before, from some experiments on plants in
+> It contains data similar to the presented data before from experiments on plants in
 > different light conditions. Imagine you need to work with this file.
 >
-> 1. What you find confusing in this file, what would you try to clarify with its author before
-> doing anything with it
-> 2. What will be the issues with calculation of: average biomas, biomas per genotype
-> 3. Typically, more advance data analysis is done programatically, which requires either
-> conversion to a text format as csv, tsv format or using library that reads Excel file
-> and "kind of make this conversion on the fly".
+> 1. What is confusing in this file, what would you try to clarify with its author before
+> using it
+> 2. What issues will you encounter with calculation of: average biomas, biomas per genotype
+> 3. Typically, more advanced data analysis is done programmatically, which requires either
+> conversion to text format as csv, tsv format or using a library that reads Excel files
+> and "kind of makes this conversion on the fly".
 > Save this file in a text format, close Excel and reopen the saved files. What has changed?
 >
-> Have you seen similar tables? Do you believe this example is realistic?
+> Have you seen similar tables? Do you believe this example is realistic and replicates real-life issues?
 >
 >> ## Solution
 >>
->> This files hopefully unreleasitcally exacerbate typical bad practices in Excel.
->> 1. Some things that may confuse:
->>      - why they are two tables, are period measurement related to the metabolics ie same samples
->>      - do colors in period table have the same meaning, seems no.
->>      - why row 22 is read while 13 says error
->>      - the meaning of values in media column
->>      - are the genotypes same in different blocks or not
+>> This file hopefully unrealistically exacerbates typical bad practices in Excel.
+>> 1. Some things that may be confusing:
+>>      - Why are there two tables, are the period measurement related to the metabolics i.e. same samples?
+>>      - Do colors in the period table have the same meaning? Seems no.
+>>      - Why is row 22 read, whilst row 13 says error?
+>>      - What is the meaning of values in the media column?
+>>      - Are the genotypes the same in different blocks or not?
 >> 2.
->>      - Before averaging the biomas weight needs conversion to the same unit and removal of the text for unit.
->>      - Averaging per genotype needs manual selection of the suitable entries
+>>      - Before averaging the biomas weight, they need to get converted the same unit and the text needs to get replaced by the unit.
+>>      - Averaging per genotype needs manual selection of suitable entries
 >> 3.
->>      - information about light conditions is completely lost
->>      - the header columns are scrambled
->>      - the update date may change its meaning depending on the locale (swithc year with day)
+>>      - Information about light conditions is completely lost.
+>>      - Header columns are scrambled.
+>>      - The update date may change its meaning depending on the location (switch year with day).
 > {: .solution}
 {: .challenge}
 
@@ -64,28 +64,28 @@ which leads to bad practices and difficut to re-use data and metadata.
 ### <a name="tables"></a> 1. Using multiple tables
 
 Multiple data tables within one spreadsheet confuse both human and computers.
-* For human, they prompt finding associations where they are not present.
-* For computers, each spreadsheet row typically is treated as one observation.
+* For humans they prompt finding associations where they are not present.
+* For computers each spreadsheet row typically is treated as one observation.
 And you are potentially using the same field name in multiple places.
 
-In our example both column A and K named `sample` represented different inforamtion,
-and values in row 6 from both parts were not related.
+In our example both column A and K named `sample` represent different information,
+and values in row 6 from both parts are not related.
 
 ### <a name="tabs"></a> 2. Using multiple tabs
 
 That seems like an easy way to organize data, right? Well, yes and no.
 
 * tabs make it more difficult to do programmatic analysis
-* tabs can be ignored (under the radar) when opening file, for example the recently used tab is shown first
+* tabs can be ignored (under the radar) when opening files, for example the recently used tab is shown first,
 other user may not notice that there are many other tabs before it (we have seen it a lot when importing data)
 
 However,
-* tabs seems like a perfect place to add adminstrative, descriptive metadata so they are next to data
-while not "polluting" data table.
-* having secondary data next to primary in subsequent tabs permits easy inspection of all without a need of
-sending always collection of files.
+* tabs seems like a perfect place to add administrative, descriptive metadata so they are next to data
+while not "polluting" the data table.
+* having secondary data next to primary in subsequent tabs permits easy inspection of all without a need to
+always send a collection of files.
 
-Our recommendation use with cautions, the more automatic analysis you do, the less frequently use tabs.
+Our recommendation: use with caution; the more automatic analysis you do, the less frequently you should use tabs.
 
 ### <a name="zeros"></a> 3. Not filling in zeros
 
@@ -132,19 +132,19 @@ White et al, 2013, explain good choices for indicating null values for different
 Never highlight cells, rows or columns that should be excluded from an analysis,
 or to mark particular properties/conditions.
 
-In our example files information about light conditions is only encoded as a color.
-Formatting information is not available to analysis software and alsmost ceratinly will be lost during
+In our example file information about light conditions is only encoded as a color.
+Formatting information is not available to analysis software and almost certainly will be lost during
 processing.
 
 All the information should be encoded as a field value, for example in columns like:
 condition, calibrated,
 validated, omitted etc.
 
-You can still use colors/fonts to help in readability (just make sure they help and
-not distract) but no information should be lost if the data is exported to plain text.
+You can still use colors/fonts to help with readability (just make sure they help and
+don't distract) but no information should be lost if data is exported to plain text.
 
-If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise
-your computer’s ability to see associations in the data.
+If you are not careful, formatting a worksheet to be more aesthetically pleasing can compromise
+your computer's ability to see associations in the data.
 
 **Never merge cells, as it will make your data unreadable by statistics software**.
 Don't leave blank rows to indicate separations in data
@@ -157,9 +157,9 @@ and would be confused by comments placed within your data cells.
 As described above for formatting, create another field if you need to add notes to cells.
 
 Similarly, don’t include units in cells: ideally, all the measurements you place in one column
-should be in the same unit, but if for some reason they aren’t, create another field and specify the units the cell is in.
-A field value `0.123 g` will need to be parsed by a srcipt into `0.123` and `g` in order to be used
-for calculations, why add extera work for others.
+should have the same unit, but if for some reason they don't, create another field and specify the unit.
+A field value `0.123 g` will need to be parsed by a script into `0.123` and `g` in order to be used
+for calculations, don't add extra work for others.
 
 
 ## <a name="info"></a> 7. Entering more than one piece of information in a cell
@@ -178,9 +178,9 @@ Using "synonyms" or alternatives to describe the same values.
 For example: `E. Coli`, `EColi`, `Escherichia coli` in the same table
 
 ## <a name="field_name"></a> 9. Using problematic field names
-Choose descriptive field names, but be careful not to include spaces, numbers, or **special characters** of any kind (incluiding natinal characters: óęłń).
-Spaces can be misinterpreted by parsers that use whitespace as delimiters and
-some programs don’t like field names that are text strings that start with numbers.
+Choose descriptive field names, but be careful not to include spaces, numbers, or **special characters** of any kind (including national characters: óęłńöüä).
+Spaces can be misinterpreted by parsers that use whitespaces as delimiters and
+some programs don’t like field names that are text strings starting with numbers (e.g. Excel).
 
 Underscores (`_`) are a good alternative to spaces.
 Consider writing names in camel case (like this: ExampleFileName) to improve
@@ -190,7 +190,7 @@ Remember that abbreviations that make sense at the moment may not be so obvious 
 but don't overdo it with names that are excessively long.
 
 Including the units in the field names avoids confusion and enables others to readily interpret your fields.
-Or add it in seperate row to help automatic unit conversions.
+Or add a separate row to help automatic unit conversions.
 
 **Examples**
 
@@ -240,30 +240,30 @@ Or add it in seperate row to help automatic unit conversions.
 ## <a name="special"></a> 10. Using special characters in data
 
 For example, when writing longer text in a cell, people often include line breaks, em-dashes,
-etc in their spreadsheet.  Also, when copying data in from applications such as Word, formatting and fancy non-standard characters (such
-as left- and right-aligned quotation marks) are included.  When exporting this data into a coding/statistical environment or into a
+etc in their spreadsheet.  Also, when copying data from applications such as Word, formatting and 'fancy' non-standard characters (such
+as left- and right-aligned quotation marks) are included. When exporting this data into a coding/statistical environment or into a
 relational database, dangerous things may occur,
 such as lines being cut in half and encoding errors being thrown.
 
-General best practice is to avoid adding characters such as newlines, tabs, vertical tabs and sadly national characters.
+General best practice is to avoid adding characters such as new lines, tabs, vertical tabs and sadly, national characters.
 In other words, treat a text cell as if it were a simple web form that can only contain text and spaces.
 
 
 ## <a name="metadata"></a> 11. Values without field labels
 
 It may be obvious for us that a cell `Ann Smart and Daniele Hardwork` contains authors and
-`Starch content in Arrabidopis T. under different light conditions` is a title, but not so
+`Starch content in Arabidopis T. under different light conditions` is a title, but this is not obvious
 for a computer program.
 
-Always label the values preferable as the column headers, or as a first field on the left:
+Always label values as the column header, or as a first field on the left:
 ```
-Author  |  Ann Samart  |  Daniele Hardwork
-Title   |  Starch content in Arrabidopis T. under different light conditions
+Author  |  Ann Smart  |  Daniele Hardwork
+Title   |  Starch content in Arabidopis T. under different light conditions
 ```
 
 > ## Spotting problems
 >
-> Which of the problems discussed above:
+> Which of the problems discussed above can you spot...:
 >
 >  1. Using multiple tables
 >  2. Using multiple tabs
@@ -277,7 +277,7 @@ Title   |  Starch content in Arrabidopis T. under different light conditions
 >  10. Using special characters in data
 >  11. Values without field labels
 >
-> Can you spot in:
+> ... in the following:
 >   * Row 5
 >   * Row 2
 >   * Column C
@@ -299,29 +299,29 @@ Title   |  Starch content in Arrabidopis T. under different light conditions
 > Let's check the cleaned version of the previous [file](../files/04-better-metadata.xlsx).
 >
 > Look how easy it is to calculate the average biomas, and if you have Office365, see how
-> easy it is to get average value per genotype.
+> easy it is to get average values per genotype.
 >
-> Do you think it would take more effort to record the data in the clean way to start with
-> comparing to the 'bad example' presented before?
+> Do you think it would take more effort to record data in a cleaned way to start with,
+> in comparison to the 'bad example' presented before?
 >
 > How long do you think it took to "clean" the original, problematic data?
 {: .callout}
 
 ## Outsmarted by Excel
 
-Excel has built in autoformating function which can make biologist's life more difficult
+Excel has built in autoformatting functions which can make biologist's life more difficult
 
 > ## Finding the right date
 >
-> Open excel and type following values into the cells:
+> Open Excel and type following values into the cells:
 >
 > | A    | B     | C      | D    | E      | F      |
 > |------|-------|--------|------|--------|--------|
 > | Gene | SEPT2 | Sample | 0013 | Record | 12/5/4 |
 > | Mar1 | 1 March | Mar-1 | 1-3 |14/3/20 | 43904  |
 >
-> * Is what you see what typed?
-> * Can you force it?
+> * Is what you see what you typed?
+> * Can you force Excel to keep your formatting?
 > * Do you know which year the dates represent?
 >
 > {: .solution}
@@ -329,7 +329,7 @@ Excel has built in autoformating function which can make biologist's life more d
 
 A team of Australian researchers analyzed nearly 3,600 genetics papers [Ziemann 2016](https://doi.org/10.1186/s13059-016-1044-7).
 As is common practice in the field, these papers all came with supplementary files
-containing lists of genes used in the research.
+containing lists of genes used in research.
 
 The Australian researchers found that roughly 1 in 5 of
 these papers included errors in their gene lists that were due to Excel
@@ -338,13 +338,12 @@ automatically converting gene names to things like calendar dates or random numb
 Those errors actually forced the renaming of 27 gene symbols
 including SEPT4 (now SEPTIN4) and MARCH1 (now MARCHF1).
 
-Storing and handling dates is generally problematic even in program languages,
+Storing and handling dates is generally problematic even in programming languages,
 as we tend to use dates in various formats and those formats are region specific.
 
-Have you ever got confused by a meeting date from american collaborator?
+Have you ever got confused by a meeting date from an American collaborator?
 
-If the dates are "real" data, for example sample collection from patient,
-field measurement, and preventing misinterpretations is crucial, there are two safe options:
+If the dates are "real" data, for example sample collection from a patient or field measurement, preventing misinterpretations is crucial. There are two safe options:
 
 1. Store dates in 3 columns for year, month and day:
 
@@ -363,23 +362,23 @@ When using text files (.csv, .tsv), You should always document what format you a
 
 > ## To use or not to use Excel
 >
-> Excel file format `.xlsx` is now an open, it is widely used and supported by external libraries
-> and thus it could be considered interoperable, and nowadays it is admissible as being FAIR.
+> Excel file format `.xlsx` is now open, widely used and supported by external libraries
+> and thus it could be considered interoperable. Nowadays it is admissible as being FAIR.
 >
-> However, plain text files like coma or tab separated values (.csv, .tsv) can be accessed without
-> any special software. Data in a CSV file can also be easily imported into other formats
+> However, plain text files like comma or tab separated values (.csv, .tsv) can be accessed without
+> any special software. Data in a CSV file can also easily be imported into other formats
 > and environments, such as SQLite and R. We’re not tied to a certain version of a certain
 > expensive program when we work with CSV files,
 > so it’s a good format to work with for maximum portability and endurance.
-> If such files are handled only with text editors or programmatically (R, python)
-> then they are safer option as prevent autoformating issues described before.
+> If such files are handled only with text editors or programmatically (R, Python)
+> then they are a safer option as they prevent the autoformatting issues described before.
 >
 > If you analyse your data with R or python, or you know that your data are meant
 > to be processed that way
 > you should be using text formats whenever possible and as soon as you capture your data.
 >
-> However, if you only use Excel, and so does your community, just keep using it.
-> Just be aware of possible pitfalls, especially when working with genes(protein)' names(accession numbers).
+> However, if you only use Excel and so does your community, just keep using it.
+> Just be aware of the possible pitfalls discussed, especially when working with gene or protein names and accession numbers.
 >
 >
 {: .callout}
@@ -392,7 +391,7 @@ When using text files (.csv, .tsv), You should always document what format you a
 > cleaning it; transforming it from one format into another;
 > and extending it with web services and external data.
 >
-> With OpenRefine you can find and merge the synonyms like: `E. Coli`, `EColi`, `Escherichia coli` into one,
+> With OpenRefine you can find and merge synonyms like: `E. Coli`, `EColi`, `Escherichia coli` into one,
 > or split values in the `Name` field into `FirstName` and `LastName`.
 >
 > There is a carpentry course available:
@@ -407,39 +406,6 @@ When using text files (.csv, .tsv), You should always document what format you a
 > help in achieving FAIR? Which aspects of FAIR they help with.
 >
 >
-{: .challenge}
-
-
-## I am a section
-
-With a text.
-
-![Figure 1. I am some figure](../fig/figure_file.jpg)
-
-*After [Figure source](https://www.figure.link/)*
-
-
-> ## I am a yellow info
->
-> And my text.
-{: .callout}
-
-
-~~~
-I am code
-~~~
-{: .source}
-
-
-> ## I am a problem
->
-> Defined here.
->
->> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
-> {: .solution}
 {: .challenge}
 
 
