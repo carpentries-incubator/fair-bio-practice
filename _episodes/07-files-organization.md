@@ -147,19 +147,19 @@ as archiving or moving between OS may fail
 > ## A good name (3)
 > Select which file options adhere the best to the presented recommendations:
 > 
-> ```1.
-> a) analysis-20210906.xlsx
-> b) rna-levels-by-site.v002.xlsx
+> ```1.  
+> a) analysis-20210906.xlsx  
+> b) rna-levels-by-site.v002.xlsx  
 > c) analysis of rna levels from 5Aug2021.xlsx```
 > 
-> ```2. 
-> a) 20210906-birds-count-EDI.csv
-> b) birds.csv
+> ```2.  
+> a) 20210906-birds-count-EDI.csv  
+> b) birds.csv  
 > c) birds-count&diversity EDI 2021-09-06.csv```
 > 
-> ```3. 
-> a) 2020-7-12_s2_phyB_+_SD_t01.raw.xlsx
-> b) ld_phyA_on_s02-t01_2020-07-12.norm.xlsx
+> ```3.  
+> a) 2020-7-12_s2_phyB_+_SD_t01.raw.xlsx  
+> b) ld_phyA_on_s02-t01_2020-07-12.norm.xlsx  
 > c) ld_phya_ons_02-01_2020-07-12.norm.xlsx```
 > 
 > > ## Solution
