@@ -51,8 +51,8 @@ data from published biological papers.
 > Find details of how to separate and transfer this large protein in
 > the reference paper.
 >
-> Hint 1: Methods section has a Western blot analysis subsection.  
-> Hint 2: Follow the references.  
+> * Hint 1: Methods section has a Western blot analysis subsection.  
+> * Hint 2: Follow the references.  
 >
 > Would you say that the methods was Findable? Accessible? Reusable?
 >
@@ -82,8 +82,8 @@ data from published biological papers.
 > limited conditions. 
 > Please calculate the average (over genotypes) nitrogen content for the two experimental conditions.
 >
-> Hint 1. Data are in Supplementary data   
-> Hint 2. Search for nitrogen in paper text to identify the correct data column.  
+> * Hint 1. Data are in Supplementary data   
+> * Hint 2. Search for nitrogen in paper text to identify the correct data column.  
 >
 {: .challenge}
 
@@ -94,8 +94,8 @@ data from published biological papers.
 > graph shown in [Figure 6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/figure/F6/)
 > which demonstrates changes in levels of phytochrome proteins from [Sharrock RA and Clack T, 2002](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC166576/).
 >
-> Hint 1: Materials and methods describe quantification procedure
-> Hint 2: Supporting Information or Supplementary Materials sections often contain data files.
+> * Hint 1: Materials and methods describe quantification procedure
+> * Hint 2: Supporting Information or Supplementary Materials sections often contain data files.
 >
 > How easy it was?
 >
@@ -110,6 +110,7 @@ data from published biological papers.
 >
 {: .challenge}
 
+<!---
 > ## Impossible format
 >
 > Sometimes raw data is shared in a proprietary format that is not easily accessible by everyone.
@@ -117,6 +118,7 @@ data from published biological papers.
 > Does the resource comply with recommended guidelines?
 >
 {: .challenge}
+-->
 
 The above examples illustrate the typical challenges in accessing research
 data and software. Firstly, data/protocols/software often do not have an identity
