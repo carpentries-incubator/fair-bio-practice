@@ -264,6 +264,7 @@ cycle.
 >> - IP
 >> - misuse (fake news)
 >> - lack of confidence (the fear of critics)
+>> - lack of expertise
 >> - the costs in $ and in time
 >>
 > {: .solution}
@@ -384,10 +385,12 @@ You do not want to be left behind!
 {: .callout}
 
 
-### Attribution
-Content of this episode was adopted after:
-* Wiki [Open Science](https://en.wikipedia.org/wiki/Open_science)
-* [European Open Science Cloud](https://www.eosc-hub.eu/open-science-info)
+## Where to next
+> Further reading/links:
+> - [Challenges & benefits of OS](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000246)
+> - [Centre for Open Science](https://www.cos.io/)
+> - [Ted talk supporting OS](https://www.youtube.com/watch?v=c-bemNZ-IqA)
+
 
 
 
@@ -431,12 +434,10 @@ Content of this episode was adopted after:
 > ## Attribution
 >
 > Content of this episode was adapted from:
-> - [Science is necessarily collaborative - The Biochemist article](https://portlandpress.com/biochemist/article/42/3/58/225220/Science-is-necessarily-collaborative).
+> * Wiki [Open Science](https://en.wikipedia.org/wiki/Open_science)
+> * [European Open Science Cloud](https://www.eosc-hub.eu/open-science-info)
+> * [Science is necessarily collaborative - The Biochemist article](https://portlandpress.com/biochemist/article/42/3/58/225220/Science-is-necessarily-collaborative).
 >
-> Further reading/links:
-> - [Challenges & benefits of OS](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000246)
-> - [Centre for Open Science](https://www.cos.io/)
-> - [Ted talk supporting OS](https://www.youtube.com/watch?v=c-bemNZ-IqA)
 {: .callout}
 
 {% include links.md %}
