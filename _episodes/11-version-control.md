@@ -465,10 +465,4 @@ For data and documents often only major.minor numbers are used.
 {: .callout}
 
 
-> ## Attribution
-> Content of this episode was adopted after XXX et al.
-> [YYY](https://biodare2.ed.ac.uk).
-{: .callout}
-
-
 {% include links.md %}
