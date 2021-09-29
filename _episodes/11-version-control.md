@@ -1,7 +1,7 @@
 ---
 title: "Version control"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 25
 questions:
 - "How not to worry about making changes to a project?"
 - "What is version control?"
@@ -30,7 +30,7 @@ Our projects are not static we:
 
 All those actions introduce change to files of our project.
 
-> ## Problems with change
+> ## Problems with change (3+2)
 >
 > Which of these issues can you relate to?
 > 
@@ -42,7 +42,6 @@ All those actions introduce change to files of our project.
 > * You remember seeing a data file but cannot find it anymore: is it deleted? Moved away?
 > * I tried multiple analysis and I don't remember which one I chose to generate my output data
 > * I have to merge changes to our manuscript from 10 different emails with collaborators
-> * I had a short abstract(paragraph) in a paper draft which I could use for my poster, but it is no longer present in the final paper
 > * I accidentally deleted a part of my work
 > * I came to an old project and forgot where I left/saved it
 > * I reorganized my data files, but broke the analysis pipeline and don't know how to fix it
@@ -139,7 +138,7 @@ two main parts:
 	as the effort required to merge differences goes up faster than the size of the difference.
 	
 
-> ## Manual versioning
+> ## Manual versioning (2)
 >
 > Which of these issues does manual versioning help to tackle?
 > 
@@ -189,6 +188,34 @@ What the manual process described above requires most is
 self-discipline. The version control tools that underpin our second
 approach don't just accelerate the manual process: they also automate 
 some steps while enforcing others and thereby deliver more reliable results.
+
+
+> ## Changelog in action (5+5)
+>
+> Have a look at one of the example Github repositories and how they track changes:
+> * [data from E.R. Ballou et al. 2020](https://github.com/ewallace/pseudonuclease_evolution_2020/commits/master)
+> * [data from I. Boehm et al. 2020](https://github.com/BioRDM/nmj-pig/commits/main)
+>
+> Give examples of:
+> * what makes them a good changelog
+> * what could be improved
+>
+> Think which are the most difficult features to replicate with manual version control?
+>
+>> ## Solution
+>> The good things:
+>> *   all log entries contain date and author
+>> *   all log entries contain list of files that have been modified
+>> *   for text files the actual change can be visible
+>> *   the description text gives an idea of the change
+>>
+>> What could be improved  
+>> *   The pig files should probably be recorded in smaller chunks (commits). The raw data and cleaned data could be added separetely unless they all were captured at the same time.
+>> *   Rather than general "Readme update" a more specific description could be provided "Reformatted headers and list"
+>> *   some of the Ballous changes could do with more detailed descriptions, for example why the change took place in case of IQ_TREE entries 
+> {: .solution}
+{: .challenge}
+
 
 ## Version Control Systems
 
@@ -250,31 +277,7 @@ Simplifying Git is a local program (like Word) that runs on your machine and kno
 Github is an online system that can communicate with Git and propagate your changes to other computers 
 (like OneDrive can do for Word documents).
 
-> ## Changelog in action
->
-> Have a look at one of the example Github repositories and how they track changes:
-> * [data from E.R. Ballou et al. 2020](https://github.com/ewallace/pseudonuclease_evolution_2020/commits/master)
-> * [data from I. Boehm et al. 2020](https://github.com/BioRDM/nmj-pig/commits/main)
->
-> Give examples of:
-> * what makes them a good changelog
-> * what could be improved
->
-> Think which are the most difficult features to replicate with manual version control?
->
->> ## Solution
->> The good things:
->> *   all log entries contain date and author
->> *   all log entries contain list of files that have been modified
->> *   for text files the actual change can be visible
->> *   the description text gives an idea of the change
->>
->> What could be improved  
->> *   The pig files should probably be recorded in smaller chunks (commits). The raw data and cleaned data could be added separetely unless they all were captured at the same time.
->> *   Rather than general "Readme update" a more specific description could be provided "Reformatted headers and list"
->> *   some of the Ballous changes could do with more detailed descriptions, for example why the change took place in case of IQ_TREE entries 
-> {: .solution}
-{: .challenge}
+
 
 
 Keeping track of changes that you or your collaborators make to data and
@@ -285,7 +288,7 @@ reviewer comments, and when providing supporting information for
 reviewers, editors, and readers.
 
 
-> ## Version Control System and FAIR
+> ## Using Version Control System (2+2)
 >
 > Five reasons to use a version control system in research
 > * Tell the story: The history of your commit messages will describe your project progress.
@@ -295,6 +298,11 @@ reviewers, editors, and readers.
 > * Collaborate easily on projects: having a web-hosted synchronised version of your project will encourage collaboration with other researchers. Think about a colleague of yours being able to add a script to make a figure for your publication for instance.
 > The repository will track their contribution and evidence their participation in the project.
 >
+> Which two are the most important for you.
+>
+{: .challenge}
+
+> ## Version Control System and FAIR
 > Looking at the reasons to use a version control system (VCS) in research, 
 > how does using VCS help in being FAIR?
 >
@@ -310,6 +318,9 @@ reviewers, editors, and readers.
 >
 > If you do any form of scientific computing: Python, R, Matlap or even bash script you simply must learn git and
 > use it on a daily basis (no excuses).
+>
+> ![Figure 3. Using Git](../fig/using-git.png)  
+> *from: xkcd (https://xkcd.com/1597/)* 
 >
 > For lab-bench biologists git can have a steep learning curve. 
 > It was designed and developed for and by Linux developers so 
@@ -346,7 +357,7 @@ is well known and called "dependency hell". To help deal with this problem, ***s
 
 In brief, it is a way for numbering software releases (naming particular versions).
 
-![Figure 3. Semantic versioning](../fig/semver-def.png)  
+![Figure 4. Semantic versioning](../fig/semver-def.png)  
 *from: Semantic versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
 
 Semantic Versioning is a 3-component number in the format of X.Y.Z, where:  
@@ -361,7 +372,7 @@ For example, your plot library can now plot in colors not only black and white o
 * Z stands for a Patch Versions: Versions for patches are used for bug fixes and security updates. 
 There are no functionality changes in the patch version upgrades. 
 
-![Figure 4. Semantic versioning](../fig/semver-upgrade.png)  
+![Figure 5. Semantic versioning](../fig/semver-upgrade2.png)  
 *from: Semantic versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
 
 When you increase the Major version you zero the remaining ones, when you increase Minor you zero the patch number.
@@ -383,7 +394,7 @@ as it communicates the *severity of changes*. For example if you as the co-autho
 
 For data and documents often only major.minor numbers are used.
 
-> ## Semantic versioning quiz
+> ## Semantic versioning quiz (3)
 >
 > 1. Which of the library version is the latest?
 > * a) 0.12.4
