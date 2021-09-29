@@ -40,16 +40,16 @@ allow you to easily find what you are looking for,
 give you a sense of the content without opening the file,
 and allow you to easily identify if something is missing.
 
->	Example
+> Example
 >
->	`LD_phyA_off_t04_2020-08-12.norm.xlsx`
+> `LD_phyA_off_t04_2020-08-12.norm.xlsx`
 >
->	could be a file that contains:
->	* normalized data (norm), 
->	* from experiment in long day (LD) 
->	* for genotype phyA
->	* with media without sucrose (off)
->	* at timepoint 4 (t04)
+> could be a file that contains:
+> * normalized data (norm), 
+> * from experiment in long day (LD) 
+> * for genotype phyA
+> * with media without sucrose (off)
+> * at timepoint 4 (t04)
 
 
 > ## Naming and sorting (5+2 minutes)
@@ -144,6 +144,31 @@ they still cause problems with most software or between operating systems (OS)
 - avoid deep paths with long names (i.e. deeply nested folders with long names)
 as archiving or moving between OS may fail
 
+> ## A good name (3)
+> Select which file options adhere the best to the presented recommendations:
+> 
+> 1.
+> a) analysis-20210906.xlsx
+> b) rna-levels-by-site.v002.xlsx
+> c) analysis of rna levels from 5Aug2021.xlsx
+> 
+> 2. 
+> a) 20210906-birds-count-EDI.csv
+> b) birds.csv
+> c) birds-count&diversity EDI 2021-09-06.csv
+> 
+> 3. 
+> a) 2020-7-12_s2_phyB_+_SD_t01.raw.xlsx
+> b) ld_phyA_on_s02-t01_2020-07-12.norm.xlsx
+> c) ld_phya_ons_02-01_2020-07-12.norm.xlsx
+> 
+> > ## Solution
+> > * 1 b)
+> > * 2 a)
+> > * 3 b)
+> >
+> {: .solution}
+{: .challenge}
 
 If adding all the relevant details to file names makes them too long,
 it is often a signal that you should use folders to organize the files and
