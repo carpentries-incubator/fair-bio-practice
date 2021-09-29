@@ -1,7 +1,7 @@
 ---
 title: "Working with files"
-teaching: 15
-exercises: 16
+teaching: 20
+exercises: 20
 questions:
 - "How should I name my files?"
 - "How does folder organisation help me"
@@ -256,7 +256,26 @@ You can start by developing a logical folder structure. To do so, you need to ta
 - Structure folders hierarchically: use broader topics for your main folders and increase in specificity as you go down the hierarchy.
 - Be consistent: agree on a naming convention from the outset of your research project.
 
-> ## Good enough practices for scientific computing recommendations
+
+
+> ## Typical folder organizations (3+2)
+>
+> Have a look at the four different folder structures. 
+>
+> The first two” a) b) are recommended for computing, the other two: c) d) are for more wet/biological projects.
+>
+> * Which one is the most similar to your project structure?  
+> * When/why would you use a) and when/why b)
+> * When/why would you use c) and when/why d)
+>
+>> ## Solution
+>> * The b) structure is called "Organized by analysis" or "by figure"
+>> * The structure similar to c) is recommended for Brain Imaging Data Structure (BIDS), as it is organized by patient and type of scans
+> {: .solution}
+{: .challenge}
+
+
+> ## (Optional) Good enough practices for scientific computing recommendations
 > The [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510#sec009) paper makes the following simple recommendations:
 > * Put each project in its own directory, which is named after the project
 > * Put text documents associated with the project in the 'doc' directory
@@ -270,7 +289,8 @@ You can start by developing a logical folder structure. To do so, you need to ta
 >
 {: .callout}
 
-
+<!---
+Replaced by folders comparison as it was not working
 > ## Organization for computing (3 minutes)
 > Take a look at the folder structure recommended by the
 > [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510) paper.
@@ -312,7 +332,7 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > > The src directory contains a controller script runall.py that loads the data and triggers the whole analysis.
 > {: .solution}
 {: .challenge}
-
+-->
 
 > ## After you have a plan
 > Your naming conventions might need some adjustments as the project progresses.
@@ -344,7 +364,7 @@ and what solutions are available in your organisation.
 ## Project file organization and FAIR guidelines
 
 
-> ## FAIR Files (3+2 minutes)
+> ## FAIR Files (3 minutes)
 > In groups, discuss:
 > * how can strategy for folder organisation and naming convention
 > help in achieving FAIR data?
