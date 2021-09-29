@@ -40,6 +40,17 @@ allow you to easily find what you are looking for,
 give you a sense of the content without opening the file,
 and allow you to easily identify if something is missing.
 
+	Example
+
+	`LD_phyA_off_t04_2020-08-12.norm.xlsx`
+
+	can be a file that contains:
+	* normalized data (norm), 
+	* from experiment in long day (LD) 
+	* for genotype phyA
+	* with media without sucrose (off)
+	* at timepoint 4 (t04)
+
 
 > ## Naming and sorting (3+2 minutes)
 > Have a look at the example files from a project, similar
