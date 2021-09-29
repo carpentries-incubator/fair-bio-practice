@@ -51,8 +51,8 @@ data from published biological papers.
 > Find details of how to separate and transfer this large protein in
 > the reference paper.
 >
-> Hint 1: Methods section has a Western blot analysis subsection.
-> Hint 2: Follow the references.
+> Hint 1: Methods section has a Western blot analysis subsection.  
+> Hint 2: Follow the references.  
 >
 > Would you say that the methods was Findable? Accessible? Reusable?
 >
@@ -72,6 +72,19 @@ data from published biological papers.
 >>      can't easily continue our experiments!
 >>
 > {: .solution}
+{: .challenge}
+
+> ## Impossible numbers
+>
+> Ikram 2014 (https://doi.org/10.1093/jxb/err244) paper contains data about various metabolites in
+> different accessions (genotypes) of Arabidopsis plant. 
+> You would like to calculate average nitrogen content in plants grown under normal and nitrogen 
+> limited conditions. 
+> Please calculate the average (over genotypes) nitrogen content for the two experimental conditions.
+>
+> Hint 1. Data are in Supplementary data   
+> Hint 2. Search for nitrogen in paper text to identify the correct data column.  
+>
 {: .challenge}
 
 > ## Impossible numbers
@@ -384,7 +397,7 @@ website.
 >
 > * Metadata standards (for example MIAME MIQUE) assure the "IR" in FAIR. T
 >
-> * Group websites are one of the best places to share your data. F
+> * Group website is a good place to share your data. F
 >
 > * Data from failed experiments are not re-usable. F
 >
