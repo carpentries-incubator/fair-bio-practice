@@ -101,7 +101,7 @@ So how do you go about finding a repository:
 	- [F1000 Research](https://f1000research.com/for-authors/data-guidelines)
 	- [GIGAscience - OUP](https://academic.oup.com/gigascience/pages/instructions_to_authors)
 	- [PLoS](https://journals.plos.org/plosbiology/s/data-availability#loc-recommended-repositories)
-	- [Scientific Data - Nature](https://www-nature-com.ezproxy.is.ed.ac.uk/sdata/policies/repositories)
+	- [Scientific Data - Nature](https://www.nature.com/sdata/policies/repositories)
 	- [Taylor and Francis](https://authorservices.taylorandfrancis.com/data-sharing-policies/repositories/)
 	- [BBSRC](https://bbsrc.ukri.org/research/resources/)
 	- [NERC](https://nerc.ukri.org/research/sites/environmental-data-service-eds/policy/)
