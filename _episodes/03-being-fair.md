@@ -180,15 +180,16 @@ Repositories provide persistent identifiers (PIDs), catalogue options,
 advanced metadata searching, and download statistics. Some repositories can also host private data or provide embargo periods, meaning access to all data can be delayed.
 
 There are general "data agnostic" repositories, for example:
-[Dryad](http://datadryad.org),
-[Zenodo](http://zenodo.org),
-[FigShare](http://figshare.com),
-[Dataverse](http://thedata.org).
+* [Dryad](http://datadryad.org),
+* [Zenodo](http://zenodo.org),
+* [FigShare](http://figshare.com),
+* [Dataverse](http://thedata.org).
+
 Or domain specific, for example:
-[UniProt](https://www.uniprot.org/) protein data,
-[GenBank](https://www.ncbi.nlm.nih.gov/genbank/) sequence data,
-[MetaboLights](https://www.ebi.ac.uk/metabolights/) metabolomics data
-and [GitHub](https://github.com/) for code.
+* [UniProt](https://www.uniprot.org/) protein data,
+* [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) sequence data,
+* [MetaboLights](https://www.ebi.ac.uk/metabolights/) metabolomics data
+* [GitHub](https://github.com/) for code.
 
 *We will cover repositories in more details in a later episode.*
 

@@ -3,30 +3,42 @@ title: "Public repositories"
 teaching: 10
 exercises: 20
 questions:
-- "Where can we deposit and find research datasets?"
-- "What are general (research data) repositories?"
-- "What are specific (research data) repositories?"
-- "How do repositories help make research data FAIR?"
+- "Where can I deposit datasets?"
+- "What are general data repositories?"
+- "How to find a repository?"
 objectives:
 - "See the benefits of using research data repositories."
-- "Be able to find a suitable repository."
-- "Be able to differentiate between general and specific repositories."
-- "See how repositories help make research data FAIR."
+- "Differentiate between general and specific repositories."
+- "Find a suitable repository."
 keypoints:
-- "Repositories help researchers share their research data."
-- "Some repositories are general and others are more data-type specific."
-- "Repositories are key players in data reuse."
+- "Repositories are the main means for sharing research data."
+- "You should use data-type specific repository whenever possible."
+- "Repositories are the key players in data reuse."
 ---
 
 ## What are research data repositories?
-Research data repositories are online repositories that enable the preservation, curation and publication of research 'products'. These repositories are mainly used to deposit research 'data'. However, the scope of the repositories is broader as we can also deposit/publish 'code' or 'protocols' (as we will see later).  
+Research data repositories are online repositories that enable the preservation, curation and publication of research 'products'. These repositories are mainly used to deposit research 'data'. However, the scope of the repositories is broader as we can also deposit/publish 'code' or 'protocols' (as we saw with protocols.io). 
+
+There are general "data agnostic" repositories, for example:
+* [Dryad](http://datadryad.org),
+* [Zenodo](http://zenodo.org),
+* [FigShare](http://figshare.com),
+* [Dataverse](http://thedata.org).
+
+Or domain specific, for example:
+* [UniProt](https://www.uniprot.org/) protein data,
+* [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) sequence data,
+* [MetaboLights](https://www.ebi.ac.uk/metabolights/) metabolomics data
+* [GitHub](https://github.com/) for code.
+ 
 Research outputs should be submitted to discipline/domain-specific repositories whenever it is possible. When such a resource does not exist, data should be submitted to a 'general' repository.
-Research data repositories are a key resource to help in data FAIRification. 
+Research data repositories are a key resource to help in data FAIRification as they
+assure Findability and Accessibility.
 
 > ## Challenge 1. The general repository (5 minutes).
-> Have a look at the following data set in Zenodo:
+> Have a look at the following record for data set in Zenodo repository:
 > [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5045374.svg)](https://doi.org/10.5281/zenodo.5045374)  
-> Discuss: What elements make it FAIR?    
+> What elements make it FAIR?    
 >   
 > > ## Solution  
 > > The elements that make this deposit FAIR are:  
@@ -69,6 +81,20 @@ Research data repositories are a key resource to help in data FAIRification.
 > {: .solution}
 {: .challenge}
 
+> ## Minimal data set   
+> Minimal data set to consist of the data required to replicate all study findings reported 
+> in the article, as well as related metadata and methods.
+>
+> * The values behind the means, standard deviations and other measures reported;
+> * The values used to build graphs;
+> * The points extracted from images for analysis.
+>
+> (no need for raw data if the standard in the field is to share data that have been processed)
+>
+> [PLOS](https://journals.plos.org/plosbiology/s/data-availability)  
+>  
+{: .callout}
+
 > ## Challenge 3. Domain specific repositories (4 minutes).  
 >  
 > Select one of the following repositories based on your expertise/interests:  
@@ -100,7 +126,7 @@ So how do you go about finding a repository:
 	- [EMBO Press](https://www.embopress.org/page/journal/14602075/authorguide#datadeposition)
 	- [F1000 Research](https://f1000research.com/for-authors/data-guidelines)
 	- [GIGAscience - OUP](https://academic.oup.com/gigascience/pages/instructions_to_authors)
-	- [PLoS](https://journals.plos.org/plosbiology/s/data-availability#loc-recommended-repositories)
+	- [PLoS](https://journals.plos.org/plosbiology/s/recommended-repositories)
 	- [Scientific Data - Nature](https://www.nature.com/sdata/policies/repositories)
 	- [Taylor and Francis](https://authorservices.taylorandfrancis.com/data-sharing-policies/repositories/)
 	- [BBSRC](https://bbsrc.ukri.org/research/resources/)
@@ -143,6 +169,7 @@ A list of UoE BioRDM's recommended data repositories can be found [here](https:/
 
 ## Evaluating a research data repository
 You can evaluate the repositories by following this criteria:
+- who is behind it, what is its funding
 - quality of interaction: is the interaction for purposes of data deposit or reuse efficient, effective and satisfactory for you?
 - take-up and impact: what can I put in it? Is anyone else using it? Will others be able to find stuff deposited in it? Is the repository linked to other data repositories so I don't have to search tehre as well? Can anyone reuse the data? Can others cite the data, and will depositing boost citations to related papers?  
 - policy and process: does it help you meet community standards of good practice and comply with policies stipulating data deposit? 
