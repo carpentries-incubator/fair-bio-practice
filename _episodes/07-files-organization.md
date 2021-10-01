@@ -270,7 +270,7 @@ You can start by developing a logical folder structure. To do so, you need to ta
 >
 >> ## Solution
 >> * The b) structure is called "Organized by analysis" or "by figure"
->> * The structure similar to c) is recommended for Brain Imaging Data Structure (BIDS), as it is organized by patient and type of scans
+>> * The structure similar to c) is recommended for Brain Imaging Data Structure [BIDS](https://doi.org/10.1038/sdata.2016.44), as it is organized by patient and type of scans
 > {: .solution}
 {: .challenge}
 
