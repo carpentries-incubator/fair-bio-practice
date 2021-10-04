@@ -1,7 +1,7 @@
 ---
 title: "Public repositories"
 teaching: 10
-exercises: 20
+exercises: 30
 questions:
 - "Where can I deposit datasets?"
 - "What are general data repositories?"
@@ -35,7 +35,7 @@ Research outputs should be submitted to discipline/domain-specific repositories 
 Research data repositories are a key resource to help in data FAIRification as they
 assure Findability and Accessibility.
 
-> ## Challenge 1. The general repository (5 minutes).
+> ## Challenge 1. The general repository (8 minutes).
 > Have a look at the following record for data set in Zenodo repository:
 > [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5045374.svg)](https://doi.org/10.5281/zenodo.5045374)  
 > What elements make it FAIR?    
@@ -67,7 +67,7 @@ assure Findability and Accessibility.
 > {: .solution}
 {: .challenge}
 
-> ## Challenge 2. Datasets discovery (4 minutes).  
+> ## Challenge 2. Datasets discovery (5 minutes).  
 >  
 > Can you easily find similar data sets in Zenodo? Try to find an interesting dataset for you  
 >   
@@ -95,7 +95,7 @@ assure Findability and Accessibility.
 >  
 {: .callout}
 
-> ## Challenge 3. Domain specific repositories (4 minutes).  
+> ## Challenge 3. Domain specific repositories (7 + 3 minutes).  
 >  
 > Select one of the following repositories based on your expertise/interests:  
 >  
@@ -146,7 +146,7 @@ So how do you go about finding a repository:
 >> ## Solution  
 >>  
 >> a) GEO/SRA and ENA/ArrayExpress are good examples. Interestingly these repositories do not issue a DOI.  
->> b) IDR and UoE Public Omero are good examples. Once again, these repositories do not issue a DOI.  
+>> b) IDR is good examples.   
 > {: .solution}  
 {: .challenge}  
 
@@ -177,7 +177,7 @@ You can evaluate the repositories by following this criteria:
 An interesting take can be found at Peter Murray-Rust's blog post [Criteria for succesful repositories](https://blogs.ch.cam.ac.uk/pmr/2011/08/19/criteria-for-successful-repositories/).
     
     
-> ## Challenge 5, Wrap up discussion (3 minutes).
+> ## Challenge 5, Wrap up discussion (3 minutes OPTIONAL).
 > Discuss the following questions:
 > - Why is choosing a domain specific repositories over zenodo more FAIR?
 > - How can selecting a repository for your data as soon as you do an experiment (or even before!) can benefit you research and help your data become FAIR?
