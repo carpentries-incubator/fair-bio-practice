@@ -25,7 +25,9 @@ Simply put, metadata is data about the data. Sound confusing? Lets clarify: meta
 This is a confocal microscopy image of a *C. elegans* nematode strain used
 as a proteostasis model (Pretty! Isn't it?). The image is part of the raw data
 associated to [Goya et al., 2020](https://doi.org/10.1016/j.celrep.2019.12.078),
-which was deposited in a [Public Omero Server](https://publicomero.bio.ed.ac.uk/webclient/?show=dataset-231).
+which was deposited in a Public Omero Server   
+[Project](https://publicomero.bio.ed.ac.uk/webclient/?show=project-58)  
+[Figure1 set](https://publicomero.bio.ed.ac.uk/webclient/?show=dataset-231)
 
 <img src="../fig/04-microscopy_with_metadata.png" alt="nematode_confocal_microscopy_image" width="600"/>
 *Figure credits: María Eugenia Goya*
@@ -126,17 +128,7 @@ Descriptive and structural **metadata should be added
 continuously** throughout the project.
 
 
-> ## Where does data end and metadata start?
->
-> What is "data" and what is "metadata" can be a matter of
-> perspective: Some researchers' metadata can be other researchers'
-> data.
->
-> For example, a funding body is categorised as typical administrative metadata,
-> however, it can be used to calculate numbers of public datasets per funder
-> and then used to compare effects of different funders' policies on open practices.
->
-{: .callout}
+
 
 
 
@@ -158,80 +150,17 @@ continuously** throughout the project.
 > {: .solution}
 {: .challenge}
 
-## Being precise
-
-If the metadata purpose is to help understand the data, it has
-to be done in a precise and "understandable" way i.e. it has to be
-interoperable. To be interoperable metadata should use
-a formal, accessible, shared, and broadly applicable terms/language
-for knowledge representation.
-
-One of the easiest examples is the problem of author disambiguation.
-
-![Why we need ORCID](../fig/04-names-example.jpg)
-
-*After [Libarary Carpentry FAIR Data](https://librarycarpentry.org/lc-fair-research/)*
-
-
-> ## Open Researcher and Contributor ID (ORCID)
+> ## Where does data end and metadata start?
 >
-> Have you ever searched yourself in pubmed and found that you have a
-> *doppelganger*? So how can you uniquely associate something you created
-> to just yourself and no other researcher with the same name?
+> What is "data" and what is "metadata" can be a matter of
+> perspective: Some researchers' metadata can be other researchers'
+> data.
 >
-> [ORCID](https://orcid.org/) is a free, unique, persistent identifier that you own and control—forever.
-> It distinguishes you from every other researcher across disciplines,
-> borders, and time.
->
-> ORCIDs of authors of this episode are:
-> * [0000-0002-0194-5706](https://orcid.org/0000-0002-0194-5706)
-> * [0000-0003-0737-2408](https://orcid.org/0000-0003-0737-2408)
->
-> You can connect your iD with your professional information—affiliations,
-> grants, publications, peer review, and more.
-> You can use your iD to share your information with other systems,
-> ensuring you get recognition for all your contributions,
-> saving you time and hassle, and reducing the risk of errors.
->
-> If you do not have an [ORCID](https://orcid.org/),
-> you should register to get one!
+> For example, a funding body is categorised as typical administrative metadata,
+> however, it can be used to calculate numbers of public datasets per funder
+> and then used to compare effects of different funders' policies on open practices.
 >
 {: .callout}
-
-ORCID provides the registry of researchers, so they can be precisely identified.
-Similarly, there are other registries that can be used to identify many
-of biological concepts and entities:
-* species e.g. [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy)
-* chemicals e.g. [ChEBI](https://www.ebi.ac.uk/chebi)
-* proteins e.g. [UniProt](https://www.uniprot.org/)
-* genes e.g. [GenBank](https://www.ncbi.nlm.nih.gov/genbank/)
-* metabolic reactions, enzymes e.g [KEGG](https://www.genome.jp/kegg/)
-
-[NCBI](https://www.ncbi.nlm.nih.gov/) or [BioPortal](https://bioportal.bioontology.org/)
-are good places to start searching for a registry or a term.
-
-
-> ## Public ID in action (3)
->
-> Wellcome Open Research journal uses ORCID to identify authors.
-> * Open one of our papers [doi.org/10.12688/wellcomeopenres.15341.2](https://doi.org/10.12688/wellcomeopenres.15341.2)
-> and check how public IDs as ORCID can be used to interlink information.
-> * The second metadata example (the Excel table) contains two other
-> types of public IDs. Can you find them?
-> Can you find the meaning behind those Ids?
->
-> *If you have not done it yet, register yourself at ORCID*
->
-> > ## Solution
-> > ORCID is used to link to authors profiles which list their other
-> > publications.
-> >
-> > The metadata example contains genes IDs from The Arabidopsis Information Resource
-> > [TAIR](https://www.arabidopsis.org) and metabolites IDs from
-> > [KEGG](https://www.genome.jp/kegg/compound/)
-> >
-> {: .solution}
-{: .challenge}
 
 ## Adding metadata to your experiments
 
@@ -246,7 +175,7 @@ to using domain specific metadata standards and formats.
 
 But,
 * **What should be included in metadata?**
-* **What public IDs should be used?**
+* **What terms should be used in descriptions?**
 
 For many assay methods and experiment types, there are defined recommendations
 and guidelines called **Minimal Information Standards**.
@@ -269,6 +198,28 @@ and guidelines called **Minimal Information Standards**.
 > for finding standards
 >
 {: .callout}
+
+> ## Minimal information standard example (3 minutes)
+>
+> Look at ***Minimum Information about a Neuroscience Investigation (MINI) Electrophysiology***
+> [Gibson, F. et al. Nat Prec (2008)](https://www.nature.com/articles/npre.2008.1720.1.pdf).
+> which contains recommendations for reporting the use of electrophysiology in a neuroscience study.  
+> (*Neuroscience (or neurobiology) is the scientific study of the nervous system*).
+>
+> Scroll to *Reporting requirement* and decide which of the points 1-8 are:
+> * a) important for understanding and reuse of data
+> * b) important for technical replication
+> * c) could be applied to other experiments in neuroscience
+>
+> > ## Solution
+> > Possible answers:
+> > * a) 2, 3, 4, 5, 6, 8a-b 
+> > * b) 3, 7
+> > * c) 2, 3, 4, 5, 6 
+> >
+> {: .solution}
+{: .challenge}
+
 
 What if there are no metadata standards defined for your data / field of research?
 
