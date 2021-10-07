@@ -74,14 +74,18 @@ are good places to start searching for a registry or a term.
 > Wellcome Open Research journal uses ORCID to identify authors.
 > * Open one of our papers [doi.org/10.12688/wellcomeopenres.15341.2](https://doi.org/10.12688/wellcomeopenres.15341.2)
 > and check how public IDs as ORCID can be used to interlink information.
+>
+> * If you have not done it yet, register yourself at ORCID*
+
+>
 > * The second metadata example (the Excel table):
+> contains two other types of public IDs.  
 > ![Metadata in data table example](../fig/04-metadatafull_spreadsheet.png)
 > *Figure credits: Tomasz Zielinski and Andrés Romanowski*
-> contains two other types of public IDs.  
-> Can you find them?
-> Can you find the meaning behind those Ids?
+>   
+> 	- Can you find the public IDs?
+> 	- Can you find the meaning behind those Ids?
 >
-> *If you have not done it yet, register yourself at ORCID*
 >
 > > ## Solution
 > > ORCID is used to link to authors profiles which list their other
