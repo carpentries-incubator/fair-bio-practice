@@ -71,15 +71,18 @@ To show you how easy it is to work with Jupyter Notebooks, we have created an ex
 >> ## Solution
 >> The following code will result in your new graph:
 >> ~~~
->> ggplot(subset(df, light_condition %in% "LD"), # subset only SD from light condition column for plotting
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) + # x-axis shows genotype, y-axis shows biomas
-    geom_boxplot(alpha=0.3) +
-    labs(title = "Biomas per Genotype on long days",
-        x = "Genotype", # Title of x-axis
-        y = "Biomas (g)") + # Title of y-axis
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) + # change colour of groups
-    theme_bw() +
-    theme(legend.position="none")
+>> ggplot(subset(df, light_condition %in% "LD"), 
+>> # subset only SD from >>light condition column for plotting
+>>       mapping = aes(x = genotype, y = biomas, fill = genotype)) + 
+>> # x-axis shows genotype, y-axis shows biomas
+>>    geom_boxplot(alpha=0.3) +
+>>    labs(title = "Biomas per Genotype on long days",
+>>        x = "Genotype", # Title of x-axis
+>>        y = "Biomas (g)") + # Title of y-axis
+>>    # change colour of groups
+>>    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) +
+>>    theme_bw() +
+>>    theme(legend.position="none")
 >> ~~~
 >> {: .source}
 >>
@@ -148,8 +151,8 @@ I am code
 
 
 > ## Attribution
-> Content of this episode was adopted after XXX et al.
-> [YYY](https://biodare2.ed.ac.uk).
+> Content of this episode was adopted from
+> [Reproducible analysis and Research Transparency](https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html).
 {: .callout}
 
 
