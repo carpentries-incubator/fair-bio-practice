@@ -21,25 +21,6 @@ keypoints:
 
 What is left for us to do is write the code through which we want to analyse our data, and explain the narrative behind the experiment and interpretation of the results. Notebooks can be exported as .pdf and .html file which allows for easy sharing of notebooks.
 
-> ## Exercise
->
-> Discuss how Jupyter Notebooks can help in being FAIR:
->
->> ## Solution
->>
->> *  Findable - Jupyter notebooks can also be deposited on GitHub, making
->> them findable in the WWW
->> *  Accessible - Sharing of code in form of a Jupyter Notebook makes
->> data and analysis more accessible/shareable
->> *  Interoperable - The format of Jupyter Notebooks is highly
->> interoperable since files can be exported as .pdf, .html or as original
->> jupyter notebook files (.ipynb) which allows opening/viewing of these files with standard browsers
->> *  Reproducible - Sharing of results and code in form of a Jupyter
->> Notebook makes analysis reproducible and more understandable as the
->> entire workprocess and narrative is annotated throughout
-> {: .solution}
-{: .challenge}
-
 ## Working with Jupyter Notebooks
 
 To show you how easy it is to work with Jupyter Notebooks, we have 
@@ -121,14 +102,29 @@ using R.
 > short-days and long-days. To show the cell as Markdown and not code,
 > make sure "Markdown" is selected in the toolbar.
 > 5. To remove a cell, select it and click on the scissors icon in the
-> toolbar.
+> toolbar (This can be undone under Edit > Undo Delete Cells).
 > 6. To change the output of your graph click on the cell containing the
 > code below the "Visualise data" title. We want you to change the colours
 > of the box-plots. You can do this where the comment "# change colour of
 > groups" is written. Either you can use three different HEX codes (a
 > 6-symbol code representing colours from white to black), or colours
 > simply by their name - e.g. dark blue, orange...
+> 7. To save the graph under a different name add your initials to the
+> file name under which the image is being saved. Press Run again. Your
+> image should be visible in the overall file hierarchy.
 {: .challenge}
+
+## Jupyter Notebooks are easy to use and great for collaborative efforts
+Imagine your collaborators have shared this experiment measuring biomas of
+*Arabidopsis* with you and you were able to duplicate and follow their
+entire analysis from start to finish, including interpretation of data.
+Now you are interested in analysing what biomas look like on long-days.
+You are in luck! 
+
+Because Jupyter Notebooks are so easy to handle you simply need to copy
+and paste the already existing code your collaborators shared and adapt
+variables such as short-day to long-day and change the names under which
+figures are being saved to avoid duplication.
 
 > ## Exercise - add another analysis step
 > We have shown you how to manipulate text and code in Jupyter notebooks,
@@ -139,7 +135,7 @@ using R.
 > * edited code to depict graph from long-days and not short-days
 > * Figure legend
 > * statistical testing of difference between genotypes on long-days
-> *interpretation of results of statistical testing.
+> * interpretation of results of statistical testing.
 >
 >> ## Solution
 >> The following code will result in your new graph:
@@ -178,49 +174,34 @@ TukeyHSD(res.aov.LD)
 > {: .solution}
 {: .challenge}
 
-Show a notebook (with nice descriptions cells) which:
-- (if possible to get a sensible library/program) 
-calls a code from command line to do some simple file processing
-(maybe one step from workflows workshop) 
-that should show that it can replace commands lines while showing how exactly the programs/library well called
-- reads in the results or excell files (in python)
-- plots something from the results
-- saves the figure to a file
+## Easy sharing of your notebook
+We have now managed to not only reproduce code, but we were able to add to the analysis and interpretation of overall results. To show your PI and colleagues your results, you want to save the notebook in readable format.
 
-- ask to run it
-- ask to add some description (non coding cell)
-- ask to change input file to another one and re-analysed it
-
-
-## I am a section
-
-With a text.
-
-![Figure 1. I am some figure](../fig/figure_file.jpg)
-
-*After [Figure source](https://www.figure.link/)*
-
-
-> ## I am a yellow info
+> ## Exercise - Sharing of your Jupyter Notebook
+> 1. Download your Notebook (ensure all code has been run) as .html and .pdf
+> 2. View the documents and think about why it is important to run all code before download (try Cell > All Output > Clear and download your Notebook then and compare)
 >
-> And my text.
-{: .callout}
+>> ## Solution
+>> It is important all code is run before the notebook is downloaded, as during download only the text and graphs are saved that are currently visible in your notebook.
+> {: .solution}
+{: .challenge}
 
-
-~~~
-I am code
-~~~
-{: .source}
-
-
-> ## I am a problem
+> ## Exercise
 >
-> Defined here.
+> Discuss how Jupyter Notebooks can help in being FAIR:
 >
 >> ## Solution
 >>
->> *   I am an answer.
->> *   So am I.
+>> *  Findable - Jupyter notebooks can also be deposited on GitHub, making
+>> them findable in the WWW
+>> *  Accessible - Sharing of code in form of a Jupyter Notebook makes
+>> data and analysis more accessible/shareable
+>> *  Interoperable - The format of Jupyter Notebooks is highly
+>> interoperable since files can be exported as .pdf, .html or as original
+>> jupyter notebook files (.ipynb) which allows opening/viewing of these files with standard browsers
+>> *  Reproducible - Sharing of results and code in form of a Jupyter
+>> Notebook makes analysis reproducible and more understandable as the
+>> entire workprocess and narrative is annotated throughout
 > {: .solution}
 {: .challenge}
 
