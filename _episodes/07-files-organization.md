@@ -263,6 +263,7 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > Have a look at the four different folder structures. 
 >![File organisation strategies](../fig/07-file_organisation.png)
 *Figure credits: Ines Boehm*
+>
 > The first two” a) b) are recommended for computing, the other two: c) d) are for more wet/biological projects.
 >
 > * Which one is the most similar to your project structure?  
