@@ -186,23 +186,19 @@ We have now managed to not only reproduce code, but we were able to add to the a
 > {: .solution}
 {: .challenge}
 
-> ## Exercise
+> ## Exercise - Accessibility of Jupyter Notebooks
 >
-> Discuss how Jupyter Notebooks can help in being FAIR:
->
->> ## Solution
->>
->> *  Findable - Jupyter notebooks can also be deposited on GitHub, making
->> them findable in the WWW
->> *  Accessible - Sharing of code in form of a Jupyter Notebook makes
->> data and analysis more accessible/shareable
->> *  Interoperable - The format of Jupyter Notebooks is highly
->> interoperable since files can be exported as .pdf, .html or as original
->> jupyter notebook files (.ipynb) which allows opening/viewing of these files with standard browsers
->> *  Reproducible - Sharing of results and code in form of a Jupyter
->> Notebook makes analysis reproducible and more understandable as the
->> entire workprocess and narrative is annotated throughout
-> {: .solution}
+> On a scale from -2 to 2, how do you feel about the following statements (R is interchangeable with Python), where -2 (strongly disagree), 0 no 
+opinion to +2 strongly agree:
+> * making graphs for a subset of data is easier in R than in Excel
+> * it is easier to filter for data in R than in Excel
+> * it is easier to apply formulas or calculations in R than in Excel
+> * it is easier to generate a series of plots with similar layout in R than Excel
+> * it is easier to do large scale data processing in R than in Excel
+> * using notebooks does not require any programming knowledge
+> * notebooks give you a better overview of your data processing than Excel
+> * Jupyter is free, whilst a Microsoft Office (+Excel) suite costs $149.99, this alone is an incentive to use Jupyter notebooks as not all individuals have Microsoft Office supported by their employers
+> * you need to learn R to do any data processing in notebooks
 {: .challenge}
 
 
