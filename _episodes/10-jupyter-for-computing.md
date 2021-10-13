@@ -39,14 +39,21 @@ What is left for us to do is write the code through which we want to analyse our
 To show you how easy it is to work with Jupyter Notebooks, we have created an exercise for you where we will work on "real-life" data from an experiment looking at circadian influence on plants following short-day and long-day light exposure. We will create some graphs and test whether there are differences between our genotypes of arabidopsis using R.
 
 > ## Exercise - basics of Jupyter notebooks
-> Open this [Jupyter notebook](http://mango.bio.ed.ac.uk:8888/notebooks/student_notebook_light_conditions.ipynb) we will first show you how to copy our notebook and save it, and how to run the code:
-> 1. Have a look around the notebook, you should see experimental details, an image, and code. If you click on separate parts of the notebook you can see that it is divided into individual cells which are of varying type (Code, R in this case, or Markdown). Hashtags are comments within the code and shall help you to interpret what individual bits of code does.
-> 2. On the top tool bar click on "File > Make a Copy..." and the current notebook will be copied.
-> 3. Change the title of the notebook to your student name: On the very top next to the jupyter logo change copy to your initials e.g. "student_notebook_light_conditions_IB"
-> 4. To Save the notebook click on the disk symbol in the toolbar.
-> 5. To run the code select the top cell of the notebook - a light blue bar will appear to the left of the cell - and click "Run" in the tool bar. The selected cell jumps one cell down.
-> 6. To avoid having to press Run repeatedly until we are at the end of the code (try clicking Run two more times and see what happens), we want to run all the code. In the tool bar click "Cell" and select "Run All" "Cell > Run All".
-> 7. If you have another look at the notebook you can see that a table, graph and outputs of statistical testing have been generated.
+> Open this [Jupyter notebook](http://mango.bio.ed.ac.uk:8888/tree), we will first show you how to duplicate a notebook and save it and how to run the code:
+> 1. Select the notebook titled 'student_notebook_light_conditions.ipynb' as depicted below and click 'Duplicate'. Confirm with Duplicate when you are asked if you are certain that you want to duplicate the notebook.
+> ![Figure 1. Duplicate a Jupyter notebook](../fig/10-01-duplicate_notebook.png)
+> 1. A copy of the notebook has appeared with the suffix '-Copy' and a number (Figure 2a), select this notebook. Have a look around the notebook and explore its anatomy (Figure 2), you should see experimental details, an image, and code. If you click on separate parts of the notebook you can see that it is divided into individual cells (Figure 2 e-g) which are of varying type (Code, R in this case, or Markdown - Figure 2d). Hashtags are comments within the code and shall help you to interpret what individual bits of code do.
+> ![Figure 2. Anatomy of a Jupyter notebook: (a) depicts the name of the notebook, (b, c) are toolbars, (c) contains the most commonly used tools, (d) shows of what type - Markdown, Code etc... - the currently selected cell is, and (e-g) are examples of cells, where (e) shows the currently selected cell. ](../fig/10-02-jupyter_anatomy.png)
+> 1. Change the title of the notebook (a) to your initials e.g. "student_notebook_light_conditions_IB"
+> 1. To Save the notebook click on the disk symbol in the toolbar (c).
+> 1. To run the code select the top cell of the notebook (e) - this is likely pre-selected already - and click "Run" in the tool bar (c). The selected cell jumps one cell down (f).
+> 1. To avoid having to press Run repeatedly until we are at the end of the code (try clicking Run two more times and see what happens), we will show you how to run all the code. In the top tool bar (b) click "Cell" and select "Run All". ("Cell > Run All".)
+> 1. If you have another look at the notebook you can see that a table, graph and outputs of statistical testing have been generated.
+>> ## Solution
+>> If you followed all steps correctly you should have reproduced the table, a graph and statistical testing. Apart from the pre-filled markdown text the rendered values of the code should look like this:
+>> ![Figure 3. Rendering of data frame](../fig/10-03-jupyter_dataframe.png)
+>> ![Figure 4. Rendering of plot](../fig/10-04-jupyter_plot.png)
+> {: .solution}
 {: .challenge}
 
 > ## Exercise - how to add and remove content
