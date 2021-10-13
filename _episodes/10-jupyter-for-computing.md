@@ -202,10 +202,30 @@ opinion to +2 strongly agree:
 {: .challenge}
 
 
-> ## Attribution
-> Content of this episode was adopted from
+> ## Further Reading
 > [Reproducible analysis and Research Transparency](https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html).
 {: .callout}
 
+>## For instructors: Advanced teaching
+> For experienced Notebook users who normally use Python:
+> * Create your own notebook using Python instead of R, replicate the above code-output
+> 
+> For experienced R users:
+> * Plot both short- and long-day light conditions as a grouped boxplot
+>  
+>> ## Solution
+>> ```
+>> ggplot(df, mapping = aes(x = genotype, y = biomas, fill=light_condition)) +
+>>     geom_boxplot() +
+>>     labs(title = "Biomas per Genotype",
+>>         x = "Genotype",
+>>         y = "Biomas (g)",
+>>         fill = "Light condition") +
+>>     theme_bw()
+>> ```
+>> ![Figure 5. Advanced Plot](../fig/10-05-advanced_plot.png)
+>>*Figure 5. Short- and long-day light conditions depicted as a grouped boxplot*
+> {: .solution}
+{: .callout}
 
 {% include links.md %}
