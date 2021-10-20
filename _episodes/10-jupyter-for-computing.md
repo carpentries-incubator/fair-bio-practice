@@ -15,11 +15,40 @@ keypoints:
 - "One single document can visualise background, results, formulae/code and metadata"
 - "One single document helps to make your work more understandable, repeatable and shareable"
 ---
+## Reusable Computing
+We have previously discussed electronic lab notebooks and their benefit in being FAIR.
+If you are working with large datasets, mathematical models, complex visualisations of 
+your data then you might already be frustrated by having to copy and paste your figures
+into your electronic lab notebook after each iteration of new code, and you might have
+already lost track of which code corresponded to which figure and why you changed your 
+code last time.
 
-## Jupyter Notebook for FAIR practices
-[Jupyter](www.jupyter.org) Notebooks are interactive web applications which allow you to type and edit lines of code in Python or R, and view the output (e.g. graphs or calculations) immediately. The huge benefit of such notebooks is that source code is mixed with documentation, thus explaining experimental setup, analysis, results of tables and plots throughout.
+There is a simple solution to this: **Computational notebooks**
 
-What is left for us to do is write the code through which we want to analyse our data, and explain the narrative behind the experiment and interpretation of the results. Notebooks can be exported as .pdf and .html file which allows for easy sharing of notebooks.
+## Computational Notebooks - Jupyter Notebook for FAIR practices
+Computational notebooks are essentially laboratory notebooks for scientific computing.
+Instead of pasting DNA gels alongside lab protocols, researchers embed code, data and 
+text to document their computational methods. A free and popular tool that is being
+used across specialities is **the Jupyter notebook**.
+
+[Jupyter](www.jupyter.org) Notebooks are interactive web applications which allow you 
+to type and edit lines of code in the programming languages July (Ju), Python (Py), or R,
+hence it's name Jupyter, and view the output (e.g. graphs or calculations) immediately. 
+The huge benefit of such notebooks is that source code is mixed with documentation, thus
+explaining experimental setup, analysis, results of tables and plots throughout.
+
+What is left for us to do is write the code that will analyse our data, and explain 
+the narrative behind the experiment and interpretation of the results. For data 
+scientists, this format can drive exploration via interactive computing. This is an 
+environment in which users execute code, see what happens, modify and repeat in an 
+iterative process between researcher and data.
+As a basic principle Jupyter Notebooks run on a 'kernel' which is responsible in
+execution of the code. Generally this 'kernel' can run on your computer, additionally
+external servers (e.g. our BioRDM server which we use below to host our notebook) can 
+be provided for you to store and analyse your data. Notebooks can also be exported as 
+.pdf and .html files which allow easy sharing of outputs, and other tools such as [nbviewer](https://nbviewer.org/), 
+an open-source service that allows users to render their Jupyter notebooks on GitHub 
+in a web browser without having to install the software or any programming libraries. 
 
 ## Working with Jupyter Notebooks
 
@@ -81,6 +110,119 @@ using R.
 >>*Figure 4. Rendering of plot*
 > {: .solution}
 {: .challenge}
+
+## Coding Good Practices
+Before we let you go wild in our subsequent exercises we would like to go highlight a
+few standards and best practices that will help you generate cleaner, more readable, 
+more efficient code.
+
+### Advantages of using Coding Standards
+* ability to retrace code created by different programmers (uniformity)
+* reusable code
+* easier to detect errors
+* code is simpler, more readable, easier to maintain
+* allows to generate faster results and work more efficiently
+
+### Best Practices
+* write as few lines as possible (this will make your code faster)
+* use appropriate names to describe your variables: e.g. df for dataframe instead of x
+* segment blocks of code in the same section into paragraphs e.g. note the difference below following two code blocks
+
+```
+## Wrong
+library(ggplot2)
+df <- read.delim(file = "light_results.txt")
+df
+df$genotype <- factor(df$genotype, levels = c("WT", "PhyA-211","elf4-101"))
+options(repr.plot.width = 5, repr.plot.height = 4)
+ggplot(subset(df, light_condition %in% "SD"),
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days",
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```  
+
+```
+## Better
+df <- read.delim(file = "light_results.txt")
+df
+
+df$genotype <- factor(df$genotype, levels = c("WT", "PhyA-211","elf4-101"))
+
+options(repr.plot.width = 5, repr.plot.height = 4)
+ggplot(subset(df, light_condition %in% "SD"),
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days",
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+* use indentations to mark the beginning and end of structures: note the difference in 
+the two code blocks below. The indentations clearly mark that mapping belongs within 
+the function of ggplot, x and y clearly belong to labs. The other functions are being 
+passed to the ggplot function and allow to change overall plot appearance.
+
+```
+## Wrong
+ggplot(subset(df, light_condition %in% "SD"),
+mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+geom_boxplot() +
+labs(title = "Biomas per Genotype on short days",
+x = "Genotype",
+y = "Biomas (g)") +
+scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+
+```
+## Better
+ggplot(subset(df, light_condition %in% "SD"),
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days",
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+* Whilst indentations are great, don't go too deep, as this will make code harder to 
+read and follow.
+* Don't repeat yourself!! If there is a repetitive task, automate this using a function 
+or already existing packages (R and Python have many data wrangling packages available)
+* Avoid long lines: horizontal block text is easier to read for us humans. Note the 
+difference between these two code blocks
+
+```
+## Wrong
+ggplot(subset(df, light_condition %in% "SD"), mapping = aes(x = genotype, y = biomas, fill = genotype)) + geom_boxplot() + labs(title = "Biomas per Genotype on short days", x = "Genotype", y = "Biomas (g)") + scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+
+```
+## Better
+ggplot(subset(df, light_condition %in% "SD"),
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days",
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+* most importantly leave comments of what your code does! Describe code functions
+throughout, add headers in between analysis steps (if code is self-explanatory this is not
+necessary - e.g. in our lesson we annotated all code as not everyone is familiar with R)
+```
+## Ideal
+
+## plot the graph using ggplot
+ggplot(subset(df, light_condition %in% "SD"), # subset only SD from light condition column
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) + # colours are by genotype
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days", # define plot title, and x- and y-axis
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) # change colour of groups
+```
 
 > ## Exercise - how to add and remove content
 > In your previously saved notebook, we will now show you how to add text
@@ -201,9 +343,14 @@ opinion to +2 strongly agree:
 > * you need to learn R to do any data processing in notebooks
 {: .challenge}
 
+> ## Attribution
+> Content of this episode was adopted after XXX et al.
+> [Why Jupyter is a data scientists' computational notebook of choice](https://doi.org/10.1038/d41586-018-07196-1)
+> [Coding Standards best practices](https://www.browserstack.com/guide/coding-standards-best-practices)
+{: .callout}
 
 > ## Further Reading
-> [Reproducible analysis and Research Transparency](https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html).
+> [Reproducible analysis and Research Transparency](https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html)
 {: .callout}
 
 >## For instructors: Advanced teaching
