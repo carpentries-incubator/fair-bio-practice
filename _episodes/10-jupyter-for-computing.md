@@ -344,13 +344,13 @@ opinion to +2 strongly agree:
 {: .challenge}
 
 > ## Attribution
-> Content of this episode was adopted after XXX et al.
-> [Why Jupyter is a data scientists' computational notebook of choice](https://doi.org/10.1038/d41586-018-07196-1)
-> [Coding Standards best practices](https://www.browserstack.com/guide/coding-standards-best-practices)
+> Content of this episode was adopted after
+> * [Why Jupyter is a data scientists' computational notebook of choice](https://doi.org/10.1038/d41586-018-07196-1)
+> * [Coding Standards best practices](https://www.browserstack.com/guide/coding-standards-best-practices)
 {: .callout}
 
 > ## Further Reading
-> [Reproducible analysis and Research Transparency](https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html)
+> * [Reproducible analysis and Research Transparency](https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html)
 {: .callout}
 
 >## For instructors: Advanced teaching
