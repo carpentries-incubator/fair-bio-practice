@@ -1,7 +1,7 @@
 ---
 title: "Being precise"
-teaching: 10
-exercises: 20
+teaching: 16
+exercises: 6
 questions:
 - "How to make my metadata interoperable?"
 - "How to avoid disambiguation?"
@@ -14,6 +14,7 @@ keypoints:
 - "Automatic data aggregations needs standarised metadata formats and values"
 ---
 
+(16 min teaching)
 
 ## Being precise
 
@@ -69,15 +70,22 @@ of biological concepts and entities:
 are good places to start searching for a registry or a term.
 
 
-> ## Public ID in action (3)
+> ## Exercise 1: Public ID in action (3 min)
 >
-> Wellcome Open Research journal uses ORCID to identify authors.
+> The Wellcome Open Research journal uses ORCID to identify authors.
 > * Open one of our papers [doi.org/10.12688/wellcomeopenres.15341.2](https://doi.org/10.12688/wellcomeopenres.15341.2)
-> and check how public IDs as ORCID can be used to interlink information.
+> and have a look how public IDs such as ORCID can be used to interlink information.
 >
-> * If you have not done it yet, register yourself at ORCID*
+> * If you have not done so yet, register yourself at ORCID*
+>
+> > ## Solution
+> > ORCID is used to link to authors profiles which list their other
+> > publications.
+> {: .solution}
+{: .challenge}
 
->
+
+> ## Exercise 2: Public ID in action 2 (3 min)
 > * The second metadata example (the Excel table):
 > contains two other types of public IDs.  
 > ![Metadata in data table example](../fig/04-metadatafull_spreadsheet.png)
@@ -88,9 +96,6 @@ are good places to start searching for a registry or a term.
 >
 >
 > > ## Solution
-> > ORCID is used to link to authors profiles which list their other
-> > publications.
-> >
 > > The metadata example contains genes IDs from The Arabidopsis Information Resource
 > > [TAIR](https://www.arabidopsis.org) and metabolites IDs from
 > > [KEGG](https://www.genome.jp/kegg/compound/)
@@ -98,11 +103,5 @@ are good places to start searching for a registry or a term.
 > {: .solution}
 {: .challenge}
 
-
-
-> ## Attribution
->
-> Content of this episode was adapted from:
-{: .callout}
 
 {% include links.md %}
