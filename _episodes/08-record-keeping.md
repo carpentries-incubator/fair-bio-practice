@@ -1,8 +1,8 @@
 ---
 title: "Record keeping"
-teaching: 20
-exercises: 40
-questions:
+teaching: 39
+exercises: 31
+questions: 
 - "How and why to keep good quality records for experiments?"
 - "How to streamline and simplify record keeping and its maintenance with electronic lab notebooks and online protocols?"
 - "How to keep records FAIR?"
@@ -30,8 +30,18 @@ Here is the same protocol typed out on [protocol.io](https://dx.doi.org/10.17504
 
 Although digital protocols are the better of the two, analogue protocols certainly have their place. For example, it is often easier to make notes on analogue protocols which you can return to later. Additionally, your working environment may make it too risky to bring expensive technology (just in case), whereas pen and paper can be fine. In cases like these, a hybrid system is often best - where analogue notes are digitized. This can be the best of both worlds.
 
-> ## Challenge (5 minutes)
-> What are advantages and disadvantages of traditional analog records vs. digital records? Try to find at least a handful of advantages and disadvantages for each. With all of these, which system do you think is most advantageous?
+> ## Exercise 1: Differences between analog and digital record keeping (4 + 5 min)
+> Compare the [electronic version of the tea protocol](https://www.protocols.io/view/how-to-make-a-cup-of-tea-buhknt4w)
+>with the paper one from the photo:
+><img src="../fig/06-handwritten-tea-protocol.jpg" alt="handwritten-tea-protocol" width="400"/>
+> *Figure credits: Ines Boehm and Ben Thomas*
+>
+> What are advantages and disadvantages of traditional analog records vs. digital records?
+>
+> Try to find at least a handful of advantages and disadvantages for each.
+>
+> With all of these, which system do you think is most advantageous?
+>
 >> ## Solution
 >> **Advantages of traditional analog records**
 >> * Ability to directly draw on your records
@@ -61,7 +71,10 @@ Although digital protocols are the better of the two, analogue protocols certain
 > {: .solution}
 {: .challenge}
 
+
 ## Why do we need to keep good quality records?
+(19 min teaching)
+
 Good scientific practice includes good record keeping, which ensures not only transparency and reproducibility, but also accountability. One prime example of why this is necessary is the recent data scandal surrounding [Novartis' FDA approved gene therapy](https://www.biopharmadive.com/news/novartis-gene-therapy-application-contained-manipulated-data-fda-says/560346/) Zolgensma, for the fatal childhood motor neuron disease Spinal Muscular Atrophy (the most expensive treatment ever approved).
 Novartis submitted manipulated data, showing that the comparison of two versions of Zolgensma in Phase 1 and Phase 3 testing had similar therapeutic activity. 
 How can we prevent the occurrence of data manipulation such as this in the future, or how can we as a research community implement practices to make it easier to find manipulated records? FAIR record keeping, for example version control can help, as it shows what changes have been made when in electronic laboratory notebooks (ELNs), which will make it difficult to manipulate results such as this without leaving a trace.
@@ -99,7 +112,7 @@ If you have not created accounts yet for both of them, please do so now as you w
 ### Electronic lab notebooks
 By now you should be familiar with the concept of why digital record keeping is important, as this is ultimately more reproducible. It is self-explanatory that handwritten notes and laboratory notebook entries take more time to search when looking for an entry. Electronic lab notebooks allow organisation by project, and the search function, or filters, can quickly find what we are looking for. We will now show how to reuse a lab entry that has already been created by someone else. 
 
-> ## ELN excercise (5 minutes):
+> ## Exercise 2: Re-using a published lab entry (6 minutes):
 > To highlight how easy it is to reuse protocols someone else has used in their lab entry, integrate these into your electronic lab notebooks, and export these for e.g. printing we will be looking at the following [Benchling lab entry, making Breakfast](https://benchling.com/s/etr-SY8fi7L8ZIDSMCLCf92o).
 > ~~~
 > ### Re-use a published lab entry
@@ -112,9 +125,11 @@ By now you should be familiar with the concept of why digital record keeping is 
 > {: .source}
 {: .challenge}
 
+(2 min teaching)
+
 With your newly set up lab entry, play around with it to explore the interface. Add or remove some text, use the tool to embed a picture etc... You can add text beside the image to 'annotate' this appropriately for example. Explore the various things you can interact with to get an understanding of the interface on Benchling.
  
-> ## Adapting a protocol to your needs (6 minutes)
+> ## Exercise 3: Adapting a protocol to your needs (4 minutes)
 > 1. You have now accessed a digital record and want to reuse it to make your own breakfast. To show how reusable digital recors are we will first navigate through the cloned file you made in your project.
 > 2. Navigate to your Project 'Breakfast', you can tell you are in your Project, if your initials show in a red circle next to entries in the side bar. You should see the lab entry 'Eggs Florentine in Portobello Mushrooms', and the top bar above the title and toolbar should read 'Tea', 'Portobello Mushrooms and Spinach', 'Poached Egg and Hollandaise Sauce', 'Add Protocol', 'Notes', and 'Metadata'.
 > 3. Click through those tabs and you will see that in your notes you have your lab entry describing how breakfast was made with embedded graphics and a shopping list and current prices. The other three tabs describe the protocols that were used, and you can add additional protocols with the 'add protocol' tab. We want you to adapt the 'Tea' protocol to suit your ingredients and methods.
@@ -127,7 +142,7 @@ With your newly set up lab entry, play around with it to explore the interface. 
 
 You hopefully should have set your tea making protocol up so that it's just the way you like it. Moreover, it should have been easy to make the changes to the protocol. Looking at the history of the record allows you to see the original protocol from which you adapted, and linked your adaptation.
 
-> ## How easy it is to share your record (4 minutes)
+> ## Exercise 4: Sharing your record (4 minutes)
 > 1. Click the info icon on the right hand side underneath the clock symbol you used previously and select 'Export entry'
 > 2. Your export is now running, you will receive an email when the export is complete
 > 3. Click the link in the email to download your protocol as a .zip
@@ -137,13 +152,21 @@ You hopefully should have set your tea making protocol up so that it's just the 
 > {: .source}
 {: .challenge}
 
+(2 min teaching)
+
 Now that you have your export you can easily share it with others and use it yourself elsewhere, while your digital record (and links to the original record) are maintained online. You can share the PDF that you have exported with others (or print it and store it the lab/workspace), or link them to your digital record, allowing them to make further changes if you wish.
+
+Our Benchling tutorial: [BioRDM Wiki](https://www.wiki.ed.ac.uk/display/RDMS/Benchling+%28quick%29+tutorial)
+
+**Further resources and tutorials from Benchling:**
+* [Main help page, with access to several tutorials](https://help.benchling.com/en/)
+* [More molecular biology features](https://help.benchling.com/en/collections/69523-molecular-biology)
+* [Benchling training kit for academics](https://help.benchling.com/en/collections/1608962-benchling-training-kit-for-academics)
 
 ### Electronic Protocols
 As you could see, Benchling has an integrated platform for protocols. But there are other repositories, such as protocols.io that we briefly mentioned beforehand, which have been developed to help make protocols FAIR. One can publish protocols with a DOI which has many benefits that we discussed in the previous lesson. Another strength is, that you can create a protocol, fork the original protocol if your lab started implementing small changes, and retain **both** versions that you can cite in your publications or share with your collaborators. 
 
-
-> ## Adapt public protocols and retain provenance (10 minutes)
+> ## Exercise 5: Adapt a public protocol and retain its provenance (6 minutes)
 > To copy protocols from protocols.io, edit them and export them as a .pdf there are a few simple steps to follow. We will be using the [making a cup of tea protocol](https://dx.doi.org/10.17504/protocols.io.buhknt4w).
 > ~~~
 > # Fork the protocol, preserving the original for crediting
@@ -169,6 +192,8 @@ As you could see, Benchling has an integrated platform for protocols. But there 
 > {: .source}
 {: .challenge}
 
+(3 min teaching)
+
 Now, if you go back to the original protocols.io protocol that you have forked from, and click on metrics, you will see how that views have increased. Additionally, if you click on 'Forks', it will show you that there are a multitude of private forks and if you click on one of these forks, e.g. 'Cup of tea (polish way)' you will be taken to the protocol. A particular perk of this is accessibility and accompanying accountability to the original creator of the work. 
 
 ## How to choose the right platform?
@@ -191,27 +216,27 @@ It is always best to use a free version or trial version to test an ELN first an
 * Labarchives (trial possible contacting the company)
 * WikiBench (works on top of Confluence)
 
-> ## ELN challenge (7 minutes)
+> ## Exercise 6: ELN challenge (4 minutes)
 >  
 > Do you use an ELNs? Which one? What features do you like?  
 >  
 {: .challenge}
 
-
+(2 min teaching)
 
 ## How does good record keeping help us get FAIR ready?
 Accessibility of your protocols online allows to share them with collaborators who need them for a publication and a DOI of said protocols allows to cite them with credibility. Electronic lab records allow for easier re-usability and access of your data across multiple platforms. Changes in your records can be traced back, therefore giving accountability.
 
-> ## FAIR record keeping - Quiz (3 minutes)
+> ## FAIR record keeping - Quiz (3 min + into break)
 >
-> Which of the following statement are true/false.
+> Which of the following statement are true (T)/false (F).
 >
-> * Good record keeping ensures transparency and reproducibility. (T)
-> * There are no advantages to using analog record keeping when compared to digital record keeping. (F)
-> * Digital records help people view a protocol simultaneously. (T)
-> * Digitally kept records can be quickly and easily edited. (T)
-> * On balance, digital record keeping is more advantageous than analog record keeping. (T)
-> * Digital records are easier to search than analog records. (T)
+> * Good record keeping ensures transparency and reproducibility.
+> * There are no advantages to using analog record keeping when compared to digital record keeping.
+> * Digital records help people view a protocol simultaneously.
+> * Digitally kept records can be quickly and easily edited.
+> * On balance, digital record keeping is more advantageous than analog record keeping.
+> * Digital records are easier to search (for and within) than analog records.
 >
 >> ## Solution  
 >>  

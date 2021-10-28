@@ -1,7 +1,7 @@
 ---
 title: "(Meta)data in Excel"
-teaching: 0
-exercises: 0
+teaching: 42
+exercises: 16
 questions:
 - "How to represent data in tables"
 objectives:
@@ -12,6 +12,7 @@ keypoints:
 - "Include only one piece of information in a cell"
 - "It is easier to store data in the correct form than to clean data for reuse"
 ---
+(2 min teaching)
 
 Tables are one of the best forms of storing and representing information.
 That is why we find them almost everywhere, from a menu in a restaurant, a bank
@@ -21,7 +22,7 @@ and we tend to predominantly use Excel.
 Excel is easy to use, flexible and powerful, however, it often gives us too much freedom
 which leads to bad practices and difficult to re-use data and metadata.
 
-> ## What can go wrong with data in Excel
+> ## Exercise 1: What can go wrong with data in Excel (4 min)
 >
 > Have a look at the example [data-file](../files/04-bad-metadata.xlsx) in Excel.
 >
@@ -30,10 +31,10 @@ which leads to bad practices and difficult to re-use data and metadata.
 > It contains data similar to the presented data before from experiments on plants in
 > different light conditions. Imagine you need to work with this file.
 >
-> 1. What is confusing in this file, what would you try to clarify with its author before
-> using it
-> 2. What issues will you encounter with calculation of: average biomas, biomas per genotype
-> 3. Typically, more advanced data analysis is done programmatically, which requires either
+> 1. What do you find confusing?
+> 2. What would you try to clarify with the author before doing anything with the file?
+> 3. What will be the issues with calculation of: average biomas, biomas per genotype?
+> 4. Typically, more advanced data analysis is done programmatically, which requires either
 > conversion to text format as csv, tsv format or using a library that reads Excel files
 > and "kind of makes this conversion on the fly".
 > Save this file in a text format, close Excel and reopen the saved files. What has changed?
@@ -43,23 +44,25 @@ which leads to bad practices and difficult to re-use data and metadata.
 >> ## Solution
 >>
 >> This file hopefully unrealistically exacerbates typical bad practices in Excel.
->> 1. Some things that may be confusing:
+>> 1+2. Some things that may be confusing:
 >>      - Why are there two tables, are the period measurement related to the metabolics i.e. same samples?
 >>      - Do colors in the period table have the same meaning? Seems no.
->>      - Why is row 22 read, whilst row 13 says error?
+>>      - Why can row 22 be read, whilst row 13 says error?
 >>      - What is the meaning of values in the media column?
 >>      - Are the genotypes the same in different blocks or not?
->> 2.
+>>      - What is the meaning behind bold text in the table?
+>>      - What is the definition of the terms/why are units missing/inconsistent?
+>> 3.
 >>      - Before averaging the biomas weight, they need to get converted the same unit and the text needs to get replaced by the unit.
 >>      - Averaging per genotype needs manual selection of suitable entries
->> 3.
+>> 4.
 >>      - Information about light conditions is completely lost.
 >>      - Header columns are scrambled.
 >>      - The update date may change its meaning depending on the location (switch year with day).
 > {: .solution}
 {: .challenge}
 
-## Common Spreadsheet Errors
+## Common Spreadsheet Errors (25 min teaching)
 
 ### <a name="tables"></a> 1. Using multiple tables
 
@@ -261,7 +264,7 @@ Author  |  Ann Smart  |  Daniele Hardwork
 Title   |  Starch content in Arabidopis T. under different light conditions
 ```
 
-> ## Spotting problems
+> ## Exercise 2: Spotting problems (4 min)
 >
 > Which of the problems discussed above can you spot...:
 >
@@ -294,7 +297,7 @@ Title   |  Starch content in Arabidopis T. under different light conditions
 > {: .solution}
 {: .challenge}
 
-> ## Clean data tables make life easier
+> ## Clean data tables make life easier (6 min teaching)
 >
 > Let's check the cleaned version of the previous [file](../files/04-better-metadata.xlsx).
 >
@@ -307,10 +310,10 @@ Title   |  Starch content in Arabidopis T. under different light conditions
 > How long do you think it took to "clean" the original, problematic data?
 {: .callout}
 
-## Outsmarted by Excel
-
-Excel has built in autoformatting functions which can make biologist's life more difficult
-
+>## Exercise 3: Outsmarted by Excel (3 min)
+>
+>Excel has built in autoformatting functions which can make biologist's life more difficult
+>
 > ## Finding the right date
 >
 > Open Excel and type following values into the cells:
@@ -324,8 +327,10 @@ Excel has built in autoformatting functions which can make biologist's life more
 > * Can you force Excel to keep your formatting?
 > * Do you know which year the dates represent?
 >
-> {: .solution}
+>
 {: .challenge}
+
+(9 min teaching)
 
 A team of Australian researchers analyzed nearly 3,600 genetics papers [Ziemann 2016](https://doi.org/10.1186/s13059-016-1044-7).
 As is common practice in the field, these papers all came with supplementary files
@@ -362,20 +367,20 @@ When using text files (.csv, .tsv), You should always document what format you a
 
 > ## To use or not to use Excel
 >
-> Excel file format `.xlsx` is now open, widely used and supported by external libraries
+> The Excel file format `.xlsx` is now open, widely used and supported by external libraries
 > and thus it could be considered interoperable. Nowadays it is admissible as being FAIR.
 >
 > However, plain text files like comma or tab separated values (.csv, .tsv) can be accessed without
 > any special software. Data in a CSV file can also easily be imported into other formats
-> and environments, such as SQLite and R. We’re not tied to a certain version of a certain
+> and environments, such as SQLite and R. We are not tied to a certain version of a certain
 > expensive program when we work with CSV files,
-> so it’s a good format to work with for maximum portability and endurance.
+> so it is a good format to work with for maximum portability, interoperability and endurance.
 > If such files are handled only with text editors or programmatically (R, Python)
 > then they are a safer option as they prevent the autoformatting issues described before.
 >
-> If you analyse your data with R or python, or you know that your data are meant
+> If you analyse your data with R or Python, or you know that your data are meant
 > to be processed that way
-> you should be using text formats whenever possible and as soon as you capture your data.
+> you should be using text formats whenever possible, and as soon as you capture your data.
 >
 > However, if you only use Excel and so does your community, just keep using it.
 > Just be aware of the possible pitfalls discussed, especially when working with gene or protein names and accession numbers.
@@ -400,19 +405,15 @@ When using text files (.csv, .tsv), You should always document what format you a
 {: .callout}
 
 
-> ## Data tables and FAIR
+> ## Exercise 4: Data tables and FAIR (5 min)
 >
-> How the described practices for representing data in tables (Excel, .csv or .tsv)
-> help in achieving FAIR? Which aspects of FAIR they help with.
+> How do the described practices for representing data in tables (Excel, .csv or .tsv)
+> help in achieving FAIR? Which aspects of FAIR do they help with?
 >
 >
 {: .challenge}
 
 
-> ## Attribution
-> Content of this episode was adopted after XXX et al.
-> [YYY](https://biodare2.ed.ac.uk).
-{: .callout}
 
 
 {% include links.md %}
