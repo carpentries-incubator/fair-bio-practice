@@ -1,7 +1,7 @@
 ---
 title: "Working with files"
-teaching: 20
-exercises: 20
+teaching: 34
+exercises: 32
 questions:
 - "How should I name my files?"
 - "How does folder organisation help me"
@@ -16,7 +16,7 @@ keypoints:
 ---
 
 ## Project organization: planning file names and folder structure
-
+(3 min teaching)
 Before you even start collecting or working with data you should decide how to structure and name files and folders. This will:
 * allow for standardized data collection and analysis by many team members.
 * make it easier for the researcher to determine where files should be saved.
@@ -52,7 +52,7 @@ and allow you to easily identify if something is missing.
 > * at timepoint 4 (t04)
 
 
-> ## Naming and sorting (5+2 minutes)
+> ## Exercise 1: Naming and sorting (12 min - 3 min explanation)
 > Have a look at the example files from a project, similar
 > to the one from the previous metadata episode.
 >
@@ -112,6 +112,9 @@ and allow you to easily identify if something is missing.
 > >
 > {: .solution}
 {: .challenge}
+<br>
+
+(4 min teaching)
 
 Some things to take into account to decide on your naming convention are:
 
@@ -144,7 +147,7 @@ they still cause problems with most software or between operating systems (OS)
 - avoid deep paths with long names (i.e. deeply nested folders with long names)
 as archiving or moving between OS may fail
 
-> ## A good name (3)
+> ## Exercise 2: A good name (3 min)
 > Select which file options adhere the best to the presented recommendations:
 > 
 > 1.  
@@ -174,7 +177,7 @@ If adding all the relevant details to file names makes them too long,
 it is often a signal that you should use folders to organize the files and
 capture some of those parameters.
 
-> ## Folders vs Files (3 minutes)
+> ## Exercise 3: Folders vs Files (5 min)
 >
 > Have a look as these two different organization strategies:
 >
@@ -245,6 +248,7 @@ capture some of those parameters.
 {: .callout}
 
 ## Strategies to set up a clear folder structure
+(3 min teaching)
 Establishing a system that allows you to access your files,
 avoid duplication and ensure that your data can be easily found
 needs planning.
@@ -257,22 +261,22 @@ You can start by developing a logical folder structure. To do so, you need to ta
 - Be consistent: agree on a naming convention from the outset of your research project.
 
 
-
-> ## Typical folder organizations (3+2)
+> ## Exercise 4: Typical folder organizations (7 min)
 >
 > Have a look at the four different folder structures. 
->![File organisation strategies](../fig/07-file_organisation.png)
-*Figure credits: Ines Boehm*  
+> <img src="../fig/07-file_organisation.png" alt="file-organisation-strategies" width="600"/>
+> *Figure credits: Ines Boehm*  
 >
-> The first two” a) b) are recommended for computing, the other two: c) d) are for more wet/biological projects.
+> The first two: a) b) are recommended for computing, the other two: c) d) are for more wet/biological projects.
 >
 > * Which one is the most similar to your project structure?  
 > * When/why would you use a) and when/why b)
 > * When/why would you use c) and when/why d)
 >
 >> ## Solution
->> * The b) structure is called "Organized by analysis" or "by figure"
->> * The structure similar to c) is recommended for Brain Imaging Data Structure [BIDS](https://doi.org/10.1038/sdata.2016.44), as it is organized by patient and type of scans
+>> * The b) structure is called "Organized by analysis" or "by figure", this is useful when analysing datasets in parallel
+>> * The structure similar to c) is recommended for Brain Imaging Data Structure [BIDS](https://doi.org/10.1038/sdata.2016.44), as it is organized by "patient" (in this case pig) and type of scans
+>> * d) is useful when we are interested in outcomes of drug treatments
 > {: .solution}
 {: .challenge}
 
@@ -335,7 +339,7 @@ Replaced by folders comparison as it was not working
 > {: .solution}
 {: .challenge}
 -->
-
+(5 min teaching)
 > ## After you have a plan
 > Your naming conventions might need some adjustments as the project progresses.
 > Don't despair, just document it!
@@ -366,11 +370,23 @@ and what solutions are available in your organisation.
 ## Project file organization and FAIR guidelines
 
 
-> ## FAIR Files (3 minutes)
-> In groups, discuss:
-> * how can strategy for folder organisation and naming convention
+> ## Exercise 5: FAIR Files (5 minutes)
+> Discuss how can a strategy for folder organisation and naming convention
 > help in achieving FAIR data?
+>
+>> ## Solutions
+>> * Make data more findable
+>> * Aid in making data more reproducible - projects can be copied easily
+>> * Raw data can be reanalysed multiple times
+>> * Conventions can be read automatically
+>> * Easy to understand content by name, less misanderstandings
+>> * Easier to find and share data with others
+>> * Fewer meetings required when sharing data
+>> * Time saving
+> {: .solution}
 {: .challenge}
+
+(19 min discussion, wrap up of teaching)
 
 Have you realised that the above suggestions mean including valuable metadata as part of your folder structure and file names?
 
