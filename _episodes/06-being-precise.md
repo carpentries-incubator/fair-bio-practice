@@ -1,6 +1,6 @@
 ---
 title: "Being precise"
-teaching: 16
+teaching: 23
 exercises: 6
 questions:
 - "How to make my metadata interoperable?"
@@ -102,6 +102,97 @@ are good places to start searching for a registry or a term.
 > >
 > {: .solution}
 {: .challenge}
+
+## Ontologies (7 min teaching)
+
+> ## Disambiguation
+>  In academic disciplines we quickly run into problems of naming standards e.g.:
+>  
+>  * Escherichia coli
+>  * EColi
+>  * E. coli
+>  * E. Coli
+>  * Kanamycin A
+>  * Kanamycin
+>  * Kanam.
+>  * Kan. 
+{: .discussion}
+
+Ontologies represent a standardised, formal naming system and define categories, properties and relationships between data. Ontologies allow to describe properties of a subject area and how they are related (e.g. taxonomy). This reduces the complexity of the data through use of controlled vocabulary.
+
+> ## Controlled Vocabulary
+>
+> **Definition:** Any closed prescribed ***list*** of terms
+>
+> **Key Features:**
+> * Terms are not usually defined
+> * Relationships between the terms are not usually defined
+> * the simplest form is a list
+>
+> **Example:**
+> * E. coli
+> * Drosophila melanogaster
+> * Homo sapiens
+> * Mus musculus
+> * Salmonella
+{: .callout}
+
+Use of controlled vocabulary (a list) can be organised hierarchically into a taxonomy, a system we know mostly from our species taxonomy.
+
+> ## Taxonomy
+>
+> **Definition:** Any controlled vocabulary that is arranged in a ***hierarchy***
+>
+> **Key Features:**
+> * Terms are not usually defined
+> * Relationships between the terms are not usually defined
+> * Terms are arranged in a hierarchy
+>
+> **Example:**
+> * Bacteria
+> * * E. coli
+> * * Salmonella
+> * Eucariota
+> * * Mammalia
+> * * * Homo sapiens
+> * * * Mus musculus
+> * Insecta
+> * * Drosophila melanogaster
+{: .callout}
+
+Ontologies add a further dimension to controlled vocabularies and taxonomy. They allow us to conceptualise relationships between the established hierarchy which helps with more sophisticated data queries and metadata searches.
+
+> ## Ontology
+>
+> **Definition:** A formal ***conceptualisation*** of a specified domain
+>
+> **Key Features:**
+> * Terms are DEFINED
+> * Relationships between the terms are DEFINED, allowing logical inference and sophisticated data queries
+> * Terms are arranged in a hierarchy
+> * expressed in a knowledge representation language such as RDFS, OBO, or OWL
+>
+> **Example:**
+> * Bacteria
+> * * E. coli
+> * * Salmonella
+> * Eucariota --- has_part ---> nucleas
+> * * Mammalia --- has_part ---> placenta
+> * * * Homo sapiens
+> * * * Mus musculus
+> * Insecta
+> * * Drosophila melanogaster
+>
+> <img src="../fig/06-ontologies.png" alt="ontology-example" width="600"/>
+> *Figure credits: Tomasz Zielinski*  
+>
+{: .callout}  
+<br>
+<br>
+#### Here some links to help you find the right ontologies for your research:
+
+1. Finding ontologies: [https://bioportal.bioontology.org/](https://bioportal.bioontology.org/)
+1. List of recommended ontologies: [http://www.obofoundry.org/](http://www.obofoundry.org/)
 
 
 {% include links.md %}
