@@ -1,7 +1,7 @@
 ---
 title: "Public repositories"
-teaching: 10
-exercises: 30
+teaching: 26
+exercises: 39
 questions:
 - "Where can I deposit datasets?"
 - "What are general data repositories?"
@@ -17,6 +17,7 @@ keypoints:
 ---
 
 ## What are research data repositories?
+(13 min teaching)
 Research data repositories are online repositories that enable the preservation, curation and publication of research 'products'. These repositories are mainly used to deposit research 'data'. However, the scope of the repositories is broader as we can also deposit/publish 'code' or 'protocols' (as we saw with protocols.io). 
 
 There are general "data agnostic" repositories, for example:
@@ -35,7 +36,7 @@ Research outputs should be submitted to discipline/domain-specific repositories 
 Research data repositories are a key resource to help in data FAIRification as they
 assure Findability and Accessibility.
 
-> ## Challenge 1. The general repository (8 minutes).
+> ## Exercise 1: Public general record (8 min)
 > Have a look at the following record for data set in Zenodo repository:
 > [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5045374.svg)](https://doi.org/10.5281/zenodo.5045374)  
 > What elements make it FAIR?    
@@ -43,22 +44,22 @@ assure Findability and Accessibility.
 > > ## Solution  
 > > The elements that make this deposit FAIR are:  
 > >   
-> > Findable:  
+> > Findable (persistent identifiers, easy to find data and metadata):  
 > > - F1. (Meta)data are assigned a globally unique and persistent identifier - YES  
 > > - F2. Data are described with rich metadata (defined by R1 below)- YES  
 > > - F3. Metadata clearly and explicitly include the identifier of the data they describe - YES  
 > > - F4. (Meta)data are registered or indexed in a searchable resource - YES  
 > >   
-> > Accessible:  
+> > Accessible (The (meta)data retrievable by their identifier using a standard web protocols):  
 > > - A1. (Meta)data are retrievable by their identifier using a standardised communications protocol - YES  
 > > - A2.  Metadata are accessible, even when the data are no longer available - YES  
 > >   
-> > Interoperable:  
+> > Interoperable (The format of the data should be open and interpretable for various tools):  
 > > - I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation. - YES  
 > > - I2. (Meta)data use vocabularies that follow FAIR principles - PARTIALLY  
 > > - I3. (Meta)data include qualified references to other (meta)data - YES  
 > >   
-> > Reusable:  
+> > Reusable (data should be well-described so that they can be replicated and/or combined in different settings, reuse states with a clear licence):  
 > > - R1. (Meta)data are richly described with a plurality of accurate and relevant attributes - YES  
 > > 	- R1.1. (Meta)data are released with a clear and accessible data usage license - YES  
 > > 	- R1.2. (Meta)data are associated with detailed provenance - YES  
@@ -67,9 +68,13 @@ assure Findability and Accessibility.
 > {: .solution}
 {: .challenge}
 
-> ## Challenge 2. Datasets discovery (5 minutes).  
+(4 min discussion)
+
+> ## Exercise 2: Datasets discovery (5 min)  
 >  
-> Can you easily find similar data sets in Zenodo? Try to find an interesting dataset for you  
+> Try to find either: 
+> * similar data sets in Zenodo
+> * data sets of interest for you
 >   
 > Hint 1: Verify the completeness/richness of the associated metadata. Is it complete? Are some bits missing?   
 > Hint 2: Does the dataset include a ReadMe.txt file?   
@@ -80,8 +85,9 @@ assure Findability and Accessibility.
 > >   
 > {: .solution}
 {: .challenge}
-
-> ## Minimal data set   
+<br>
+(3 min teaching)
+> ## Minimal data set
 > Minimal data set to consist of the data required to replicate all study findings reported 
 > in the article, as well as related metadata and methods.
 >
@@ -95,7 +101,7 @@ assure Findability and Accessibility.
 >  
 {: .callout}
 
-> ## Challenge 3. Domain specific repositories (7 + 3 minutes).  
+> ## Challenge 3. Domain specific repositories (7 min).  
 >  
 > Select one of the following repositories based on your expertise/interests:  
 >  
@@ -117,6 +123,7 @@ assure Findability and Accessibility.
 {: .challenge}
 
 ## How do we choose a research data repository?
+(3 min teaching)
 As a general rule, your research needs to be deposited in discipline/data specific repository. If no specific repository can be found, then you can use a generalist repository. Having said this, there are tons of data repositories to choose from. Choosing one can be time consuming and challenging as well.
 So how do you go about finding a repository:
 - Check the publisher's / funder' recommended list of repositories, some of which can be found below:
@@ -137,7 +144,7 @@ So how do you go about finding a repository:
 - Check [Fairsharing recommendations](https://fairsharing.org/recommendations/?q=)
 	- alternatively, check the [Registry of research data repositories - re3data](https://www.re3data.org/)
 
-> ## Challenge 4. Finding a repository (4 minutes).
+> ## Exercise 4: Finding a repository (5 min + 4 min discussion).
 >
 > a) Find a repo for genomics data.  
 > b) Find a repo for microscopy data.  
@@ -149,6 +156,8 @@ So how do you go about finding a repository:
 >> b) IDR is good examples.   
 > {: .solution}  
 {: .challenge}  
+
+(6 min teaching)
 
 A list of UoE BioRDM's recommended data repositories can be found [here](https://www.wiki.ed.ac.uk/display/RDMS/Suggested+data+repositories).
 
@@ -177,11 +186,11 @@ You can evaluate the repositories by following this criteria:
 An interesting take can be found at Peter Murray-Rust's blog post [Criteria for succesful repositories](https://blogs.ch.cam.ac.uk/pmr/2011/08/19/criteria-for-successful-repositories/).
     
     
-> ## Challenge 5, Wrap up discussion (3 minutes OPTIONAL).
+> ## Exercise 5: Wrap up discussion (7 min - OPTIONAL).
 > Discuss the following questions:
-> - Why is choosing a domain specific repositories over zenodo more FAIR?
-> - How can selecting a repository for your data as soon as you do an experiment (or even before!) can benefit you research and help your data become FAIR?
-> - What's your favourite research data repository? Why?
+> * Why is choosing a domain specific repositories over zenodo more FAIR?
+> * How can selecting a repository for your data as soon as you do an experiment (or even before!) benefit your research and help your data become FAIR?
+> * What is your favourite research data repository? Why?
 >
 {: .challenge}
 
