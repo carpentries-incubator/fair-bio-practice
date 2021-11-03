@@ -1,6 +1,6 @@
 ---
 title: "Version control"
-teaching: 20
+teaching: 49
 exercises: 25
 questions:
 - "How not to worry about making changes to a project?"
@@ -15,6 +15,7 @@ keypoints:
 - "Version control system helps maintaining good practices"
 - "Version control system keeps your work safe"
 ---
+(1 min teaching)
 
 ![Figure 1. Versioning Hell](../fig/ew-versions.png)  
 *from: Wit and wisdom from Jorge Cham (http://phdcomics.com/)*
@@ -30,7 +31,7 @@ Our projects are not static we:
 
 All those actions introduce change to files of our project.
 
-> ## Problems with change (3+2)
+> ## Exercise 1: Problems with change (5 min)
 >
 > Which of these issues can you relate to?
 > 
@@ -49,6 +50,8 @@ All those actions introduce change to files of our project.
 > * My directory is polluted with a lot of unused/temporary/old folders because I'm afraid of losing something important
 > * I made a lot of changes to my paper but want to bring back one paragraph
 {: .challenge}
+
+(6 min teaching)
 
 When introducing changes to files and their content, we:
 * overwrite old content or loose whole files (hoping they won't be needed)
@@ -138,7 +141,7 @@ two main parts:
 	as the effort required to merge differences goes up faster than the size of the difference.
 	
 
-> ## Manual versioning (2)
+> ## Exercise 2: Manual versioning (5 min)
 >
 > Which of these issues does manual versioning help to tackle?
 > 
@@ -152,9 +155,9 @@ two main parts:
 > * I have to merge changes to our manuscript from 10 different emails from collaborators
 > * I made a lot of changes to my paper but want to bring back one paragraph
 {: .challenge}
- 
 
-> ## How to document a change
+
+> ## How to document a change (6 min teaching)
 >
 > A good entry that documents changes should contain:
 > * date of the change
@@ -190,7 +193,7 @@ approach don't just accelerate the manual process: they also automate
 some steps while enforcing others and thereby deliver more reliable results.
 
 
-> ## Changelog in action (5+5)
+> ## Exercise 3: Changelog in action (5 min)
 >
 > Have a look at one of the example Github repositories and how they track changes:
 > * [data from E.R. Ballou et al. 2020](https://github.com/ewallace/pseudonuclease_evolution_2020/commits/master)
@@ -218,6 +221,7 @@ some steps while enforcing others and thereby deliver more reliable results.
 
 
 ## Version Control Systems
+(13 min teaching)
 
 > ## How Version Control Systems Work
 > 
@@ -288,7 +292,7 @@ reviewer comments, and when providing supporting information for
 reviewers, editors, and readers.
 
 
-> ## Using Version Control System (2+2)
+> ## Exercise 4: Using Version Control System (5 min)
 >
 > Five reasons to use a version control system in research
 > * Tell the story: The history of your commit messages will describe your project progress.
@@ -314,7 +318,7 @@ reviewers, editors, and readers.
 > {: .solution}
 {: .challenge}
 
-> ## Learning git
+> ## Learning git (10 min teaching)
 >
 > If you do any form of scientific computing: Python, R, Matlap or even bash script you simply must learn git and
 > use it on a daily basis (no excuses).
@@ -340,7 +344,7 @@ reviewers, editors, and readers.
 {: .callout}
 
 ## Semantic versioning (Optional)
-
+(10 min teaching)
 Although we recommend to record small changes often a particular point in time
 (a set of changes) has its logical meaning. 
 
@@ -394,7 +398,7 @@ as it communicates the *severity of changes*. For example if you as the co-autho
 
 For data and documents often only major.minor numbers are used.
 
-> ## Semantic versioning quiz (3)
+> ## Semantic versioning quiz (5 min)
 >
 > 1. Which of the library version is the latest?
 > * a) 0.12.4
