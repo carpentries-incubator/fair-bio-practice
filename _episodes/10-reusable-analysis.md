@@ -1,7 +1,7 @@
 ---
-title: "Jupyter notebooks for data analysis"
-teaching: 0
-exercises: 0
+title: "Reusable analysis"
+teaching: 77
+exercises: 28
 questions:
 - "How is live coding with instant output beneficial for FAIR?"
 - "How to adapt existing Jupyter notebooks"
@@ -15,13 +15,31 @@ keypoints:
 - "One single document can visualise background, results, formulae/code and metadata"
 - "One single document helps to make your work more understandable, repeatable and shareable"
 ---
+## Reusable Analysis
+(~50 min teaching)
+
+Data analysis and research are an iterative process. Experimental measurements and 
+their analysis will guide next steps within research, e.g. identification of new 
+targets for drug discovery, the invalidation of a target would likely make us switch 
+to a different target for target validation. Or in large data, or omics experiments 
+data is initially explored, analysis method will be adjusted and modified, and so will experimental procedures if adequate results have not been achieved.
+
+This so called ad-hoc analysis will only after several iterations of data exploration, 
+retries, adjustments, and modifications to experimental procedures lead to selection of suitable analysis methods and parameters. One would then conduct statistical validation 
+of results and generate final results and graphs for publications. This process can be difficult to track using conventional methods such as pen + paper and Excel.
+
+Plotting in R (or Python) is often a natural starting point to learn programming and 
+allows to create more professional scientific plots than those available in Excel. Additionally, throughout ad-hoc data analysis these plots are easier to recreate, and 
+easier to adjust for specific dimensions and journal formatting guidelines, when using 
+code.
+
 ## Reusable Computing
 We have previously discussed electronic lab notebooks and their benefit in being FAIR.
 If you are working with large datasets, mathematical models, complex visualisations of 
 your data then you might already be frustrated by having to copy and paste your figures
-into your electronic lab notebook after each iteration of new code, and you might have
-already lost track of which code corresponded to which figure and why you changed your 
-code last time.
+into your electronic lab notebook after each iteration of new code (or generation in 
+Excel). You might also have lost track of which code corresponded to which figure 
+and why you changed your code last time.
 
 There is a simple solution to this: **Computational notebooks**
 
@@ -29,7 +47,7 @@ There is a simple solution to this: **Computational notebooks**
 Computational notebooks are essentially laboratory notebooks for scientific computing.
 Instead of pasting DNA gels alongside lab protocols, researchers embed code, data and 
 text to document their computational methods. A free and popular tool that is being
-used across specialities is **the Jupyter notebook**.
+used across disciplines is **the Jupyter notebook**.
 
 [Jupyter](www.jupyter.org) Notebooks are interactive web applications which allow you 
 to type and edit lines of code in the programming languages July (Ju), Python (Py), or R,
@@ -37,11 +55,11 @@ hence it's name Jupyter, and view the output (e.g. graphs or calculations) immed
 The huge benefit of such notebooks is that source code is mixed with documentation, thus
 explaining experimental setup, analysis, results of tables and plots throughout.
 
-What is left for us to do is write the code that will analyse our data, and explain 
+What you need to do is write the code that will analyse our data, and explain 
 the narrative behind the experiment and interpretation of the results. For data 
 scientists, this format can drive exploration via interactive computing. This is an 
 environment in which users execute code, see what happens, modify and repeat in an 
-iterative process between researcher and data.
+iterative process between researcher and data, in an ad-hoc way.
 As a basic principle Jupyter Notebooks run on a 'kernel' which is responsible in
 execution of the code. Generally this 'kernel' can run on your computer, additionally
 external servers (e.g. our BioRDM server which we use below to host our notebook) can 
@@ -52,69 +70,20 @@ in a web browser without having to install the software or any programming libra
 
 ## Working with Jupyter Notebooks
 
-To show you how easy it is to work with Jupyter Notebooks, we have 
-created an exercise for you where we will work on "real-life" data 
-from an experiment looking at circadian influence on plants following
-short-day and long-day light exposure. We will create some graphs and 
-test whether there are differences between our genotypes of arabidopsis
-using R.
-
-> ## Exercise - basics of Jupyter notebooks
->
-> Open this [Jupyter notebook](http://mango.bio.ed.ac.uk:8888/tree), we
-> will first show you how to duplicate a notebook and save it and how to
-> run the code:
->
-> 1. Select the notebook titled 'student_notebook_light_conditions.ipynb'
-> as depicted below and click 'Duplicate'. Confirm with Duplicate when you
-> are asked if you are certain that you want to duplicate the notebook.
-> ![Figure 1. Duplicate a Jupyter notebook](../fig/10-01-duplicate_notebook.png)*Figure 1. Duplicate a Jupyter notebook*
->
-> 1. A copy of the notebook has appeared with the suffix '-Copy' and a
-> number (**Figure 2a**), select this notebook. Have a look around the
-> notebook and explore its anatomy (**Figure 2**), you should see
-> experimental details, an image, and code. If you click on separate parts
-> of the notebook you can see that it is divided into individual cells
-> (**Figure 2 e-g**) which are of varying type (Code, R in this case, or
-> Markdown - **Figure 2d**). Hashtags are comments within the code and shall help you to interpret what individual bits of code do.
-> ![Figure 2. Anatomy of a Jupyter notebook: (a) depicts the name of the
-> notebook, (b, c) are toolbars, (c) contains the most commonly used
-> tools, (d) shows of what type - Markdown, Code etc... - the currently
-> selected cell is, and (e-g) are examples of cells, where (e) shows the
-> currently selected cell. ](../fig/10-02-jupyter_anatomy.png)
-> *Figure 2. Anatomy of a Jupyter notebook: (a) depicts the name of the
-> notebook, (b, c) are toolbars, (c) contains the most commonly used
-> tools, (d) shows of what type - Markdown, Code etc... - the currently
-> selected cell is, and (e-g) are examples of cells, where (e) shows the
-> currently selected cell.*
->
-> 1. Change the title of the notebook (**a**) to your initials e.g. "student_notebook_light_conditions_IB"
-> 1. To Save the notebook click on the disk symbol in the toolbar (**c**).
-> 1. To run the code select the top cell of the notebook (**e**) - this is
-> likely pre-selected already - and click "Run" in the tool bar (**c**). The
-> selected cell jumps one cell down (**f**).
-> 1. To avoid having to press Run repeatedly until we are at the end of
-> the code (try clicking Run two more times and see what happens), we will
-> show you how to run all the code. In the top tool bar (**b**) click "Cell"
-> and select "Run All". ("Cell > Run All".)
-> 1. If you have another look at the notebook you can see that a table,
-> graph and outputs of statistical testing have been generated.
->
->> ## Solution
->> If you followed all steps correctly you should have reproduced the
->> table, a graph and statistical testing. Apart from the pre-filled
->> markdown text the rendered values of the code should look like this:
->> ![Figure 3. Rendering of data frame](../fig/10-03-jupyter_dataframe.png)
->>*Figure 3. Rendering of data frame*
->> ![Figure 4. Rendering of plot](../fig/10-04-jupyter_plot.png)
->>*Figure 4. Rendering of plot*
-> {: .solution}
-{: .challenge}
+One thing to keep in mind is that your reusable analysis with Jupyter is only ever as 
+good as your self discipline. Things you want to keep in mind are:
+* document the entire decision process
+* document parameters and their significance
+* decide what data you want to retain and clean - annotate why
+* comment your code where necessary
+* follow coding good practices
+* your notebook has to be exported/shared with ALL file inputs and the description of the runtime environment
 
 ## Coding Good Practices
 Before we let you go wild in our subsequent exercises we would like to go highlight a
 few standards and best practices that will help you generate cleaner, more readable, 
-more efficient code.
+more efficient code. (Note: this code is an example for coding in R, but best practices
+apply to any code)
 
 ### Advantages of using Coding Standards
 * ability to retrace code created by different programmers (uniformity)
@@ -224,7 +193,67 @@ ggplot(subset(df, light_condition %in% "SD"), # subset only SD from light condit
     scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) # change colour of groups
 ```
 
-> ## Exercise - how to add and remove content
+To show you how easy it is to work with Jupyter Notebooks, we have 
+created an exercise for you where we will work on "real-life" data 
+from an experiment looking at circadian influence on plants following
+short-day and long-day light exposure. We will create some graphs and 
+test whether there are differences between our genotypes of arabidopsis
+using the language R as an example.
+
+> ## Exercise 1: basics of Jupyter notebooks (5 min)
+>
+> Open this [Jupyter notebook](http://mango.bio.ed.ac.uk:8888/tree), we
+> will first show you how to duplicate a notebook and save it and how to
+> run the code:
+>
+> 1. Select the notebook titled 'student_notebook_light_conditions.ipynb'
+> as depicted below and click 'Duplicate'. Confirm with Duplicate when you
+> are asked if you are certain that you want to duplicate the notebook.
+> ![Figure 1. Duplicate a Jupyter notebook](../fig/10-01-duplicate_notebook.png)*Figure 1. Duplicate a Jupyter notebook*
+>
+> 1. A copy of the notebook has appeared with the suffix '-Copy' and a
+> number (**Figure 2a**), select this notebook. Have a look around the
+> notebook and explore its anatomy (**Figure 2**), you should see
+> experimental details, an image, and code. If you click on separate parts
+> of the notebook you can see that it is divided into individual cells
+> (**Figure 2 e-g**) which are of varying type (Code, R in this case, or
+> Markdown - **Figure 2d**). Hashtags are comments within the code and shall help you to interpret what individual bits of code do.
+> ![Figure 2. Anatomy of a Jupyter notebook: (a) depicts the name of the
+> notebook, (b, c) are toolbars, (c) contains the most commonly used
+> tools, (d) shows of what type - Markdown, Code etc... - the currently
+> selected cell is, and (e-g) are examples of cells, where (e) shows the
+> currently selected cell. ](../fig/10-02-jupyter_anatomy.png)
+> *Figure 2. Anatomy of a Jupyter notebook: (a) depicts the name of the
+> notebook, (b, c) are toolbars, (c) contains the most commonly used
+> tools, (d) shows of what type - Markdown, Code etc... - the currently
+> selected cell is, and (e-g) are examples of cells, where (e) shows the
+> currently selected cell.*
+>
+> 1. Change the title of the notebook (**a**) to your initials e.g. "student_notebook_light_conditions_IB"
+> 1. To Save the notebook click on the disk symbol in the toolbar (**c**).
+> 1. To run the code select the top cell of the notebook (**e**) - this is
+> likely pre-selected already - and click "Run" in the tool bar (**c**). The
+> selected cell jumps one cell down (**f**).
+> 1. To avoid having to press Run repeatedly until we are at the end of
+> the code (try clicking Run two more times and see what happens), we will
+> show you how to run all the code. In the top tool bar (**b**) click "Cell"
+> and select "Run All". ("Cell > Run All".)
+> 1. If you have another look at the notebook you can see that a table,
+> graph and outputs of statistical testing have been generated.
+>
+>> ## Solution
+>> If you followed all steps correctly you should have reproduced the
+>> table, a graph and statistical testing. Apart from the pre-filled
+>> markdown text the rendered values of the code should look like this:
+>> ![Figure 3. Rendering of data frame](../fig/10-03-jupyter_dataframe.png)
+>>*Figure 3. Rendering of data frame*
+>> ![Figure 4. Rendering of plot](../fig/10-04-jupyter_plot.png)
+>>*Figure 4. Rendering of plot*
+> {: .solution}
+{: .challenge}
+
+
+> ## Exercise 2: how to add and remove content (3 min)
 > In your previously saved notebook, we will now show you how to add text
 > and remove cells within your notebook. Additionally we will show you how
 > to change code:
@@ -256,6 +285,9 @@ ggplot(subset(df, light_condition %in% "SD"), # subset only SD from light condit
 > image should be visible in the overall file hierarchy.
 {: .challenge}
 
+
+(3 min teaching)
+
 ## Jupyter Notebooks are easy to use and great for collaborative efforts
 Imagine your collaborators have shared this experiment measuring biomas of
 *Arabidopsis* with you and you were able to duplicate and follow their
@@ -268,7 +300,7 @@ and paste the already existing code your collaborators shared and adapt
 variables such as short-day to long-day and change the names under which
 figures are being saved to avoid duplication.
 
-> ## Exercise - add another analysis step
+> ## Exercise 3: add another analysis step (10 min including walkthrough)
 > We have shown you how to manipulate text and code in Jupyter notebooks,
 > now we want you to add data visualisation (a graph) and stats for long-
 > day light condition:
@@ -319,7 +351,7 @@ TukeyHSD(res.aov.LD)
 ## Easy sharing of your notebook
 We have now managed to not only reproduce code, but we were able to add to the analysis and interpretation of overall results. To show your PI and colleagues your results, you want to save the notebook in readable format.
 
-> ## Exercise - Sharing of your Jupyter Notebook
+> ## Exercise 4: Sharing of your Jupyter Notebook (5 min)
 > 1. Download your Notebook (ensure all code has been run) as .html and .pdf
 > 2. View the documents and think about why it is important to run all code before download (try Cell > All Output > Clear and download your Notebook then and compare)
 >
@@ -328,7 +360,7 @@ We have now managed to not only reproduce code, but we were able to add to the a
 > {: .solution}
 {: .challenge}
 
-> ## Exercise - Accessibility of Jupyter Notebooks
+> ## Exercise 5: Accessibility of Jupyter Notebooks (5 min)
 >
 > On a scale from -2 to 2, how do you feel about the following statements (R is interchangeable with Python), where -2 (strongly disagree), 0 no 
 opinion to +2 strongly agree:
