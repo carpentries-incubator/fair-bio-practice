@@ -1,7 +1,7 @@
 ---
 title: "It's all about planning"
-teaching: 10
-exercises: 12
+teaching: 28
+exercises: 50
 questions:
 - "What is the research data life cycle?"
 - "How to plan for FAIR sharing?"
@@ -14,8 +14,9 @@ keypoints:
 - "Data within a project undergo a set of steps known as the research data life cycle."
 - "Planning can help make your data FAIR."
 - "Data management is a continuous process during a project."
-- "A DMP is the best way to prepare for new project."
+- "A DMP is the best way to prepare for a new project."
 ---
+(5 min teaching)
 
 ## The research data life cycle
 The Research Data Life Cycle is composed of a sequential series of stages/steps in which data is produced, processed and shared.
@@ -36,7 +37,7 @@ There are many actions/steps which you can take during your research workflow
 which would make it easier to share your data in a **Findable, Accessible,
 Interoperable and Reusable** way, while, helping you in your day to day activities.
 
-> ## Action plan challenge (4 + 4 minutes)
+> ## Exercise 1: Action plan challenge (7 min)
 > Where would you say the following actions belong in the Research Data Life Cycle?
 > How do they help in achieving FAIR principles?
 >
@@ -74,6 +75,7 @@ Interoperable and Reusable** way, while, helping you in your day to day activiti
 > {: .solution}
 {: .challenge}
 
+(13 min teaching)
 
 ## Plan ahead: data management plans (DMPs)
 A good data management is about PLANning!
@@ -101,7 +103,7 @@ Most funders require a DMP with grant applications.
 Some institutions even ask their PhD students to prepare a DMP for their PhD project.
 
 
-You should think how you are going to manage your data (or outputs, in general)
+You should think about how you are going to manage your data (or outputs, in general)
 for each of your projects (or even individual assay types). For individual project
 the main focus should be on:
 **what data will be produced, how will they be stored
@@ -127,7 +129,7 @@ to discuss folder structures, but, they should emphasize the **data safety
 {: .callout}
 
 
-> ## Challenge (given as homework but starts in class - 5 minutes)
+> ## Exercise 2: Challenge (30 min)
 > Working in pairs, think of your last paper (or project).
 > Pretend that you have a joined project that combines the outputs of both your papers/projects.
 >
@@ -178,6 +180,42 @@ to discuss folder structures, but, they should emphasize the **data safety
 > > The data will be released no later than a year after the project ends.
 > > All data will be made available under CC-BY and the code under MIT licensing.
 > >
+> {: .solution}
+{: .challenge}
+
+> ## Exercise 2, part 2: Explore each outhers DMPs (10 min)
+> Now, take a look at the other group's DMP and make comments/suggestions on how 
+> to improve it (at the end of the DMP)
+>
+{: .challenge}
+
+> ## Exercise 3: Quiz (3 min)
+> Answer the following questions with true or false (T or F):
+>
+> 1. The best time to do data management is at the end of a project, when you've collected all the data you're managing.
+> 2. Data management plans (DMPs) detail what will happen to data before collection begins.
+> 3. The best storage method for data is multiple backups to USBs.
+> 4. There is a single best way to manage, organise, and share data.
+> 5. For grant applications, DMPs should mention data preservation, longevity, sharing, discover, and reuse.
+> 6. Your metadata should be standardised and descriptive.
+> 7. Taking the time to plan out what's needed in metadata and your DMP will save you time in the long run and make your data more FAIR.
+> 8. DMP online is a tool which constructs DMPs for researchers.
+> 9. Data addressed in a DMP can be freely shared regardless of confidentiality.
+> 10. Data can be given creative commons licenses to dictate how others can and cannot use it.
+>
+>> ## Solution
+>>
+>> 1. The best time to do data management is at the end of a project, when you've collected all the data you're managing. (F)
+>> 2. Data management plans (DMPs) detail what will happen to data before collection begins. (T)
+>> 3. The best storage method for data is multiple backups to USBs. (F)
+>> 4. There is a single best way to manage, organise, and share data. (F)
+>> 5. For grant applications, DMPs should mention data preservation, longevity, sharing, discover, and reuse. (T)
+>> 6. Your metadata should be standardised and descriptive. (T)
+>> 7. Taking the time to plan out what's needed in metadata and your DMP will save you time in the long run and make your data more FAIR. (T)
+>> 8. DMP online is a tool which constructs DMPs for researchers. (F)
+>> 9. Data addressed in a DMP can be freely shared regardless of confidentiality. (F)
+>> 10. Data can be given creative commons licenses to dictate how others can and cannot use it. (T)
+>>
 > {: .solution}
 {: .challenge}
 
