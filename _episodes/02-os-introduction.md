@@ -347,32 +347,27 @@ You do not want to be left behind!
 >
 >* Open Science relies strongly on the Internet
 >* Open Access eliminates publishing costs
->* You cannot Open Source patented software
->* You cannot earn money from Open Source software
 >* Open Data facilitates re-use
 >* Open Data can increases confidence in research findings
 >* In Open Peer Review, readers vote on publication acceptance
 >* Open Notebooks improve reproducibility
 >* Open Notebooks can create patenting issues
 >* Open Access permits the whole society to benefit from scientific findings
+>* Citizen Science engages the public in the research process
+>* Citizen Science can help get ecological data quickly
 >
 > > ## Solution
 > >* Open Science relies strongly on the Internet T
 > >* Open Access eliminates publishing costs F
-> >* You cannot Open Source patented software F*
-> >* You cannot earn money Open Source software F
 > >* Open Data facilitates re-use T
 > >* Open Data increases confidence in research findings T
 > >* In Open Peer Review, readers vote on publication acceptance  F
 > >* Open Notebooks improve reproducibility T
 > >* Open Notebooks can create patenting issues T*
 > >* Open Access permits the whole society to benefit from scientific findings T
+> >* Citizen Science engages the public in the research process T
+> >* Citizen Science can help get ecological data quickly T
 > >
-> > ** For patenting, the dates of public release and patent application
-> > are important.
-> > Once patent is granted all the details can be made public.
-> > On the other hand, laboratory notes published before patent application
-> > can be treated as public disclosure and prevents from obtaining a patent.
 > >
 > {: .solution}
 {: .challenge}
