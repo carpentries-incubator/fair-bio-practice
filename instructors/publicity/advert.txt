@@ -1,0 +1,25 @@
+Workshop: How to work with your data
+
+Interactive Workshop: FAIR in (Biological) Practice
+
+Would you like to:
+- Organize your data to work more efficiently?
+- Make your outputs reusable?
+- Build reputation and presence in the science community?
+- Be more productive?
+
+Understanding good data management principles is key to practicing it. 
+
+This free hands-on workshop is aimed at active researchers in biomedicine science (PhD students, postdocs, technicians, young PI…) who are interested in Open Science, FAIR (Findable Accessible Interoperable Reusable) principles and how to practically apply them to their own workflows. 
+
+Across four half-day sessions you will learn how to plan and use the correct set of tools to prepare your research outputs for public sharing and reuse.
+
+Online
+15-18 February 2022 
+13:00 - 17:00
+
+Workshops website: https://edcarp.github.io/2022-02-15_ed-dash_fair-bio-practice/ 
+
+Register here: https://tinyurl.com/ms99jwuu 
+
+Ed-DaSH ( https://edcarp.github.io/Ed-DaSH/ ) is a project funded by UKRI-MRC to develop and deliver Data Science training for the Health Sciences.
