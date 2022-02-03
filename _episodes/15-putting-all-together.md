@@ -126,17 +126,20 @@ license
 
 > ## List of ELNs and online protocols
 > * [Benchling](https://www.benchling.com/) 
-> * [procols.io](https://www.protocols.io/welcome)
-> * Our Benchling tutorial: [BioRDM Wiki](https://www.wiki.ed.ac.uk/display/RDMS/Benchling+%28quick%29+tutorial)
-> * [Main help page, with access to several tutorials](https://help.benchling.com/en/)
-> * [More molecular biology features](https://help.benchling.com/en/collections/69523-molecular-biology)
-> * [Benchling training kit for academics](https://help.benchling.com/en/collections/1608962-benchling-training-kit-for-academics)
-> * [ELN Guide](https://www.scinote.net/electronic-lab-notebook-guide/)  
-> * comprehensive summary of [ELNs on the University of Edinburgh Wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=463750271) by BioRDM
-> * [Scinote](https://www.scinote.net/) (free version available)
+> * [Procols.io](https://www.protocols.io/)
+> * [Colabra](https://www.colabra.app/) (free version available)
+> * [SciNote](https://www.scinote.net/) (free version available)
 > * [Rspace](https://www.researchspace.com/) (trial possible)
 > * [Labarchives](https://www.labarchives.com/) (trial possible contacting the company)
 > * [WikiBench](https://www.ed.ac.uk/information-services/research-support/research-data-service/during/open-research-tools/wikibench) (works on top of Confluence)
+{: .callout}
+
+> ## ELN Resources
+> * Comprehensive summary of [ELNs on the University of Edinburgh Wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=463750271) by BioRDM
+> * Our Benchling tutorial: [BioRDM Wiki](https://www.wiki.ed.ac.uk/display/RDMS/Benchling+%28quick%29+tutorial)
+> * [Benchling's training kit for academics](https://help.benchling.com/en/collections/1608962-benchling-training-kit-for-academics)
+> * [ELN Guide](https://www.scinote.net/electronic-lab-notebook-guide/)
+> * [Colabra's lab management course](https://www.colabra.app/course/)
 {: .callout}
 
 > ## Other useful courses
