@@ -1,7 +1,7 @@
 ---
 title: "Being FAIR"
-teaching: 25
-exercises: 25
+teaching: 44
+exercises: 16
 questions:
 - "How to get more value from your own data?"
 - "What are the FAIR guidelines?"
@@ -14,11 +14,12 @@ keypoints:
 - "FAIR stands for Findable Accessible Interoperable Reusable"
 - "FAIR assures easy reuse of data underlying scientific findings"
 ---
+(7 min teaching)
 
 We have seen how Open practices can benefit both scientific community as
 a whole and individual practitioner.
 The wide adoption of Open Access principles has resulted in an easy access
-to the recent biomedical publications.
+to recent biomedical publications.
 Unfortunately, the same cannot be said about data and software
 that accompanies those publications.
 
@@ -39,7 +40,7 @@ that accompanies those publications.
 Let's have a look how challenging it can be to access and use
 data from published biological papers.
 
-> ## Impossible protocol (5+3)
+> ## Exercise 1: Impossible protocol (4 min)
 >
 > You need to do a western blot to identify Titin proteins,
 > the largest proteins in the body, with a molecular weight of 3,800 kDa.
@@ -109,6 +110,8 @@ data from published biological papers.
 > Can you find it anywhere?
 >
 {: .challenge}
+
+(29 min teaching)
 
 <!---
 > ## Impossible format
@@ -266,7 +269,7 @@ or [Apache license](http://www.apache.org/licenses/).
 > which prevents others from copying or modifying it.
 > Only by adding the explicit licence you can permit re-use by others.
 >
-> Data, being factual, cannot be copyrighted. **So why, do we need a licence?**
+> Data, being factual, cannot be copyrighted. **So why, do we need a license?**
 >
 > While the data itself cannot be copyrighted,
 > the way how it is presented can be. The extend to which it is protected needs ultimately
@@ -279,41 +282,16 @@ or [Apache license](http://www.apache.org/licenses/).
 {: .callout}
 
 
-
-> ## Achieving FAIR (2)
+> ## Exercise 2: Example of FAIR data (4 min)
 >
-> Which part of **Findable, Accessible, Interoperable, Reusable**
-> seems to be the easiest to achieve by you and
-> which looks like the most challenging for data producers.
->
->> ## Solution
->>
->> *Accessible* is probably the easiest to achieve as it can
->> be delivered by depositing to any of the general repositories.
->> *Findable* as accessible by persistent identifiers (PIDs) is also easy
->> as offered by the same repositories. However, *findable* in the sense of search
->> results by some features and characteristics may not be so simple.
->>
->> *Interoperable* and *Reusable* are the most challenging as they require
->> substantial effort and time to convert existing data into well documented
->> and in suitable format.
->>
-> {: .solution}
-{: .challenge}
-
-
-> ## Example of FAIR data (5+3)
->
-> The Nucleotide database is a collection of sequences from several
-> sources, including GenBank, RefSeq, TPA and PDB.
-> Genome, gene and transcript sequence data provide the foundation for biomedical research and discovery.
->
-> Have a look at record for myoglobin gen [https://www.ncbi.nlm.nih.gov/nuccore/AH002877.2](https://www.ncbi.nlm.nih.gov/nuccore/AH002877.2)
+> Uniprot is a high-quality and freely accessible resource of protein sequence 
+> and functional information. Have a look at the record of the GFP protein:
+> [https://www.uniprot.org/uniprot/P42212](https://www.uniprot.org/uniprot/P42212)
 >
 > Identify how each of F.A.I.R principles has been met.
 >
 > *Alternative records to check:*
-> *https://www.uniprot.org/uniprot/P42212 https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1*
+> *https://www.ncbi.nlm.nih.gov/nuccore/AH002877.2 https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1*
 >
 >> ## Solution
 >>
@@ -321,16 +299,16 @@ or [Apache license](http://www.apache.org/licenses/).
 >> that provides access to the record in a variety of formats including
 >> a web page, plain-text, FASTA, and GENBANK ('A', 'I').
 >> The record contains rich metadata (‘R’) that is both human-readable (HTML) and machine-readable (text) ('I').
->> There search options that uses both records IDs and the rich metadata ('F').
+>> There search options that uses both record IDs and the rich metadata ('F').
 >> The graphical pane shows how the data are re-usable. Metadata uses ontological
 >> terms (e.g. taxonomy) and shared vocabularies (e.g. genbank features) ('I').
->> Interlinking with other databases: UniProt, Pubmed ('I', 'R') enabling automated retrieval of records and cross-referencing information.
+>> Interlinking with other databases: GenBank, Pubmed ('I', 'R') enabling automated retrieval of records and cross-referencing information.
 >>
 > {: .solution}
 {: .challenge}
 
 
-> ## FAIR and You (5)
+> ## Exercise 3: FAIR and You (3 min)
 >
 > The FAIR acronym is sometimes accompanied with the following labels:
 > * Findable - Citable
@@ -356,11 +334,12 @@ or [Apache license](http://www.apache.org/licenses/).
 >> * Well documented data should contain all the details necessary to
 >> reproduce the experiments, helping the future you or someone taking over
 >> from you in the laboratory.
+>> * Saves time and money.
 >>
 > {: .solution}
 {: .challenge}
 
-## FAIR vs Open Science
+## FAIR vs Open Science (6 min teaching)
 
 **FAIR does not mean Open**. Actually, FAIR guideline only requires
 that the metadata record is always accessible.
@@ -382,38 +361,32 @@ website.
 
 
 
-> ## FAIR Quiz (2 ... run through break)
+> ## Exercise 4: FAIR Quiz (5 min - run through break)
 >
 > Which of the following statements is true/false (T or F).
 >
-> * F in FAIR stands for free. F
->
-> * Even if there is no license information you can combine data
-> with yours to produce a plot as long as you give appropriate credit to the other authors. F
->
-> * Only the figure presenting results of statistical analysis need
-> numerical data that were used to create that figure. F
->
-> * Sharing numerical data as a .pdf in Zenodo is FAIR. F
->
-> * Sharing numerical data as an Excel file via Github is not FAIR. F*
->
-> * Metadata standards (for example MIAME MIQUE) assure the "IR" in FAIR. T
->
-> * Group website is a good place to share your data. F
->
-> * Data from failed experiments are not re-usable. F
->
-> * Data should always be converted to Excel files or .cvs in order to be FAIR. F
->
-> * A DOI of a dataset helps in getting credit. T
->
-> * FAIR data are peer reviewed. F
->
-> * FAIR data have to accompany a publication. F
+> * F in FAIR stands for free.
+> * Only figures presenting results of statistical analysis need underlying numerical data.
+> * Sharing numerical data as a .pdf in Zenodo is FAIR.
+> * Sharing numerical data as an Excel file via Github is not FAIR.
+> * Group website is a good place to share your data.
+> * Data from failed experiments are not re-usable.
+> * Data should always be converted to Excel or .csv files in order to be FAIR.
+> * A DOI of a dataset helps in getting credit.
+> * FAIR data are peer reviewed.
+> * FAIR data accompany a publication.
 >
 >> ## Solution
->> copied form above once the wording is corrected
+>> * F in FAIR stands for free. F
+>> * Only figures presenting results of statistical analysis need underlying numerical data. F
+>> * Sharing numerical data as a .pdf in Zenodo is FAIR. F
+>> * Sharing numerical data as an Excel file via Github is not FAIR. F
+>> * Group website is a good place to share your data. F
+>> * Data from failed experiments are not re-usable. F
+>> * Data should always be converted to Excel or .csv files in order to be FAIR. F
+>> * A DOI of a dataset helps in getting credit. T
+>> * FAIR data are peer reviewed. F
+>> * FAIR data accompany a publication. F
 >>
 > {: .solution}
 {: .challenge}

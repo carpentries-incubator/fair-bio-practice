@@ -1,7 +1,7 @@
 ---
 title: "Introduction to metadata"
-teaching: 10
-exercises: 20
+teaching: 11
+exercises: 14
 questions:
 - "What is metadata?"
 - "What do we use metadata for?"
@@ -15,6 +15,7 @@ keypoints:
 - "Metadata is key for data reuse and complying with FAIR guidelines."
 - "Metadata should be added incrementally through out the project"
 ---
+(5 min teaching)
 
 ## What is (or are) metadata?
 
@@ -129,10 +130,7 @@ continuously** throughout the project.
 
 
 
-
-
-
-> ## Identifying metadata types (3+2 minutes)
+> ## Exercise 1: Identifying metadata types (4 min)
 > Here we have an excel spreadsheet that contains project metadata for
 > a made-up experiment of plant metabolites
 > ![Metadata in data table example](../fig/04-metadatafull_spreadsheet.png)
@@ -149,6 +147,8 @@ continuously** throughout the project.
 > >*Figure credits: Tomasz Zielinski and Andrés Romanowski*
 > {: .solution}
 {: .challenge}
+
+(6 min teaching)
 
 > ## Where does data end and metadata start?
 >
@@ -199,7 +199,7 @@ and guidelines called **Minimal Information Standards**.
 >
 {: .callout}
 
-> ## Minimal information standard example (3 minutes)
+> ## Exercise 2: Minimal information standard example (5 min)
 >
 > Look at ***Minimum Information about a Neuroscience Investigation (MINI) Electrophysiology***
 > [Gibson, F. et al. Nat Prec (2008)](https://www.nature.com/articles/npre.2008.1720.1.pdf).
@@ -229,7 +229,7 @@ without any further input from you.
 
 **Think as a consumer** of your data not the producer!
 
-> ## What to include - discussion (5+5 minutes)
+> ## Exercise 3: What to include - discussion (4 minutes)
 >
 > Think of the data you generate in your projects,
 > and imagine you are going to share them.
@@ -243,14 +243,17 @@ without any further input from you.
 >
 > Write down and compare your proposals, can we find some common elements?
 >
-> > ## Solution
-> > Some typical elements are:
-> > * biological material, e.g. Species, Genotypes, Tissue type, Age, Health conditions
-> > * biological context, e.g. speciment growth, entrainment, samples preparation
-> > * experimental factors and conditions, e.g. drug treatments, stress factors
-> > * specifics of data acquisition
-> > * specifics of data processing and analysis
-> >
+>> ## Solution
+>> Some typical elements are:
+>> * biological material, e.g. Species, Genotypes, Tissue type, Age, Health conditions
+>> * biological context, e.g. speciment growth, entrainment, samples preparation
+>> * experimental factors and conditions, e.g. drug treatments, stress factors
+>> * primers, plasmid sequences, cell line information, plasmid construction
+>> * specifics of data acquisition
+>> * specifics of data processing and analysis
+>> * definition of variables
+>> * accompanying code, software used (version nr), parameters applied, statistical tests used, seed for randomisation
+>> * LOT numbers
 > {: .solution}
 {: .challenge}
 
