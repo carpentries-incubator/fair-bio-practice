@@ -177,9 +177,11 @@ ggplot(subset(df, light_condition %in% "SD"),
         y = "Biomas (g)") +
     scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
 ```
+
 * most importantly leave comments of what your code does! Describe code functions
 throughout, add headers in between analysis steps (if code is self-explanatory this is not
 necessary - e.g. in our lesson we annotated all code as not everyone is familiar with R)
+
 ```
 ## Ideal
 
