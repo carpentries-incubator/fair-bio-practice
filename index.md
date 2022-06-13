@@ -27,7 +27,7 @@ This course can also be of interest to mathematical/biological/computational mod
 
 <ins>Example of a learner profile:</ins>
 
-**Shania Soilscientist (she/her) - junior postdoc**
+**Shania Wang (she/her) - junior postdoc**
 Shania is starting her first postdoctoral stay. She has recently obtained a PhD in Plant Biology and is very skilled in running plant molecular and physiology experiments. She recently published her first publication, but found the process of preparing all the figures and required information for the publisher super tedious and time consuming. As a postdoc, she must find an effective way to organise her own research project and the PhD students she is going to supervise...([read more](./learners) ) 
   
   

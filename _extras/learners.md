@@ -2,7 +2,7 @@
 title: "Learners Profiles"
 ---
 
-### Shania Soilscientist (she/her) - junior postdoc 
+### Shania Wang (she/her) - junior postdoc 
 
 Shania is starting her first postdoctoral stay. 
 She has recently obtained a PhD in Plant Biology and is very skilled in running plant molecular and physiology experiments. 
@@ -15,7 +15,7 @@ This workshop will teach her why data management is important for research and h
 She will understand how she can benefit from Open Science and FAIR principles. 
 She will learn about how to use electronic lab notebooks (ELNs) to share experimental notes with other lab members, how to find suitable repositories for her data and how to describe the data in a standard way. And... she will stop fearing metadata! 
 
-### Guillermo Geobiologist (he/him) - lab manager 
+### Guillermo Puertas (he/him) - lab manager 
 
 Guillermo is a lab manager. He makes sure the lab is running smoothly and no reagents are ever missing. 
 He helps with budgets, project management, organizes lab meetings, oversees lab training and is (occasionally) involved with doing experiments 
@@ -31,7 +31,7 @@ This workshop will help him learn efficient ways to organize a lab project from 
 implementing FAIR principles into the research data cycle. He will learn how to effectively manage protocols
 and get the credit by sharing them. He will learn how to standardize data descriptions in the lab. 
 
-### Kavindra Kineticist (they/them) - senior postdocs 
+### Kavindra Anand (they/them) - senior postdocs 
 
 Kavindra is a senior systems biology postdoc, trained in both experimental and theoretical work. 
 They are very skilled at the bench, they routinely create new transgenic constructs and test them with molecular biology techniques. 
