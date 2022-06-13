@@ -4,13 +4,15 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
-The course is aimed at researchers in biomedical sciences (PhD students, postdocs, technicians, etc...) who are interested in Open Science, FAIR principles and data management. This training is aimed at everyone who wants to familiarise themselves with these concepts and apply them throughout their projects' life cycle. 
+The course is aimed at researchers in biological and biomedical sciences (PhD students, postdocs, technicians, etc...) who are interested in Open Science and data management.
+The course explains the FAIR (Findable, Accessible, Interoperable, Reusable) principles for data re-use, and how to practically apply FAIR principles throughout projects' life cycles. 
 
 ## Introduction
-Open Science is disruptive. It will change how we do research and how society benefits from it. Making data re-usable is the key to this, and FAIR principles are a way to achieve this.
+
+Open Science is disruptive. It is changing how we do research and how society benefits from it.
 * But what does this mean in practice?
 * How can a biologist incorporate these principles in their daily workflow?
-* We will learn that becoming FAIR (Findable, Accessible, Interoperable, Reusable) and following Open Science practices is a process.
+* We will learn that becoming FAIR and following Open Science practices is a process.
 
 We will teach you how through planning and using a powerful set of tools, you can make your outputs ready for public sharing and reuse. 
 
@@ -25,7 +27,7 @@ This course can also be of interest to mathematical/biological/computational mod
 
 <ins>Example of a learner profile:</ins>
 
-**Shania T. Wain (she/her) - junior postdoc**
+**Shania Soilscientist (she/her) - junior postdoc**
 Shania is starting her first postdoctoral stay. She has recently obtained a PhD in Plant Biology and is very skilled in running plant molecular and physiology experiments. She recently published her first publication, but found the process of preparing all the figures and required information for the publisher super tedious and time consuming. As a postdoc, she must find an effective way to organise her own research project and the PhD students she is going to supervise...([read more](./learners) ) 
   
   
@@ -63,9 +65,9 @@ Shania is starting her first postdoctoral stay. She has recently obtained a PhD 
 >
 > * explain elements of the Open Science movement
 > * explain FAIR principles and understand their importance 
-> * plan their own data managment strategy
+> * plan their own data management strategy
 > * prepare their data for re-use
-> * apply aproaches and tools into a FAIR-ready research data lifecycle
+> * apply approaches and tools into a FAIR-ready research data lifecycle
 > * find suitable resources for delivering Open Science and FAIR data
 >
 {: .objectives }  
