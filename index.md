@@ -43,9 +43,6 @@ Shania is starting her first postdoctoral stay. She has recently obtained a PhD 
 > * familiarity with online bioscience data resources (in general, not any particular resource); for example: searching publications
 > * know your ways around files and directories on your own machine 
 > 
-> The [Reusable Analysis](./10-reusable-analysis) episode use examples of code to illustrate good or bad practice, 
-> and has examples of Jupyter notebooks. 
-> These are designed to be accessible to beginners, so coding experience is not a prerequisite.
 > 
 {: .prereq }  
   
