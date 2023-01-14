@@ -92,12 +92,14 @@ data from published biological papers.
 >> * Finding the right table and column containing the relevant data is already problematic as the headers are obscured so they need to decoded using manuscript
 >> * Data in pdf table so they cannot be readily used in calculations
 >> * Depending on the software used to open (and the way the pdf was created), the local machine international settings, copying the data into Excel can bring unexpected results
->> ![Figure 2. Pdf data copied to Excel](../fig/03-average_to_excel1.png)
->> ![Figure 2. The same data copied to Excel with polish locale](../fig/03-average_to_excel1.png)
+>> ![Figure 2. Pdf data copied to Excel](../fig/03-average_to_excel1.png)  
+>> *Data needs parsing after coping to Excel*
+>> ![Figure 2. The same data copied to Excel with polish locale](../fig/03-average_to_excel1.png)  
+>> *The same data copied to Excel with polish locale has been converted to dates*
+>> * In general pdf tables cannot be read programaticaly from R or Python.
 >> 
 >>
 > {: .solution}
-
 {: .challenge}
 
 > ## Impossible numbers
