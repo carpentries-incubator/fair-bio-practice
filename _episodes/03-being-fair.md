@@ -1,7 +1,7 @@
 ---
 title: "Being FAIR"
-teaching: 44
-exercises: 16
+teaching: 45
+exercises: 15
 questions:
 - "How to get more value from your own data?"
 - "What are the FAIR guidelines?"
@@ -31,6 +31,7 @@ that accompanies those publications.
 > Data also includes:
 > * images, not only from microscopes
 > * information about biological materials, like strain or patient details
+> * biological models
 > * recipes, laboratory and measurement protocols
 > * scripts, analysis procedures, and custom software can also be considered data
 > However, there are specific recommendations on how to deal with code.
@@ -77,7 +78,7 @@ data from published biological papers.
 
 > ## Impossible numbers
 >
-> Ikram 2014 (https://doi.org/10.1093/jxb/err244) paper contains data about various metabolites in
+> [Ikram 2014](https://doi.org/10.1093/jxb/err244) paper contains data about various metabolites in
 > different accessions (genotypes) of Arabidopsis plant. 
 > You would like to calculate average nitrogen content in plants grown under normal and nitrogen 
 > limited conditions. 
@@ -86,6 +87,17 @@ data from published biological papers.
 > * Hint 1. Data are in Supplementary data   
 > * Hint 2. Search for nitrogen in paper text to identify the correct data column.  
 >
+>> ## Solution
+>>
+>> * Finding the right table and column containing the relevant data is already problematic as the headers are obscured so they need to decoded using manuscript
+>> * Data in pdf table so they cannot be readily used in calculations
+>> * Depending on the software used to open (and the way the pdf was created), the local machine international settings, copying the data into Excel can bring unexpected results
+>> ![Figure 2. Pdf data copied to Excel](../fig/03-average_to_excel1.png)
+>> ![Figure 2. The same data copied to Excel with polish locale](../fig/03-average_to_excel1.png)
+>> 
+>>
+> {: .solution}
+
 {: .challenge}
 
 > ## Impossible numbers
