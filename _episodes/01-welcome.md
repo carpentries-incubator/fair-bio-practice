@@ -1,6 +1,6 @@
 ---
 title: "Welcome"
-teaching: 22
+teaching: 15
 exercises: 0
 questions:
 - "Who are we and what are we going to learn?"
@@ -55,6 +55,7 @@ is our bad timing and lack of planning.
 When should you engage in data sharing and open practices?
 * Data management should be done throughout the duration of your project.
 * If you wait till the end, it will take a massive effort on your side and will be more of a burden than a benefit.
+* The overheads of making data suitable for sharing at each stage of data life-cycle are small comparing to the other actions involved
 * Taking the time to do effective data management will help you understand your data better and make it easier to find when you need it (for example when you need to write a manuscript or a thesis!).
 * All the practices that enable others to access and use your outcomes directly
 benefit you and your group
@@ -76,12 +77,12 @@ records for documenting experiments.
 We will talk about working and organizing files and appropriate file naming conventions 
 using Excel or CSV tables to store and document data.
 * **Day 3**
-We will show you how public repositories make your outputs accessible and reusable.
 We will introduce Jupyter notebooks as a tool for reusable data analysis.
+We will talk about Version Control.
 We will teach how to describe your projects using simple text files or customized templates.
 
 * **Day 4**
-We will talk about Version Control.
+We will show you how public repositories make your outputs accessible and reusable.
 We will consolidate our knowledge of FAIR ready data management and what
 other tools can help you during your research.
 
