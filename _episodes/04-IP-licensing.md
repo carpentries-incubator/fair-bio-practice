@@ -11,7 +11,7 @@ objectives:
 - "Understand what licenses to use for re-use of data and software"
 keypoints:
 - "A license is a promise not to sue - therefore attach license files"
-- "For data use Creative Commons Attribution (CC BY) license"
+- "For data use Creative Commons Attribution (CC BY) license (CC0 is even more permissive)"
 - "For code use open source licenses such as MIT, BSD, or Apache license"
 ---
 (13 min teaching)
@@ -93,7 +93,7 @@ is it clear what you can do with software code under this licence?
 >
 > 3. Compare the full wording of CC BY
 [https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode)
-can you guess why the MIT licence is currently the most popular for open source code?
+can you guess why the MIT licence is currently one of the most popular for open source code?
 > 
 >> ## Solution
 >>
