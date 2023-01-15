@@ -376,7 +376,7 @@ or [Apache license](http://www.apache.org/licenses/).
 > {: .solution}
 {: .challenge}
 
-## FAIR vs Open Science (6 min teaching)
+## FAIR vs Open Science (3 min teaching)
 
 **FAIR does not mean Open**. Actually, FAIR guideline only requires
 that the metadata record is always accessible.
