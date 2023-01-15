@@ -231,19 +231,19 @@ Ontologies are encoded in standard, interoperable formats, which permitted creat
 > ## Exercise 4: Ontology tests
 >
 > 1.	The prefix CL stands for:
-> a)	Class ontology:
-> b)	Cell ontology:
-> c)	Cell line ontology
+> * a)	Class ontology:
+> * b)	Cell ontology:
+> * c)	Cell line ontology
 > 
 > 2.	The recommended ontology for chemical compounds is:
-> a)	cheminf
-> b)	chmo
-> c)	chebi
+> * a)	cheminf
+> * b)	chmo
+> * c)	chebi
 > 
 > 3.	Which terms captures both Alzheimer’s and Huntington's diseases
-> a)	DOID_680
-> b)	DOID_1289
-> c)	DOID_0060090 
+> * a)	DOID_680
+> * b)	DOID_1289
+> * c)	DOID_0060090 
 >
 >> ## Solution
 >> 3 b (hint try to see the tree in bioportal)
