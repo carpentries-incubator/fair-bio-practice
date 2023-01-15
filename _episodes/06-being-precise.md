@@ -1,7 +1,7 @@
 ---
 title: "Being precise"
-teaching: 23
-exercises: 6
+teaching: 25
+exercises: 10
 questions:
 - "How to make my metadata interoperable?"
 - "How to avoid disambiguation?"
@@ -11,7 +11,7 @@ objectives:
 - "Finding ontology terms"
 keypoints:
 - "Public identifiers and ontologies are key to knowledge discovery"
-- "Automatic data aggregations needs standarised metadata formats and values"
+- "Automatic data aggregations needs standardised metadata formats and values"
 ---
 
 (16 min teaching)
@@ -56,19 +56,6 @@ One of the easiest examples is the problem of author disambiguation.
 >
 {: .callout}
 
-ORCID provides the registry of researchers, so they can be precisely identified.
-Similarly, there are other registries that can be used to identify many
-of biological concepts and entities:
-* species e.g. [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy)
-* chemicals e.g. [ChEBI](https://www.ebi.ac.uk/chebi)
-* proteins e.g. [UniProt](https://www.uniprot.org/)
-* genes e.g. [GenBank](https://www.ncbi.nlm.nih.gov/genbank/)
-* metabolic reactions, enzymes e.g [KEGG](https://www.genome.jp/kegg/)
-
-[BioPortal](https://bioportal.bioontology.org/) or
-[NCBI](https://www.ncbi.nlm.nih.gov/)  
-are good places to start searching for a registry or a term.
-
 
 > ## Exercise 1: Public ID in action (3 min)
 >
@@ -83,6 +70,21 @@ are good places to start searching for a registry or a term.
 > > publications.
 > {: .solution}
 {: .challenge}
+
+
+ORCID provides the registry of researchers, so they can be precisely identified.
+Similarly, there are other registries that can be used to identify many
+of biological concepts and entities:
+* species e.g. [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy)
+* chemicals e.g. [ChEBI](https://www.ebi.ac.uk/chebi)
+* proteins e.g. [UniProt](https://www.uniprot.org/)
+* genes e.g. [GenBank](https://www.ncbi.nlm.nih.gov/genbank/)
+* metabolic reactions, enzymes e.g [KEGG](https://www.genome.jp/kegg/)
+
+[BioPortal](https://bioportal.bioontology.org/) or
+[NCBI](https://www.ncbi.nlm.nih.gov/)  
+are good places to start searching for a registry or a term.
+
 
 
 > ## Exercise 2: Public ID in action 2 (3 min)
@@ -103,22 +105,24 @@ are good places to start searching for a registry or a term.
 > {: .solution}
 {: .challenge}
 
-## Ontologies (7 min teaching)
+## Disambiguation (7 min teaching)
 
-> ## Disambiguation
->  In academic disciplines we quickly run into problems of naming standards e.g.:
->  
->  * Escherichia coli
->  * EColi
->  * E. coli
->  * E. Coli
->  * Kanamycin A
->  * Kanamycin
->  * Kanam.
->  * Kan. 
-{: .discussion}
+In academic disciplines we quickly run into problems of naming standards e.g.:
+  
+* Escherichia coli
+* EColi
+* E. coli
+* E. Coli
+* Kanamycin A
+* Kanamycin
+* Kanam.
+* Kan. 
 
-Ontologies represent a standardised, formal naming system and define categories, properties and relationships between data. Ontologies allow to describe properties of a subject area and how they are related (e.g. taxonomy). This reduces the complexity of the data through use of controlled vocabulary.
+In order to prevent such ambiguities applications provide interface that constraints
+users to pre-defined options, it controls the available vocabulary.
+
+![UI with controlled vocabulary](../fig/06-controlled_voc_UI.jpg)
+*Example of graphical user interfaces with controlled vocabularies*
 
 > ## Controlled Vocabulary
 >
@@ -138,6 +142,7 @@ Ontologies represent a standardised, formal naming system and define categories,
 {: .callout}
 
 Use of controlled vocabulary (a list) can be organised hierarchically into a taxonomy, a system we know mostly from our species taxonomy.
+
 
 > ## Taxonomy
 >
@@ -183,16 +188,78 @@ Ontologies add a further dimension to controlled vocabularies and taxonomy. They
 > * Insecta
 > * * Drosophila melanogaster
 >
-> <img src="../fig/06-ontologies.png" alt="ontology-example" width="600"/>
-> *Figure credits: Tomasz Zielinski*  
 >
 {: .callout}  
-<br>
-<br>
-#### Here some links to help you find the right ontologies for your research:
 
-1. Finding ontologies: [https://bioportal.bioontology.org/](https://bioportal.bioontology.org/)
-1. List of recommended ontologies: [http://www.obofoundry.org/](http://www.obofoundry.org/)
+Ontologies represent a standardised, formal naming system and define categories, properties and relationships between data. Ontologies allow to describe properties of a subject area and how they are related (e.g. taxonomy). 
+
+<img src="../fig/06-ontologies.png" alt="ontology-example" width="600"/>
+ 
+Ontologies allows automatic reasoning about the data, using the relations between the described terms. For example, in the picture above we can "deduce" that **hippocampal astrocyte**:
+* it is type of cell as it one of its predecessor in the knowledge tree is **cell (CL_0000000)** 
+* it is located in the **brain (UBERON_000955)**
+* it can perform **axon regeneration (GO_0031103)** 
+
+We could follow the term *axon regeneration* to find its definition and what it means, to have a better understanding of *hippocampal astrocyte*.
+
+Ontologies are crucial for aggregation of information and finding suitable data.
+Imagine you are interested in gene expersions in glial cells. Using a free text search you would need to hope that data from astrocytes will be also tagged as glial cell, or you would need to specify all suptypes of glial cells like oligodendrocytes astrocytes.
+Ontologies permits to automatically expands such searches that they contain suitable domain. 
+
+The above figure presents also another aspect of using ontologies. The terms are often referred to as:  
+**PREFIX_ID**  e.g. CL_0002604  
+Prefix (CL, UB, UBERON, GO) will identify the ontology which defined the term ([Cell Ontology](https://obofoundry.org/ontology/cl.html) for CL).  
+ID refers to particular term in the ontology.
+
+Ontologies are encoded in standard, interoperable formats, which permitted creation of re-usable interfaces to access the described terms or browsing different ontologies. For example: https://bioportal.bioontology.org/](https://bioportal.bioontology.org/) permits searching for suitable terms definitions in hundreds of ontologies.
+
+[Obo foundry](http://www.obofoundry.org/) is another useful tool that lists recommended ontologies.
+
+> ## Exercise 3: Exploring ontologies (with instructor)
+> 
+> Check the example of ontology records:
+> * [oocyte](https://bioportal.bioontology.org/ontologies/ZFA/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0001109#details)
+> * [microglial cell](https://bioportal.bioontology.org/ontologies/CL?p=classes&conceptid=CL:0000129#details)
+> * [promoter](https://bioportal.bioontology.org/ontologies/SO?p=classes&conceptid=http://purl.obolibrary.org/obo/SO_0000167#details)
+> 
+> Check what type of information is available, explore the terms hierarchy, the visualization, the interlinked terms, mapping between different ontologies.
+>
+{: .challenge}
+ 
+
+
+> ## Exercise 4: Ontology tests
+>
+> 1.	The prefix CL stands for:
+> a)	Class ontology:
+> b)	Cell ontology:
+> c)	Cell line ontology
+> 
+> 2.	The recommended ontology for chemical compounds is:
+> a)	cheminf
+> b)	chmo
+> c)	chebi
+> 
+> 3.	Which terms captures both Alzheimer’s and Huntington's diseases
+> a)	DOID_680
+> b)	DOID_1289
+> c)	DOID_0060090 
+>
+>> ## Solution
+>> 3 b (hint try to see the tree in bioportal)
+>>
+> {: .solution}
+{: .challenge}
+
+
+> ## Attribution
+>
+> Content of this episode was adapted from:
+> * BD2K Open Educational Resources: BDK14 Ontologies 101 [Nicole Vasilevsky](https://github.com/OHSUBD2K/BDK14-Ontologies-101)
+>
+{: .callout}
+
+
 
 
 {% include links.md %}
