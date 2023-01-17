@@ -15,6 +15,7 @@ keypoints:
 - "Good record keeping ensures transparency and reproducibility."
 - "Record keeping is an integral part of data FAIRification."
 - "Record keeping is key to good data management practices."
+- "Having experimental details already in electronic form makes it easier to include them in READMEs or repository records"
 ---
 
 ## Before we start...
@@ -204,7 +205,7 @@ There are more than a 100 platforms that provide services to host electronic lab
 * What is the ability to share & export entries, experience of colleagues, availability of support, integration with other relevant platforms (e.g. dropbox), and the potential for use with mobile devices if required?
 * What is the user interface like? Does it feel intuitive or does it take you days to find what you are looking for. 
 * Check for operating system compatibility and real time collaboration. 
-* Preferably it should be Open Source.
+* If you plan to maintain it locally it should be Open Source.
 
 The BioRDM team has put together a comprehensive summary of [ELNs on the University of Edinburgh Wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=463750271) where they test-ran a handful of ELNs for you so you can make a more informed choice.
 
@@ -225,6 +226,7 @@ It is always best to use a free version or trial version to test an ELN first an
 (2 min teaching)
 
 ## How does good record keeping help us get FAIR ready?
+
 Accessibility of your protocols online allows to share them with collaborators who need them for a publication and a DOI of said protocols allows to cite them with credibility. Electronic lab records allow for easier re-usability and access of your data across multiple platforms. Changes in your records can be traced back, therefore giving accountability.
 
 > ## FAIR record keeping - Quiz (3 min + into break)
