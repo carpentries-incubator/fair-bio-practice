@@ -408,12 +408,27 @@ When using text files (.csv, .tsv), You should always document what format you a
 {: .callout}
 
 
-> ## Exercise 4: Data tables and FAIR (5 min)
+> ## Exercise 4: Data tables and FAIR (3 min)
 >
-> How do the described practices for representing data in tables (Excel, .csv or .tsv)
-> help in achieving FAIR? Which aspects of FAIR do they help with?
->
->
+> Which of the following statements is true/false (T or F):
+> *	Do’s and don’ts help in programmatic re-use:
+> *	Avoiding multiple tabs improves interoperability:
+> *	Having accompanying README file with a table description is not FAIR:
+> *	No ‘spaces’ in columns headers improve readability:
+> *	2022-07-15 is ISO date format:
+> *	20220715 date format is better for excel than 2022-07-15:
+> *	“No data” is better than leaving cell “blank” for missing data:
+> 
+>> ## Solution
+>> *	Do’s and don’ts help in programmatic re-use: T
+>> *	Avoiding multiple tabs improves interoperability: T
+>> *	Having accompanying README file with a table description is not FAIR: F
+>> *	No ‘spaces’ in columns headers improve readability: F
+>> *	2022-07-15 is ISO date format: T
+>> *	20220715 date format is better for excel than 2022-07-15: T
+>> *	“No data” is better than leaving cell “blank” for missing data: F
+>> 
+> {: .solution}
 {: .challenge}
 
 
