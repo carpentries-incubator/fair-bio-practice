@@ -62,6 +62,22 @@ There is a simple solution to this: **Computational notebooks**
 >
 {: .challenge}
 
+ 
+> ## Exercise 2: How to add and remove content
+> You have duplicated a notebook and saved it under your own name. Now we will add text, remove cells and change code.
+>  
+> 1.     Change the author name of the document to your name: Double click on the cell containing the author name and change the name.  
+> 2.     Press Run again.  
+> 3.     Add a new cell: Let us add details about the “light_results.txt” file that is loaded. The “+” in the tool bar creates new cells below the currently selected cell. Thus select the cell above the code and click “+” in the toolbar.  
+> 4.     Ensure the type of the cell is Markdown and enter a description of subsequent analysis e.g.: “Loading of results following short- and long-day light exposure on arabidopsis, followed by visualisation of differences in chlorophyll/biomas etc... content between genotypes on short-days and long-days.”  
+> 5.     Press Run again.  
+> 6.     To remove a cell, select the cell you have just created and click on the scissors icon in the toolbar. (This can be undone under Edit > Undo Delete Cells)  
+> 7.     Change colours of your graph: Where the code of the graph reads the comment “# change colour of groups” you can replace the HEX codes, # followed by 6-symbol code, with names of colours (e.g. blue, green…) or other HEX codes if you are familiar with them.  
+> 8.     Save graph under new name: Add your initials to the file name under which the image is saved. Press Run. Your image should be visible in overall file hierarchy.  
+> 
+> Can you see the new colors already? What needs to be done?
+{: .challenge}
+
 ## Computational Notebooks - Jupyter Notebook for FAIR practices
 Computational notebooks are essentially laboratory notebooks for scientific computing.
 Instead of pasting DNA gels alongside lab protocols, researchers embed code, data and 
