@@ -12,7 +12,7 @@ objectives:
 keypoints:
 - "A good file name suggests the file content"
 - "Good project organization saves you time"
-- "Describe your files organization in PROJECT_STRUCTURE"
+- "Describe your files organization in PROJECT_STRUCTURE or README including naming convention"
 ---
 
 ## Project organization: planning file names and folder structure
