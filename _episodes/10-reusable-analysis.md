@@ -28,10 +28,6 @@ This so called ad-hoc analysis will only after several iterations of data explor
 retries, adjustments, and modifications to experimental procedures lead to selection of suitable analysis methods and parameters. One would then conduct statistical validation 
 of results and generate final results and graphs for publications. This process can be difficult to track using conventional methods such as pen + paper and Excel.
 
-Plotting in R (or Python) is often a natural starting point to learn programming and 
-allows to create more professional scientific plots than those available in Excel. Additionally, throughout ad-hoc data analysis these plots are easier to recreate, and 
-easier to adjust for specific dimensions and journal formatting guidelines, when using 
-code.
 
 ## Reusable Computing
 We have previously discussed electronic lab notebooks and their benefit in being FAIR.
@@ -41,7 +37,30 @@ into your electronic lab notebook after each iteration of new code (or generatio
 Excel). You might also have lost track of which code corresponded to which figure 
 and why you changed your code last time.
 
+
 There is a simple solution to this: **Computational notebooks**
+
+
+ 
+> ## Exercise 1: Basics of Jupyter Notebooks
+>
+> Go to the provided Jupyter server.  
+> We will first show you how to duplicate a notebook, save it and run code.
+>  
+> 1.     Select the notebook titled 'student_notebook_light_conditions.ipynb' and click 'Duplicate'.  
+> 2.    Confirm with Duplicate when asked if you are certain that you want to duplicate the notebook.  
+> 3.    A copy of the notebook has appeared with the suffix '-Copy' and a number.   
+> 4.    Rename the notebook from -copy number to your initials e.g. “student_notebook_light_conditions_TZ” , open it by clicking  
+> 
+> Explore the anatomy of the notebook:
+> !(https://github.com/carpentries-incubator/fair-bio-practice/blob/gh-pages/fig/10-02-jupyter_anatomy.png )  
+> 
+> 5.    Save the notebook: Click on the disk symbol in the toolbar  
+> 6.    Run the notebook: Select the top cell of the notebook with the title (this is likely pre-selected already and will show with a light-blue bar to its left), and click “Run” in the tool bar.  
+> 7.    Click two times. What can you see?  
+> 8.    We want to run ALL the code: In the top tool bar click Cell > Run All. What can you see?  
+>
+{: .challenge}
 
 ## Computational Notebooks - Jupyter Notebook for FAIR practices
 Computational notebooks are essentially laboratory notebooks for scientific computing.
@@ -61,9 +80,10 @@ scientists, this format can drive exploration via interactive computing. This is
 environment in which users execute code, see what happens, modify and repeat in an 
 iterative process between researcher and data, in an ad-hoc way.
 As a basic principle Jupyter Notebooks run on a 'kernel' which is responsible in
-execution of the code. Generally this 'kernel' can run on your computer, additionally
-external servers (e.g. our BioRDM server which we use below to host our notebook) can 
-be provided for you to store and analyse your data. Notebooks can also be exported as 
+execution of the code. Generally this 'kernel' can run on your computer or
+you can use external servers to store and analyse your data. 
+
+Notebooks can also be exported as 
 .pdf and .html files which allow easy sharing of outputs, and other tools such as [nbviewer](https://nbviewer.org/), 
 an open-source service that allows users to render their Jupyter notebooks on GitHub 
 in a web browser without having to install the software or any programming libraries. 
