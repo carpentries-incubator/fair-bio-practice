@@ -274,9 +274,26 @@ You can start by developing a logical folder structure. To do so, you need to ta
 > * When/why would you use c) and when/why d)
 >
 >> ## Solution
->> * The b) structure is called "Organized by analysis" or "by figure", this is useful when analysing datasets in parallel
->> * The structure similar to c) is recommended for Brain Imaging Data Structure [BIDS](https://doi.org/10.1038/sdata.2016.44), as it is organized by "patient" (in this case pig) and type of scans
->> * d) is useful when we are interested in outcomes of drug treatments
+>> Firstly, the root directory contains a README file that provides an overview of the project as a whole,
+>> a CITATION file that explains how to reference it and a LICENSE, all three make it **REUSABLE**.
+>>
+>> The **a)** structure is recommended by the [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510) paper.  
+>> This project structure clearly separates the inputs (the raw data)
+>> from the outputs (the results) and the analysis procedure (python code).
+>> Following the same convention (like src folder for code) makes it easy
+>> to find interesting elements, for example the raw data or particular plotting procedure.
+>> Good for sharing analysis project, also for pipelines where one set of inputs generated the set of outputs in the step by step manner.
+>>
+>> The **b)** structure is called "Organized by analysis" or "by figure".
+>> As the name suggest it may be recommended to share data underling a publication. In that way each paper figure is represented by its raw data, processing scripts
+>> and the final results and figure plots. It is also well suited if each analysis deals with different data type or different aspect of it.
+>> When compared to 'a)' it makes easier to match the required inputs with the computational procedures.
+>>
+>> The structure similar to c) is recommended for Brain Imaging Data Structure [BIDS](https://doi.org/10.1038/sdata.2016.44), as it is organized by "patient" 
+>> (in this case patient was replaced by pig :) ) and type of scans. Here the focus is on individual subject / samples, for which various data was obtained.
+>>
+>> Structured **d)** is useful when we are interested in outcomes of experimental conditions (here drug treatments). The same set of samples/subjects/genotypes are exposed to different experimental variables/conditions and the data are probably compared between all the samples at the same conditions.
+>>
 > {: .solution}
 {: .challenge}
 
