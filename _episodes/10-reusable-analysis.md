@@ -1,7 +1,7 @@
 ---
 title: "Reusable analysis"
-teaching: 77
-exercises: 28
+teaching: 60
+exercises: 30
 questions:
 - "How is live coding with instant output beneficial for FAIR?"
 - "How to adapt existing Jupyter notebooks"
@@ -53,12 +53,12 @@ There is a simple solution to this: **Computational notebooks**
 > 4.    Rename the notebook from -copy number to your initials e.g. “student_notebook_light_conditions_TZ” , open it by clicking  
 > 
 > Explore the anatomy of the notebook:
-> !(https://github.com/carpentries-incubator/fair-bio-practice/blob/gh-pages/fig/10-02-jupyter_anatomy.png )  
+> ![Jupyter notebook](../fig/10-02-jupyter_anatomy.png)  
 > 
 > 5.    Save the notebook: Click on the disk symbol in the toolbar  
 > 6.    Run the notebook: Select the top cell of the notebook with the title (this is likely pre-selected already and will show with a light-blue bar to its left), and click “Run” in the tool bar.  
 > 7.    Click two times. What can you see?  
-> 8.    We want to run ALL the code: In the top tool bar click Cell > Run All. What can you see?  
+> 8.    We want to run ALL the code: In the top tool bar click `Cell > Run All`. What can you see?  
 >
 {: .challenge}
 
