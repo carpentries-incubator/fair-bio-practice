@@ -76,7 +76,37 @@ There is a simple solution to this: **Computational notebooks**
 > 8.     Save graph under new name: Add your initials to the file name under which the image is saved. Press Run. Your image should be visible in overall file hierarchy.  
 > 
 > Can you see the new colors already? What needs to be done?
+>
 {: .challenge}
+
+
+> ## Exercise 3: Add another analysis step
+> We have shown you how to manipulate text and code in Jupyter notebooks. You should be able to add data visualisation (a graph) and stats for long-day light condition including annotations yourself.
+>  
+> 1.     Add additional cells including  
+> a.     Titles  
+> b.     Edited code to depict graph from long-days (saved under different name)  
+> c.     Figure legend  
+> d.     Statistical testing of difference between genotypes on long-days (remember to assign a different variable throughout e.g. LD.aov)  
+> e.     Interpretation of results of statistical testing  
+> 
+{: .challenge}
+
+
+  
+> ## Exercise 4: Sharing of your Jupyter Notebook
+> You have now generated your own analysis and interpretation on top of your collaborators results and want to share this with your colleagues.
+>  
+> 1. Download your Notebook (ensure all code has been run) as .html
+> 2. View the documents and think about why it is important to run all code before download (try Cell > All Output > Clear and download your Notebook, compare the outputs)  
+>  
+> Questions:
+> * What is the difference between running all code and clearing all run code?
+> * Why is it important to run all code before download?
+> 
+{: .challenge}
+
+
 
 ## Computational Notebooks - Jupyter Notebook for FAIR practices
 Computational notebooks are essentially laboratory notebooks for scientific computing.
