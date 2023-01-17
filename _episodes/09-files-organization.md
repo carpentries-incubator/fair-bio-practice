@@ -1,7 +1,7 @@
 ---
 title: "Working with files"
-teaching: 34
-exercises: 32
+teaching: 30
+exercises: 30
 questions:
 - "How should I name my files?"
 - "How does folder organisation help me"
@@ -370,20 +370,18 @@ and what solutions are available in your organisation.
 ## Project file organization and FAIR guidelines
 
 
-> ## Exercise 5: FAIR Files (5 minutes)
-> Discuss how can a strategy for folder organisation and naming convention
-> help in achieving FAIR data?
+> ## Exercise 5: FAIR Files (3 minutes)
+> Choose 3 main benefits of a good strategy for folder organisation and naming conventions.  
 >
->> ## Solutions
->> * Make data more findable
->> * Aid in making data more reproducible - projects can be copied easily
->> * Raw data can be reanalysed multiple times
->> * Conventions can be read automatically
->> * Easy to understand content by name, less misanderstandings
->> * Easier to find and share data with others
->> * Fewer meetings required when sharing data
->> * Time saving
-> {: .solution}
+> * Makes data more findable
+> * Aids in making data more reproducible - projects can be copied easily
+> * Raw data can be reanalysed multiple times
+> * Naming conventions can be read automatically
+> * Easy to understand content by name, less misunderstandings
+> * Easier to find and share data with others
+> * Easy inspection of the project progress (present files)
+> * Fewer meetings required when sharing data
+> * Time saving
 {: .challenge}
 
 (19 min discussion, wrap up of teaching)
