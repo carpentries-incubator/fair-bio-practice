@@ -314,6 +314,28 @@ They all offer well defined:
 * error handling
 * restart options
 
+## Computing in R and Python
+Both languages are flexible and easy to start. They permit quickly achieve the desired effect, have things done with minimal setup and lines of codes.
+However, because of their flexibility it is easy to pick up bad habits and write code without much understanding of good practices of software engineering.
+
+For the journey into scientific computing we recommend:
+* Firstly, learn how to make simple plots, clean/reorganize files and data tables
+* Secondly, learn basics of software engineering and good programming practices
+* Then start coding advanced analysis and processing, construct pipelines with workflows
+
+One of the pitfalls of R and Python is that their behaviour depends on libraries installed on your machine, not only R o Python libraries but also the system one.
+It often creates situation in which the code works on one machine but does not work on another.
+
+There are ways of dealing with those issues, for example, for Python, there is a package management system called Conda. 
+Conda installs, runs, and updates packages and their dependencies. 
+Conda can switch between project environments, so each project can have its own set of installed libraries and their versions.  
+Conda support many languages (Python, R, Ruby, Lua, Scala, Java, JavaScript, C, C++, FORTRAN) but it is particularly well suited for Python.
+
+In our experience, for R renv works better than conda.
+
+As a rule, despite the package managment system used, you should try to keep track of what libraries you installed during your code development and in what versions.
+
+
 
 ## Coding Good Practices
 Before we let you go wild in our subsequent exercises we would like to go highlight a
