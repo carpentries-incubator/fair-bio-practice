@@ -74,6 +74,13 @@ short-day and long-day light exposure. We will create some graphs and
 test whether there are differences between our genotypes of arabidopsis
 using the language R as an example.
 
+>
+> The example notebook and data files can be found in instructors folders.  
+> The most recent version are available via a separated github project:  
+> [fair-jupyter](https://github.com/BioRDM/fair-jupyter)
+>
+{: .testimonial}
+
 > ## Exercise 1: basics of Jupyter notebooks (5 min)
 >
 > Navigate to the jupyter server, we
@@ -235,7 +242,7 @@ We have now managed to not only reproduce code, but we were able to add to the a
 {: .challenge}
 
 
-
+The example notebook is extremely well documented to show the good practices when coding. Without such level of comments and explanations it may not be possible for new-commers to re-use this notebook.
 
 
 
