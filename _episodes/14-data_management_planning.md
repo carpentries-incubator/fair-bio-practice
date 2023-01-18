@@ -27,7 +27,7 @@ not going to use the data you would not need to store it or even process it.
 
 
 ![Figure 5.1. The Research Data Life Cycle ](../fig/05-research_data_life_cycle.png)
-*Figure credits: Tomasz Zielinski*
+*Figure credits: Tomasz Zieliński*
 
 ## Data management is a continuous process
 Data management should be done throughout the duration of your project.
@@ -183,7 +183,7 @@ to discuss folder structures, but, they should emphasize the **data safety
 > {: .solution}
 {: .challenge}
 
-> ## Exercise 2, part 2: Explore each outhers DMPs (10 min)
+> ## Exercise 2, part 2: Explore each others DMPs (10 min)
 > Now, take a look at the other group's DMP and make comments/suggestions on how 
 > to improve it (at the end of the DMP)
 >
