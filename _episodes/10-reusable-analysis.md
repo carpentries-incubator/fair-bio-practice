@@ -40,74 +40,6 @@ and why you changed your code last time.
 
 There is a simple solution to this: **Computational notebooks**
 
-
- 
-> ## Exercise 1: Basics of Jupyter Notebooks
->
-> Go to the provided Jupyter server.  
-> We will first show you how to duplicate a notebook, save it and run code.
->  
-> 1.     Select the notebook titled 'student_notebook_light_conditions.ipynb' and click 'Duplicate'.  
-> 2.    Confirm with Duplicate when asked if you are certain that you want to duplicate the notebook.  
-> 3.    A copy of the notebook has appeared with the suffix '-Copy' and a number.   
-> 4.    Rename the notebook from -copy number to your initials e.g. “student_notebook_light_conditions_TZ” , open it by clicking  
-> 
-> Explore the anatomy of the notebook:
-> ![Jupyter notebook](../fig/10-02-jupyter_anatomy.png)  
-> 
-> 5.    Save the notebook: Click on the disk symbol in the toolbar  
-> 6.    Run the notebook: Select the top cell of the notebook with the title (this is likely pre-selected already and will show with a light-blue bar to its left), and click “Run” in the tool bar.  
-> 7.    Click two times. What can you see?  
-> 8.    We want to run ALL the code: In the top tool bar click `Cell > Run All`. What can you see?  
->
-{: .challenge}
-
- 
-> ## Exercise 2: How to add and remove content
-> You have duplicated a notebook and saved it under your own name. Now we will add text, remove cells and change code.
->  
-> 1.     Change the author name of the document to your name: Double click on the cell containing the author name and change the name.  
-> 2.     Press Run again.  
-> 3.     Add a new cell: Let us add details about the “light_results.txt” file that is loaded. The “+” in the tool bar creates new cells below the currently selected cell. Thus select the cell above the code and click “+” in the toolbar.  
-> 4.     Ensure the type of the cell is Markdown and enter a description of subsequent analysis e.g.: “Loading of results following short- and long-day light exposure on arabidopsis, followed by visualisation of differences in chlorophyll/biomas etc... content between genotypes on short-days and long-days.”  
-> 5.     Press Run again.  
-> 6.     To remove a cell, select the cell you have just created and click on the scissors icon in the toolbar. (This can be undone under Edit > Undo Delete Cells)  
-> 7.     Change colours of your graph: Where the code of the graph reads the comment “# change colour of groups” you can replace the HEX codes, # followed by 6-symbol code, with names of colours (e.g. blue, green…) or other HEX codes if you are familiar with them.  
-> 8.     Save graph under new name: Add your initials to the file name under which the image is saved. Press Run. Your image should be visible in overall file hierarchy.  
-> 
-> Can you see the new colors already? What needs to be done?
->
-{: .challenge}
-
-
-> ## Exercise 3: Add another analysis step
-> We have shown you how to manipulate text and code in Jupyter notebooks. You should be able to add data visualisation (a graph) and stats for long-day light condition including annotations yourself.
->  
-> 1.     Add additional cells including  
-> a.     Titles  
-> b.     Edited code to depict graph from long-days (saved under different name)  
-> c.     Figure legend  
-> d.     Statistical testing of difference between genotypes on long-days (remember to assign a different variable throughout e.g. LD.aov)  
-> e.     Interpretation of results of statistical testing  
-> 
-{: .challenge}
-
-
-  
-> ## Exercise 4: Sharing of your Jupyter Notebook
-> You have now generated your own analysis and interpretation on top of your collaborators results and want to share this with your colleagues.
->  
-> 1. Download your Notebook (ensure all code has been run) as .html
-> 2. View the documents and think about why it is important to run all code before download (try Cell > All Output > Clear and download your Notebook, compare the outputs)  
->  
-> Questions:
-> * What is the difference between running all code and clearing all run code?
-> * Why is it important to run all code before download?
-> 
-{: .challenge}
-
-
-
 ## Computational Notebooks - Jupyter Notebook for FAIR practices
 Computational notebooks are essentially laboratory notebooks for scientific computing.
 Instead of pasting DNA gels alongside lab protocols, researchers embed code, data and 
@@ -134,132 +66,6 @@ Notebooks can also be exported as
 an open-source service that allows users to render their Jupyter notebooks on GitHub 
 in a web browser without having to install the software or any programming libraries. 
 
-## Working with Jupyter Notebooks
-
-One thing to keep in mind is that your reusable analysis with Jupyter is only ever as 
-good as your self discipline. Things you want to keep in mind are:
-* document the entire decision process
-* document parameters and their significance
-* decide what data you want to retain and clean - annotate why
-* comment your code where necessary
-* follow coding good practices
-* your notebook has to be exported/shared with ALL file inputs and the description of the runtime environment
-
-## Coding Good Practices
-Before we let you go wild in our subsequent exercises we would like to go highlight a
-few standards and best practices that will help you generate cleaner, more readable, 
-more efficient code. (Note: this code is an example for coding in R, but best practices
-apply to any code)
-
-### Advantages of using Coding Standards
-* ability to retrace code created by different programmers (uniformity)
-* reusable code
-* easier to detect errors
-* code is simpler, more readable, easier to maintain
-* allows to generate faster results and work more efficiently
-
-### Best Practices
-* write as few lines as possible (this will make your code faster)
-* use appropriate names to describe your variables: e.g. df for dataframe instead of x
-* segment blocks of code in the same section into paragraphs e.g. note the difference below following two code blocks
-
-```
-## Wrong
-library(ggplot2)
-df <- read.delim(file = "light_results.txt")
-df
-df$genotype <- factor(df$genotype, levels = c("WT", "PhyA-211","elf4-101"))
-options(repr.plot.width = 5, repr.plot.height = 4)
-ggplot(subset(df, light_condition %in% "SD"),
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days",
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```  
-
-```
-## Better
-df <- read.delim(file = "light_results.txt")
-df
-
-df$genotype <- factor(df$genotype, levels = c("WT", "PhyA-211","elf4-101"))
-
-options(repr.plot.width = 5, repr.plot.height = 4)
-ggplot(subset(df, light_condition %in% "SD"),
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days",
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-* use indentations to mark the beginning and end of structures: note the difference in 
-the two code blocks below. The indentations clearly mark that mapping belongs within 
-the function of ggplot, x and y clearly belong to labs. The other functions are being 
-passed to the ggplot function and allow to change overall plot appearance.
-
-```
-## Wrong
-ggplot(subset(df, light_condition %in% "SD"),
-mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-geom_boxplot() +
-labs(title = "Biomas per Genotype on short days",
-x = "Genotype",
-y = "Biomas (g)") +
-scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-
-```
-## Better
-ggplot(subset(df, light_condition %in% "SD"),
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days",
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-* Whilst indentations are great, don't go too deep, as this will make code harder to 
-read and follow.
-* Don't repeat yourself!! If there is a repetitive task, automate this using a function 
-or already existing packages (R and Python have many data wrangling packages available)
-* Avoid long lines: horizontal block text is easier to read for us humans. Note the 
-difference between these two code blocks
-
-```
-## Wrong
-ggplot(subset(df, light_condition %in% "SD"), mapping = aes(x = genotype, y = biomas, fill = genotype)) + geom_boxplot() + labs(title = "Biomas per Genotype on short days", x = "Genotype", y = "Biomas (g)") + scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-
-```
-## Better
-ggplot(subset(df, light_condition %in% "SD"),
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days",
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-
-* most importantly leave comments of what your code does! Describe code functions
-throughout, add headers in between analysis steps (if code is self-explanatory this is not
-necessary - e.g. in our lesson we annotated all code as not everyone is familiar with R)
-
-```
-## Ideal
-
-## plot the graph using ggplot
-ggplot(subset(df, light_condition %in% "SD"), # subset only SD from light condition column
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) + # colours are by genotype
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days", # define plot title, and x- and y-axis
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) # change colour of groups
-```
 
 To show you how easy it is to work with Jupyter Notebooks, we have 
 created an exercise for you where we will work on "real-life" data 
@@ -270,7 +76,7 @@ using the language R as an example.
 
 > ## Exercise 1: basics of Jupyter notebooks (5 min)
 >
-> Open this [Jupyter notebook](http://mango.bio.ed.ac.uk:8888/tree), we
+> Navigate to the jupyter server, we
 > will first show you how to duplicate a notebook and save it and how to
 > run the code:
 >
@@ -401,8 +207,8 @@ figures are being saved to avoid duplication.
 > in long-days - we assign a new variable to separate both analysis.
 >> ~~~
 >> res.aov.LD <- aov(biomas ~ genotype, data = subset(df, light_condition %in% "LD"))
-# Summary of the analysis
-summary(res.aov.LD)
+>> # Summary of the analysis
+>> summary(res.aov.LD)
 >> ~~~
 >> {: .source}
 >> 
@@ -410,7 +216,7 @@ summary(res.aov.LD)
 > testing.
 >> ~~~
 >> # conduct Tukey multiple pairwise-comparison
-TukeyHSD(res.aov.LD)
+>> TukeyHSD(res.aov.LD)
 >> ~~~
 >> {: .source}
 > {: .solution}
@@ -420,13 +226,52 @@ TukeyHSD(res.aov.LD)
 We have now managed to not only reproduce code, but we were able to add to the analysis and interpretation of overall results. To show your PI and colleagues your results, you want to save the notebook in readable format.
 
 > ## Exercise 4: Sharing of your Jupyter Notebook (5 min)
-> 1. Download your Notebook (ensure all code has been run) as .html and .pdf
+> 1. Download your Notebook (ensure all code has been run) as .html
 > 2. View the documents and think about why it is important to run all code before download (try Cell > All Output > Clear and download your Notebook then and compare)
 >
 >> ## Solution
 >> It is important all code is run before the notebook is downloaded, as during download only the text and graphs are saved that are currently visible in your notebook.
 > {: .solution}
 {: .challenge}
+
+
+
+
+
+
+
+## Plotting in R or Python
+Plotting in R or Python is often a natural starting point to learn programming and 
+allows to create more professional scientific plots than those available in Excel.  Additionally, these plots are easier to recreate, and easier to adjust for specific dimensions and journal formatting guidelines. Using code it is very easy to prepare series of figures that follow the same formatting of all their elements.
+
+## Ad-hoc analysis with Jupyter Notebooks
+
+Notebook can document entire ad-hoc analysis. It can capture the motivations
+and decisions which lead us to the final results (as the markdown-cells).  
+It contains information about the input data uses, the actual parameters and functions called.  
+It can include intermediate results, adjustment made.  
+It captures all the steps that lead to the final result which can be accompanied with the conclusions. 
+
+One thing to keep in mind is that your reusable analysis with Jupyter is only ever 
+as good as your self discipline. Things you want to keep in mind are:
+* document the entire decision process and motivations behind it
+* document input data
+* document parameters and their significance
+* decide what data you want to retain and clean - annotate why
+* comment your code where necessary
+* follow coding good practices (in naming variables, functions, in code formatting)
+* Notebook has to be shipped with all file inputs and description of runtime environment
+
+Notebooks are very well suited to:
+* orchestrate „short”, step by step operations in R, python, shell (notebooks can use all 3 at the same time)
+* capture parameters
+* add interpretations
+* act as a „flexible” user interface (user can change the runtime parameters in the notebook following the embedded instructions)
+
+However, notebooks should not be used a replacement of integrated development environment (IDE) and writing modularized, split into packages code.
+They are not suitable to write a long programs, long executable code should be compiled into stand alone modules.
+
+
 
 > ## Exercise 5: Accessibility of Jupyter Notebooks (5 min)
 >
@@ -443,14 +288,134 @@ opinion to +2 strongly agree:
 > * you need to learn R to do any data processing in notebooks
 {: .challenge}
 
+* your notebook has to be exported/shared with ALL file inputs and the description of the runtime environment
+
+## Coding Good Practices
+Before we let you go wild in our subsequent exercises we would like to go highlight a
+few standards and best practices that will help you generate cleaner, more readable, 
+more efficient code. (Note: this code is an example for coding in R, but best practices
+apply to any code)
+
+### Advantages of using Coding Standards
+* ability to retrace code created by different programmers (uniformity)
+* reusable code
+* easier to detect errors
+* code is simpler, more readable, easier to maintain
+* allows to generate faster results and work more efficiently
+
+### Best Practices
+* write as few lines as possible (this will make your code faster)
+* use appropriate names to describe your variables: e.g. df for dataframe instead of x
+* segment blocks of code in the same section into paragraphs e.g. note the difference below following two code blocks
+
+```
+## Wrong
+library(ggplot2)
+df <- read.delim(file = "light_results.txt")
+df
+df$genotype <- factor(df$genotype, levels = c("WT", "PhyA-211","elf4-101"))
+options(repr.plot.width = 5, repr.plot.height = 4)
+ggplot(subset(df, light_condition %in% "SD"),
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days",
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```  
+
+```
+## Better
+df <- read.delim(file = "light_results.txt")
+df
+
+df$genotype <- factor(df$genotype, levels = c("WT", "PhyA-211","elf4-101"))
+
+options(repr.plot.width = 5, repr.plot.height = 4)
+ggplot(subset(df, light_condition %in% "SD"),
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days",
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+* use indentations to mark the beginning and end of structures: note the difference in 
+the two code blocks below. The indentations clearly mark that mapping belongs within 
+the function of ggplot, x and y clearly belong to labs. The other functions are being 
+passed to the ggplot function and allow to change overall plot appearance.
+
+```
+## Wrong
+ggplot(subset(df, light_condition %in% "SD"),
+mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+geom_boxplot() +
+labs(title = "Biomas per Genotype on short days",
+x = "Genotype",
+y = "Biomas (g)") +
+scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+
+```
+## Better
+ggplot(subset(df, light_condition %in% "SD"),
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days",
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+* Whilst indentations are great, don't go too deep, as this will make code harder to 
+read and follow.
+* Don't repeat yourself!! If there is a repetitive task, automate this using a function 
+or already existing packages (R and Python have many data wrangling packages available)
+* Avoid long lines: horizontal block text is easier to read for us humans. Note the 
+difference between these two code blocks
+
+```
+## Wrong
+ggplot(subset(df, light_condition %in% "SD"), mapping = aes(x = genotype, y = biomas, fill = genotype)) + geom_boxplot() + labs(title = "Biomas per Genotype on short days", x = "Genotype", y = "Biomas (g)") + scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+
+```
+## Better
+ggplot(subset(df, light_condition %in% "SD"),
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days",
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+```
+
+* most importantly leave comments of what your code does! Describe code functions
+throughout, add headers in between analysis steps (if code is self-explanatory this is not
+necessary - e.g. in our lesson we annotated all code as not everyone is familiar with R)
+
+```
+## Ideal
+
+## plot the graph using ggplot
+ggplot(subset(df, light_condition %in% "SD"), # subset only SD from light condition column
+       mapping = aes(x = genotype, y = biomas, fill = genotype)) + # colours are by genotype
+    geom_boxplot() +
+    labs(title = "Biomas per Genotype on short days", # define plot title, and x- and y-axis
+        x = "Genotype",
+        y = "Biomas (g)") +
+    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) # change colour of groups
+```
+
+
+
 > ## Attribution
 > Content of this episode was adopted after
 > * [Why Jupyter is a data scientists' computational notebook of choice](https://doi.org/10.1038/d41586-018-07196-1)
-> * [Coding Standards best practices](https://www.browserstack.com/guide/coding-standards-best-practices)
 {: .callout}
 
 > ## Further Reading
 > * [Reproducible analysis and Research Transparency](https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html)
+> * [Coding Standards best practices](https://www.browserstack.com/guide/coding-standards-best-practices)
 {: .callout}
 
 >## For instructors: Advanced teaching

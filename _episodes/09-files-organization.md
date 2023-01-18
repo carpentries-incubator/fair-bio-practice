@@ -401,7 +401,7 @@ and what solutions are available in your organisation.
 > * Time saving
 {: .challenge}
 
-(19 min discussion, wrap up of teaching)
+
 
 Have you realised that the above suggestions mean including valuable metadata as part of your folder structure and file names?
 
