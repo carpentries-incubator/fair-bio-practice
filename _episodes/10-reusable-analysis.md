@@ -3,13 +3,13 @@ title: "Reusable analysis"
 teaching: 60
 exercises: 30
 questions:
-- "How is live coding with instant output beneficial for FAIR?"
-- "How to adapt existing Jupyter notebooks"
-- "How to run code in Jupyter notebooks and annotate results"
+- "How keep track of your data analysis procedure?"
+- "How to make reproducible plots?"
+- "What are Jupyter notebooks"
 objectives:
-- "Benefits of notebooks for analysis"
-- "Use a notebook and modify it"
-- "How notebooks help in FAIR"
+- "Recognise benefits of notebooks for analysis"
+- "Use a jupyter notebook and modify it"
+- "Understand notebooks role in being FAIR"
 keypoints:
 - "Jupyter Notebooks are useful tools to share analysis with non-programmers"
 - "One single document can visualise background, results, formulae/code and metadata"
