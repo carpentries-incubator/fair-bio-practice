@@ -288,7 +288,32 @@ opinion to +2 strongly agree:
 > * you need to learn R to do any data processing in notebooks
 {: .challenge}
 
-* your notebook has to be exported/shared with ALL file inputs and the description of the runtime environment
+
+## Pipelines
+
+Computational pipelines differ from ad-hoc analysis like a protocol differs from lab record. 
+Pipelines tend to represent fixed and testes step by step analysis / processing. 
+There is no need for experimentation, but, the processing should be fast and reproducible. Pipelines usually take few configuration parameters and input files.
+The pipeline computations will be repeated multiple times on different input data and the life-span of a established pipeline can be in months or years.
+
+For that reason the computational pipelines should offer:
+* robustness, for example restarting job from the middle of the analysis without a need to recreate the first steps
+* support for parallel computing
+* easy to maintain, ie change inputs, update dependencies, add new step
+* be methodologically sound
+* have well specified dependencies
+
+It is typically achieved by using one of the systems for managing computational workflows, like for example:
+* Nextflow
+* Snakemake
+* Galaxy
+
+They all offer well defined:
+* ways of defining inputs and parameters
+* behaviour, like transition to next stages
+* error handling
+* restart options
+
 
 ## Coding Good Practices
 Before we let you go wild in our subsequent exercises we would like to go highlight a
