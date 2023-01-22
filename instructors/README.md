@@ -41,5 +41,35 @@ The quiz like test (true/false, agree, select) are an excuse to comment on the a
 
 For the end of episode quiz, we tend to ask students to complete them during the break and after the break comment only on "wrong" answers.
 
+## Specifics for each episode
+
+### 1. Welcome
+
+You can start breakout rooms so students can introduce themselves in the groups.
+
+### 2. Introduction to Open Science
+
+When presenting Open Access explain what other "benefits" it brought with it (apart from costs free access). For example, the time save in trips to libraries or asking inter-libraries loans. 
+That should act as an example for the *Exercise 1. Benefits of openness*
+
+Here you should have at least two groups One for Open Data and one Open Software.
+Comment on student answers, fill the gaps if some aspect are missing, for example publishing negative results for Open Data. Learning by example for Open Software.
+
+Exercise 2. Personal benefits of being “open”
+
+Answers will tend to cluster, you can comment on that. 
+We talk about the typically overlooked: *"•	distinguish yourself from the crowd"*, as in the current "transition" period having those skills can still make a difference as all job/grants/fellowship competitors would have typically have good academic record. Open practices can be this one extra point.
+
+The IP part can be skipped if the IP episode is planned on the same day.
+
+
+
+
+
+
+
+
+
+
 
 
