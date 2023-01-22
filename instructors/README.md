@@ -50,7 +50,9 @@ You can start breakout rooms so students can introduce themselves in the groups.
 ### 2. Introduction to Open Science
 
 When presenting Open Access explain what other "benefits" it brought with it (apart from costs free access). For example, the time save in trips to libraries or asking inter-libraries loans. 
-That should act as an example for the *Exercise 1. Benefits of openness*
+That should act as an example for the 
+
+Exercise 1. Benefits of openness
 
 Here you should have at least two groups One for Open Data and one Open Software.
 Comment on student answers, fill the gaps if some aspect are missing, for example publishing negative results for Open Data. Learning by example for Open Software.
@@ -62,12 +64,53 @@ We talk about the typically overlooked: *"•	distinguish yourself from the crow
 
 The IP part can be skipped if the IP episode is planned on the same day.
 
+### 3. Being FAIR
+
+Exercise 1. Impossible ...
+
+We give some teams a) the Impossible protocol and some b) the Imposible Average.
+Those two work the best. 
+We said that it is going to be a race who can get the answers first.
+We warn there is no time to read the full manuscript, nor it is how we "typically look for data and protocols".
+
+Sometimes there are answers to 1a. For the average in 5-7 minutes it is rather unlikely. 
+We then explain what was the problem with 1a and demonstrate the problem with 1b. 
+Show the tables with meaningless headers, say how to get the right column.
+Then copy from from pdf to excel the table to show hot it gets scrambled.
+
+That scrambling depends in what program the pdf was oppended. We recommend firefox or bing as they usually do not copy nicely (Acrobat does much better job). Foreing localales also can messad up with copying.
+
+Exercise 2. FAIR Example
+
+Typically some answers for I or R end up in A. 
+You should do quick demo of the zenodo record and highlith the most important part (or point to them using the students answers)
+
+Exercise 3. FAIR and You
+
+We only once got the right answers. 
+Always worth going back to Zenod and show: *Accessible - Trackable and countable*
+as the views and downloads, mention the new metrics. 
 
 
 
+### 4. IP and Openness
 
+Exercise 1. Checking common licence:
 
+Try to make it code-along exercise, clicking through the licence text and make the point (but give students the head start).
 
+### 5. Intro to metadata
+
+Use the life demo of omero records to show different kind of metadata rather than slides.
+
+When talking about Minimal Inf, show the fairsharing.org collection.
+Mention it is a good resource to find all the standards and repos for FAIR.
+
+Exercise 3. What to include
+
+Start by typing the title and the purpose.
+you can ask people to think first of the C. elegans image and what should be added there, so start with domain specific ie microscopy, then go general.
+You need to add the crucial metadata elements if student did not think about them, for example genotype, tissue type , generally sample description, some experimental conditions
 
 
 
