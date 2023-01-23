@@ -19,6 +19,13 @@ The instructor folders contains the slide decks for the delivery, which works be
 There are also set of word documents with content of the etherpad with the exercises for the student. 
 They are bundled into "days". 
 
+We tried to order the episodes in logical sequence, but they can be shuffled around.
+The first day is probably the most intense. We typically stop the delivery 15 minutes before the allocated time (even if still we are in the middle of the episode). 
+It gives student time to give sensible feedback and the course does not feel rushed.
+The left over of the episode are continuing on the next day. It is typically Being precise episode which we split between ORCID and Ontology. 
+
+There is also an option to move IP and Openness to the last day.
+
 ### Breakout rooms
 
 Generally, students asked for more time in the group activities in their feedback forms. 
@@ -113,6 +120,115 @@ you can ask people to think first of the C. elegans image and what should be ad
 You need to add the crucial metadata elements if student did not think about them, for example genotype, tissue type , generally sample description, some experimental conditions
 
 
+### 6. Being precise
 
+We demo of ORCID by clicking from the paper via ORCID to the list of authors publication.
 
+The ontology section apart from explaining in slides should be code-along/demo of navigation from bioportals to ontologies, explaining the elements of the terms records, show synonyms, class mapping and visualizations.
+
+### 7. (Meta)data in Excel
+
+Show what happens when saved as text (there are also merged cells which messed up row, date change, not only lost of color).
+
+### 8. Laboratory Records
+
+We use benchling as:
+- we have nice real notebooks to show
+- we know it
+- it has wow effect and tends to attract new users no problem.
+
+But the exercises could be easily adopted to any other ELN.
+
+Apart from the exercise 1, the rest should code-along experience when instructor perfoms all the operations explaining where to click, what is being shown etc.
+
+The aim is not to teach Benchling per say, but to show how easy is to:
+- reuse
+- follow provenance
+
+Protocols.io give doi and offer forks plus who used our protocol. It can also be demonstrated during the life demo.
+
+### 9. Files organisation
+
+This notepad must be reformatted online before the class. The file/directory names should in mono-space so they align nicely. 
+That is being lost during copying from word.
+
+Exercise 1.
+The aim is to show how sorting helps finding info unless the naming convention messes up with the sorting.
+
+Exercise 4: Typical folder organizations
+
+The webpage contains our answer to this exercise. The wet projects typically do not get good answers.
+
+### 10. Reusable analysis
+
+We just start jupyter from the network directory on the server and pass the link to students. We asked them first to make a copy of the notebook (the notebook is readonly), that creates some race condition but after a while student have their own copy.
+
+More fancy setup is possible but that was good enough.
+
+That is code-along episode with instructor performing the tasks together with the students.
+
+Before the exercises the instructor should walk through the notebook elements and explain why it is good fot the analysis.
+
+In case the group contains advanced users, ask them to illustrate all variables on the graphic. R offers much more than just multipane graphic, a novel visualisations are possible.
+
+### 11. Version Control
+
+Exercise 3: Changelog in action
+
+We have two examples of real repositories to look at. 
+Before the exercise instructor should explain the github screen, which are the entries, how to see what files were changed etc.
+
+Then after exercises instructor should show more features of github:
+- navigate back in the history
+- markdown
+- contributors page with commits stats, user home page with they output.
+
+We use this course repo as the demo of contributions as it has easy to explain burst of activities. 
+
+### 12. Templates for consistency
+
+Ideally it should be the last episode on the 3rd day.
+We ask students for feedback and then we do the exercise, that way they can stay and work on templates after the course allocated time. Templates need 20-30 minutes time. If it is too late than it needs to be moved to the next day. 
+
+You need to provide a shared file/directory for students to work on templates.
+
+Then on the next day we give feedback.
+If the 2nd day worked well, than the excel template should adhere to the good practices in headers naming etc.
+
+Typical issues which can be comment on:
+- in excel table, multi values entry eg authors in one cell with ',' rather then in row of cells (so not authors parsing is necessary)
+- lack of cleer rule how to distinguish between keys and values
+- lack of obvious fields, like names, title, experiment ref, date
+
+### 13. Public repositories
+
+Instructor should click through the appropriate repository records when discussing the students answers.
+
+Exercise 2: Dataset discovery
+- after student assessment try, clicking into keyword
+that gives nothing, comment on it.
+
+The search for "neuromuscular junction", if you scroll down you will find exotic hits like
+
+*Surveys of Forest Birds on Puerto Rico, 2015*
+
+Exercise 3: Domain specific repositories.
+
+You may try to assing domain to room and let the studens chooce room for a group activity.
+Or you ask students to keep typing their anwers working on their own.
+
+At some instructor should demonstrate some of the features of all the repos which are being evaluated, so the other students also see them. Either using the students answer of showing one of the instructor "favourite" feature of each repo.
+
+Exercise 4: Finding a repository
+
+When discussing answers show how FAIR sharing fails for omics type with too many hits and why the curated lists from funders and journals are good place to start.
+
+### 14. It's all about planning
+
+Practical exercise, at least 20 minutes before break, encourage working during the break, sometimes needs 10 minutes more. 
+Students should have access to a shared document so they can write simultanously.
+
+After the break the groups switch DMPs and evaluate other work. 
+Worth stressing up what reviewers should pick up (like non sensible copy pasting).
+While students evaluate instructors should check DMPs themselves and pick up the points worth commenting/ prizing, correcting.
 
