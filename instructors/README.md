@@ -161,6 +161,8 @@ The webpage contains our answer to this exercise. The wet projects typically do 
 
 ### 10. Reusable analysis
 
+The notebook and data files are on [GitHub](https://github.com/BioRDM/fair-jupyter)
+
 We just start jupyter from the network directory on the server and pass the link to students. We asked them first to make a copy of the notebook (the notebook is readonly), that creates some race condition but after a while student have their own copy.
 
 More fancy setup is possible but that was good enough.
