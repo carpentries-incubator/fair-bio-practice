@@ -1,5 +1,5 @@
 ---
-title: "Record keeping"
+title: "Laboratory records"
 teaching: 39
 exercises: 31
 questions: 
