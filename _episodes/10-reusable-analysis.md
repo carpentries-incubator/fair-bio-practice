@@ -1,15 +1,15 @@
 ---
 title: "Reusable analysis"
-teaching: 77
-exercises: 28
+teaching: 60
+exercises: 30
 questions:
-- "How is live coding with instant output beneficial for FAIR?"
-- "How to adapt existing Jupyter notebooks"
-- "How to run code in Jupyter notebooks and annotate results"
+- "How keep track of your data analysis procedure?"
+- "How to make reproducible plots?"
+- "What are Jupyter notebooks"
 objectives:
-- "Benefits of notebooks for analysis"
-- "Use a notebook and modify it"
-- "How notebooks help in FAIR"
+- "Recognise benefits of notebooks for analysis"
+- "Use a jupyter notebook and modify it"
+- "Understand notebooks role in being FAIR"
 keypoints:
 - "Jupyter Notebooks are useful tools to share analysis with non-programmers"
 - "One single document can visualise background, results, formulae/code and metadata"
@@ -28,10 +28,6 @@ This so called ad-hoc analysis will only after several iterations of data explor
 retries, adjustments, and modifications to experimental procedures lead to selection of suitable analysis methods and parameters. One would then conduct statistical validation 
 of results and generate final results and graphs for publications. This process can be difficult to track using conventional methods such as pen + paper and Excel.
 
-Plotting in R (or Python) is often a natural starting point to learn programming and 
-allows to create more professional scientific plots than those available in Excel. Additionally, throughout ad-hoc data analysis these plots are easier to recreate, and 
-easier to adjust for specific dimensions and journal formatting guidelines, when using 
-code.
 
 ## Reusable Computing
 We have previously discussed electronic lab notebooks and their benefit in being FAIR.
@@ -40,6 +36,7 @@ your data then you might already be frustrated by having to copy and paste your 
 into your electronic lab notebook after each iteration of new code (or generation in 
 Excel). You might also have lost track of which code corresponded to which figure 
 and why you changed your code last time.
+
 
 There is a simple solution to this: **Computational notebooks**
 
@@ -61,139 +58,14 @@ scientists, this format can drive exploration via interactive computing. This is
 environment in which users execute code, see what happens, modify and repeat in an 
 iterative process between researcher and data, in an ad-hoc way.
 As a basic principle Jupyter Notebooks run on a 'kernel' which is responsible in
-execution of the code. Generally this 'kernel' can run on your computer, additionally
-external servers (e.g. our BioRDM server which we use below to host our notebook) can 
-be provided for you to store and analyse your data. Notebooks can also be exported as 
+execution of the code. Generally this 'kernel' can run on your computer or
+you can use external servers to store and analyse your data. 
+
+Notebooks can also be exported as 
 .pdf and .html files which allow easy sharing of outputs, and other tools such as [nbviewer](https://nbviewer.org/), 
 an open-source service that allows users to render their Jupyter notebooks on GitHub 
 in a web browser without having to install the software or any programming libraries. 
 
-## Working with Jupyter Notebooks
-
-One thing to keep in mind is that your reusable analysis with Jupyter is only ever as 
-good as your self discipline. Things you want to keep in mind are:
-* document the entire decision process
-* document parameters and their significance
-* decide what data you want to retain and clean - annotate why
-* comment your code where necessary
-* follow coding good practices
-* your notebook has to be exported/shared with ALL file inputs and the description of the runtime environment
-
-## Coding Good Practices
-Before we let you go wild in our subsequent exercises we would like to go highlight a
-few standards and best practices that will help you generate cleaner, more readable, 
-more efficient code. (Note: this code is an example for coding in R, but best practices
-apply to any code)
-
-### Advantages of using Coding Standards
-* ability to retrace code created by different programmers (uniformity)
-* reusable code
-* easier to detect errors
-* code is simpler, more readable, easier to maintain
-* allows to generate faster results and work more efficiently
-
-### Best Practices
-* write as few lines as possible (this will make your code faster)
-* use appropriate names to describe your variables: e.g. df for dataframe instead of x
-* segment blocks of code in the same section into paragraphs e.g. note the difference below following two code blocks
-
-```
-## Wrong
-library(ggplot2)
-df <- read.delim(file = "light_results.txt")
-df
-df$genotype <- factor(df$genotype, levels = c("WT", "PhyA-211","elf4-101"))
-options(repr.plot.width = 5, repr.plot.height = 4)
-ggplot(subset(df, light_condition %in% "SD"),
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days",
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```  
-
-```
-## Better
-df <- read.delim(file = "light_results.txt")
-df
-
-df$genotype <- factor(df$genotype, levels = c("WT", "PhyA-211","elf4-101"))
-
-options(repr.plot.width = 5, repr.plot.height = 4)
-ggplot(subset(df, light_condition %in% "SD"),
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days",
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-* use indentations to mark the beginning and end of structures: note the difference in 
-the two code blocks below. The indentations clearly mark that mapping belongs within 
-the function of ggplot, x and y clearly belong to labs. The other functions are being 
-passed to the ggplot function and allow to change overall plot appearance.
-
-```
-## Wrong
-ggplot(subset(df, light_condition %in% "SD"),
-mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-geom_boxplot() +
-labs(title = "Biomas per Genotype on short days",
-x = "Genotype",
-y = "Biomas (g)") +
-scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-
-```
-## Better
-ggplot(subset(df, light_condition %in% "SD"),
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days",
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-* Whilst indentations are great, don't go too deep, as this will make code harder to 
-read and follow.
-* Don't repeat yourself!! If there is a repetitive task, automate this using a function 
-or already existing packages (R and Python have many data wrangling packages available)
-* Avoid long lines: horizontal block text is easier to read for us humans. Note the 
-difference between these two code blocks
-
-```
-## Wrong
-ggplot(subset(df, light_condition %in% "SD"), mapping = aes(x = genotype, y = biomas, fill = genotype)) + geom_boxplot() + labs(title = "Biomas per Genotype on short days", x = "Genotype", y = "Biomas (g)") + scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-
-```
-## Better
-ggplot(subset(df, light_condition %in% "SD"),
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days",
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
-
-* most importantly leave comments of what your code does! Describe code functions
-throughout, add headers in between analysis steps (if code is self-explanatory this is not
-necessary - e.g. in our lesson we annotated all code as not everyone is familiar with R)
-
-```
-## Ideal
-
-## plot the graph using ggplot
-ggplot(subset(df, light_condition %in% "SD"), # subset only SD from light condition column
-       mapping = aes(x = genotype, y = biomas, fill = genotype)) + # colours are by genotype
-    geom_boxplot() +
-    labs(title = "Biomas per Genotype on short days", # define plot title, and x- and y-axis
-        x = "Genotype",
-        y = "Biomas (g)") +
-    scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) # change colour of groups
-```
 
 To show you how easy it is to work with Jupyter Notebooks, we have 
 created an exercise for you where we will work on "real-life" data 
@@ -202,9 +74,16 @@ short-day and long-day light exposure. We will create some graphs and
 test whether there are differences between our genotypes of arabidopsis
 using the language R as an example.
 
+>
+> The example notebook and data files can be found in instructors folders.  
+> The most recent version are available via a separated github project:  
+> [fair-jupyter](https://github.com/BioRDM/fair-jupyter)
+>
+{: .testimonial}
+
 > ## Exercise 1: basics of Jupyter notebooks (5 min)
 >
-> Open this [Jupyter notebook](http://mango.bio.ed.ac.uk:8888/tree), we
+> Navigate to the jupyter server, we
 > will first show you how to duplicate a notebook and save it and how to
 > run the code:
 >
@@ -335,8 +214,8 @@ figures are being saved to avoid duplication.
 > in long-days - we assign a new variable to separate both analysis.
 >> ~~~
 >> res.aov.LD <- aov(biomas ~ genotype, data = subset(df, light_condition %in% "LD"))
-# Summary of the analysis
-summary(res.aov.LD)
+>> # Summary of the analysis
+>> summary(res.aov.LD)
 >> ~~~
 >> {: .source}
 >> 
@@ -344,7 +223,7 @@ summary(res.aov.LD)
 > testing.
 >> ~~~
 >> # conduct Tukey multiple pairwise-comparison
-TukeyHSD(res.aov.LD)
+>> TukeyHSD(res.aov.LD)
 >> ~~~
 >> {: .source}
 > {: .solution}
@@ -354,13 +233,52 @@ TukeyHSD(res.aov.LD)
 We have now managed to not only reproduce code, but we were able to add to the analysis and interpretation of overall results. To show your PI and colleagues your results, you want to save the notebook in readable format.
 
 > ## Exercise 4: Sharing of your Jupyter Notebook (5 min)
-> 1. Download your Notebook (ensure all code has been run) as .html and .pdf
+> 1. Download your Notebook (ensure all code has been run) as .html
 > 2. View the documents and think about why it is important to run all code before download (try Cell > All Output > Clear and download your Notebook then and compare)
 >
 >> ## Solution
 >> It is important all code is run before the notebook is downloaded, as during download only the text and graphs are saved that are currently visible in your notebook.
 > {: .solution}
 {: .challenge}
+
+
+The example notebook is extremely well documented to show the good practices when coding. Without such level of comments and explanations it may not be possible for new-commers to re-use this notebook.
+
+
+
+
+## Plotting in R or Python
+Plotting in R or Python is often a natural starting point to learn programming and 
+allows to create more professional scientific plots than those available in Excel.  Additionally, these plots are easier to recreate, and easier to adjust for specific dimensions and journal formatting guidelines. Using code it is very easy to prepare series of figures that follow the same formatting of all their elements.
+
+## Ad-hoc analysis with Jupyter Notebooks
+
+Notebook can document entire ad-hoc analysis. It can capture the motivations
+and decisions which lead us to the final results (as the markdown-cells).  
+It contains information about the input data uses, the actual parameters and functions called.  
+It can include intermediate results, adjustment made.  
+It captures all the steps that lead to the final result which can be accompanied with the conclusions. 
+
+One thing to keep in mind is that your reusable analysis with Jupyter is only ever 
+as good as your self discipline. Things you want to keep in mind are:
+* document the entire decision process and motivations behind it
+* document input data
+* document parameters and their significance
+* decide what data you want to retain and clean - annotate why
+* comment your code where necessary
+* follow coding good practices (in naming variables, functions, in code formatting)
+* Notebook has to be shipped with all file inputs and description of runtime environment
+
+Notebooks are very well suited to:
+* orchestrate „short”, step by step operations in R, python, shell (notebooks can use all 3 at the same time)
+* capture parameters
+* add interpretations
+* act as a „flexible” user interface (user can change the runtime parameters in the notebook following the embedded instructions)
+
+However, notebooks should not be used a replacement of integrated development environment (IDE) and writing modularized, split into packages code.
+They are not suitable to write a long programs, long executable code should be compiled into stand alone modules.
+
+
 
 > ## Exercise 5: Accessibility of Jupyter Notebooks (5 min)
 >
@@ -377,14 +295,65 @@ opinion to +2 strongly agree:
 > * you need to learn R to do any data processing in notebooks
 {: .challenge}
 
+
+## Pipelines
+
+Computational pipelines differ from ad-hoc analysis like a protocol differs from lab record. 
+Pipelines tend to represent fixed and testes step by step analysis / processing. 
+There is no need for experimentation, but, the processing should be fast and reproducible. Pipelines usually take few configuration parameters and input files.
+The pipeline computations will be repeated multiple times on different input data and the life-span of a established pipeline can be in months or years.
+
+For that reason the computational pipelines should offer:
+* robustness, for example restarting job from the middle of the analysis without a need to recreate the first steps
+* support for parallel computing
+* easy to maintain, ie change inputs, update dependencies, add new step
+* be methodologically sound
+* have well specified dependencies
+
+It is typically achieved by using one of the systems for managing computational workflows, like for example:
+* Nextflow
+* Snakemake
+* Galaxy
+
+They all offer well defined:
+* ways of defining inputs and parameters
+* behaviour, like transition to next stages
+* error handling
+* restart options
+
+## Computing in R and Python
+Both languages are flexible and easy to start. They permit quickly achieve the desired effect, have things done with minimal setup and lines of codes.
+However, because of their flexibility it is easy to pick up bad habits and write code without much understanding of good practices of software engineering.
+
+For the journey into scientific computing we recommend:
+* Firstly, learn how to make simple plots, clean/reorganize files and data tables
+* Secondly, learn basics of software engineering and good programming practices
+* Then start coding advanced analysis and processing, construct pipelines with workflows
+
+One of the pitfalls of R and Python is that their behaviour depends on libraries installed on your machine, not only R o Python libraries but also the system one.
+It often creates situation in which the code works on one machine but does not work on another.
+
+There are ways of dealing with those issues, for example, for Python, there is a package management system called Conda. 
+Conda installs, runs, and updates packages and their dependencies. 
+Conda can switch between project environments, so each project can have its own set of installed libraries and their versions.  
+Conda support many languages (Python, R, Ruby, Lua, Scala, Java, JavaScript, C, C++, FORTRAN) but it is particularly well suited for Python.
+
+In our experience, for R renv works better than conda.
+
+As a rule, despite the package managment system used, you should try to keep track of what libraries you installed during your code development and in what versions.
+
+
+
+
+
 > ## Attribution
 > Content of this episode was adopted after
 > * [Why Jupyter is a data scientists' computational notebook of choice](https://doi.org/10.1038/d41586-018-07196-1)
-> * [Coding Standards best practices](https://www.browserstack.com/guide/coding-standards-best-practices)
 {: .callout}
 
 > ## Further Reading
 > * [Reproducible analysis and Research Transparency](https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html)
+> * [Coding Standards best practices](https://www.browserstack.com/guide/coding-standards-best-practices)
 {: .callout}
 
 >## For instructors: Advanced teaching

@@ -1,7 +1,7 @@
 ---
 title: "Being FAIR"
-teaching: 44
-exercises: 16
+teaching: 45
+exercises: 15
 questions:
 - "How to get more value from your own data?"
 - "What are the FAIR guidelines?"
@@ -31,6 +31,7 @@ that accompanies those publications.
 > Data also includes:
 > * images, not only from microscopes
 > * information about biological materials, like strain or patient details
+> * biological models
 > * recipes, laboratory and measurement protocols
 > * scripts, analysis procedures, and custom software can also be considered data
 > However, there are specific recommendations on how to deal with code.
@@ -77,7 +78,7 @@ data from published biological papers.
 
 > ## Impossible numbers
 >
-> Ikram 2014 (https://doi.org/10.1093/jxb/err244) paper contains data about various metabolites in
+> [Ikram 2014](https://doi.org/10.1093/jxb/err244) paper contains data about various metabolites in
 > different accessions (genotypes) of Arabidopsis plant. 
 > You would like to calculate average nitrogen content in plants grown under normal and nitrogen 
 > limited conditions. 
@@ -86,6 +87,19 @@ data from published biological papers.
 > * Hint 1. Data are in Supplementary data   
 > * Hint 2. Search for nitrogen in paper text to identify the correct data column.  
 >
+>> ## Solution
+>>
+>> * Finding the right table and column containing the relevant data is already problematic as the headers are obscured so they need to decoded using manuscript
+>> * Data in pdf table so they cannot be readily used in calculations
+>> * Depending on the software used to open (and the way the pdf was created), the local machine international settings, copying the data into Excel can bring unexpected results
+>> ![Figure 2. Pdf data copied to Excel](../fig/03-average_to_excel1.png)  
+>> *Data needs parsing after coping to Excel*
+>> ![Figure 2. The same data copied to Excel with polish locale](../fig/03-average_to_excel1.png)  
+>> *The same data copied to Excel with polish locale has been converted to dates*
+>> * In general pdf tables cannot be read programaticaly from R or Python.
+>> 
+>>
+> {: .solution}
 {: .challenge}
 
 > ## Impossible numbers
@@ -129,9 +143,9 @@ of their own, but only accompany a publication.
 Second, they are not easily accessible or reusable, for example, all the details are inside one supporting information PDF file. Such file includes "printed" numerical table or even source code, both of which need to be "re-typed" if someone would like to use them. Data are shared in proprietary file format specific to a particular vendor and not accessible if one does not have a particular software that accompanies the equipment. Finally, data files are provided without detailed description
 other than the whole article text.
 
-In our examples, the protocol was difficult to *find* (the loops),
-difficult to *access* (pay wall), and not *reusable* as it lacked the necessary details (dead-end).
-In the second example the data were not *interoperable* and *reusable*
+In our examples, the protocol was difficult to **find** (the loops),
+difficult to **access** (pay wall), and not **reusable** as it lacked the necessary details (dead-end).
+In the second example the data were not **interoperable** and **reusable**
 as their were only available as a figure graph.
 
 To avoid such problems FAIR principles were designed.
@@ -281,8 +295,31 @@ or [Apache license](http://www.apache.org/licenses/).
 >
 {: .callout}
 
-
 > ## Exercise 2: Example of FAIR data (4 min)
+>
+> Zenodo is general data repository. 
+> Have a look at the dataset record with COVID-19 data:
+> [https://doi.org/10.5281/zenodo.6339631](https://doi.org/10.5281/zenodo.6339631)
+>
+> Identify how each of F.A.I.R principles has been met.  
+> *Hint: navigate to linked github record to easily access the README file*
+>
+>
+>> ## Solution
+>>
+>> * (F) The dataset is identified by a PID (doi). It can be found by its ID. It has human accessible description and keywords, both suitable for discovery. 
+>> * (A) Data can be downloaded using standard browser.
+>> * (I) Dataset entries are in common formats: csv, R, jpg
+>> * (I) Dataset is linked to publication, github record and project website
+>> * (R) The record contains rich metadata in README file, including files structure and the detailed tables formats.
+>> * (R) Data are released under open Creative Commons Attribution Licence
+>>
+> {: .solution}
+{: .challenge}
+
+
+> ## Exercise 2 (too)Advanced: Example of FAIR data (4 min)
+> *Depending on the audience this version of the excercise may present information overload.*
 >
 > Uniprot is a high-quality and freely accessible resource of protein sequence 
 > and functional information. Have a look at the record of the GFP protein:
@@ -339,7 +376,7 @@ or [Apache license](http://www.apache.org/licenses/).
 > {: .solution}
 {: .challenge}
 
-## FAIR vs Open Science (6 min teaching)
+## FAIR vs Open Science (3 min teaching)
 
 **FAIR does not mean Open**. Actually, FAIR guideline only requires
 that the metadata record is always accessible.

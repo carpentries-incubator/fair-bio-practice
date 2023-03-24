@@ -1,7 +1,7 @@
 ---
 title: "(Meta)data in Excel"
-teaching: 42
-exercises: 16
+teaching: 40
+exercises: 15
 questions:
 - "How to represent data in tables"
 objectives:
@@ -45,20 +45,20 @@ which leads to bad practices and difficult to re-use data and metadata.
 >>
 >> This file hopefully unrealistically exacerbates typical bad practices in Excel.
 >> 1+2. Some things that may be confusing:
->>      - Why are there two tables, are the period measurement related to the metabolics i.e. same samples?
->>      - Do colors in the period table have the same meaning? Seems no.
->>      - Why can row 22 be read, whilst row 13 says error?
->>      - What is the meaning of values in the media column?
->>      - Are the genotypes the same in different blocks or not?
->>      - What is the meaning behind bold text in the table?
->>      - What is the definition of the terms/why are units missing/inconsistent?
+>>* Why are there two tables, are the period measurement related to the metabolics i.e. same samples?
+>>* Do colors in the period table have the same meaning? Seems no.
+>>* Why can row 22 be read, whilst row 13 says error?
+>>* What is the meaning of values in the media column?
+>>* Are the genotypes the same in different blocks or not?
+>>* What is the meaning behind bold text in the table?
+>>* What is the definition of the terms/why are units missing/inconsistent?
 >> 3.
->>      - Before averaging the biomas weight, they need to get converted the same unit and the text needs to get replaced by the unit.
->>      - Averaging per genotype needs manual selection of suitable entries
+>>* Before averaging the biomas weight, they need to get converted the same unit and the text needs to get replaced by the unit.
+>>* Averaging per genotype needs manual selection of suitable entries
 >> 4.
->>      - Information about light conditions is completely lost.
->>      - Header columns are scrambled.
->>      - The update date may change its meaning depending on the location (switch year with day).
+>> * Information about light conditions is completely lost.
+>> * Header columns are scrambled.
+>> * The update date may change its meaning depending on the location (switch year with day).
 > {: .solution}
 {: .challenge}
 
@@ -152,7 +152,7 @@ your computer's ability to see associations in the data.
 **Never merge cells, as it will make your data unreadable by statistics software**.
 Don't leave blank rows to indicate separations in data
 
-## <a name="units"></a> 6. Placing comments or units in cells
+### <a name="units"></a> 6. Placing comments or units in cells
 
 Most analysis software can't see Excel or LibreOffice comments,
 and would be confused by comments placed within your data cells.
@@ -165,7 +165,7 @@ A field value `0.123 g` will need to be parsed by a script into `0.123` and `g` 
 for calculations, don't add extra work for others.
 
 
-## <a name="info"></a> 7. Entering more than one piece of information in a cell
+### <a name="info"></a> 7. Entering more than one piece of information in a cell
 
 Don't include more than one piece of information in a cell (like `M30`, `F25`, for male age 30 and female 25,
 or `Red light + Ampicilin + High nitrogen`).
@@ -174,13 +174,13 @@ This will limit the ways in which you can analyze your data.
 Design your data sheet to include this information. For example, include one column for age of
 individuals and a separate column for sex.
 
-## <a name="consistency"></a> 8. Inconsistency in used values
+### <a name="consistency"></a> 8. Inconsistency in used values
 
 Using "synonyms" or alternatives to describe the same values.
 
 For example: `E. Coli`, `EColi`, `Escherichia coli` in the same table
 
-## <a name="field_name"></a> 9. Using problematic field names
+### <a name="field_name"></a> 9. Using problematic field names
 Choose descriptive field names, but be careful not to include spaces, numbers, or **special characters** of any kind (including national characters: óęłńöüä).
 Spaces can be misinterpreted by parsers that use whitespaces as delimiters and
 some programs don’t like field names that are text strings starting with numbers (e.g. Excel).
@@ -240,7 +240,7 @@ Or add a separate row to help automatic unit conversions.
 </tr>
 </table>
 
-## <a name="special"></a> 10. Using special characters in data
+### <a name="special"></a> 10. Using special characters in data
 
 For example, when writing longer text in a cell, people often include line breaks, em-dashes,
 etc in their spreadsheet.  Also, when copying data from applications such as Word, formatting and 'fancy' non-standard characters (such
@@ -252,7 +252,7 @@ General best practice is to avoid adding characters such as new lines, tabs, ver
 In other words, treat a text cell as if it were a simple web form that can only contain text and spaces.
 
 
-## <a name="metadata"></a> 11. Values without field labels
+### <a name="metadata"></a> 11. Values without field labels
 
 It may be obvious for us that a cell `Ann Smart and Daniele Hardwork` contains authors and
 `Starch content in Arabidopis T. under different light conditions` is a title, but this is not obvious
@@ -266,8 +266,16 @@ Title   |  Starch content in Arabidopis T. under different light conditions
 
 > ## Exercise 2: Spotting problems (4 min)
 >
-> Which of the problems discussed above can you spot...:
+> Look at the following rows and columns in the problematic table:
+> * Row 5
+> * Row 2
+> * Column C
+> * Column E
+> * Column L
+> ![bad-metadata](../fig/bad-metadata.png) 
 >
+> which of the problems discussed above can you spot in these rows and column?
+> Here, we list them again:  
 >  1. Using multiple tables
 >  2. Using multiple tabs
 >  3. Not filling in zeros
@@ -280,20 +288,15 @@ Title   |  Starch content in Arabidopis T. under different light conditions
 >  10. Using special characters in data
 >  11. Values without field labels
 >
-> ... in the following:
->   * Row 5
->   * Row 2
->   * Column C
->   * Column E
->   * Column L
+> Type the problem number(s) next to the table elements
 >
 >> ## Solution
 >>
->> *  5, 9
->> *  11, 7
->> *  8
->> *  6, 5
->> *  3
+>> * Row 5: 5, 9
+>> * Row 2: 11, 7
+>> * Column C: 8
+>> * Column E: 6, 5
+>> * Column L: 3
 > {: .solution}
 {: .challenge}
 
@@ -405,12 +408,27 @@ When using text files (.csv, .tsv), You should always document what format you a
 {: .callout}
 
 
-> ## Exercise 4: Data tables and FAIR (5 min)
+> ## Exercise 4: Data tables and FAIR (3 min)
 >
-> How do the described practices for representing data in tables (Excel, .csv or .tsv)
-> help in achieving FAIR? Which aspects of FAIR do they help with?
->
->
+> Which of the following statements is true/false (T or F):
+> *	Do’s and don’ts help in programmatic re-use:
+> *	Avoiding multiple tabs improves interoperability:
+> *	Having accompanying README file with a table description is not FAIR:
+> *	No ‘spaces’ in columns headers improve readability:
+> *	2022-07-15 is ISO date format:
+> *	20220715 date format is better for excel than 2022-07-15:
+> *	“No data” is better than leaving cell “blank” for missing data:
+> 
+>> ## Solution
+>> *	Do’s and don’ts help in programmatic re-use: T
+>> *	Avoiding multiple tabs improves interoperability: T
+>> *	Having accompanying README file with a table description is not FAIR: F
+>> *	No ‘spaces’ in columns headers improve readability: F
+>> *	2022-07-15 is ISO date format: T
+>> *	20220715 date format is better for excel than 2022-07-15: T
+>> *	“No data” is better than leaving cell “blank” for missing data: F
+>> 
+> {: .solution}
 {: .challenge}
 
 

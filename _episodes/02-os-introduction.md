@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Open Science"
-teaching: 37
-exercises: 21
+teaching: 35
+exercises: 20
 questions:
 - "What is Open Science?"
 - "How can I benefit from Open Science?"
@@ -13,6 +13,7 @@ objectives:
 keypoints:
 - "Open Science increases transparency in research"
 - "Publicly funded science should be publicly available"
+- "While both You and the research community benefit from open practices, they are costs involved in making outputs open"
 ---
 (16 min teaching)
 
