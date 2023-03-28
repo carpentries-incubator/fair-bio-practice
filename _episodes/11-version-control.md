@@ -465,6 +465,7 @@ For data and documents often only major.minor numbers are used.
 > * Majority of the content of this episode was adopted after Wilson et al.
 > [Good Enough Practices for Scientific Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing).
 > * Semantic annotations after (Parikshit Hooda)[https://www.geeksforgeeks.org/introduction-semantic-versioning/]
+> * [Semantic Versioning 2.0.0](https://semver.org/)
 >
 {: .callout}
 
