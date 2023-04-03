@@ -121,6 +121,8 @@ to discuss folder structures, but, they should emphasize the **data safety
 > Whenever you need to write DMP for a grant application, check
 > if this resource is available to you.
 >
+> [DMPTool](https://dmptool.org) is similar tool tailored to USA.
+>
 > Additionally, your own Institutions may have resources to help with your DMP.
 >
 > Authors of this course, have created ready to use paragraphs for writing DMPs
