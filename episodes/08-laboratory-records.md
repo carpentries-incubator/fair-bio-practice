@@ -25,8 +25,9 @@ exercises: 31
 
 Before we start this session on good record keeping, it might be a good idea to make ourselves cup of tea. Here's a peer-reviewed protocol for making tea:
 
-<img src="fig/06-handwritten-tea-protocol.jpg" alt="handwritten-tea-protocol" width="600"/>
-*Figure credits: Ines Boehm and Ben Thomas*  
+![*Figure credits: Ines Boehm and Ben Thomas* ](fig/06-handwritten-tea-protocol.jpg){
+    alt="handwritten-tea-protocol" width="600"}
+ 
 
 ## Differences between analog and record keeping
 
@@ -43,8 +44,10 @@ Although digital protocols are the better of the two, analogue protocols certain
 
 Compare the [electronic version of the tea protocol](https://www.protocols.io/view/how-to-make-a-cup-of-tea-buhknt4w)
 with the paper one from the photo:
-<img src="../fig/06-handwritten-tea-protocol.jpg" alt="handwritten-tea-protocol" width="400"/>
-*Figure credits: Ines Boehm and Ben Thomas*
+
+![*Figure credits: Ines Boehm and Ben Thomas*](fig/06-handwritten-tea-protocol.jpg){
+    alt="handwritten-tea-protocol" width="400"
+}
 
 What are advantages and disadvantages of traditional analog records vs. digital records?
 

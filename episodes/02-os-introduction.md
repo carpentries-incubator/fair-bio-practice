@@ -300,9 +300,9 @@ cycle.
 
 Discuss Open Science barriers, mention the reasons for not already being open:
 
-:::::::::::::::  solution
+:::::::::::::::  spoiler
 
-## Solution
+## Potential discussion topics
 
 - sensitive data (anonymising data from administrative health records can be difficult)
 - IP
