@@ -1,20 +1,18 @@
 ---
-title: "Template"
+title: Template
 teaching: 0
 exercises: 0
-questions:
-- ""
-- ""
-- ""
-objectives:
-- ""
-- ""
-- ""
-keypoints:
-- ""
-- ""
-- ""
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- - - 
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- - - 
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 I am episode intro
 
@@ -22,39 +20,57 @@ I am episode intro
 
 With a text.
 
-![Figure 1. I am some figure](../fig/figure_file.jpg)
+![](fig/figure_file.jpg){alt='Figure 1. I am some figure'}
 
 *After [Figure source](https://www.figure.link/)*
 
+:::::::::::::::::::::::::::::::::::::::::  callout
 
-> ## I am a yellow info
->
-> And my text.
-{: .callout}
+## I am a yellow info
+
+And my text.
 
 
-~~~
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+```source
 I am code
-~~~
-{: .source}
+```
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## I am a problem
+
+Defined here.
+
+:::::::::::::::  solution
+
+## Solution
+
+- I am an answer.
+- So am I.
+  
+  
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Attribution
+
+Content of this episode was adopted after XXX et al.
+[YYY](https://biodare2.ed.ac.uk).
 
 
-> ## I am a problem
->
-> Defined here.
->
->> ## Solution
->>
->> *   I am an answer.
->> *   So am I.
-> {: .solution}
-{: .challenge}
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-> ## Attribution
-> Content of this episode was adopted after XXX et al.
-> [YYY](https://biodare2.ed.ac.uk).
-{: .callout}
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- - - 
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-{% include links.md %}
