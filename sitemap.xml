@@ -55,6 +55,9 @@
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/fair-bio-practice/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/code-good-practices.html</loc>
   </url>
   <url>
@@ -65,6 +68,9 @@
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/feedback_fair-bio-practice_workshop_1.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/fair-bio-practice/images.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/index.html</loc>
@@ -124,6 +130,9 @@
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/code-good-practices.html</loc>
   </url>
   <url>
@@ -136,7 +145,16 @@
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/feedback_fair-bio-practice_workshop_1.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/learners.html</loc>
@@ -149,6 +167,12 @@
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/fair-bio-practice/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/fair-bio-practice/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/fair-bio-practice/learners.html</loc>
