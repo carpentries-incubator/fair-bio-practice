@@ -581,7 +581,7 @@ generated.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>If you followed all steps correctly you should have reproduced the
 table, a graph and statistical testing. Apart from the pre-filled
@@ -674,7 +674,7 @@ long-days</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The following code will result in your new graph:</p>
 <pre class="source"><code><span><span class="fu">ggplot</span><span class="op">(</span><span class="fu">subset</span><span class="op">(</span><span class="va">df</span>, <span class="va">light_condition</span> <span class="op">%in%</span> <span class="st">"LD"</span><span class="op">)</span>,</span>
@@ -728,7 +728,7 @@ your Notebook then and compare)</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>It is important all code is run before the notebook is downloaded, as
 during download only the text and graphs are saved that are currently
@@ -913,7 +913,7 @@ boxplot</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <pre><code><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">df</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">genotype</span>, y <span class="op">=</span> <span class="va">biomas</span>, fill<span class="op">=</span><span class="va">light_condition</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">geom_boxplot</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
@@ -1008,7 +1008,7 @@ repeatable and shareable</li>
   "identifier": "https://carpentries-incubator.github.io/fair-bio-practice/10-reusable-analysis.html",
   "dateCreated": "2021-03-23",
   "dateModified": "2025-01-28",
-  "datePublished": "2026-06-30"
+  "datePublished": "2026-07-07"
 }
 
   </script><script>
